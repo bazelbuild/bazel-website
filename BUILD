@@ -1,36 +1,21 @@
 load("@bazel_tools//tools/build_defs/pkg:pkg.bzl", "pkg_tar")
 
-exports_files(
-    [
-        "versions/master/docs/bazel-user-manual.html",
-        "command-line-reference-prefix.html",
-        "command-line-reference-suffix.html",
-    ],
-)
-
-DOT_GRAPH_HTML_FILES = [
-    "versions/master/docs/query.html",
-    "versions/master/docs/build-ref.html",
-]
-
-filegroup(
-    name = "srcs",
-    srcs = glob(["**"]),
-    visibility = ["//:__pkg__"],
-)
-
 filegroup(
     name = "jekyll-srcs",
     srcs = glob(
         ["**/*"],
         exclude = [
+            ".git/**",
+            "bazel-*/**",
             "BUILD",
-            "jekyll-tree.sh",
+            "WORKSPACE",
+            "scripts/**",
             "*.swp",
-            "command-line-reference-prefix.html",
-            "command-line-reference-suffix.html",
-            "site/README.md",
-        ] + DOT_GRAPH_HTML_FILES,
+            "LICENSE",
+            "CONTRIBUTING",
+            "production/**",
+            "README.md",
+        ],
     ),
 )
 
@@ -81,60 +66,20 @@ pkg_tar(
         ":bootstrap-css",
         ":bootstrap-images",
         ":bootstrap-js",
-        ":dot-graphs",
         ":font-awesome-css",
         ":font-awesome-font",
         ":jekyll-files",
     ],
 )
 
-pkg_tar(
-    name = "skylark-rule-docs",
-    files = [
-        "//tools/build_defs/docker:README.md",
-        "//tools/build_defs/pkg:README.md",
-    ],
-    strip_prefix = "/tools/build_defs",
-)
-
-genrule(
-    name = "dot-graphs",
-    srcs = DOT_GRAPH_HTML_FILES,
-    outs = ["dot.tar"],
-    cmd = """
-origdir=$$PWD
-tmpdir=$$(mktemp -d)
-for f in $(SRCS); do
-    mkdir -p $$tmpdir/$$(dirname $$f)
-    if which dot > /dev/null; then
-      $(location //scripts/docs:generate_dot_graphs) < $$f > $$tmpdir/$$f
-    else
-      cp $$f $$tmpdir/$$f
-    fi
-done
-cd $$tmpdir/site
-tar cf $$origdir/$@ *
-""",
-    tools = ["//scripts/docs:generate_dot_graphs"],
-)
-
+# Workaround to rename bazel_release.pub.gpg to bazel-release.pub.gpg in order
+# to not break links.
+# TODO(dzc): Remove this script and its associated build step once
+# bazelbuild/bazel#2909 is fixed.
 genrule(
     name = "jekyll-tree",
-    srcs = [
-        ":jekyll-base",
-        ":skylark-rule-docs",
-        "//src/main/java/com/google/devtools/build/lib:gen_buildencyclopedia",
-        "//src/main/java/com/google/devtools/build/lib:gen_skylarklibrary",
-        "//src/main/java/com/google/devtools/build/lib:gen_command-line-reference",
-    ],
+    srcs = [":jekyll-base"],
     outs = ["jekyll-tree.tar"],
-    cmd = ("$(location jekyll-tree.sh) $@ " +
-           "$(location :jekyll-base) " +
-           "$(location :skylark-rule-docs) " +
-           "$(location //src/main/java/com/google/devtools/build/lib:gen_buildencyclopedia) " +
-           "$(location //src/main/java/com/google/devtools/build/lib:gen_skylarklibrary) " +
-           "$(location //src/main/java/com/google/devtools/build/lib:gen_command-line-reference)"),
-    tools = [
-        "jekyll-tree.sh",
-    ],
+    cmd = "$(location jekyll-tree.sh) $@ $(location :jekyll-base)",
+    tools = ["jekyll-tree.sh"],
 )
