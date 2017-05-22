@@ -215,6 +215,24 @@ $page-title-bar-color: #4caf50;
   height: 100px;
 }
 
+.user-logo-container .user-logo {
+  width: 200px;
+}
+
+.user-logo-container .user-logo.square {
+  width: 80px;
+}
+.user-logo-container .user-logo.heavy {
+  width: 160px;
+}
+
+.user-logo-container {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // Sidebar styles
 $navbar-bg-color: #4caf50;
 $navbar-hover-bg-color: #66bb6a;
