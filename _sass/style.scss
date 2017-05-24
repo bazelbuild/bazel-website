@@ -162,18 +162,17 @@ code {
 
 // Main page hero styles.
 $hero-bg-color: #fafafa;
+$hero-padding: 40px;
 
 .hero {
   background-color: $hero-bg-color;
-  color: $text-color;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: $hero-padding;
+  padding-bottom: $hero-padding;
   text-align: center;
 
   h1 {
     margin-top: 0;
     font-size: 72px;
-    color: $text-color;
   }
 
   .logo {
@@ -182,13 +181,10 @@ $hero-bg-color: #fafafa;
   }
 }
 
-$hero-bar-bg-color: #eee;
-
 .hero-bar {
   text-align: center;
-  background-color: $hero-bar-bg-color;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  background-color: $hero-bg-color;
+  padding-bottom: $hero-padding;
   font-weight: bold;
 }
 
