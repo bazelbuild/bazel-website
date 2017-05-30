@@ -1,8 +1,14 @@
+// Bazel logo colors
+$bazel-green: #43a047;
+$bazel-green-light: #76d275;
+$bazel-green-dark-left: #00701a;
+$bazel-green-dark-right: #004300;
+
 $body-font-family: 'RobotoDraft', 'Helvetica Neue', Helvetica, Arial,
                    sans-serif;
 $code-font-family: 'Source Code Pro', monospace;
 
-$link-color: #4caf50;
+$link-color: $bazel-green;
 $link-hover-color: darken($link-color, 10%);
 $well-color: #f9f9f9;
 $text-color: #444;
@@ -177,8 +183,8 @@ $hero-bg-color: #fafafa;
   }
 
   .logo {
-    width: 270px;
-    padding-bottom: 20px;
+    max-width: 500px;
+    margin-bottom: 20px;
   }
 }
 
@@ -192,8 +198,8 @@ $hero-bar-bg-color: #eee;
   font-weight: bold;
 }
 
-$page-title-bar-bg-color: #e8f5e9;
-$page-title-bar-color: #4caf50;
+$page-title-bar-bg-color: $bazel-green-light;
+$page-title-bar-color: $bazel-green;
 
 .page-title-bar {
   background-color: $page-title-bar-bg-color;
@@ -216,13 +222,13 @@ $page-title-bar-color: #4caf50;
 }
 
 // Sidebar styles
-$navbar-bg-color: #4caf50;
-$navbar-hover-bg-color: #66bb6a;
+$navbar-bg-color: $bazel-green;
+$navbar-hover-bg-color: $bazel-green-light;
 $navbar-color: #fff;
 $navbar-hover-color: #444;
-$navbar-input-bg-color: #c8e6c9;
+$navbar-input-bg-color: $bazel-green-light;
 $navbar-input-focus-bg-color: #fff;
-$navbar-input-border-color: #4caf50;
+$navbar-input-border-color: $bazel-green;
 
 .navbar-inverse {
   margin-bottom: 0;
@@ -238,7 +244,7 @@ $navbar-input-border-color: #4caf50;
 
     &:focus,
     &:hover {
-      color: $navbar-color;
+      color: $navbar-hover-color;
       background-color: $navbar-bg-color;
     }
   }
@@ -248,7 +254,7 @@ $navbar-input-border-color: #4caf50;
 
     &:focus,
     &:hover {
-      color: $navbar-color;
+      color: $navbar-hover-color;
       background-color: $navbar-hover-bg-color;
     }
 
@@ -276,6 +282,10 @@ $navbar-input-border-color: #4caf50;
     input[type="search"] {
       background-color: $navbar-input-bg-color;
       border-color: $navbar-input-border-color;
+
+      &::placeholder {
+        color: $navbar-color;
+      }
 
       &:focus,
       &:active {
