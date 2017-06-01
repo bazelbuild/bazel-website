@@ -3,6 +3,7 @@ $bazel-green: #43a047;
 $bazel-green-light: #76d275;
 $bazel-green-dark-left: #00701a;
 $bazel-green-dark-right: #004300;
+$color-on-bazel-green: #fff;
 
 $body-font-family: 'RobotoDraft', 'Helvetica Neue', Helvetica, Arial,
                    sans-serif;
@@ -173,11 +174,9 @@ $hero-padding: 40px;
   font-weight: bold;
 }
 
-$page-title-bar-bg-color: $bazel-green-light;
-$page-title-bar-color: $bazel-green;
 
 .page-title-bar {
-  background-color: $page-title-bar-bg-color;
+  background-color: $bazel-green-light;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -188,7 +187,7 @@ $page-title-bar-color: $bazel-green;
   h5,
   h6 {
     margin: 8px 0 4px 0;
-    color: $page-title-bar-color;
+    color: $color-on-bazel-green;
   }
 }
 
@@ -217,10 +216,10 @@ $page-title-bar-color: $bazel-green;
 // Sidebar styles
 $navbar-bg-color: $bazel-green;
 $navbar-hover-bg-color: $bazel-green-light;
-$navbar-color: #fff;
+$navbar-color: $color-on-bazel-green;
 $navbar-hover-color: #444;
 $navbar-input-bg-color: $bazel-green-light;
-$navbar-input-focus-bg-color: #fff;
+$navbar-input-focus-bg-color: $color-on-bazel-green;
 $navbar-input-border-color: $bazel-green;
 
 .navbar-inverse {
