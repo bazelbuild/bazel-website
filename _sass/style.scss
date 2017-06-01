@@ -15,8 +15,6 @@ $text-color: #444;
 
 $vpad: 20px;
 
-$footer-height: 60px;
-$footer-margin: 40px;
 
 html {
   position: relative;
@@ -27,46 +25,27 @@ body {
   padding-top: 50px;
   color: $text-color;
   font-family: $body-font-family;
-  margin-bottom: $footer-height + $footer-margin;
 }
 
 // Footer styles
-$footer-bg-color: #424242;
-$footer-color: #fff;
-$footer-muted-color: #e0e0e0;
-$footer-link-color: #e0e0e0;
-$footer-link-hover-color: #fff;
-
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: $footer-height;
-  margin-top: $footer-margin;
-  background-color: $footer-bg-color;
-  color: $footer-color;
+  margin-top: 40px;
+  background-color: #424242;
+  color: #fff;
   padding: 20px;
 
   .text-muted {
-    color: $footer-muted-color;
+    color: #e0e0e0;
   }
 
   a {
-    color: $footer-link-color;
+    color: #e0e0e0;
 
     &:hover,
     &:focus {
-      color: $footer-link-hover-color;
+      color: #fff;
       text-decoration: none;
     }
-  }
-}
-
-.body-home {
-  margin-bottom: $footer-height;
-
-  .footer {
-    margin-top: 0;
   }
 }
 
