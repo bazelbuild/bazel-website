@@ -81,7 +81,7 @@ To work with IntelliJ:
 * Import the Bazel workspace as a Bazel project (`File` > `Import Bazel Project...`)
   with the following settings:
   * Use existing bazel workspace: choose your cloned Git repository.
-  * Select `Import from workspace` and choose the `scripts/ij.bazelbuild` file as the `Project view`.
+  * Select `Import from workspace` and choose the `scripts/ij.bazelproject` file as the `Project view`.
 * Download [Google's Java Code Style Scheme file for IntelliJ](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml),
   import it (go to `Preferences` > `Editor` > `Code Style` > `Java`, click `Manage`, then `Import`)
   and use it when working on Bazel's code.
