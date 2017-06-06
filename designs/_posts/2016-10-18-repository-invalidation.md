@@ -32,7 +32,7 @@ for each repository with a
 next fetch, if that fingerprint has not changed, the rule is not
 refetched. This is not applied if the repository rule is marked
 as
-[`local`](https://www.bazel.io/versions/master/docs/skylark/lib/globals.html#repository_rule)
+[`local`](https://docs.bazel.build/skylark/lib/globals.html#repository_rule)
 because fetching a local repository is assumed to be
 [fast](https://github.com/bazelbuild/bazel/blob/master/src/main/java/com/google/devtools/build/lib/rules/repository/RepositoryDelegatorFunction.java#L125).
 
@@ -40,7 +40,7 @@ because fetching a local repository is assumed to be
 
 These consideration were well-suited when the implementation of
 repository rules were not depending on Skylark file. With the introduction of
-[Skylark repositories](https://www.bazel.io/versions/master/docs/skylark/repository_rules.html),
+[Skylark repositories](https://docs.bazel.build/skylark/repository_rules.html),
 several issues appeared:
 
 - [Change in the skylark implementation of the rule does not
@@ -61,18 +61,18 @@ several issues appeared:
 Right now rules are not invalidated on the environment:
 
 - Invalidation on accessing
-  [`repository_ctx.os.environ`](https://www.bazel.io/versions/master/docs/skylark/lib/repository_os.html#environ)
+  [`repository_ctx.os.environ`](https://docs.bazel.build/skylark/lib/repository_os.html#environ)
   would generate invalidation on environment variable that might be
   volatile (e.g. `CC` when you want to use one C++ compiler and you
   reset your environment) and might miss other environment variables
   due to computed variable names.
 - There is no way to represent environment variables that influence
-  [`repository_ctx.execute`](https://www.bazel.io/versions/master/docs/skylark/lib/repository_ctx.html#execute).
+  [`repository_ctx.execute`](https://docs.bazel.build/skylark/lib/repository_ctx.html#execute).
 
 This document proposes to add a way to declare a dependency on an
 environment variable value that would trigger a refetch of a
 repository. An optional attribute `environ` would be added to the
-[`repository_rule`](https://www.bazel.io/versions/master/docs/skylark/lib/globals.html#repository_rule)
+[`repository_rule`](https://docs.bazel.build/skylark/lib/globals.html#repository_rule)
 method, taking a list of strings and would trigger invalidation of the
 repository on any of change to those environment variables. E.g.:
 
@@ -87,9 +87,9 @@ would changes.
 To be consistent with the
 [new environment specification](https://www.bazel.io/designs/2016/06/21/environment.html)
 mechanism, the environment available through
-[`repository_ctx.os.environ`](https://www.bazel.io/versions/master/docs/skylark/lib/repository_os.html#environ)
+[`repository_ctx.os.environ`](https://docs.bazel.build/skylark/lib/repository_os.html#environ)
 or transmitted to
-[`repository_ctx.execute`](https://www.bazel.io/versions/master/docs/skylark/lib/repository_ctx.html#execute)
+[`repository_ctx.execute`](https://docs.bazel.build/skylark/lib/repository_ctx.html#execute)
 will take values from the `--action_env` flag, when specified. I.e. if
 `--action_env FOO=BAR --action_env BAR` are specified, and the
 environment set `FOO=BAZ`, `BAR=FOO`, `BAZ=BAR`, then the actual
