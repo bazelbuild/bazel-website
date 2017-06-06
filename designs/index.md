@@ -15,7 +15,7 @@ It's possible that designs change as they are implemented in practice. The
 design documents published here capture the initial design, and _not_ the
 ongoing changes as designs are implemented.
 
-Always go to the [documentation](/versions/master/docs/bazel-overview.md) for
+Always go to the [documentation](https://docs.bazel.build/bazel-overview.md) for
 descriptions of current Bazel functionality.
 
 ## Bazel Design Documents
@@ -26,8 +26,6 @@ descriptions of current Bazel functionality.
       {{ doc.date | date_to_long_string }}</a></li>
 {% endfor %}
 </ul>
-
-
 
 ## Skylark Design Documents
 

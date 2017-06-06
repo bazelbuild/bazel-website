@@ -88,7 +88,7 @@ be refined if appropriate.
     <tr><td>P1. Docker (<a href="http://bazel.build/docs/be/docker.html">build and load</a>)</td></tr>
     <tr><td>P2. <a href="http://bazel.build/docs/bazel-user-manual.html#sandboxing">Sandboxing of actions for Linux</a></td></tr>
     <tr><td>P2. AppEngine (<a href="http://bazel.build/docs/be/appengine.html">build and load</a>)</td></tr>
-    <tr><td>P2. <a href="http://bazel.build/blog/2015/07/29/dashboard-dogfood.html">Test result dashboard</a></tr></td>
+    <tr><td>P2. <a href="http://blog.bazel.build/2015/07/29/dashboard-dogfood.html">Test result dashboard</a></tr></td>
     <tr>
       <td rowspan="5">
         <a href="https://github.com/bazelbuild/bazel/releases/tag/0.2.0"><b>0.2</b>
@@ -109,7 +109,7 @@ be refined if appropriate.
       <td rowspan="5"><b>2016&#8209;06&#8209;10</b></td>
       <td>P0. <a href="http://bazel.build/docs/windows.html">Bazel can bootstrap itself on Windows without requiring admin privileges</a></td></tr>
     </tr>
-    <tr><td>P1. <a href="http://bazel.build/blog/2016/06/10/ide-support.html">Interface for IDE support</a></td></tr>
+    <tr><td>P1. <a href="http://blog.bazel.build/2016/06/10/ide-support.html">Interface for IDE support</a></td></tr>
     <tr><td>P1. IDE support for <a href="http://tulsi.bazel.build">Xcode (stable)</a> and <a href="https://github.com/bazelbuild/e4b">Eclipse (experimental)</a></td></tr>
     <tr><td>P1. <a href="https://docs.google.com/document/d/1jKbNXOVp2T1zJD_iRnVr8k5D0xZKgO8blMVDlXOksJg">Custom remote repositories using Skylark</a></td></tr>
     <tr><td>P2. <a href="https://github.com/bazelbuild/bazel/commit/79adf59e2973754c8c0415fcab45cd58c7c34697">Prototype for distributed caching of build artifact</a></td></tr>

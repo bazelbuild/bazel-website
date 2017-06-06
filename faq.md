@@ -191,7 +191,7 @@ across Windows versions.
 As of version [0.3.0](https://github.com/bazelbuild/bazel/releases/tag/0.3.0)
 Bazel supports Windows (bootstrapping itself and running builds), and we are
 actively working on improving this support. See our
-[blog post](https://bazel.build/blog/2016/09/07/bazel-windows.html) for more
+[blog post](https://blog.bazel.build/2016/09/07/bazel-windows.html) for more
 information, as well as the [list of open bugs](https://github.com/bazelbuild/bazel/issues?q=is%3Aissue+is%3Aopen+label%3A%22category%3A+multi-platform+%3E+windows%22).
 
 What should I not use Bazel for?
@@ -269,7 +269,7 @@ Can I build Docker images with Bazel?
 -------------------------------------
 
 Yes, you can use our
-[Docker rules](https://bazel.build/versions/master/docs/be/docker.html)
+[Docker rules](https://docs.bazel.build/be/docker.html)
 to build reproducible Docker images.
 
 Will Bazel make my builds reproducible automatically?
@@ -310,7 +310,7 @@ For XCode, check out [Tulsi](http://tulsi.bazel.build/).
 For Eclipse, check out [E4B plugin](https://github.com/bazelbuild/e4b).
 
 For other IDEs, check out the [blog
-post](https://bazel.build/blog/2016/06/10/ide-support.html) on how these
+post](https://blog.bazel.build/2016/06/10/ide-support.html) on how these
 plugins work.
 
 I use Jenkins/CircleCI/TravisCI. How does Bazel interoperate with CI systems?
