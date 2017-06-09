@@ -5,6 +5,14 @@
   $section-padding: $shared-padding;
   $text-light-color: #777;
 
+  p, li {
+    font-size: 16px;
+  }
+
+  .lead {
+      font-size: 21px;
+  }
+
   h1,
   h2,
   .features,
@@ -14,7 +22,7 @@
     text-align: center;
   }
 
-  h1 {
+  h1, h3 {
     font-weight: bold;
   }
 
@@ -28,6 +36,11 @@
 
   .hero .logo {
       max-width: 350px;
+      margin-top: 10px;
+  }
+
+  .main-cta {
+    margin-left: $shared-padding;
   }
 
   blockquote {
@@ -68,6 +81,9 @@
   .beta {
     padding-top: 20px;
     color: $text-light-color;
+    p {
+      font-size: 14px;
+    }
   }
 
 }
