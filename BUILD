@@ -1,4 +1,11 @@
 load("@bazel_tools//tools/build_defs/pkg:pkg.bzl", "pkg_tar")
+load("//:redirects.bzl", "BAZEL_SITE_REDIRECTS")
+load("//:site.bzl", "site_tar")
+
+sh_binary(
+    name = "build-jekyll-tree",
+    srcs = ["build-jekyll-tree.sh"],
+)
 
 filegroup(
     name = "jekyll-srcs",
@@ -11,10 +18,12 @@ filegroup(
             "WORKSPACE",
             "scripts/**",
             "*.swp",
+            "*.sh",
             "LICENSE",
             "CONTRIBUTING",
             "production/**",
             "README.md",
+            "*.bzl",
         ],
     ),
 )
@@ -72,14 +81,8 @@ pkg_tar(
     ],
 )
 
-# Workaround to rename bazel_release.pub.gpg to bazel-release.pub.gpg in order
-# to not break links.
-# TODO(dzc): Remove this script and its associated build step once
-# bazelbuild/bazel#2909 is fixed.
-genrule(
+site_tar(
     name = "jekyll-tree",
-    srcs = [":jekyll-base"],
-    outs = ["jekyll-tree.tar"],
-    cmd = "$(location jekyll-tree.sh) $@ $(location :jekyll-base)",
-    tools = ["jekyll-tree.sh"],
+    src = ":jekyll-base",
+    redirects = BAZEL_SITE_REDIRECTS,
 )
