@@ -1,0 +1,90 @@
+.home {
+  $shared-padding: 40px;
+  $landing-alternate-bg-color: #fafafa;
+  $logos-padding-bottom: $shared-padding;
+  $section-padding: $shared-padding;
+  $text-light-color: #777;
+
+  p, li {
+    font-size: 16px;
+  }
+
+  .lead {
+      font-size: 21px;
+  }
+
+  h1,
+  h2,
+  .features,
+  .buttons,
+  .tagline,
+  .get-started {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .buttons {
+    margin-top: $shared-padding;
+  }
+
+  .hero .logo,
+  .hero .tagline {
+      max-width: 350px;
+      margin-top: 20px;
+  }
+
+  .main-cta {
+    margin-left: $shared-padding;
+  }
+
+  blockquote {
+    border-left: none;
+  }
+
+  .logos {
+    .user-logo-container {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .user-logo {
+        width: 200px;
+      }
+      .user-logo.square {
+        width: 80px;
+      }
+      .user-logo.heavy {
+        width: 160px;
+      }
+    }
+  }
+
+  .landing-section,
+  .logos {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+  }
+
+  .hero,
+  .get-started,
+  .features {
+    background-color: $landing-alternate-bg-color;
+  }
+
+  .beta {
+    padding-top: 20px;
+    color: $text-light-color;
+    p {
+      font-size: 14px;
+    }
+  }
+
+}

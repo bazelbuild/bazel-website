@@ -2,194 +2,226 @@
 layout: home
 title: Bazel - a fast, scalable, multi-language and extensible build system"
 ---
+<div class="home">
+  <div class="landing-section hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="{{site_root}}images/bazel-logo.svg"
+               title="Bazel"
+               alt="Bazel logo"
+               class="logo img-responsive" />
+          <p class="tagline">{Fast, Correct} - Choose two</p>
+        </div>
+        <div class="col-md-6 lead">
+          <h1>Build and test software of any size, quickly and reliably</h1>
+          <p class="buttons">
+            <a class="btn btn-lg"
+               href="https://docs.bazel.build/install.html">
+               Get Bazel
+            </a>
+            <a class="btn btn-success btn-lg main-cta"
+               href="https://docs.bazel.build/getting-started.html">
+               Get Started
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="hero">
-  <div class="container">
-    <img src="{{site_root}}images/bazel-logo.svg"
-         title="Bazel"
-         alt="Bazel logo"
-         class="logo img-responsive center-block" />
-    <p class="lead">{Fast, Correct} - Choose two</p>
-  </div>
-</div>
-<div class="hero-bar">
-  <div class="container">
-    <a class="btn btn-lg"
-       href="{{ "/docs/install.html" | prepend: site_root }}">
-       Install Bazel</a>
-    <a class="btn btn-success btn-lg"
-       href="{{ "/docs/getting-started.html" | prepend: site_root }}">
-       Get Started</a>
-  </div>
-</div>
-<div class="landing-feature-1">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Correct, reproducible, fast builds for everyone</h1>
-        <p class="lead">Build software of any size, quickly and reliably, just as engineers do at Google.</p>
-        <p>Bazel is Google's own build tool, now publicly available in Beta.
-           Bazel has built-in support for building both client and server software, including client
-           applications for both Android and iOS platforms. It also provides an extensible framework
-           that you can use to develop your own build rules.
-        </p>
+  <div class="landing-section summary">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lead">
+            Bazel is an open-source build and test tool which is correct, fast and scalable by design.
+          </p>
+          <p>
+            Bazel is Google's build tool, now available to everyone.
+            Bazel makes builds reproducible and only rebuilds what is necessary.
+            <br/>
+            It has built-in support for building both client and server software in a variety of programming languages, and is easily extensible.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="landing-feature-2">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Why Bazel?</h1>
-        <p class="lead">Here's what makes Bazel great.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>Speed</h3>
-        <p>With Bazel's optimized dependency analysis, advanced
-           caching and parallel execution of build actions, you get
-           fast, clean builds.
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Scalability</h3>
-        <p>At Google, Bazel is used by tens of
-           thousands of engineers to build heavy-duty, mission-critical
-           infrastructure services as well as public web applications. But it's
-           great for smaller projects, too.
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Flexibility</h3>
-        <p>A comprehensive, built-in set of rules lets you build software for
-           a wide variety of languages and platforms right out of the box.
-           Skylark, Bazel's extensible rule framework, allows you to develop
-           and share your own build rules for other languages and platforms.
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>Correctness</h3>
-        <p>Bazel examines the content of source files in your
-           dependency graph, not just timestamps, to determine when to rebuild.
-           Because incremental builds are virtually always correct, it's not
-           necessary to run a clean build "just in case" to ensure correctness.
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Reliability</h3>
-        <p>When you build software with Bazel, you're running the same code
-           that has been refined and tested over years of use in the
-           engineering environment at Google.
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Repeatability</h3>
-        <p>Builds only use input files that are explicitly declared in the
-           build specification. On Linux, Bazel runs tools in a sandboxed
-           environment that contain only the minimum necessary files required.
-           Even tests are run in sandboxes, which ensures predictable,
-           environment-independent results.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="landing-feature-1">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Organizations using Bazel</h1>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-sm-3 user-logo-container">
-        <img class="user-logo" src="{{site_root}}images/user-logos/dropbox.svg" alt="Dropbox logo" title="Dropbox"/>
+  <div class="landing-section features">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Why Bazel?</h2>
+        </div>
       </div>
-      <div class="col-sm-3 user-logo-container">
-        <img class="user-logo square" src="{{site_root}}images/user-logos/pinterest.svg" alt="Pinterest logo" title="Pinterest"/>
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-2">
+          <h3>Reduce build times</h3>
+          <p>
+            Speed up your builds and tests:
+            With advanced local and distributed caching, optimized dependency analysis and parallel execution, you get fast and incremental builds.
+          </p>
+        </div>
+        <div class="col-sm-3 col-sm-offset-2">
+          <h3>One tool, multiple languages</h3>
+          <p>Build and test Java, C++, Android, iOS, Go and a wide variety of other language platforms.
+            Bazel runs on Windows, macOS, and Linux.
+          </p>
+        </div>
       </div>
-      <div class="col-sm-3 user-logo-container">
-        <img class="user-logo" src="{{site_root}}images/user-logos/stripe.svg" alt="Stripe logo" title="Stripe"/>
-      </div>
-      <div class="col-sm-3 user-logo-container">
-        <img class="user-logo square" src="{{site_root}}images/user-logos/huawei.png" alt="Huawei logo" title="Huawei"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3 user-logo-container">
-        <img class="user-logo" src="{{site_root}}images/user-logos/google.svg" alt="Google logo" title="Google"/>
-      </div>
-      <div class="col-sm-3 user-logo-container">
-        <img class="user-logo" src="{{site_root}}images/user-logos/improbable.svg" alt="Improbable logo" title="Improbable.io"/>
-      </div>
-      <div class="col-sm-3 user-logo-container">
-        <img class="user-logo" src="{{site_root}}images/user-logos/braintree.svg" alt="Braintree logo" title="Braintree, a PayPal service"/>
-      </div>
-      <!--
-      <div class="col-sm-3 user-logo-container">
-        <img class="user-logo heavy" src="{{site_root}}images/user-logos/grpc.svg" alt="GRPC logo" title="GRPC"/>
-      </div>
-    -->
-      <div class="col-sm-3 user-logo-container">
-        <img class="user-logo square" src="{{site_root}}images/user-logos/tensorflow.svg" alt="TensorFlow logo" title="TensorFlow"/>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="landing-feature-2">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Get Started</h1>
-      </div>
-      <div class="col-sm-4">
-        <h3>Install Bazel</h2>
-        <p>See our <a href="docs/install.html">Installation Guide</a> to learn
-           how to download and install Bazel.
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Run Bazel</h2>
-        <p>See our
-           <a href="docs/getting-started.html">Getting Started Guide</a> to
-           learn how to write a BUILD file and run Bazel.
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Bazel Commands</h2>
-        <p>See our <a href="docs/bazel-user-manual.html">User Manual</a> to
-           learn about the Bazel command-line tool.
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <h3>Learn More</h2>
-        <p>Take a look at our <a href="docs/install.html">documentation</a>
-           and read our <a href="faq.html">FAQ</a>.
-        </p>
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-2">
+          <h3>Scalable</h3>
+          <p>
+            Bazel helps you scale your organization, codebase and Continuous Integration system.
+            It handles codebases of any size, in multiple repositories or a huge monorepo.
+          </p>
+        </div>
+        <div class="col-sm-3 col-sm-offset-2">
+          <h3>Extensible to your needs</h3>
+          <p>
+            Easily add support for new languages and platforms with Bazel's familiar extension language.
+            Share and re-use language rules written by the growing Bazel community.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="landing-feature-1">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>About Bazel</h1>
-        <p>
-          <a href="contributing.html">Contribute</a><br />
-          <a href="governance.html">Governance Plan</a><br />
-          <a href="roadmap.html">Roadmap</a><br />
-          <a href="docs/support.html">Support</a><br />
-          <a href="https://github.com/bazelbuild/bazel/wiki/Bazel-Users">Who's using Bazel</a>
-        </p>
+  <div class="landing-section users">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Trusted by industry leaders</h2>
+        </div>
+      </div>
+
+      <div class="logos">
+        <div class="row">
+          <div class="col-sm-3 user-logo-container">
+            <img class="user-logo" src="{{site_root}}images/user-logos/dropbox.svg" alt="Dropbox logo" title="Dropbox"/>
+          </div>
+          <div class="col-sm-3 user-logo-container">
+            <img class="user-logo square" src="{{site_root}}images/user-logos/pinterest.svg" alt="Pinterest logo" title="Pinterest"/>
+          </div>
+          <div class="col-sm-3 user-logo-container">
+            <img class="user-logo" src="{{site_root}}images/user-logos/stripe.svg" alt="Stripe logo" title="Stripe"/>
+          </div>
+          <div class="col-sm-3 user-logo-container">
+            <img class="user-logo square" src="{{site_root}}images/user-logos/huawei.png" alt="Huawei logo" title="Huawei"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 user-logo-container">
+            <img class="user-logo" src="{{site_root}}images/user-logos/google.svg" alt="Google logo" title="Google"/>
+          </div>
+          <div class="col-sm-3 user-logo-container">
+            <img class="user-logo" src="{{site_root}}images/user-logos/improbable.svg" alt="Improbable logo" title="Improbable.io"/>
+          </div>
+          <div class="col-sm-3 user-logo-container">
+            <img class="user-logo" src="{{site_root}}images/user-logos/braintree.svg" alt="Braintree logo" title="Braintree, a PayPal service"/>
+          </div>
+          <div class="col-sm-3 user-logo-container">
+            <img class="user-logo" src="{{site_root}}images/user-logos/twosigma.svg" alt="Two Sigma logo" title="Two Sigma"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 user-logo-container">
+            <img class="user-logo" src="{{site_root}}images/user-logos/heron.svg" alt="Heron logo" title="Heron"/>
+          </div>
+          <div class="col-sm-4 user-logo-container">
+            <img class="user-logo heavy" src="{{site_root}}images/user-logos/grpc.svg" alt="gRPC logo" title="gRPC"/>
+          </div>
+          <div class="col-sm-4 user-logo-container">
+            <img class="user-logo square" src="{{site_root}}images/user-logos/tensorflow.svg" alt="TensorFlow logo" title="TensorFlow"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <blockquote>
+            <p class="text-center">
+              Bazel is the common build tool throughout Pinterest and has been instrumental in achieving fast, reproducible builds across our programming languages and platforms.
+              Unlike other products, Bazel has a rich feature set which has allowed us to unify all of our internal repositories to get the benefits of a Monorepo without actually creating one.
+            </p>
+            <footer class="text-center"><cite>Rahul Malik</cite>, Software Engineer at Pinterest</footer>
+          </blockquote>
+        </div>
+        <div class="col-sm-6">
+          <blockquote>
+            <p class="text-center">
+              We employed a combination of systems to build Heron that required different expertise and difficult to maintain.
+              Bazel solved the problem by providing a seamless and consistent build interface for different languages in a single system. It increased our productivity significantly.
+              We love it!
+            </p>
+            <footer class="text-center"><cite>Maosong Fu</cite>, Engineering Manager, Real-Time Compute at Twitter</footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <blockquote>
+            <p class="text-center">By switching to bazel we not only eliminated the overhead of maintaining multiple build systems, but also massively sped up our build and testing infrastructure.</p>
+            <footer class="text-center"><cite>Michal Witkowski</cite>, Principal TL at Improbable</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="landing-section get-started">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Get Started</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-2">
+          <h3>Install Bazel</h3>
+          <p>See our <a href="docs/install.html">Installation Guide</a> to learn
+             how to download and install Bazel.
+          </p>
+        </div>
+        <div class="col-sm-3 col-sm-offset-2">
+          <h3>Run Bazel</h3>
+          <p>See our
+             <a href="docs/getting-started.html">Getting Started Guide</a> to
+             learn how to write a BUILD file and run Bazel.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-2">
+          <h3>Bazel Commands</h3>
+          <p>See our <a href="docs/bazel-user-manual.html">User Manual</a> to
+             learn about the Bazel command-line tool.
+          </p>
+        </div>
+        <div class="col-sm-3 col-sm-offset-2">
+          <h3>Learn More</h3>
+          <p>Take a look at our <a href="docs/install.html">documentation</a>
+             and read our <a href="faq.html">FAQ</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="beta">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>
+            <b>Beta:</b>
+            When you build software with Bazel, you're running the same code that has been refined and tested for years at Google to build heavy-duty, mission-critical infrastructure, services, and applications.
+            However, Bazel is not yet covered by a deprecation policy, may be subject to backward-incompatible changes, and is missing some features.
+            Consequently, Bazel is released in 'Beta'.
+            See the <a href="/roadmap.html">product roadmap</a> to learn about the path toward a stable 1.0 release.
+          </p>
+        </div>
       </div>
     </div>
   </div>
