@@ -5,3 +5,7 @@ highlighter: pygments
 sass:
   sass_dir: _sass
 gems: [jekyll-paginate]
+
+main_site_url: ""
+blog_site_url: https://blog.bazel.build
+docs_site_url: https://docs.bazel.build

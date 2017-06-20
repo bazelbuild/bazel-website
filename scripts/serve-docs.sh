@@ -81,7 +81,7 @@ check() {
 build_tree() {
   bazel build //:jekyll-tree.tar
   rm -rf $WORKING_DIR/*
-  tar -xf "$(bazel info bazel-genfiles)/jekyll-tree.tar" -C $WORKING_DIR
+  tar -xf "$(bazel info bazel-bin)/jekyll-tree.tar" -C $WORKING_DIR
 }
 
 build_static() {

@@ -15,14 +15,14 @@
 
 # Workaround to rename bazel_release.pub.gpg to bazel-release.pub.gpg in order
 # to not break links.
-# TODO(dzc): Remove this script and its associated build step once
-# bazelbuild/bazel#2909 is fixed.
 
 set -eu
 
 readonly OUTPUT=${PWD}/$1
-shift
-readonly JEKYLL_BASE=${PWD}/$1
+readonly JEKYLL_BASE=${PWD}/$2
+readonly REDIRECTS_FILE=${3:-""}
+
+readonly OWD=${PWD}
 
 # Create temporary directory that is removed when this script exits.
 readonly TMP=$(mktemp -d "${TMPDIR:-/tmp}/tmp.XXXXXXXX")
@@ -33,7 +33,32 @@ function main {
   mkdir -p "$OUT_DIR"
   cd "$OUT_DIR"
   tar -xf "${JEKYLL_BASE}"
+
+  if [[ -n "$REDIRECTS_FILE" ]]; then
+    local redirects_path="${OWD}/${REDIRECTS_FILE}"
+    while IFS=$'\t' read old new; do
+      if [[ -e "$old" ]]; then
+        echo "Cannot create redirect file $old. File exists."
+        exit 1
+      fi
+      local old_dir=$(dirname $old)
+      if [[ ! -d "$old_dir" ]]; then
+        mkdir -p "$old_dir"
+      fi
+      cat <<EOF > $old
+<html>
+  <head>
+    <script>
+      window.location.replace("${new}" + window.location.hash);
+    </script>
+  </head>
+</html>
+EOF
+    done < "$redirects_path"
+  fi
+
   mv bazel_release.pub.gpg bazel-release.pub.gpg
+
   tar -hcf $OUTPUT $(find . -type f | sort)
 }
 
