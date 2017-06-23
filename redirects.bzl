@@ -11,7 +11,9 @@ def _make_doc_redirects(docs):
   return redirects
 
 def _make_blog_redirects(posts):
-  redirects = {}
+  redirects = {
+      "blog/index.html": "https://blog.bazel.build",
+  }
   for post in posts:
     old = "blog/%s" % post
     new = "https://blog.bazel.build/%s" % post
