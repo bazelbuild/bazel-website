@@ -1,8 +1,8 @@
 .home {
   $shared-padding: 40px;
   $landing-alternate-bg-color: #fafafa;
-  $logos-padding-bottom: $shared-padding;
-  $section-padding: $shared-padding;
+  $logos-padding: $shared-padding;
+  $section-padding: $shared-padding / 2;
   $text-light-color: #777;
 
   p, li {
@@ -13,13 +13,14 @@
       font-size: 21px;
   }
 
-  h1,
   h2,
-  .features,
-  .buttons,
-  .tagline,
-  .get-started {
+  .tagline {
     text-align: center;
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 50px;
   }
 
   h2 {
@@ -27,17 +28,22 @@
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 26px;;
   }
 
   .buttons {
     margin-top: $shared-padding;
   }
 
-  .hero .logo,
-  .hero .tagline {
-      max-width: 350px;
+  .hero .logo {
+      max-width: 150px;
       margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .tagline {
+    margin-top: 20px;
   }
 
   .main-cta {
@@ -48,29 +54,30 @@
     border-left: none;
   }
 
-  .logos {
+  .users {
     .user-logo-container {
-      height: 100px;
+      height: 80px;
       display: flex;
       justify-content: center;
       align-items: center;
 
       .user-logo {
-        width: 200px;
+        width: 150px;
       }
       .user-logo.square {
-        width: 80px;
-      }
-      .user-logo.heavy {
-        width: 160px;
+        width: 70px;
       }
     }
   }
 
-  .landing-section,
-  .logos {
+  .landing-section {
     padding-top: $section-padding;
     padding-bottom: $section-padding;
+  }
+
+  .logos {
+    padding-top: $logos-padding;
+    padding-bottom: $logos-padding;
   }
 
   .hero,
