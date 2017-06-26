@@ -139,6 +139,7 @@ BAZEL_SITE_REDIRECTS = _make_redirects(
         "skylark/lib/platform.html",
         "skylark/lib/platform_type.html",
         "skylark/lib/proto.html",
+        "skylark/lib/provider.html",
         "skylark/lib/repository_ctx.html",
         "skylark/lib/repository_os.html",
         "skylark/lib/root.html",
