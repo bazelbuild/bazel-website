@@ -9,10 +9,6 @@
     font-size: 16px;
   }
 
-  .lead {
-      font-size: 21px;
-  }
-
   h2,
   .tagline {
     text-align: center;
@@ -28,8 +24,12 @@
   }
 
   h3 {
-    font-size: 26px;;
+    font-size: 26px;
   }
+  .features h3 {
+    height: 2em;
+  }
+
 
   .buttons {
     margin-top: $shared-padding;
@@ -60,13 +60,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
-      .user-logo {
-        width: 150px;
-      }
-      .user-logo.square {
-        width: 70px;
-      }
+    }
+    blockquote .user-logo-container  {
+      justify-content: left;
+    }
+    .user-logo {
+      width: 150px;
+    }
+    .user-logo.square {
+      width: 70px;
     }
   }
 

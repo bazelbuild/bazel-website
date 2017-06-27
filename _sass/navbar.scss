@@ -13,8 +13,10 @@ $navbar-input-border-color: $bazel-green;
   border-bottom: 1px solid $navbar-bg-color;
 
   .navbar-brand {
+    padding-top: 12px;
+    
     .navbar-logo {
-      height: 22px;
+      height: 28px;
     }
   }
 
