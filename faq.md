@@ -4,6 +4,8 @@ title: FAQ
 nav: faq
 ---
 
+Ask technical questions [on StackOverflow using the 'bazel' tag](stackoverflow.com/questions/tagged/bazel).
+
 What is Bazel?
 --------------
 
@@ -232,7 +234,7 @@ should also hold for our open source codebase.
 How can I start using Bazel?
 ----------------------------
 
-See our [getting started document](docs/getting-started.html).
+See our [getting started document]({{ site.docs_site_url }}/getting-started.html).
 
 Doesn't Docker solve the reproducibility problems?
 --------------------------------------------------
@@ -269,7 +271,7 @@ Can I build Docker images with Bazel?
 -------------------------------------
 
 Yes, you can use our
-[Docker rules](https://docs.bazel.build/be/docker.html)
+[Docker rules](https://github.com/bazelbuild/rules_docker)
 to build reproducible Docker images.
 
 Will Bazel make my builds reproducible automatically?
@@ -349,12 +351,6 @@ Simplistic support for PEX-style binaries is at
 [here](https://github.com/bazelbuild/bazel/blob/master/tools/build_rules/py_rules.bzl).
 
 
-What about Go?
---------------
-
-Bazel supports Go through an [external rule set](https://github.com/bazelbuild/rules_go)
-
-
 Can I use Bazel for my [INSERT LANGUAGE HERE] project?
 ------------------------------------------------------
 
@@ -393,8 +389,7 @@ We are reachable at <bazel-discuss@googlegroups.com>.
 Where do I report bugs?
 -----------------------
 
-Send an e-mail to <bazel-discuss@googlegroups.com> or file a bug
-[on GitHub](https://github.com/bazelbuild/bazel/issues).
+Open on issue [on GitHub](https://github.com/bazelbuild/bazel/issues).
 
 
 
