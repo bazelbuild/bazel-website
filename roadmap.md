@@ -26,9 +26,9 @@ be refined if appropriate.
 ## Planned feature list
 
 #### 0.6
-2017-06
+2017-07
 
-* P0. Stable API for Remote execution including platform description
+* P0. Stable API for Remote execution, excluding platform description
 * P0. List of feature to deprecate until version 1.0 are tracked in a publicly available document
 * P1. Bazel on Windows does not need to install MSYS
 * P1. Migration tool: Maven project to Bazel project
