@@ -15,8 +15,8 @@ It's possible that designs change as they are implemented in practice. The
 design documents published here capture the initial design, and _not_ the
 ongoing changes as designs are implemented.
 
-Always go to the [documentation](https://docs.bazel.build/bazel-overview.md) for
-descriptions of current Bazel functionality.
+Always go to the [documentation]({{ site.docs_site_url }}) for descriptions of
+current Bazel functionality.
 
 ## Bazel Design Documents
 

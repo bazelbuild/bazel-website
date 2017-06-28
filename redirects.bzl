@@ -20,20 +20,27 @@ def _make_blog_redirects(posts):
     redirects[old] = new
   return redirects
 
-def _make_redirects(docs=[], blog=[]):
+def _make_redirects(docs=[], blog=[], other={}):
   return dict(_make_doc_redirects(docs).items() +
-              _make_blog_redirects(blog).items())
+              _make_blog_redirects(blog).items() +
+              other.items())
 
 # Dict mapping path of site page to new URL to redirect to.
 BAZEL_SITE_REDIRECTS = _make_redirects(
     docs = [
+        "bazel-overview.html",
         "bazel-user-manual.html",
         "best-practices.html",
         "build-ref.html",
+        "command-line-reference.html",
         "cpp.html",
         "external.html",
         "getting-started.html",
         "install.html",
+        "install-compile-source.html",
+        "install-os-x.html",
+        "install-ubuntu.html",
+        "install-windows.html",
         "mobile-install.html",
         "output_directories.html",
         "query-how-to.html",
@@ -71,10 +78,13 @@ BAZEL_SITE_REDIRECTS = _make_redirects(
         "skylark/concepts.html",
         "skylark/cookbook.html",
         "skylark/deploying.html",
+        "skylark/depsets.html",
         "skylark/index.html",
+        "skylark/language.html",
         "skylark/macros.html",
         "skylark/repository_rules.html",
         "skylark/rules.html",
+        "skylark/errors/read-only-variable.html",
 
         # Skylark Library
         "skylark/lib/Action.html",
@@ -202,4 +212,7 @@ BAZEL_SITE_REDIRECTS = _make_redirects(
         "2017/04/21/JDK7-deprecation.html",
         "2017/05/26/Bazel-0-5-0-release.html",
         "2017/05/31/google-summer-of-code-2017.html",
-    ])
+    ],
+    other = {
+        "versions/master/docs/windows-chocolatey-maintenance.html": "https://www.bazel.build/windows-chocolatey-maintenance.html",
+    })
