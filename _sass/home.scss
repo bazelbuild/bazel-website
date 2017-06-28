@@ -1,17 +1,18 @@
+$landing-bg-color: #fafafa;
+
+.body-home {
+  background-color: $landing-bg-color;
+}
+
 .home {
   $shared-padding: 40px;
-  $landing-alternate-bg-color: #fafafa;
   $logos-padding: $shared-padding;
+  $landing-alternate-bg-color: #fff;
   $section-padding: $shared-padding / 2;
   $text-light-color: #777;
 
   p, li {
     font-size: 16px;
-  }
-
-  h2,
-  .tagline {
-    text-align: center;
   }
 
   h1 {
@@ -24,34 +25,49 @@
   }
 
   h3 {
-    font-size: 26px;
-  }
-  .features h3 {
-    height: 2em;
+    font-size: 24px;
   }
 
-
-  .buttons {
-    margin-top: $shared-padding;
-  }
-
-  .hero .logo {
+  .hero {
+    .logo {
       max-width: 150px;
       margin-top: 20px;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    .hero-tagline {
+      font-size: 20px;
+      font-weight: 300;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #757575;
+    }
+
+    .hero-title {
+      margin-top: 0px;
+      font-size: 36px;
+    }
   }
 
-  .tagline {
-    margin-top: 20px;
-  }
+  .cta-buttons {
+    margin-top: $shared-padding;
 
-  .main-cta {
-    margin-left: $shared-padding;
+    .cta-main {
+      margin-left: $shared-padding;
+    }
   }
 
   blockquote {
     border-left: none;
+  }
+
+  .features {
+    h3 {
+      // This is needed to align the value statements since some headings span
+      // two rows.
+      height: 2em;
+    }
   }
 
   .users {
@@ -75,6 +91,10 @@
   .landing-section {
     padding-top: $section-padding;
     padding-bottom: $section-padding;
+
+    h2 {
+      text-align: center;
+    }
   }
 
   .logos {
@@ -82,18 +102,17 @@
     padding-bottom: $logos-padding;
   }
 
-  .hero,
-  .get-started,
-  .features {
+  .features,
+  .get-started {
     background-color: $landing-alternate-bg-color;
   }
 
   .beta {
-    padding-top: 20px;
+    padding-top: 40px;
     color: $text-light-color;
     p {
       font-size: 14px;
+      margin: 0;
     }
   }
-
 }
