@@ -94,6 +94,12 @@ $landing-bg-color: #fafafa;
     }
   }
 
+  @media (max-width: 767px) {
+    .users  blockquote .user-logo-container  {
+      justify-content: center;
+    }
+  }
+
   .landing-section {
     padding-top: $section-padding;
     padding-bottom: $section-padding;
