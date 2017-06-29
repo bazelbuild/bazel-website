@@ -2,11 +2,13 @@
   <style>
     .regular{fill:#43A047;} .dark-left{fill:#00701A;} .dark-right{fill:#004300;} .light{fill:#76D275;}
   </style>
-  <path class="regular"    d="M21.3 139.8v115.1l117.4 117.3V257.1"/>
-  <path class="dark-left"  d="M256 374.4v115.2L138.7 372.2V257.1"/>
-  <path class="regular"    d="M490.7 139.8v115.1L373.3 372.2V257.1"/>
-  <path class="dark-right" d="M256 374.4l117.3-117.3v115.1L256 489.6"/>
-  <path class="light"      d="M138.658 22.43l117.308 117.308-117.308 117.308L21.35 139.738z"/>
-  <path class="regular"    d="M255.99 139.714L373.3 257.022 255.99 374.33 138.685 257.022z"/>
-  <path class="light"      d="M373.347 22.452L490.655 139.76 373.347 257.068 256.04 139.76z"/>
+  <path class="light"      d="M144 32 l112 112 -112 112 L32 144z"/>
+  <path class="regular"    d="M32 144 v112 l112 112 V256"/>
+
+  <path class="light"      d="M368 32  l112 112 -112 112 -112 -112z"/>
+  <path class="regular"    d="M480 144 v112 L368 368 V256"/>
+
+  <path class="regular"    d="M256 144 l112 112 -112 112 -112 -112z"/>
+  <path class="dark-left"  d="M256 368 v112 L144 368 V256"/>
+  <path class="dark-right" d="M256 368 l112 -112 v112 L256 480"/>
 </svg>
