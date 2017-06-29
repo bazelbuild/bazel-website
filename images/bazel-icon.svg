@@ -3,7 +3,7 @@
     .regular{fill:#43A047;} .dark-left{fill:#00701A;} .dark-right{fill:#004300;} .light{fill:#76D275;}
   </style>
 
-  <path class="light"      d="M144 32 l112 112 -112 112 L32 144z"/>
+  <path class="light"      d="M144 32 l112 112 -112 112 l-112 -112z"/>
   <path class="regular"    d="M32 144 v112 l112 112 v-112"/>
 
   <path class="light"      d="M368 32  l112 112 -112 112 -112 -112z"/>
