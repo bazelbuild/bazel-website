@@ -58,6 +58,12 @@ $landing-bg-color: #fafafa;
     }
   }
 
+  @media (max-width: 767px) {
+    .cta-buttons {
+      text-align: center;
+    }
+  }
+
   blockquote {
     border-left: none;
   }
