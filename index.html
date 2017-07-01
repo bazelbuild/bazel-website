@@ -11,6 +11,7 @@ title: Bazel - a fast, scalable, multi-language and extensible build system"
           <h1 class="hero-title">Build and test software of any size, quickly and reliably</h1>
           <p class="cta-buttons">
             <a class="btn btn-lg"
+               id="btn-install"
                href="{{ site.docs_site_url }}/install.html">
                Get Bazel
             </a>
@@ -184,3 +185,14 @@ title: Bazel - a fast, scalable, multi-language and extensible build system"
     </div>
   </div>
 </div>
+
+<script>
+  var installBtn = document.getElementById("btn-install");
+  if (navigator.appVersion.indexOf("Win") != -1) {
+    installBtn.href = "{{ site.docs_site_url }}/install-windows.html";
+  } else if (navigator.appVersion.indexOf("Mac") != -1) {
+    installBtn.href = "{{ site.docs_site_url }}/install-os-x.html";
+  } else if (navigator.appVersion.indexOf("Linux") != -1) {
+    installBtn.href = "{{ site.docs_site_url }}/install-ubuntu.html";
+  }
+</script>
