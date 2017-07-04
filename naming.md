@@ -13,9 +13,9 @@ If you are building a Bazel related tool or sharing your Skylark rules, we recom
 
 See the ["Deploying new Skylark rules" section](https://docs.bazel.build/versions/master/skylark/deploying.html) in the docs.
 
-## Naming an other Bazel related tool
+## Naming other Bazel related tools
 
-This section applies if you are building a tool to enrich the Bazel ecosystem (For example: a new IDE plugin, or a new build system migrator...).
+This section applies if you are building a tool to enrich the Bazel ecosystem. For example, a new IDE plugin or a new build system migrator.
 
 Picking a good name for your tool can be hard. If we’re not careful and use too many codenames, the Bazel ecosystem could become very difficult to understand for newcomers.
 
@@ -23,7 +23,7 @@ Follow these guidelines for naming Bazel tools:
 
 1. Prefer **not introducing a new brand name**: "*Bazel*" is already a new brand for our users, we should avoid confusing them with too many new names.
 
-2. Prefer **using a name that includes "Bazel"**: This helps to express that it is a Bazel related tool, it also helps people finding it with a search engine.
+2. Prefer **using a name that includes "Bazel"**: This helps to express that it is a Bazel related tool, it also helps people find it with a search engine.
 
 3. Prefer **using names that are descriptive about what the tool is doing**: Ideally, the name should not need a subtitle for users to have a first good guess at what the tool does. Using english words separated by spaces is a good way to achieve this.
 
@@ -37,11 +37,11 @@ These guidelines also apply to the GitHub repository URL. Reading the repository
 Examples of good names:
 
 * *Bazel for Eclipse*: Users will understand that if they want to use Bazel with Eclipse, this is where they should be looking. It uses a third party brand as a descriptor.
-* *Bazel buildfarm*: a "buildfarm" is a [compile farm](https://en.wikipedia.org/wiki/Compile_farm), users will understand that this project relates to building on servers.
+* *Bazel buildfarm*: A "buildfarm" is a [compile farm](https://en.wikipedia.org/wiki/Compile_farm). Users will understand that this project relates to building on servers.
 
 Examples of names to avoid:
 
-* *Ocimum*, which is the [scientific name of basil](https://en.wikipedia.org/wiki/Ocimum), des not relate enough to the Bazel project.
-* *Bazelizer* is not descriptive enough: the tool behind this name could do a lot of things.
+* *Ocimum*: The [scientific name of basil](https://en.wikipedia.org/wiki/Ocimum) does not relate enough to the Bazel project.
+* *Bazelizer*: The tool behind this name could do a lot of things, this name is not descriptive enough.
 
 Note that these recommendations are aligned with the [guidelines](https://opensource.google.com/docs/releasing/preparing/#name) Google uses when open sourcing a project.
