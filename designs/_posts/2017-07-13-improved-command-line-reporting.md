@@ -20,8 +20,10 @@ Currently, there is no good way for a Bazel user to get the command line that
 initiated a build, if they do not have access to the terminal history. The 
 GotOptionsEvent tracks the various types of options (notably, startup and 
 command options) and this information is starting to be used in Bazel by the 
-BEP. However, this information is incomplete, and, unfortunately, not entirely 
-correct.
+BuildEventProtocol (BEP, see the proto definition in 
+//src/main/java/com/google/devtools/build/lib/buildeventstream/proto/build_event_stream.proto, 
+for context). However, this information is incomplete, and, unfortunately, 
+not entirely correct.
 
 The output information in the BEP is currently as follows:
 ```
@@ -132,7 +134,6 @@ command lines that should be trivially accessible from the BEP output.
        reapplication of any configuration files or flag-altering options such
        as invocation policy.
 
-
 4. Filtered command line(s) 
 
     +  providing boiled-down lists of flags that affects one aspect of the 
@@ -179,9 +180,6 @@ stream would need to come last.
 
 Details for these are below.
 
-
-
-
 ### Passing the Bazel-invoking tool's command line to the server
 
 A `--summoning_command` command option will serve to accept the original tool's
@@ -202,12 +200,12 @@ worth adding state somewhere outside of a flag value.
 
 +  Passing by command arg
 
-    +  Compiled proto (Format [1])
+    +  Compiled proto (format [1], in the accepted alternative)
 
         +  Simple scripts that want Bazel to log how they were called shouldn't
            need to write and compile a protobuf message.
 
-    +  Data as a single string (Format [2])
+    +  Data as a single string (format [2], in the accepted alternative)
 
         +  This causes problems with escaping argv to be passed as a 
            re-combined string. For a complicated command line, this is not 
@@ -240,7 +238,7 @@ Diagram provided for convenience:
 
 ![command line structure](command_line_structure.png)
 
-`CommandLine~
+`CommandLine`
 
 +  enum label
 
@@ -339,9 +337,6 @@ For cmd line A, we don't know any structure, so we would have the CommandLine
 label "tool-provided", but with a single CommandLineSection without a label, 
 and everything in "repeatable chunk".
 
-
-
-
 ### Required OptionsParser refactoring
 
 Make the options parser able to correctly track both the canonical and original
@@ -376,9 +371,6 @@ exist in their "effective" form for the lifetime of the server, but the
 invocation-specific information would be passed to the server as received 
 literally.
 
-
-
-
 ### Literalness vs. Canonicalization
 
 There are mainly two places where the literal way a command line was specified 
@@ -395,9 +387,11 @@ instead is helpful.
    or `--flag=val` form, the different accepted boolean forms, `--nobool_flag`, 
    `--bool_flag=0`, `--bool_flag=false`, `--bool_flag=no` that are all 
    semantically the same, and some flags have a long and short form (such as 
-   --keep_going and -k). For command line reporting in BEP, I think a 
-   canonical version is best, so that all flags set to false use the same 
-   syntax. 
+   --keep_going and -k). For command line reporting in the BuildEventProtocol 
+   (BEP, see the proto definition in 
+   //src/main/java/com/google/devtools/build/lib/buildeventstream/proto/build_event_stream.proto, 
+   for context. There is no command line field yet,) I think a canonical 
+   version is best, so that all flags set to false use the same syntax. 
 
     +  Which canonical version, you ask? I think `--flag=val`, `--nobool` and 
        the longform `--keep_going` are the easiest to read.
@@ -410,11 +404,7 @@ In the OptionsParser, this will require the following:
    ("raw") as well as a "standardized" or "canonical" value, that is parsed, 
    but would be accepted on the command line and reparsed to the same value. 
 
-
-
-
-
-### Flag categorization and tagging
+   ### Flag categorization and tagging
 
 Add ability to tag flags to be able to include or exclude certain types of 
 flags to have a filterable command line.
