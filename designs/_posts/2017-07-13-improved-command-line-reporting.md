@@ -17,13 +17,15 @@ Always go to the documentation for current information.**
 ## Background
 
 Currently, there is no good way for a Bazel user to get the command line that 
-initiated a build, if they do not have access to the terminal history. The 
-GotOptionsEvent tracks the various types of options (notably, startup and 
-command options) and this information is starting to be used in Bazel by the 
-BuildEventProtocol (BEP, see the proto definition in 
-//src/main/java/com/google/devtools/build/lib/buildeventstream/proto/build_event_stream.proto, 
-for context). However, this information is incomplete, and, unfortunately, 
-not entirely correct.
+initiated a build, if they do not have access to the terminal history. 
+
+The GotOptionsEvent tracks some of the necessary information, and this 
+information is starting to be used in Bazel by the BuildEventProtocol 
+(BEP, see the proto definition in 
+https://github.com/bazelbuild/bazel/blob/master/src/main/java/com/google/devtools/build/lib/buildeventstream/proto/build_event_stream.proto, 
+for context). However, the contents of the OptionsParsed proto message, which 
+come from this GotOptionsEvent, are insufficient for the reconstruction of the
+user's command line, and are occasionally incorrect.
 
 The output information in the BEP is currently as follows:
 ```
@@ -43,17 +45,24 @@ Startup options, the options that go before the command, are listed in two ways:
 + `explicit_startup_options` : The explicit options, only those mentioned 
    explicitely on the command line.
 
-As are the command options:
+Command options are also listed in two ways:
 
 + `cmd_line` : The effective options. These include those listed explicitely 
    in the command line, but also have expansion flags expanded, those mentioned
    in bazelrc's, and any alterations from the invocation policy.
 + `explicit_cmd_line` : The explicit options listed on the command line.
 
-This is insufficient information to mirror the full user input. The executable,
-command, and targets are listed elsewhere, and the parts, if recombined, do not
-accurately reflect what was provided by the user, since they were never 
-intended to be matching parts of the whole. It is also not fully correct. 
+These lists of options are insufficient to mirror the full user input. The 
+executable, command, and targets are listed elsewhere, and the parts, if 
+recombined, do not accurately reflect what was provided by the user, since 
+they were never intended to be matching parts of the whole. It is also not 
+fully correct: startup options are not fully passed to the server for logging,
+and certain bazelrc features and OptionsParser features incorrectly lead to 
+either missing pieces or duplication in the list. These bugs are mostly edge 
+cases, and would likely not be a problem for the average use case, but if a 
+user is relying on this output, it can be incredibly confusing and difficult to
+debug discrepancies, and the fixes are non-trivial as they are deeply ingrained
+in the structure of the command line parsing.
 
 ## Goals
 
@@ -61,10 +70,12 @@ Basically, we want the following: the "literal" command line that was passed
 by the user, and a "reproducible" command line, along with the amorphous 
 request of "any additional information that might help debug an issue". 
 
-Unfortunately, reproducibility is a red herring, as it can mean many different
-things depending on the behavior (or failure) that we want to reproduce, and it
-is not in the power of a single command line to guarantee it, as the 
-environment, source state, and other factors can affect the behavior of Bazel.
+Unfortunately, reproducibility isn't achievable with just a command line, so we 
+will avoid getting distracted by this and remain focused on concrete 
+improvements.  Specifically, reproducibility isn't a good goal for this effort 
+because it can mean many different things depending on the behavior 
+(or failure) that we want to reproduce, and it is affected by other factors,
+including the environment, source state, machine, user permissions, and others.
 The goal of the logged command lines is therefore to help get as close to this
 reproducibility promise as possible, without obfuscating the original intent of
 the user.
