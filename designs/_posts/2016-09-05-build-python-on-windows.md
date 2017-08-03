@@ -43,7 +43,7 @@ the way py\_binary works on Unix is:
 _A py\_binary is an executable Python program consisting of a collection
 of `.py` source files (possibly belonging to other py\_library rules),
 a `*.runfiles` directory tree containing all the code and data needed by
-the program at run-time, and a [stub script](https://github.com/bazelbuild/bazel/blob/master/src/main/java/com/google/devtools/build/lib/bazel/rules/python/stub_template.txt)
+the program at run-time, and a [stub script](https://github.com/bazelbuild/bazel/blob/master/src/main/java/com/google/devtools/build/lib/bazel/rules/python/python_stub_template.txt)
 that starts up the program with the correct initial environment and data._
 
 This doesn’t work on Windows, because we don’t have runfiles tree on Windows.
