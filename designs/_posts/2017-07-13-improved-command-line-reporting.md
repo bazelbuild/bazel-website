@@ -40,17 +40,17 @@ message OptionsParsed {
 
 Startup options, the options that go before the command, are listed in two ways:
 
-+ `startup_options` : The effective options, both those mentioned explicitely 
+*  `startup_options` : The effective options, both those mentioned explicitely 
    and implicitely (say, in a bazelrc)
-+ `explicit_startup_options` : The explicit options, only those mentioned 
+*  `explicit_startup_options` : The explicit options, only those mentioned 
    explicitely on the command line.
 
 Command options are also listed in two ways:
 
-+ `cmd_line` : The effective options. These include those listed explicitely 
+*  `cmd_line` : The effective options. These include those listed explicitely 
    in the command line, but also have expansion flags expanded, those mentioned
    in bazelrc's, and any alterations from the invocation policy.
-+ `explicit_cmd_line` : The explicit options listed on the command line.
+*  `explicit_cmd_line` : The explicit options listed on the command line.
 
 These lists of options are insufficient to mirror the full user input. The 
 executable, command, and targets are listed elsewhere, and the parts, if 
@@ -83,39 +83,39 @@ the user.
 The work outlined in this doc is for addressing the following concerns, for the
 greater purpose of improving how Bazel logs command lines:
 
-+  No non-Bazel tools should be reconstructing the command line. 
+*  No non-Bazel tools should be reconstructing the command line. 
 
-    +  Bazel should provide the command lines in a consistent format.
-    +  This format should be flexible to allow for future changes while 
-       avoiding unnecessary repetition.
+   *  Bazel should provide the command lines in a consistent format.
+   *  This format should be flexible to allow for future changes while 
+      avoiding unnecessary repetition.
 
-+  The "full" command line, with bazelrc and invocation policy changes, can 
+*  The "full" command line, with bazelrc and invocation policy changes, can 
    often be overwhelming
 
-    +  Bazel should make it easier to find the relevant information.
+   *  Bazel should make it easier to find the relevant information.
 
-+  The Bazel server does not have fully correct information about the command
+*  The Bazel server does not have fully correct information about the command
    line. 
 
-    +  It needs access to the literal command line that was passed to the 
-       client. Currently, particularly for startup options, this is not the 
-       case.
-    +  If Bazel was invoked through a tool, and the original command line was 
-       of interest to understand where the Bazel invocation came from, this
-       needs to be passed to Bazel for logging.
-    +  The options parsing logic needs consistent and accurate information
-       about where flags come from.
+   *  It needs access to the literal command line that was passed to the 
+      client. Currently, particularly for startup options, this is not the 
+      case.
+   *  If Bazel was invoked through a tool, and the original command line was 
+      of interest to understand where the Bazel invocation came from, this
+      needs to be passed to Bazel for logging.
+   *  The options parsing logic needs consistent and accurate information
+      about where flags come from.
 
 ### Non-Goals
 
 The work outlined here does not aim to address the following:
 
-+  Provide reproducible command lines. Giving more accurate command line
+*  Provide reproducible command lines. Giving more accurate command line
    information is a step towards better reproducibility, but is not sufficient. 
 
-    +  The command line is not sufficient when external information affects
-       the build, including source state, binary version, environment variables,
-       machine state, etc.  
+   *  The command line is not sufficient when external information affects
+      the build, including source state, binary version, environment variables,
+      machine state, etc.  
 
 ## Proposed Improvements - High level view
 
@@ -127,39 +127,40 @@ command lines that should be trivially accessible from the BEP output.
 
 1. Tool command line (not Bazel)
 
-    +  the command line to the non-Bazel tool that triggered this whole thing. 
-       (This is NOT a Bazel command line, and shouldn't be structured as one.)
+   *  the command line to the non-Bazel tool that triggered this whole thing. 
+      (This is NOT a Bazel command line, and shouldn't be structured as one.)
 
 2. Explicit command line : _pre-client-processing_
 
-    +  This would be the command line as close as we can get it to how it was 
-       written. For the startup options, that means including flags passed to 
-       the client that are not passed as such to the server. This includes 
-       --invocation_policy.
+   *  This would be the command line as close as we can get it to how it was 
+      written. For the startup options, that means including flags passed to 
+      the client that are not passed as such to the server. This includes 
+      --invocation_policy.
 
 3. Effective, or canonical, command line : _post-server-processing_
 
-    +  post bazelrc & post invocation policy, a command line that includes all 
-       non-default flag values. This should be possible to copy paste to get 
-       the same command line, and as such, Bazel should take care of preventing
-       reapplication of any configuration files or flag-altering options such
-       as invocation policy.
+   *  post bazelrc & post invocation policy, a command line that includes all 
+      non-default flag values. This should be possible to copy paste to get 
+      the same command line, and as such, Bazel should take care of preventing
+      reapplication of any configuration files or flag-altering options such
+      as invocation policy.
 
 4. Filtered command line(s) 
 
-    +  providing boiled-down lists of flags that affects one aspect of the 
-       invocation. For example,
+   *  providing boiled-down lists of flags that affects one aspect of the 
+      invocation. For example,
 
-        1. a "semantic" command line that includes only flags that change what 
-           the correct build is.
-        1. a "behavioral" command line with flags that define Bazel's 
-           constraints about how to get there (jvm args, logging flags, 
-           sandboxing, etc.)
+      1. a "semantic" command line that includes only flags that change what 
+         the correct build is.
+      1. a "behavioral" command line with flags that define Bazel's 
+         constraints about how to get there (jvm args, logging flags, 
+         sandboxing, etc.)
 
-	+  As there might be many possible filters we want to apply, we shouldn't 
-       try and guess what users will find useful, but provide the flag category
-       information with the rest of the command line, with command lines 2 and 
-       3. The user/tool can then filter them as needed.
+   *  As there might be many possible filters we want to apply, we shouldn't 
+      try and guess what users will find useful, but provide the flag category
+      information with the rest of the command line, with command lines 2 
+      and 3. The user/tool can then filter them as needed.
+ 
   
 Note that none of these claims to be a "reproducible" command line. As stated 
 and explained above, that is not a goal of this effort. Some users would just 
@@ -176,14 +177,14 @@ There are a fair number of isolated changes that need to be made before we can
 provide new structured command lines as part of Bazel's output. The following
 can be done in parallel:
 
-+  To get command line 1, Bazel-invoking tools need to be able to pass Bazel 
+*  To get command line 1, Bazel-invoking tools need to be able to pass Bazel 
    their command lines.
-+  Refactoring the OptionsParser to maintain correct information about the
+*  Refactoring the OptionsParser to maintain correct information about the
    initial and final states of the command line.
-+  Passing the client arguments from the client to the server literally.
-+  Adding the command line reporting structure to the Build Event Protocol 
+*  Passing the client arguments from the client to the server literally.
+*  Adding the command line reporting structure to the Build Event Protocol 
    (BEP).
-+  To filter command lines for command lines 4, we need better option 
+*  To filter command lines for command lines 4, we need better option 
    categorization. 
 
 Tying everything together and reporting the command lines via the build event 
@@ -199,7 +200,7 @@ containing the list of strings that represents the calling executable's argv[],
 or [2] a single string. 
 
 This can quickly become an unbounded dance - "what about (the tool that 
-invoked)+ Bazel?" We are intentionally not going to support this. Flags are 
+invoked)* Bazel?" We are intentionally not going to support this. Flags are 
 not a great tool for extended information passing, and while there are ways to 
 do it, it raises questions of ordering and correctness that we will not address 
 here. Bazel will accept 1 value to this flag, for the purpose of helping users 
@@ -209,32 +210,32 @@ worth adding state somewhere outside of a flag value.
 
 #### Alternative formats considered
 
-+  Passing by command arg
+Passing by command arg
 
-    +  Compiled proto (format [1], in the accepted alternative)
+*  Compiled proto (format [1], in the accepted alternative)
 
-        +  Simple scripts that want Bazel to log how they were called shouldn't
-           need to write and compile a protobuf message.
+   *  Simple scripts that want Bazel to log how they were called shouldn't
+      need to write and compile a protobuf message.
 
-    +  Data as a single string (format [2], in the accepted alternative)
+*  Data as a single string (format [2], in the accepted alternative)
 
-        +  This causes problems with escaping argv to be passed as a 
-           re-combined string. For a complicated command line, this is not 
-           acceptable.
+   *  This causes problems with escaping argv to be passed as a 
+      combined string. For a complicated command line, this is not 
+      acceptable.
 
-    +  Repeatable arg, each value is an element of argv
+*  Repeatable arg, each value is an element of argv
 
-        +  We still have potential sub-string escape problems, but now we 
-           introduce dependencies on flag ordering.
+   *  We still have potential sub-string escape problems, but now we 
+      introduce dependencies on flag ordering.
 
-+  Passing by future structured interface directly over the client-server 
-   grpc interface
+Passing by future structured interface directly over the client-server 
+grpc interface
 
-    +  This could be a future migration, but we can't block on it for now. It 
-       also would only support tools that depend directly on the interface, 
-       which most will never do, and which none do yet.
-    +  Any future work here would need to ensure that we don't accept both a 
-       command arg and a RunRequest-equivalent argument.
+*  This could be a future migration, but we can't block on it for now. It 
+   also would only support tools that depend directly on the interface, 
+   which most will never do, and which none do yet.
+*  Any future work here would need to ensure that we don't accept both a 
+   command arg and a RunRequest-equivalent argument.
 
 ### "Command line" proto for reporting command lines
 
@@ -247,70 +248,70 @@ line.
 
 Diagram provided for convenience:
 
-![command line structure](command_line_structure.png)
+![command line structure](https://github.com/bazelbuild/bazel-website/blob/master/designs/_posts/command_line_structure.png)
 
 `CommandLine`
 
-+  enum label
+*  enum label
 
-    +  `effective`/`explicit`/`tool-provided`, labels the command line.   
-       Keeping this as an enum requires us to be explicit if adding an 
-       additional command line to the output.
+   *  `effective`/`explicit`/`tool-provided`, labels the command line.   
+      Keeping this as an enum requires us to be explicit if adding an 
+      additional command line to the output.
 
-+  repeatable `CommandLineSection`
+*  repeatable `CommandLineSection`
 
 `CommandLineSection`
 
-+  string label
+*  string label
 
-    +  Labels the section of the command line, such as the command, the command 
-       arguments, the target. 
-    +  The label could be an enum, having it not set is still doable for the 
-       tool command line, but that might not be preferable. In particular, 
-       some commands care about the arguments after --, notably the 
-       canonicalize_flags or run commands, but sometimes it's not a  useful 
-       separation, so keeping this fluid has advantages.
+   *  Labels the section of the command line, such as the command, the command 
+      arguments, the target. 
+   *  The label could be an enum, having it not set is still doable for the 
+      tool command line, but that might not be preferable. In particular, 
+      some commands care about the arguments after --, notably the 
+      canonicalize_flags or run commands, but sometimes it's not a  useful 
+      separation, so keeping this fluid has advantages.
 
-+  "chunk"
+*  "chunk"
 
-    +  The actual part of the command line. For the command (`build`, `test`, 
-       etc) there would only be one chunk, but for flags or targets, there 
-       could be many.
-    +  One of: (one of's can't have repeatable fields, so adding an additional 
-       proto message layer for the repeatable parts of the command line)
+   *  The actual part of the command line. For the command (`build`, `test`, 
+      etc) there would only be one chunk, but for flags or targets, there 
+      could be many.
+   *  One of: (one of's can't have repeatable fields, so adding an additional 
+      proto message layer for the repeatable parts of the command line)
 
-        +  Simple chunk, string
+      *  Simple chunk, string
 
-            +  for executable name, command, any element of the command line 
-               we only accept 1 of
+         *  for executable name, command, any element of the command line 
+            we only accept 1 of
 
-        +  Repeatable_Chunk message - simple wrapper message with a repeatable 
-           string chunk
+      *  Repeatable_Chunk message - simple wrapper message with a repeatable 
+        string chunk
 
-            +  Practically, this is necessary for build targets. It can be 
-               used for any repeatable part of the command line that is NOT a 
-               list of options
+         *  Practically, this is necessary for build targets. It can be 
+            used for any repeatable part of the command line that is NOT a 
+            list of options
 
-        +  Option_List message - simple wrapper message with a repeatable Option
+      *  Option_List message - simple wrapper message with a repeatable Option
 
 Option
 
-+  String representation : `--foo=bar`
+*  String representation : `--foo=bar`
 
-    +  The part that should be printed when re-assembling the command line in 
-       text logs.
-    +  (We might want both the original and the canonicalized version, but 
-       I'd rather avoid the duplication if possible)
+   *  The part that should be printed when re-assembling the command line in 
+      text logs.
+   *  (We might want both the original and the canonicalized version, but 
+      I'd rather avoid the duplication if possible)
 
-+  Flag name : `foo`
-+  Flag value (canonicalized) : `bar`
-+  Repeatable effect and metadata tags (enum values, see Flag categorization 
+*  Flag name : `foo`
+*  Flag value (canonicalized) : `bar`
+*  Repeatable effect and metadata tags (enum values, see Flag categorization 
    below)
-+  Potential additional information
+*  Potential additional information
 
-    +  short-hand form, 
-    +  origin (command line, bazelrc, invocation_policy, for example, though 
-       that isn't currently readily available information)
+   *  short-hand form, 
+   *  origin (command line, bazelrc, invocation_policy, for example, though 
+      that isn't currently readily available information)
 
 
 For a complete, fully parsed command line, the `CommandLineSection`s might 
@@ -318,31 +319,31 @@ potentially include any or all the following,
 
 1. Label : "executable name"
 
-    +  single argv[0], "bazel," or "blaze" internally
+   *  single argv[0], "bazel," or "blaze" internally
 
 1. Label: "startup options"
 
-    +  (repeatable) options
+   *  (repeatable) options
 
 1. Label: "command"
 
-    +  single command
+   *  single command
 
 1. Label: "command options"
 
-    +  (repeatable) options
+   *  (repeatable) options
 
 1. Label: "command arg separator"
 
-    +  "--" 
+   *  "--" 
 
 1. Label: "target"
 
-    +  (repeatable) target name
+   *  (repeatable) target name
 
 1. Label: "target args" (if applicable)
 
-    +  (repeatable) 
+   *  (repeatable) 
 
 For cmd line A, we don't know any structure, so we would have the CommandLine 
 label "tool-provided", but with a single CommandLineSection without a label, 
@@ -356,15 +357,15 @@ the flags without the values that were used to create it, to avoid
 re-application. Coming from where we are, there are two approaches that would 
 work:
 
-+  Remove the ordering hacks in the OptionsParser for dealing with bazelrc and 
+*  Remove the ordering hacks in the OptionsParser for dealing with bazelrc and 
    invocation policy.
 
-    +  Actually parse options in the order we claim, so that currently broken 
-       last-mention wins is fixed, and we can list all instances of a flag 
-       correctly in the literal command line report. It will also make correct 
-       reporting of expansion flags (of all flavors) easier.
+   *  Actually parse options in the order we claim, so that currently broken 
+      last-mention wins is fixed, and we can list all instances of a flag 
+      correctly in the literal command line report. It will also make correct 
+      reporting of expansion flags (of all flavors) easier.
 
-+  Track links between original and final versions of flags, with flags of no 
+*  Track links between original and final versions of flags, with flags of no 
    value, that existed to change other flags (invocation policy, bazelrc and 
    expansion flags), rendered newter in the final version instead of allowing 
    re-application.
@@ -404,12 +405,12 @@ instead is helpful.
    for context. There is no command line field yet,) I think a canonical 
    version is best, so that all flags set to false use the same syntax. 
 
-    +  Which canonical version, you ask? I think `--flag=val`, `--nobool` and 
-       the longform `--keep_going` are the easiest to read.
+   *  Which canonical version, you ask? I think `--flag=val`, `--nobool` and 
+      the longform `--keep_going` are the easiest to read.
 
 In the OptionsParser, this will require the following:
 
-+  UnparsedOptionValueDescription (defined in 
+*  UnparsedOptionValueDescription (defined in 
    src/main/java/com/google/devtools/common/options/OptionsParser.java) will 
    need to get a string representation of the actual way the option was passed 
    ("raw") as well as a "standardized" or "canonical" value, that is parsed, 
@@ -427,26 +428,26 @@ com/google/devtools/common/options/OptionDocumentationCategory.java)
 There will be different categorization mechanisms added.   
 (Details in the sections below)
 
-+  Convert category, currently to string, to an enum for natural grouping of 
+*  Convert category, currently to string, to an enum for natural grouping of 
    flags in generated documentation. 
 
-    +  Each flag must belong to exactly 1 DocumentationCategory
+   *  Each flag must belong to exactly 1 DocumentationCategory
 
-+  Add a "tag" field for option effect, for filtering. These tags, unlike the 
+*  Add a "tag" field for option effect, for filtering. These tags, unlike the 
    categories, are meant to mostly make sense to experienced Bazel users, or 
    people who want to create filters - they should help isolate the cause of 
    an issue or behavior by allowing irrelevant options to be filtered out.
 
-    +  Each flag must have at least 1 intended behavior, so should have 1+ 
-       OptionEffectTag
+   *  Each flag must have at least 1 intended behavior, so should have 1* 
+      OptionEffectTag
 
-+  Add a "tag" for option metadata - information about the flag itself. It 
+*  Add a "tag" for option metadata - information about the flag itself. It 
    might be an statement about the intended use of an option, or how 
    trustworthy we might think it is, and so is useful in filtering, but 
    does not actually describe the "intent" or "meaning" of a flag.
 
-    +  This can be an empty list, but options can also have multiple 
-       OptionMetadataTags
+   *  This can be an empty list, but options can also have multiple 
+      OptionMetadataTags
 
 
 
@@ -456,19 +457,19 @@ Keep all possible tags enumerated in a proto enum, separated into their types.
 
 Advantages
 
-+  Forces labels to be consistent and immune to typos.
-+  Forces labels to be documented & well defined (we can expect developers 
+*  Forces labels to be consistent and immune to typos.
+*  Forces labels to be documented & well defined (we can expect developers 
    to use them correctly, instead of being unsure what labels are appropriate), 
    and requires developers who wish to introduce a new labels to explain what 
    they think it means and why it is useful (hopefully prevents "what" from 
    happening ever again)
-+  Will hopefully discourage the creation of one-off labels.
+*  Will hopefully discourage the creation of one-off labels.
 
 Disadvantages
 
-+  Requires all definitions to be in one place, even if some tags are only 
+*  Requires all definitions to be in one place, even if some tags are only 
    applicable to a subset of the system.
-+  Double-documentation in the enum comments and in HelpCommand.
+*  Double-documentation in the enum comments and in HelpCommand.
 
 #### Number constraints: Single category, multiple tags
 
@@ -479,35 +480,35 @@ listed.
 
 Justification
 
-+  Single category 
+*  Single category 
 
-    +  Since these are just meant to be for grouping, there is no need to come 
-       up with categories that are effectively mutually exclusive, as long as 
-       there is always clearly a most appropriate category. 
-    +  "Uncategorized" as an explicit category
+   *  Since these are just meant to be for grouping, there is no need to come 
+      up with categories that are effectively mutually exclusive, as long as 
+      there is always clearly a most appropriate category. 
+   *  "Uncategorized" as an explicit category
 
-        +  Makes it explicit inside the code that uncategorized flags will 
-           be listed as such, as opposed to accepting a null value, which 
-           might be misinterpreted.
-        +  Helps with a gradual rollout - we can flip the switch on using 
-           this new documentation information before 100% of flags are 
-           categorized.
+      *  Makes it explicit inside the code that uncategorized flags will 
+         be listed as such, as opposed to accepting a null value, which 
+         might be misinterpreted.
+      *  Helps with a gradual rollout - we can flip the switch on using 
+         this new documentation information before 100% of flags are 
+         categorized.
 
-+  Multiple Effect Tags
+*  Multiple Effect Tags
 
-    +  An option can have multiple consequences, so limiting it to one 
-       OptionEffectTag would reduce the value of the tag (It'd be great if 
-       we could rely on all options that have an effect on output be labeled 
-       as such, instead of getting an incomplete list)
-    +  Avoids confusion about which tag to list when multiple tags apply 
-    +  Allows tags to be independent, since any intersecting option can just 
-       list both tags. No umbrella tags needed.
+   *  An option can have multiple consequences, so limiting it to one 
+      OptionEffectTag would reduce the value of the tag (It'd be great if 
+      we could rely on all options that have an effect on output be labeled 
+      as such, instead of getting an incomplete list)
+   *  Avoids confusion about which tag to list when multiple tags apply 
+   *  Allows tags to be independent, since any intersecting option can just 
+      list both tags. No umbrella tags needed.
 
-+  Minimum 1 effect tag
+*  Minimum 1 effect tag
 
-    +  Lists "No-Op" as an effect tag, so that if a flag truly does not have 
-       any effect, it can list it, but otherwise, it is clear to the developer 
-       that leaving out an effect is not an option.
+   *  Lists "No-Op" as an effect tag, so that if a flag truly does not have 
+      any effect, it can list it, but otherwise, it is clear to the developer 
+      that leaving out an effect is not an option.
 
 #### Alternatives considered
 
@@ -529,13 +530,13 @@ all in 1 go, or we could go through a more gradual process:
 1. Create bugs for every OptionsBase subclass to categorize the options, 
    assigning to subteams. Ask for a 1 month turnaround.
 
-    +  They should not remove the deprecated "category" field, for documentation 
-       coherence. These lines will be removed in 1 go, when we convert the 
-       documentation generation.
+   *  They should not remove the deprecated "category" field, for documentation 
+      coherence. These lines will be removed in 1 go, when we convert the 
+      documentation generation.
 
-1.  Once we've categorized some high proportion of the depot flags, (80%?) 
-    migrate "bazel help" documentation to using the "categories" information, 
-    including the html output used for the bazel.build docs.
-1.  Remove the "category" field entirely and all mentions.
+1. Once we've categorized some high proportion of the depot flags, (80%?) 
+   migrate "bazel help" documentation to using the "categories" information, 
+   including the html output used for the bazel.build docs.
+1. Remove the "category" field entirely and all mentions.
 
 
