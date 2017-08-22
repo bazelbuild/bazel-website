@@ -28,7 +28,8 @@ come from this GotOptionsEvent, are insufficient for the reconstruction of the
 user's command line, and are occasionally incorrect.
 
 The output information in the BEP is currently as follows:
-```
+
+```proto
 message OptionsParsed {
   repeated string startup_options = 1;
   repeated string explicit_startup_options = 2;
@@ -124,20 +125,21 @@ issues with the current availability of information. Here is a list of the
 command lines that should be trivially accessible from the BEP output.
 
 ### More command lines
-
-1. Tool command line (not Bazel)
+<!-- `1.` numbered list form with sublists with bullets is not working as 
+  intented, numbering them weirdly to keep the referenceability -->
+* (1) Tool command line (not Bazel)
 
    *  the command line to the non-Bazel tool that triggered this whole thing. 
       (This is NOT a Bazel command line, and shouldn't be structured as one.)
 
-2. Explicit command line : _pre-client-processing_
+* (2) Explicit command line : _pre-client-processing_
 
    *  This would be the command line as close as we can get it to how it was 
       written. For the startup options, that means including flags passed to 
       the client that are not passed as such to the server. This includes 
       --invocation_policy.
 
-3. Effective, or canonical, command line : _post-server-processing_
+* (3) Effective, or canonical, command line : _post-server-processing_
 
    *  post bazelrc & post invocation policy, a command line that includes all 
       non-default flag values. This should be possible to copy paste to get 
@@ -145,14 +147,14 @@ command lines that should be trivially accessible from the BEP output.
       reapplication of any configuration files or flag-altering options such
       as invocation policy.
 
-4. Filtered command line(s) 
+* (4) Filtered command line(s) 
 
    *  providing boiled-down lists of flags that affects one aspect of the 
       invocation. For example,
 
-      1. a "semantic" command line that includes only flags that change what 
+      *  a "semantic" command line that includes only flags that change what 
          the correct build is.
-      1. a "behavioral" command line with flags that define Bazel's 
+      *  a "behavioral" command line with flags that define Bazel's 
          constraints about how to get there (jvm args, logging flags, 
          sandboxing, etc.)
 
@@ -248,7 +250,7 @@ line.
 
 Diagram provided for convenience:
 
-![command line structure](https://github.com/bazelbuild/bazel-website/blob/master/designs/_posts/command_line_structure.png)
+![command line structure](https://github.com/bazelbuild/bazel-website/blob/master/designs/_posts/command_line_structure.png?raw=true)
 
 `CommandLine`
 
@@ -317,31 +319,31 @@ Option
 For a complete, fully parsed command line, the `CommandLineSection`s might 
 potentially include any or all the following, 
 
-1. Label : "executable name"
+*  Label : "executable name"
 
    *  single argv[0], "bazel," or "blaze" internally
 
-1. Label: "startup options"
+*  Label: "startup options"
 
    *  (repeatable) options
 
-1. Label: "command"
+*  Label: "command"
 
    *  single command
 
-1. Label: "command options"
+*  Label: "command options"
 
    *  (repeatable) options
 
-1. Label: "command arg separator"
+*  Label: "command arg separator"
 
    *  "--" 
 
-1. Label: "target"
+*  Label: "target"
 
    *  (repeatable) target name
 
-1. Label: "target args" (if applicable)
+*  Label: "target args" (if applicable)
 
    *  (repeatable) 
 
@@ -525,18 +527,18 @@ lines.
 Either we pick what categories matter, create the enum and migrate the depot 
 all in 1 go, or we could go through a more gradual process:
 
-1. Introduce the enums, the fields in the @Option annotation, and deprecate 
+* (1) Introduce the enums, the fields in the @Option annotation, and deprecate 
    the current string "category" field
-1. Create bugs for every OptionsBase subclass to categorize the options, 
+* (2) Create bugs for every OptionsBase subclass to categorize the options, 
    assigning to subteams. Ask for a 1 month turnaround.
 
    *  They should not remove the deprecated "category" field, for documentation 
       coherence. These lines will be removed in 1 go, when we convert the 
       documentation generation.
 
-1. Once we've categorized some high proportion of the depot flags, (80%?) 
+* (3) Once we've categorized some high proportion of the depot flags, (80%?) 
    migrate "bazel help" documentation to using the "categories" information, 
    including the html output used for the bazel.build docs.
-1. Remove the "category" field entirely and all mentions.
+* (4) Remove the "category" field entirely and all mentions.
 
 
