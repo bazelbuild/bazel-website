@@ -418,7 +418,7 @@ In the OptionsParser, this will require the following:
    ("raw") as well as a "standardized" or "canonical" value, that is parsed, 
    but would be accepted on the command line and reparsed to the same value. 
 
-   ### Flag categorization and tagging
+### Flag categorization and tagging
 
 Add ability to tag flags to be able to include or exclude certain types of 
 flags to have a filterable command line.
