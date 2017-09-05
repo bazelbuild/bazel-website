@@ -122,15 +122,20 @@ uses. They are located in `//src/java_tools/...`, `//src/objc_tools/...` and
 `//src/tools/...` and their directories contain README files describing their
 respective utility.
 
-When modifying Bazel, you want to make sure that the following still works:
+When modifying Bazel, you want to make sure you can compile Bazel and
+all of the tests still pass. To do so:
 
-*  Build a distribution archive with `bazel build //:bazel-distfile`. After
-   unzipping it in a new empty directory, run `bash compile.sh all` there.
-   It rebuilds Bazel with `./compile.sh`, Bazel with the
-   `compile.sh` Bazel and Bazel with the Bazel-built binary. It compares if the
-   constructed Bazel builts are identical and then runs all bazel tests with
-   `bazel test //src/... //third_party/ijar/...`. This is what we use at Google
-   to ensure that we don't break Bazel when pushing new commits, too.
+1.  Build a distribution archive with `bazel build //:bazel-distfile`.
+
+2.  Unzip the created binary in a new empty directory and in that directory run
+    `bash compile.sh all`. This script does two things:
+
+    *   Rebuilds Bazel with `./compile.sh`, Bazel with the
+        `compile.sh` Bazel, and Bazel with the Bazel-built binary.
+
+    *   Compares if the constructed Bazel builts are identical and then
+        runs all bazel tests with `bazel test //src/... //third_party/ijar/...
+        --build_tests_only --test_tag_filters -noci,-manual`.
 
 ### Debugging Bazel
 
