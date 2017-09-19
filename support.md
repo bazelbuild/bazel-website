@@ -49,23 +49,34 @@ reported issues within 2 business days.
 
 ## Releases
 
-We regularly publish [binary releases of Bazel](https://github.com/bazelbuild/bazel/releases). To
-that end, we announce release candidates on
-[bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss); these are binaries that have
-passed all of our unit tests. Over the next few days, we regression test all applicable build
-targets at Google. If you have a critical project using Bazel, we recommend that you establish an
-automated testing process that tracks the current release candidate, and report any regressions.
+We regularly publish [binary releases of Bazel](https://github.com/bazelbuild/bazel/releases).
 
-If no regressions are discovered, we officially release the candidate after a week. However,
+Every beginning of the month (we target the first business day of the month), we create a new release
+candidate for a new MINOR version (e.g. 0.6.0). The work is tracked by a [release bug on GitHub](https://github.com/bazelbuild/bazel/issues?q=is%3Aissue+is%3Aopen+label%3A%22Release+blocker%22+label%3A%22type%3A+process%22) which indicates
+the exact target date for the incoming month. Those release candidate should pass all our unit tests,
+and show no unwanted regression in the projects tested on [ci.bazel.io](http://ci.bazel.io).
+
+We announce those release candidates on [bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss);
+these are binaries that have passed all of our unit tests. Over the next few days, we regression
+test all applicable build targets at Google. If you have a critical project using Bazel, we
+recommend that you establish an automated testing process that tracks the current release
+candidate, and report any regressions.
+
+If no regressions are discovered, we officially release the candidate after two week. However,
 regressions can delay the release of a release candidate. If regressions are found, we apply
 corresponding cherry-picks to the release candidate to fix those regressions. If no further
-regressions are found for two business days, but not before a week has elapsed since the first
+regressions are found for two business days, but not before two week has elapsed since the first
 release candidate, we release it.
+
+If we are unable to create a viable release candidate 2 business days after the target days or
+if we are unable to release a candidate by the end of the month, we will investigate and publish
+a proper post-mortem.
 
 ### Release versioning
 
 Version 0.1 is our first release marking the start of our beta phase. Until version 1.0.0, we
-increase the MINOR version every time we reach a [new milestone](http://bazel.build/roadmap.html).
+increase the MINOR version every time we do a new full release. We increase the PATCH version
+when a regression is found on a release that necessite a new release.
 
 Version 1.0.0 marks the end of our beta phase; afterwards, we will label each release with a
 version number of the form MAJOR.MINOR.PATCH according to the
