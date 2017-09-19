@@ -16,7 +16,7 @@ milestone. The convention for the priorities are:
 *   P0 feature will block the milestone; we will delay the milestone date
     until the feature is shipped.
 *   P1 feature can delay the milestone if the feature can be shipped with a
-    reasonable delay (2 months max).
+    reasonable delay.
 *   P2 feature will be dropped and rescheduled for later rather than delaying
     the milestone.
 
@@ -25,58 +25,59 @@ be refined if appropriate.
 
 ## Planned feature list
 
-#### 0.6
-2017-07
+### 1.0
 
-* P0. Stable API for Remote execution, excluding platform description
+#### Stable API
+
 * P0. List of feature to deprecate until version 1.0 are tracked in a publicly available document
-* P1. Bazel on Windows does not need to install MSYS
-* P1. Migration tool: Maven project to Bazel project
+* P0. APIs are defined and versioned
+* P0. Main APIs are stable: Skylark, remote execution, platform description, build language, Build Event Protocol
+* P0. Deprecated features are removed
+* P1. Support policy is defined regarding LTS release
 
-#### 0.7
-2017-09
+#### Windows
 
-* P0. Skylark is fully documented; strategy for user-provided Skylark rule documentation
-* P0. Support for Android integration testing (on Linux)
-* P0. Support for Robolectric test for Android (on Linux)
-* P1. The Build Event Protocol is stable
-* P1. Support for coverage can be extended in Skylark and C++
-* P1. Support for testing Skylark rules
-* P1. iOS test runner
-* P1. Better CLI output (--experimental-ui is enabled by default)
-* P2. All external repositories can use the local cache
-* P2. Local caching of build artifacts
-* P2. Bazel can load workspace recursively
-
-#### 0.8
-2017-12
-
-* P0. Support for iOS integration testing
-* P1. Bazel can build Android application on Windows
-* P1. Local caching of external repository is turned on by default and has a deletion strategy
-* P1. Access to native rules functionality from Skylark (["sandwich"](/designs/2016/08/04/extensibility-for-native-rules.html))
-* P1. Push to Maven public and private artifact repositories
-* P2. Bazel is benchmarked publicly by third parties.
-
-#### 0.9
-2018-03
-
+* P0. Bazel on Windows does not need to install MSYS
 * P0. Feature parity for Android, Java, C++, Python on Windows
-* P1. Full test suite is open-sourced
-* P2. Minimize need for manual user config to make Bazel fast
+
+#### Migration / External repositories / Interfacing with other build systems
+
+* P0. Migration tool: Maven project to Bazel project
+* P1. Bazel can load workspace recursively
+* P1. All external repositories can use the local cache which turned on by default and has a deletion strategy
+* P1. Push to Maven public and private artifact repositories
 * P2. Repository of BUILD files for third party OSS libraries open to the community
 
-### Stable
+#### Skylark
 
-#### 1.0
-2018-06
+* P0. Skylark is fully documented; strategy for user-provided Skylark rule documentation
+* P0. Support for coverage can be extended in Skylark
+* P0. Support for testing Skylark rules
 
-* P0. APIs are defined and versioned
-* P1. Deprecated features are removed
-* P1. Support policy is defined regarding LTS release
+#### Mobile rules
+
+* P0. Support for Android testing: integration and robolectric tests
+* P0. Bazel can build Android application on Windows
+* P0. Support for iOS testing
+
+#### Native rules
+
+* P0. Access to native rules functionality from Skylark ("sandwich")
+* P0. C++ coverage support
+
+#### Performance
+
+* P1. Local caching of build artifacts
+* P2. Bazel is benchmarked publicly by third parties.
+* P2. Minimize need for manual user config to make Bazel fast
+
+#### Misc
+
+* P1. Better CLI output (`--experimental_ui` is enabled by default)
+* P1. Full test suite is open-sourced
 * P1. Public review process for design documents
 
-#### 1.1 (LTS)
+#### 1.x (LTS)
 
 * P0. Google uses only public APIs of Bazel
 * P0. Github is the primary code repository
