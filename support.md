@@ -61,17 +61,20 @@ projects tested on [ci.bazel.io](http://ci.bazel.io).
 
 We announce those release candidates on [bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss);
 these are binaries that have passed all of our unit tests. Over the next days, we monitor community bug
-reports for regression in release candidate.
+reports for regressions in release candidate.
 
-If no regressions are discovered, we officially release the candidate after two week. However,
+If no regressions are discovered, we officially release the candidate after two weeks. However,
 regressions can delay the release of a release candidate. If regressions are found, we apply
 corresponding cherry-picks to the release candidate to fix those regressions. If no further
 regressions are found for two business days, but not before two week has elapsed since the first
-release candidate, we release it. We do not cherry-pick non-regression bugfix (e.g., for
-bug that has always been there or bug on new features) or feature.
+release candidate, we release it.
+
+After the release candidate is cut, we do not cherry-pick new features into release candidates.
+Moreover, if we discover that a new feature is buggy, we might decide to roll it back from a
+release candidate. Only critical, high-impact bugs will be fixed in a release candidate.
 
 A release can only be release on a day where the next day is a business day. The release manager
-should make sure he is available on the next day or delegate its responsabilities.
+should make sure they are available on the next day or delegate their responsabilities.
 
 If a regression is found on the latest release, a patch release can be emitted by applying the
 corresponding cherry-pick to the release tag. Being another patch to an existing release, the
@@ -90,7 +93,7 @@ We are doing public post-mortems in the following cases:
 ### Testing
 
 We run nightly build of all the projects running on [ci.bazel.io](http://ci.bazel.io) using Bazel
-binaries built at head, and using the release binaries. We project going to be impacted by a
+binaries built at head, and using the release binaries. We notify projects going to be impacted by a
 breaking change. Google's internal continuous integraion test run all the applicable build targets
 at Google nightly.
 
