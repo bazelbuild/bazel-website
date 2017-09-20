@@ -56,12 +56,11 @@ We regularly publish [binary releases of Bazel](https://github.com/bazelbuild/ba
 Every beginning of the month (we target the first business day of the month), we create a new release
 candidate for a new MINOR version (e.g. 0.6.0). The work is tracked by a [release bug on GitHub](https://github.com/bazelbuild/bazel/issues?q=is%3Aissue+is%3Aopen+label%3Arelease) which indicates
 the exact target date for the incoming month and assigned to the current Release Manager.
-Those release candidate should pass all our unit tests, and show no unwanted regression in the
+Those release candidates should pass all our unit tests, and show no unwanted regression in the
 projects tested on [ci.bazel.io](http://ci.bazel.io).
 
-We announce those release candidates on [bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss);
-these are binaries that have passed all of our unit tests. Over the next days, we monitor community bug
-reports for regressions in release candidate.
+We announce those release candidates on [bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss).
+Over the next days, we monitor community bug reports for regressions in release candidate.
 
 If no regressions are discovered, we officially release the candidate after two weeks. However,
 regressions can delay the release of a release candidate. If regressions are found, we apply
@@ -69,14 +68,13 @@ corresponding cherry-picks to the release candidate to fix those regressions. If
 regressions are found for two business days, but not before two week has elapsed since the first
 release candidate, we release it.
 
-After the release candidate is cut, we do not cherry-pick new features into release candidates.
+After a release candidate is cut, we do not cherry-pick new features into it.
 Moreover, if we discover that a new feature is buggy, we might decide to roll it back from a
 release candidate. Only critical, high-impact bugs will be fixed in a release candidate.
 
-A release can only be release on a day where the next day is a business day. The release manager
-should make sure they are available on the next day or delegate their responsabilities.
+A release can only be release on a day where the next day is a business day.
 
-If a regression is found on the latest release, a patch release can be emitted by applying the
+If a critical issue is found on the latest release, a patch release can be emitted by applying the
 corresponding cherry-pick to the release tag. Being another patch to an existing release, the
 release candidate for a patch release can be released after 2 business days.
 
