@@ -72,7 +72,7 @@ After a release candidate is cut, we do not cherry-pick new features into it.
 Moreover, if we discover that a new feature is buggy, we might decide to roll it back from a
 release candidate. Only critical, high-impact bugs will be fixed in a release candidate.
 
-A release can only be release on a day where the next day is a business day.
+A release can only be released on a day where the next day is a business day.
 
 If a critical issue is found on the latest release, a patch release can be emitted by applying the
 corresponding cherry-pick to the release tag. Being another patch to an existing release, the
