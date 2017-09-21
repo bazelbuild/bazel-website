@@ -5,10 +5,10 @@ title: Roadmap
 
 # Bazel Feature Roadmap
 
-This document describes the Bazel team's plans for introducing features that
-will be incorporated into version 1.0. Note that this roadmap only includes
-features that the Bazel team itself intends to support. We anticipate that a
-number of other features will be added by code contributors.
+This document describes the Bazel team's plans for introducing features. Note
+that this roadmap only includes features that the Bazel team itself intends
+to support. We anticipate that a number of other features will be added by
+code contributors.
 
 In the following list, each feature is associated with a corresponding
 milestone. The convention for the priorities are:
