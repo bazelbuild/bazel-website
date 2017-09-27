@@ -49,23 +49,62 @@ reported issues within 2 business days.
 
 ## Releases
 
-We regularly publish [binary releases of Bazel](https://github.com/bazelbuild/bazel/releases). To
-that end, we announce release candidates on
-[bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss); these are binaries that have
-passed all of our unit tests. Over the next few days, we regression test all applicable build
-targets at Google. If you have a critical project using Bazel, we recommend that you establish an
-automated testing process that tracks the current release candidate, and report any regressions.
+We regularly publish [binary releases of Bazel](https://github.com/bazelbuild/bazel/releases).
 
-If no regressions are discovered, we officially release the candidate after a week. However,
+### Policy
+
+Every beginning of the month (we target the first business day of the month), we create a new release
+candidate for a new MINOR version (e.g. 0.6.0). The work is tracked by a [release bug on GitHub](https://github.com/bazelbuild/bazel/issues?q=is%3Aissue+is%3Aopen+label%3Arelease) which indicates
+the exact target date for the incoming month and assigned to the current Release Manager.
+Those release candidates should pass all our unit tests, and show no unwanted regression in the
+projects tested on [ci.bazel.io](http://ci.bazel.io).
+
+We announce those release candidates on [bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss).
+Over the next days, we monitor community bug reports for regressions in release candidate.
+
+If no regressions are discovered, we officially release the candidate after two weeks. However,
 regressions can delay the release of a release candidate. If regressions are found, we apply
 corresponding cherry-picks to the release candidate to fix those regressions. If no further
-regressions are found for two business days, but not before a week has elapsed since the first
+regressions are found for two business days, but not before two week has elapsed since the first
 release candidate, we release it.
+
+After a release candidate is cut, we do not cherry-pick new features into it.
+Moreover, if we discover that a new feature is buggy, we might decide to roll it back from a
+release candidate. Only critical, high-impact bugs will be fixed in a release candidate.
+
+A release can only be released on a day where the next day is a business day.
+
+If a critical issue is found on the latest release, a patch release can be emitted by applying the
+corresponding cherry-pick to the release tag. Being another patch to an existing release, the
+release candidate for a patch release can be released after 2 business days.
+
+### Post-mortems
+
+We are doing public post-mortems in the following cases:
+
+- We are unable to create a viable release candidate 2 business days after the target day,
+- We are unable to release a candidate by the end of the month,
+- An emergency patch release is needed (a regression that cause the current binary to increase
+  the support load, e.g. several users report the same issue after a package manager update to
+  the new release).
+
+### Testing
+
+We run nightly build of all the projects running on [ci.bazel.io](http://ci.bazel.io) using Bazel
+binaries built at head, and using the release binaries. We notify projects going to be impacted by a
+breaking change. Google's internal continuous integraion test run all the applicable build targets
+at Google nightly.
+
+When a release candidate is issued, we test more projects at Google like [TensorFlow](https://tensorflow.org)
+on their complete test suite using the release candidate binaries. If you have a critical project
+using Bazel, we recommend that you establish an automated testing process that tracks the current
+release candidate, and report any regressions.
 
 ### Release versioning
 
 Version 0.1 is our first release marking the start of our beta phase. Until version 1.0.0, we
-increase the MINOR version every time we reach a [new milestone](http://bazel.build/roadmap.html).
+increase the MINOR version every time we do a new full release. We increase the PATCH version
+when a regression is found on a release that necessite a new release.
 
 Version 1.0.0 marks the end of our beta phase; afterwards, we will label each release with a
 version number of the form MAJOR.MINOR.PATCH according to the
