@@ -186,15 +186,11 @@ straightforward, as long as a JDK is available for the platform.
 What about Windows?
 -------------------
 
-Due to its UNIX heritage, porting Bazel to Windows is significant work. For
-example, Bazel uses symlinks extensively, which has varying levels of support
-across Windows versions.
+Bazel runs natively on Windows and we are committed to improving it with every
+new release.
 
-As of version [0.3.0](https://github.com/bazelbuild/bazel/releases/tag/0.3.0)
-Bazel supports Windows (bootstrapping itself and running builds), and we are
-actively working on improving this support. See our
-[blog post](https://blog.bazel.build/2016/09/07/bazel-windows.html) for more
-information, as well as the [list of open bugs](https://github.com/bazelbuild/bazel/issues?q=is%3Aissue+is%3Aopen+label%3A%22category%3A+multi-platform+%3E+windows%22).
+For more information, see the [list of open
+bugs](https://github.com/bazelbuild/bazel/issues?q=is%3Aissue+is%3Aopen+label%3A%22category%3A+multi-platform+%3E+windows%22).
 
 What should I not use Bazel for?
 --------------------------------
