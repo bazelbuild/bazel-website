@@ -20,4 +20,6 @@ See [the Jekyll site](http://jekyllrb.com/docs) if you need more info.
 
 ## Deploying the website
 
-To deploy a build of the website, run `bazel run //:site -- --push`.
+Deploying the website is done automatically through Google Cloud Container Builder.
+If for some reason it does not work, you can run `bazel run //:site -- --push` to deploy
+manually.
