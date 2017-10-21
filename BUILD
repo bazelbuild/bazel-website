@@ -1,6 +1,7 @@
 load("@bazel_tools//tools/build_defs/pkg:pkg.bzl", "pkg_tar")
 load("//:redirects.bzl", "BAZEL_SITE_REDIRECTS")
 load("//:site.bzl", "site_tar")
+load("//scripts:jekyll.bzl", "jekyll_build")
 
 sh_binary(
     name = "build-jekyll-tree",
@@ -85,4 +86,10 @@ site_tar(
     name = "jekyll-tree",
     src = ":jekyll-base",
     redirects = BAZEL_SITE_REDIRECTS,
+)
+
+jekyll_build(
+    name = "site",
+    srcs = [":jekyll-tree"],
+    bucket = "www.bazel.build",
 )
