@@ -84,7 +84,7 @@ To work with IntelliJ:
    (`Preferences` > `Other Settings` > `Bazel Settings`).
 *  Import the Bazel workspace as a Bazel project
    (`File` > `Import Bazel Project...`) with the following settings:
-   *  Use existing bazel workspace: choose your cloned Git repository.
+   *  Use existing Bazel workspace: choose your cloned Git repository.
    *  Select `Import from workspace` and choose the `scripts/ij.bazelbuild`
    file as the `Project view`.
 *  Download [Google's Java Code Style Scheme file for IntelliJ](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml),
@@ -109,8 +109,8 @@ To work with Eclipse:
 <a name="compile-bazel"></a>
 ### Compiling Bazel
 
-To test out bazel, you need to compile it. To compile a development version of
-Bazel, you need a the latest released version of bazel, which can be
+To test out Bazel, you need to compile it. To compile a development version of
+Bazel, you need a the latest released version of Bazel, which can be
 [compiled from source](/versions/master/docs/install.html#compiling-from-source).
 
 `bazel build //src:bazel` builds the Bazel binary using `bazel` from your PATH
@@ -128,7 +128,7 @@ When modifying Bazel, you want to make sure that the following still works:
    unzipping it in a new empty directory, run `bash compile.sh all` there.
    It rebuilds Bazel with `./compile.sh`, Bazel with the
    `compile.sh` Bazel and Bazel with the Bazel-built binary. It compares if the
-   constructed Bazel builts are identical and then runs all bazel tests with
+   constructed Bazel builts are identical and then runs all Bazel tests with
    `bazel test //src/... //third_party/ijar/...`. This is what we use at Google
    to ensure that we don't break Bazel when pushing new commits, too.
 
