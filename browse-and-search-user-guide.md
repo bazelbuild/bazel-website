@@ -3,6 +3,7 @@ layout: contribute
 title: Browse and Search User Guide
 ---
 
+<a id="product-overview"></a>
 ## Product overview
 
 Bazel's [code search and source browsing interface](https://source.bazel.build)
@@ -10,6 +11,7 @@ is a web-based tool for browsing Bazel source code repositories. You can
 use these features to navigate among different repositories, branches, and
 files. You can also view history, diffs, and blame information.
 
+<a id="getting-started"></a>
 ## Getting started
 
 **Note:** For the best experience, use the latest version of Chrome, Safari, or
@@ -30,8 +32,10 @@ commit.
 At the top of the screen is a search box. You can use this box to search for
 specific files and code.
 
+<a id="working-with-repositories"></a>
 ## Working with repositories
 
+<a id="opening-a-repository"></a>
 ### Opening a repository
 
 To open a repository, click its name from the main screen.
@@ -42,10 +46,12 @@ repository and allows you to move quickly to another location such as another
 repository, or another location within a repository, such as a file, branch, or
 commit.
 
+<a id="switch-repositories"></a>
 ### Switch repositories
 
 To switch to a different repository, select the repository from the Breadcrumb toolbar.
 
+<a id="view-a-repository-at-a-specific-commit"></a>
 ### View a repository at a specific commit
 
 To view a repository at a specific commit:
@@ -57,6 +63,7 @@ To view a repository at a specific commit:
 
 The interface now shows the repository as it existed at that commit.
 
+<a id="open-a-branch-commit-or-tag"></a>
 ### Open a branch, commit, or tag
 
 By default, the code search and source browsing interface opens a repository to
@@ -73,6 +80,7 @@ branch using a branch name, a tag name, or through a search box.
 *  To search for a branch, commit, or tag, select the corresponding item and
    type a search term in the search box.
 
+<a id="working-with-files"></a>
 ## Working with files
 
 When you select a repository from the main screen, the screen changes to display
@@ -91,12 +99,14 @@ three components:
 *  A **File path** box, which displays the name of the current file or folder
    and its corresponding path
 
+<a id="open-a-file"></a>
 ### Open a file
 
 You can open a file by browsing to its directory and selecting it. The view of
 the repository updates to show the contents of the file in the file pane, and
 its location in the repository in the tree pane.
 
+<a id="view-file-changes"></a>
 ### View file changes
 
 To view file changes:
@@ -106,6 +116,7 @@ To view file changes:
 
 The file pane updates to display who made changes to the file and when.
 
+<a id="view-change-history"></a>
 ### View change history
 
 To view the change history of a file:
@@ -114,6 +125,7 @@ To view the change history of a file:
 1.  Click **HISTORY**, located in the upper-right corner.
     The **Change history** pane appears, showing the commits for this file.
 
+<a id="view-code-reviews"></a>
 ### View code reviews
 
 For Gerrit code reviews, you can open the tool directly from the Change History pane.
@@ -129,6 +141,7 @@ To view the code review for a file:
 
 The Gerrit Code Review tool opens in a new browser window.
 
+<a id="open-a-file-at-a-specific-commit"></a>
 ### Open a file at a specific commit
 
 To open a file at a specific commit:
@@ -139,6 +152,7 @@ To open a file at a specific commit:
 1. Hover over a commit. A **VIEW** button appears.
 1. Click the **VIEW** button.
 
+<a id="compare-a-file-to-a-different-commit"></a>
 ### Compare a file to a different commit
 
 To compare a file at a different commit:
@@ -158,6 +172,7 @@ To change either file, hover over the commit in the Change History pane. Then,
 click either the **Left** or **Right** button to have the open the commit on the
 left or right side of the diff.
 
+<a id="search"></a>
 ## Searching for code
 
 You can search for specific files or code snippets using the search box located
@@ -240,6 +255,7 @@ f:</td>
 </tbody>
 </table>
 
+<a id="additional-support"></a>
 # Additional Support
 
 To report an issue, click the **Feedback** button that appears in the top right-hand corner of the screen and enter your feedback in the provided form.
