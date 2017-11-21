@@ -196,9 +196,7 @@ What should I not use Bazel for?
     *   A test step that connects to the QA instance of your site.
     *   A deployment step that changes your site's cloud configuration.
 
-*   Bazel tries to minimize expensive compilation steps. If you are only
-    using interpreted languages directly, such as JavaScript or Python,
-    Bazel will likely not interest you.
+*   If your build consists of a few long, sequential steps, Bazel may not be able to help much. You'll get more speed by breaking long steps into smaller, discrete targets that Bazel can run in parallel.
 
 How stable is Bazel's feature set?
 ----------------------------------
