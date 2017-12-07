@@ -172,6 +172,35 @@ To change either file, hover over the commit in the Change History pane. Then,
 click either the **Left** or **Right** button to have the open the commit on the
 left or right side of the diff.
 
+<a id="browsing-cross-references"></a>
+### Browsing cross references                                                                                                   
+
+Another way to browse source repositories is through the use of cross
+references. These references appear automatically as hyperlinks within a given
+source file.                                                                                                                   
+
+To make cross references easier to identify, click **Cross References**,
+located in the upper-right corner. This option displays an underline below all
+cross references in a file.
+
+Click a cross reference to open the Cross Reference pane. This pane contains
+two sections:
+
+* A **Definition** section, which lists the file or files that define the
+  reference
+* A **References** section, which lists the files in which the reference also
+  appears
+
+Both sections display the the name of the file, as well as the line or lines
+that contains the reference. To open a file from the Cross Reference pane,
+click the line number entry. The file appears in a new section of the pane,
+allowing you to continue to browse the file while keeping the original file
+in view.                                                                                                                       
+
+You can continue to browse cross references using the Cross Reference pane, just                                             
+as you can in the File pane. When you do, the pane displays a breadcrumb trail,                                                
+which you can use to navigate between different cross references.
+
 <a id="search"></a>
 ## Searching for code
 
