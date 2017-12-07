@@ -183,6 +183,9 @@ To make cross references easier to identify, click **Cross References**,
 located in the upper-right corner. This option displays an underline below all
 cross references in a file.
 
+**Note:** If **Cross References** is grayed out, it indicates that
+cross references are not available for that file.
+
 Click a cross reference to open the Cross Reference pane. This pane contains
 two sections:
 
