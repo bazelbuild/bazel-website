@@ -178,3 +178,8 @@ Bazel is organized in several parts:
 *  Java native interfaces in `src/main/native`.
 *  Various tooling for language support (see the list in the
    [compiling Bazel](#compile-bazel) section).
+   
+## Searching Bazel's source code
+
+To quickly search through Bazel's source code, use [Bazel Code Search](https://source.bazel.build/). You can navigate Bazel's repositories, branches, and files. You can also view history, diffs, and blame information. To learn more, see the
+[Bazel Code Search User Guide](https://www.bazel.build/browse-and-search-user-guide.html).
