@@ -183,3 +183,7 @@ Bazel is organized in several parts:
 
 To quickly search through Bazel's source code, use [Bazel Code Search](https://source.bazel.build/). You can navigate Bazel's repositories, branches, and files. You can also view history, diffs, and blame information. To learn more, see the
 [Bazel Code Search User Guide](https://www.bazel.build/browse-and-search-user-guide.html).
+
+## Using Bazel Continuous Integration
+
+To get started with the Bazel CI system, see [Bazel Continuous Integration](https://github.com/bazelbuild/continuous-integration/blob/master/docs/user.md). To monitor the tests and builds of your Bazel contributions, use the [Bazel CI Dashboard](https://ci.bazel.build/).
