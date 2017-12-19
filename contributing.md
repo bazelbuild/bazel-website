@@ -186,4 +186,4 @@ To quickly search through Bazel's source code, use [Bazel Code Search](https://s
 
 ## Using Bazel Continuous Integration
 
-To set up your own Bazel CI (Continuous Integration) system, see [Bazel Continuous Integration](https://github.com/bazelbuild/continuous-integration/blob/master/docs/user.md). To monitor the tests and builds of your Bazel contributions, use the [Bazel CI Dashboard](https://ci.bazel.build/).
+To get started with the Bazel CI system, see [Bazel Continuous Integration](https://github.com/bazelbuild/continuous-integration/blob/master/docs/user.md). To monitor the tests and builds of your Bazel contributions, use the [Bazel CI Dashboard](https://ci.bazel.build/).
