@@ -111,7 +111,7 @@ To work with Eclipse:
 
 To test out Bazel, you need to compile it. To compile a development version of
 Bazel, you need a the latest released version of Bazel, which can be
-[compiled from source](/versions/master/install-compile-source.html).
+[compiled from source](https://bazel.build/versions/master/docs/install-compile-source.html).
 
 `bazel build //src:bazel` builds the Bazel binary using `bazel` from your PATH
 and the resulting binary can be found at `bazel-bin/src/bazel`. This is the
