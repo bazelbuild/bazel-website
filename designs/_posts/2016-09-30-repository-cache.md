@@ -23,7 +23,7 @@ wasteful.
 With a central cache, Bazel can check it for the requested
 repositories before hitting the internet. This allows multiple
 workspaces to share the same repository cache. The cache should also
-be portable, i.e. tar’ing up the cache and reusing it on another
+be portable, that is, tar’ing up the cache and reusing it on another
 system.
 
 ### Related issues:
@@ -35,7 +35,7 @@ artifacts across different projects
 ## Objective
 
 Implement an additional step prior to fetching that checks a directory
-`$repository_cache` for the requested external repository. 
+`$repository_cache` for the requested external repository.
 
 Note:
 
@@ -45,7 +45,7 @@ somewhere outside of `output_base/external` (which means outside of
 individual Bazel invocation folders), and symlinking to those
 locations instead.
 - This does not require a change in CI configuration until it’s
-switched on by default. It can be used with the flag 
+switched on by default. It can be used with the flag
 `--experimental_repository_cache` during the development process.
 
 ## Not in scope
@@ -56,15 +56,15 @@ output of `repository_ctx.execute`, while still respecting the external
 tool’s caching strategy, but that is not in the scope of this design.
 - Human-readable cache layouts. Simplifies inspection of cache content.
 - Garbage collection / cache cleanup of non-referenced cache content.
-- Using a remote filesystem as cache (NFS, ssh-fuse, etc)
+- Using a remote filesystem as cache (NFS, ssh-fuse, and so on).
 - Cache invalidation
 
 ## Implementation plan
 
-1. Implement a new command line option: `--experimental_repository_cache` 
+1. Implement a new command line option: `--experimental_repository_cache`
 that takes in a string argument, which is the path of the directory. This
 path will be used directly in BazelRepositoryModule#handleOptions. There is
-no default value for this option; the user will need to provide an absolute 
+no default value for this option; the user will need to provide an absolute
 path.
   a. Acts as a feature gate until the feature is ready to become a
   default behavior, after which it’ll will be used to specify custom
@@ -72,7 +72,7 @@ path.
 2. Option will be implemented in the new `RepositoryOptions` class,
 which is added to `FetchCommand` and `BuildCommand`.
 3. Create a class, `RepositoryCache`, that defines the caching strategy when
-used in `HttpDownloader`. Skylark’s `download/download_and_extrac`t
+used in `HttpDownloader`. Skylark’s `download/download_and_extract`
 methods will also get this caching for free.
 4. Prior to downloading, if the `--repository_cache` option is
 specified && the SHA checksum is specified in the download parameters
@@ -87,5 +87,6 @@ copy back to `$output_base/external`.
 ## Cache structure
 - `repository_cache`: `$HOME/.cache/bazel/repository_cache`
 - `content_adressable_cache`: `${repository_cache}/content_addressable`
-- `sha{1, 256}_cache`: `${content_addressable_cache}/${sha{1, 256}}`
-- Cache keys: SHA checksum of download. 
+- `cache_entry`: `${content_addressable_cache}/sha{1, 256}/file`
+- Cache keys: SHA checksum of ${cache_entry}, for example the tar.gz of
+a http_archive.
