@@ -87,70 +87,10 @@ be refined if appropriate.
 
 
 
-## Previously released
+## Releases
 
-### Alpha
-Released 2015-03-24
+We publish releases on [Github](https://github.com/bazelbuild/bazel/releases).
 
-* Linux &amp; OS X Support</td>
-* C++ ([build](http://bazel.build/docs/be/c-cpp.html#cc_binary) and [test](http://bazel.build/docs/be/c-cpp.html#cc_test))
-* Java ([build](http://bazel.build/docs/be/java.html#java_binary) and [test](http://bazel.build/docs/be/java.html#java_test))
-* Objective-C for iOS ([build](http://bazel.build/docs/be/objective-c.html#objc_binary))
-* Python ([build](http://bazel.build/docs/be/python.html#py_binary))
-* iOS applications ([build](http://bazel.build/docs/be/objective-c.html#ios_application))
-* Skylark extension mechanism ([build](http://bazel.build/docs/skylark/index.html))
-* Basic test suite on GitHub
-* Support for fetching dependencies from [Maven repositories](http://bazel.build/docs/be/workspace.html#maven_jar) and [web servers](http://bazel.build/docs/be/workspace.html#http_archive)
-
-
-### Beta
-
-#### [0.1](https://github.com/bazelbuild/bazel/releases/tag/0.1.0)
-Released 2015-09-01
-
-* P0. Binary distribution for Linux & OS X
-* P0. Public [continuous integration system](http://ci.bazel.build)
-* P0. Support for [fetching transitive dependencies from Maven Central](http://bazel.build/docs/external.html)
-* P0. Android application ([build](http://bazel.build/docs/be/android.html#android_binary) and [install](http://bazel.build/docs/bazel-user-manual.html#mobile-install))
-* P1. Support for [prefetching and caching remote dependencies](http://bazel.build/docs/external.html)
-* P1. Docker support
-* P1. [IntelliJ plugin](https://ij.bazel.build/)
-* P2. [Sandboxing of actions for Linux](http://bazel.build/docs/bazel-user-manual.html#sandboxing)
-
-#### [0.2](https://github.com/bazelbuild/bazel/releases/tag/0.2.0)
-Released 2016-02-18
-
-* P0. [Significantly increase test coverage](https://github.com/bazelbuild/bazel/tree/master/src/test/java/com/google/devtools)
-* P0. Support for fetching [remote](http://bazel.build/docs/external.html) [Skylark rules](http://bazel.build/docs/be/functions.html#load)
-* P2. [Go language support (build and tests)](https://github.com/bazelbuild/rules_go)
-* P2. [Debian packages for Bazel](https://github.com/bazelbuild/bazel/releases/latest)
-* P2. [OS X homebrew recipe for distributing Bazel](http://braumeister.org/formula/bazel)
-
-#### [0.3](https://github.com/bazelbuild/bazel/releases/tag/0.3.0)
-Released 2016-06-10
-
-* P0. [Bazel can bootstrap itself on Windows without requiring admin privileges](http://bazel.build/docs/windows.html)
-* P1. [Interface for IDE support](http://blog.bazel.build/2016/06/10/ide-support.html)
-* P1. IDE support for [Xcode (stable)](http://tulsi.bazel.build) and [Eclipse (experimental)](https://github.com/bazelbuild/e4b)
-* P1. [Custom remote repositories using Skylark](https://docs.google.com/document/d/1jKbNXOVp2T1zJD_iRnVr8k5D0xZKgO8blMVDlXOksJg)
-* P2. [[Prototype for distributed caching of build artifact](https://github.com/bazelbuild/bazel/commit/79adf59e2973754c8c0415fcab45cd58c7c34697)]()
-
-#### [0.4](https://github.com/bazelbuild/bazel/releases/tag/0.4.0)
-Released 2016-11-02
-
-* P0. [Persistent Java compiler is enabled](https://github.com/bazelbuild/bazel/commit/490f250b27183a886cf70a5fe9e99d9428141b34)
-* P2. [Sandboxing of action for OS X](https://github.com/bazelbuild/bazel/commit/7b825b8ea442246aabfa6a5a8962abd70855d0da)
-
-
-#### [0.5](https://github.com/bazelbuild/bazel/releases/tag/0.5.0)
-Released 2017-05-26
-
-* P0. Support for building and testing Java, C++ and Python on Windows</td>
-* P1. Initial API for a Build Event Protocol
-* P1. Support for coverage for Java
-* P1. Bazel installer optionally bundles the JDK
-* P1. [New Rules to build applications for Apple platforms](https://github.com/bazelbuild/rules_apple)
-* P2. Repository rules no longer have invalidation issues
 
 ## Code location
 
