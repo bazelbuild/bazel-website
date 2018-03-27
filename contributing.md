@@ -69,8 +69,17 @@ for Java. We don't have IDE support for other languages in Bazel right now.
 *  Clone Bazel's Git repository from Gerrit:
    *  `git clone https://bazel.googlesource.com/bazel`
 *  Try to build Bazel:
-   *  `cd bazel && bazel build //src:bazel`
-*  This should produce a working Bazel binary in `bazel-bin/src/bazel`.
+   *  On Linux/macOS, in Bash/Terminal:
+      ```
+      cd bazel
+      bazel build //src:bazel
+      ```
+   *  On Windows, in the Command Prompt:
+      ```
+      cd bazel
+      bazel --output_user_root=c:\tmp build //src:bazel.exe
+      ```
+*  This will produce a working Bazel binary in `bazel-bin/src/bazel` (or `bazel-bin/src/bazel.exe` on Windows).
 
 If everything works fine, feel free to configure your favorite IDE in the
 following steps.
