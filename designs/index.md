@@ -32,7 +32,8 @@ current Bazel functionality.
 Changes to the Bazel build and extension language (Skylark) should go
 through the [Skylark Design Process](/designs/skylark/skylark-design-process.html).
 
-* [Output Map Madness](https://docs.google.com/document/d/1ic9lJPn-0VqgKcqSbclVWwYDW2eiV-9k6ZUK_xE6H5E/edit?usp=sharing)
+* [Moving Skylark out of Bazel](https://docs.google.com/document/d/15ysfoMXRqZDdz0OOY1mtpeWd7LjDnXKl4fOVSLGACAY/edit?usp=sharing) 23 March 2018
+* [Output Map Madness](https://docs.google.com/document/d/1ic9lJPn-0VqgKcqSbclVWwYDW2eiV-9k6ZUK_xE6H5E/edit?usp=sharing) 05 March 2018
 * [Parameterized Skylark Aspects](/designs/skylark/parameterized-aspects.html)
   18 April 2016
 * [Declared Providers](/designs/skylark/declared-providers.html) 06 June 2016
