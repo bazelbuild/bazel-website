@@ -45,12 +45,12 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
         [#1954](https://github.com/bazelbuild/bazel/issues/1954),
         [#3418](https://github.com/bazelbuild/bazel/issues/3418)).
 
-*   Improve runfiles experience for Java, C++, Python, and Bash
-    programs.
+*   Improve runfiles experience for Java, C++, Python, and Bash programs.
     *   **[scheduled: Q2'18]** Implement and roll out all runfiles libraries as
         `@bazel_tools//tools/<language>/runfiles`
         ([#4460](https://github.com/bazelbuild/bazel/issues/4460)).
-    *   Document runfiles libraries in Build Enclycopedia at `*_binary.data`
+    *   **[scheduled: Q2'18]** Document runfiles libraries in Build Enclycopedia
+        at `*_binary.data`
         ([#4279](https://github.com/bazelbuild/bazel/issues/4279)).
     *   Implement `rfind()` for all runfiles libraries
         ([#4334](https://github.com/bazelbuild/bazel/issues/4334)).
@@ -111,6 +111,8 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
         ([#3888](https://github.com/bazelbuild/bazel/issues/3888)).
 
 *   Fix the following set of uncategorized issues.
+    *   **[scheduled: Q2'18]** Write Skylark rule migration guide
+        ([#3889](https://github.com/bazelbuild/bazel/issues/3889)).
     *   Fix `glob.exclude_directories`
         ([#3674](https://github.com/bazelbuild/bazel/issues/3674)).
     *   Break `cmd.exe` dependency
@@ -126,7 +128,5 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
         ([#3192](https://github.com/bazelbuild/bazel/issues/3192)).
     *   Fix that `repository_ctx.execute` ignores `PATH`
         ([#3445](https://github.com/bazelbuild/bazel/issues/3445)).
-    *   Write Skylark rule migration guide
-        ([#3889](https://github.com/bazelbuild/bazel/issues/3889)).
     *   Support `--watchfs`
         ([#1931](https://github.com/bazelbuild/bazel/issues/1931)).
