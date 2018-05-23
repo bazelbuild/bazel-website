@@ -11,17 +11,17 @@ Everyone's welcome to suggest items and to contribute!
 issue](https://github.com/bazelbuild/bazel/issues/new) to request features or
 bugfixes.
 
-**Contributing**: please follow our [contribution guide](/contributing.html).
+**Contribution**: please follow our [contribution guide](/contributing.html).
 
 **Feedback**: please send us an email to
 <a href="mailto:bazel-discuss@googlegroups.com">bazel-discuss@googlegroups.com</a>.
 
-**Update history**: see the [page's history on
+**Update history**: see this [page's history on
 GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/windows.md).
 
 ---
 
-*   Break Bash dependency
+*   **Break Bash dependency**
     ([#4319](https://github.com/bazelbuild/bazel/issues/4319)).
     *   **[scheduled: Q2'18]** Make shell-using rules use the shell toolchain.
     *   **[scheduled: Q2'18]** Implement a tool to merge files and text, to
@@ -37,7 +37,7 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
         dependency on Bash. [It cannot select a toolchain without a
         `RuleContext`.](https://groups.google.com/d/msg/bazel-discuss/pYJoWFfkyAE/iwpzfXlVCQAJ)
 
-*   Improve C++ build experience.
+*   **Improve C++ build experience.**
     *   **[scheduled: Q2'18]** Enable short object paths by default
         ([#4148](https://github.com/bazelbuild/bazel/issues/4148)).
     *   **[scheduled: Q2'18]** Make file extensions configurable
@@ -45,7 +45,7 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
         [#1954](https://github.com/bazelbuild/bazel/issues/1954),
         [#3418](https://github.com/bazelbuild/bazel/issues/3418)).
 
-*   Improve runfiles experience for Java, C++, Python, and Bash programs.
+*   **Improve runfiles experience for Java, C++, Python, and Bash programs.**
     *   **[scheduled: Q2'18]** Implement and roll out all runfiles libraries as
         `@bazel_tools//tools/<language>/runfiles`
         ([#4460](https://github.com/bazelbuild/bazel/issues/4460)).
@@ -55,7 +55,7 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
     *   Implement `rfind()` for all runfiles libraries
         ([#4334](https://github.com/bazelbuild/bazel/issues/4334)).
 
-*   Improve test coverage.
+*   **Improve test coverage.**
     *   **[scheduled: Q2'18]** Roll out Bash runfiles support to
         `//examples/shell`
         ([#3839](https://github.com/bazelbuild/bazel/issues/3839)).
@@ -69,7 +69,7 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
     *   Speed up bootstrap test
         ([#4503](https://github.com/bazelbuild/bazel/issues/4503)).
 
-*   Fix Bazel client bugs.
+*   **Fix Bazel client bugs.**
     *   Fix new year bug
         ([#4378](https://github.com/bazelbuild/bazel/issues/4378)).
     *   Fix corrupt install
@@ -81,23 +81,23 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
         ([#3821](https://github.com/bazelbuild/bazel/issues/3821),
         [#2443](https://github.com/bazelbuild/bazel/issues/2443)).
 
-*   Fix `*_binary` launcher.
+*   **Fix `*_binary` launcher.**
     *   Use Unicode Windows API
         ([#4473](https://github.com/bazelbuild/bazel/issues/4473)).
     *   Remove `../` in classpath jars
         ([#4420](https://github.com/bazelbuild/bazel/issues/4420)).
 
-*   Keep supporting TensorFlow.
+*   **Keep supporting TensorFlow.**
     *   Build TFLite on Windows
         ([#4148](https://github.com/bazelbuild/bazel/issues/4148)).
     *   **[scheduled: Q2'18]** Help TF migrate their Pip package release
         pipeline on Windows from CMake to Bazel.
 
-*   Implement sandboxing.
+*   **Implement sandboxing.**
     *   Research sandboxing feasibility
         ([#5136](https://github.com/bazelbuild/bazel/issues/5136)).
 
-*   Improve Android support.
+*   **Improve Android support.**
     *   Build the Android Hello World project on Windows on BuildKite
         ([#3663](https://github.com/bazelbuild/bazel/issues/3663)).
     *   Run Android desugar tests on Windows
@@ -110,7 +110,7 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
     *   Support Android Studio on Windows
         ([#3888](https://github.com/bazelbuild/bazel/issues/3888)).
 
-*   Fix the following set of uncategorized issues.
+*   **Fix the following set of uncategorized issues.**
     *   **[scheduled: Q2'18]** Write Skylark rule migration guide
         ([#3889](https://github.com/bazelbuild/bazel/issues/3889)).
     *   Fix `glob.exclude_directories`
