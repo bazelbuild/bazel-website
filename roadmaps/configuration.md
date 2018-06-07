@@ -37,9 +37,10 @@ Questions or suggestions? Email
 * [Roadmap](#roadmap)
   * [Platforms](#platforms)
   * [User-Defined Configuration](#user-defined-configuration)
-  * [Correctness and Speed](#correctness-and-speed)
+  * [Correctness and Speed](#correctness_and_speed)
 
 
+<a name="goal"></a>
 ## Goal 
 
 Configurability's goal is to make Bazel a graceful multiplatform build
@@ -62,8 +63,7 @@ This translates into the following high-level goals:
 
 1. **Users decide what to configure**
 
-    `$ bazel build //myapp:fancy_edition` automatically builds my app with
-    "fancy" features
+    `$ bazel build //myapp:fancy_edition # automatically builds my app with "fancy" features`
 
 1. **Users decide what rules to configure**
     1. e.g. "*all foo rules use the foo toolchain*"
@@ -77,8 +77,10 @@ This translates into the following high-level goals:
     1. Builds remain cross platform-cacheable and remote execution-friendly
     1. Users have robust tools to understand multiplatform effects
 
+<a name="roadmap"></a>
 ## Roadmap
 
+<a name="platforms"></a>
 ### Platforms
 There's a more detailed [Platforms Roadmap]
 (https://docs.google.com/document/d/1_clxJHyUylwYjmQ9jQfWr-eZeLLTUZL6onfvPV7CMoI)
@@ -137,6 +139,7 @@ toolchains**
 * `--android_sdk`, -`-ios_sdk_version`, etc. are deprecated and obsolete
 
 
+<a name="user-defined-configuration"></a>
 ### [User-Defined Configuration](https://docs.google.com/document/d/1vc8v-kXjvgZOdQdnxPTaV0rrLxtP2XwnD2tAZlYJOqw/edit?usp=sharing)
 
 
@@ -179,6 +182,7 @@ settings**
 in Skylark**
 
 
+<a name="correctness_and_speed"></a>
 ### Correctness and Speed
 
 
