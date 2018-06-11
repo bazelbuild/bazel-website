@@ -62,7 +62,8 @@ This translates into the following high-level goals:
 
 1. **Users decide what to configure**
 
-    `$ bazel build //myapp:fancy_edition # automatically builds my app with "fancy" features`
+    `$ bazel build //myapp:fancy_edition` automatically builds my app with
+    "fancy" features
 
 1. **Users decide what rules to configure**
     1. e.g. "*all foo rules use the foo toolchain*"
