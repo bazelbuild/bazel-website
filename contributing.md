@@ -164,7 +164,7 @@ For debugging the C++ client you can just run it from gdb or lldb as you normall
 But if you want to debug the Java code, you must attach to the server using the following:
 
 *  Run Bazel with debugging option `--host_jvm_debug` before the
-   command (e.g., `bazel --batch --host_jvm_debug build //src:bazel`).
+   command (e.g., `bazel --host_jvm_debug build //src:bazel`).
 *  Attach a debugger to the port 5005. With `jdb` for instance,
    run `jdb -attach localhost:5005`. From within Eclipse, use the
    [remote Java application launch
