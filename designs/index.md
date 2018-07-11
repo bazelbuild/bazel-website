@@ -16,7 +16,7 @@ In order to add, change, or remove a user-facing feature Bazel, a design process
    [bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss) and
    the [Bazel Proposals Repository](https://github.com/bazelbuild/proposals)
 3. Design is approved
-3. Design is implemented
+4. Design is implemented
 
 It's possible that designs change as they are implemented in practice. The
 published design documents capture the initial design, and _not_ the ongoing
