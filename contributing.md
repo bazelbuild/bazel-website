@@ -49,7 +49,7 @@ languages in Bazel right now.
    system. Note that for developing Bazel, you need the latest released version
    of Bazel.
 *  Clone Bazel's Git repository from GitHub:
-   *  `git clone https://github.com/bazelbuild/bazel`
+   *  `git clone https://github.com/bazelbuild/bazel.git`
 *  Try to build Bazel:
    *  On Linux/macOS, in Bash/Terminal:
 
