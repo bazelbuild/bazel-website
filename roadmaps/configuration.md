@@ -13,10 +13,20 @@ title: Bazel Configurability Roadmap
     padding: 6px;
     margin-right: 10px;
   }
+  .donestatus {
+    color: #00D000;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  .inprogressstatus {
+    color: #D0D000;
+    font-weight: bold;
+    padding-left: 10px;
+  }
 </style>
 
 # Bazel Configurability 2018 Roadmap
-*Last verified: Wednesday, June 6, 2018* ([update history]
+*Last verified: Wednesday, July 11, 2018* ([update history]
 (https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
 
 This page describes committed plans to advance Bazel's configuration and
@@ -86,6 +96,7 @@ available with more details on ongoing subprojects.
 
 <div class="etabox">June 2018</div>**Rules can declare what kinds of machines
 they can build on**
+<span class="donestatus">DONE</span> ([#5217](http://github.com/bazelbuild/bazel/issues/5217))
 
 * Because of remote execution, this might not be the same machine Bazel runs on
 
@@ -93,6 +104,7 @@ they can build on**
 <div class="etabox">Aug 2018</div>**C++ rules fully support
 [platforms](https://docs.bazel.build/versions/master/platforms.html) and
 [toolchains](https://docs.bazel.build/versions/master/toolchains.html)**
+<span class="inprogressstatus">IN PROGRESS</span>
 
 * This gives them first-class Skylark support, `select()` [on
 platforms](https://docs.bazel.build/versions/master/be/general.html#config_setting.constraint_values),
@@ -141,6 +153,8 @@ toolchains**
 
 
 <div class="etabox">Aug 2018</div>**Skylark supports platform transitions**
+<span class="inprogressstatus">IN PROGRESS</span> ([#5574]
+(http://github.com/bazelbuild/bazel/issues/5574))
 
 * Rule designers can decide which rules target which platforms
 * Rule designers can declare default target platforms
@@ -150,6 +164,8 @@ toolchains**
 
 <div class="etabox">Aug 2018</div>**Skylark supports multi-architecture ("fat")
 binaries**
+<span class="inprogressstatus">IN PROGRESS</span> ([#5575]
+(http://github.com/bazelbuild/bazel/issues/5575))
 
 * Rule designers can write rules that bundle deps configured for multiple
   platforms
@@ -157,6 +173,8 @@ binaries**
 
 <div class="etabox">Aug 2018</div>**Skylark supports user-defined configuration
 settings**
+<span class="inprogressstatus">IN PROGRESS</span> ([#5577]
+(http://github.com/bazelbuild/bazel/issues/5577))
 
 * A standard API defines how to declare custom settings (consolidating [command
   line
@@ -177,7 +195,8 @@ settings**
 
 <div class="etabox">Aug 2018</div>**All native Bazel rules can be implemented
 in Skylark**
-
+<span class="inprogressstatus">IN PROGRESS</span> ([#5578]
+(http://github.com/bazelbuild/bazel/issues/5578))
 
 ### Correctness and Speed
 
@@ -186,23 +205,28 @@ in Skylark**
 duplicate under <a
 href="https://github.com/bazelbuild/bazel/blob/d6a98282e229b311dd56e65b72003197120f299a/src/test/java/com/google/devtools/build/lib/rules/android/AndroidBinaryTest.java#L3107">feature
 flags</a>**
+<span class="donestatus">DONE</span>
 
 * This makes "feature customization" under Android binaries more efficient
 * Non-Android dependencies won't duplicate due to Android-only changes
 
 
 <div class="etabox">June 2018</div>**Bazel updates _fast_ on `--test_timeout`, etc. changes**
+<span class="inprogressstatus">IN PROGRESS</span> ([#5579]
+(http://github.com/bazelbuild/bazel/issues/5579))
 <br><br>
 
 
-<div class="etabox">July 2018</div>**An experimental Bazel mode automatically
+<div class="etabox">Sep 2018</div>**An experimental Bazel mode automatically
 minimizes build graphs**
+<span class="inprogressstatus">IN PROGRESS</span>
 
 * No rule builds twice because of settings that don't affect it
 
 
-<div class="etabox">July 2018</div>**Java compilation doesn't include cpu in its
+<div class="etabox">Sep 2018</div>**Java compilation doesn't include cpu in its
 output paths**
+<span class="inprogressstatus">IN PROGRESS</span>
 
 * This improves multiplatform build times and cross-build cacheability
 * This is conditional on the impact of generated sources,
@@ -210,15 +234,16 @@ output paths**
   etc.
 
 
-<div class="etabox">Aug 2018</div>**Distinct actions can't write to the same
+<div class="etabox">Sep 2018</div>**Distinct actions can't write to the same
 output path**
+<span class="inprogressstatus">IN PROGRESS</span>
 
 * This prevents "output clobbering" when the same command is invoked twice with
   different inputs, producing different versions of the same output
 * This is especially important for Skylark rules
 
 
-<div class="etabox">Sep 2018</div>**Bazel automatically minimizes graphs over
+<div class="etabox">Dec 2018</div>**Bazel automatically minimizes graphs over
 feature flag changes**
 <br><br>
 
