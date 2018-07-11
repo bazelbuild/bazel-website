@@ -5,7 +5,7 @@ title: Design Documents
 
 # Design Documents
 
-The list of design documents is published on the [Bazel Proposals Repository].
+The list of design documents is published on the [Bazel Proposals Repository](https://github.com/bazelbuild/proposals).
 
 ## Design Process
 
