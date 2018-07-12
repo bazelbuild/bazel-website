@@ -23,9 +23,21 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
 
 *   **Break Bash dependency**
     ([#4319](https://github.com/bazelbuild/bazel/issues/4319)).
-    *   **[scheduled: Q2'18]** Make shell-using rules use the shell toolchain.
-    *   **[scheduled: Q2'18]** Implement a tool to merge files and text, to
-        break dependency on bintools when creating `py_binary` stub.
+    *   **[partially completed, on hold]** Make shell-using rules use the shell
+        toolchain.
+        *   **[status as beginning of Q3'18]**: Shell-using rules now report an
+            error if the shell is missing (if Bazel is not aware of a shell
+            interpreter). They don't yet use the shell toolchain, which they
+            would only really need for remote builds. We can break the rash
+            dependency for local builds without using the shell toolchain.
+    *   **[on hold]** Implement a tool to merge files and text, to break
+        dependency on bintools when creating `py_binary` stub.
+        *   **[status as beginning of Q3'18]**: Was scheduled for Q2'18 but we
+            couldn't deliver it. A more important blocker for breaking the Bash
+            dependency ([#5508](https://github.com/bazelbuild/bazel/issues/5508)).
+            came up.
+    *   **[scheduled for Q3'18]** Bash-less test execution
+        ([#5508](https://github.com/bazelbuild/bazel/issues/5508)).
     *   Create example project on GitHub showing how to write a custom shell
         toolchain for local and remote builds, and how to override the default
         toolchain. Link to this project from the Build Encyclopdia or the User
@@ -36,33 +48,40 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
         [`RunCommand`](https://github.com/bazelbuild/bazel/blob/cc0f41dccc55bb1380b10cc65281632676192a8d/src/main/java/com/google/devtools/build/lib/runtime/commands/RunCommand.java#L455)'s
         dependency on Bash. [It cannot select a toolchain without a
         `RuleContext`.](https://groups.google.com/d/msg/bazel-discuss/pYJoWFfkyAE/iwpzfXlVCQAJ)
+    *   Design a way to express dependency on bintools (e.g. "perl", "grep")
+        ([#5265](https://github.com/bazelbuild/bazel/issues/5265)).
 
-*   **Improve C++ build experience.**
-    *   **[scheduled: Q2'18]** Enable short object paths by default
+*   **[done]: Improve C++ build experience.**
+    *   **[done]** Enable short object paths by default
         ([#4148](https://github.com/bazelbuild/bazel/issues/4148)).
-    *   **[scheduled: Q2'18]** Make file extensions configurable
+    *   **[done]** Make file extensions configurable
         ([#1013](https://github.com/bazelbuild/bazel/issues/1013),
         [#1954](https://github.com/bazelbuild/bazel/issues/1954),
         [#3418](https://github.com/bazelbuild/bazel/issues/3418)).
 
 *   **Improve runfiles experience for Java, C++, Python, and Bash programs.**
-    *   **[scheduled: Q2'18]** Implement and roll out all runfiles libraries as
+    *   **[done]** Implement and roll out all runfiles libraries as
         `@bazel_tools//tools/<language>/runfiles`
         ([#4460](https://github.com/bazelbuild/bazel/issues/4460)).
-    *   **[scheduled: Q2'18]** Document runfiles libraries in Build Enclycopedia
+    *   **[scheduled: Q3'18]** Document runfiles libraries in Build Enclycopedia
         at `*_binary.data`
+        *   **[status as beginning of Q3'18]**: Was scheduled for Q2'18 but we
+            didn't deliver it. We'll try to deliver it in Q3'18.
         ([#4279](https://github.com/bazelbuild/bazel/issues/4279)).
     *   Implement `rfind()` for all runfiles libraries
         ([#4334](https://github.com/bazelbuild/bazel/issues/4334)).
 
 *   **Improve test coverage.**
-    *   **[scheduled: Q2'18]** Roll out Bash runfiles support to
+    *   **[done]** Roll out Bash runfiles support to
         `//examples/shell`
         ([#3839](https://github.com/bazelbuild/bazel/issues/3839)).
-    *   **[scheduled: Q2'18]** Roll out Bash runfiles support to
+    *   **[scheduled: Q3'18]** Roll out Bash runfiles support to
         `//src/test/shell/...`
+        *   **[status as beginning of Q3'18]**: In progress. Was scheduled for
+            Q2'18 and we started the work, but we only scratched the surface.
+            It'll need at least 3 more months if not more.
         ([#4292](https://github.com/bazelbuild/bazel/issues/4292)).
-    *   Run 90% of `//src/...` on Windows
+    *   **[scheduled: Q3'18]** Run 90% of `//src/...` on Windows
         ([#4292](https://github.com/bazelbuild/bazel/issues/4292)).
     *   Fix `$(location)` expansion in `*_test.args`
         ([#4171](https://github.com/bazelbuild/bazel/issues/4171)).
@@ -70,7 +89,7 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
         ([#4503](https://github.com/bazelbuild/bazel/issues/4503)).
 
 *   **Fix Bazel client bugs.**
-    *   Fix new year bug
+    *   **[done]** Fix new year bug
         ([#4378](https://github.com/bazelbuild/bazel/issues/4378)).
     *   Fix corrupt install
         ([#5091](https://github.com/bazelbuild/bazel/issues/5091),
@@ -82,16 +101,16 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
         [#2443](https://github.com/bazelbuild/bazel/issues/2443)).
 
 *   **Fix `*_binary` launcher.**
-    *   Use Unicode Windows API
+    *   **[done]** Use Unicode Windows API
         ([#4473](https://github.com/bazelbuild/bazel/issues/4473)).
     *   Remove `../` in classpath jars
         ([#4420](https://github.com/bazelbuild/bazel/issues/4420)).
 
 *   **Keep supporting TensorFlow.**
-    *   Build TFLite on Windows
+    *   **[scheduled: Q3'18]** Build TFLite on Windows
         ([#4148](https://github.com/bazelbuild/bazel/issues/4148)).
-    *   **[scheduled: Q2'18]** Help TF migrate their Pip package release
-        pipeline on Windows from CMake to Bazel.
+    *   **[done]** Help TF migrate their Pip package release pipeline on Windows
+        from CMake to Bazel.
 
 *   **Implement sandboxing.**
     *   Research sandboxing feasibility
