@@ -42,8 +42,8 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
         toolchain for local and remote builds, and how to override the default
         toolchain. Link to this project from the Build Encyclopdia or the User
         Manual, and announce it on the Blog.
-    *   Break test-setup's dependency on Perl and on Bash
-        ([#4691](https://github.com/bazelbuild/bazel/issues/4691)).
+    *   **[scheduled for Q3'18]** Break test-setup's dependency on Perl and on
+        Bash ([#4691](https://github.com/bazelbuild/bazel/issues/4691)).
     *   Break
         [`RunCommand`](https://github.com/bazelbuild/bazel/blob/cc0f41dccc55bb1380b10cc65281632676192a8d/src/main/java/com/google/devtools/build/lib/runtime/commands/RunCommand.java#L455)'s
         dependency on Bash. [It cannot select a toolchain without a
@@ -51,7 +51,7 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
     *   Design a way to express dependency on bintools (e.g. "perl", "grep")
         ([#5265](https://github.com/bazelbuild/bazel/issues/5265)).
 
-*   **[done]: Improve C++ build experience.**
+*   **[done] Improve C++ build experience.**
     *   **[done]** Enable short object paths by default
         ([#4148](https://github.com/bazelbuild/bazel/issues/4148)).
     *   **[done]** Make file extensions configurable
@@ -130,8 +130,11 @@ GitHub](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/wind
         ([#3888](https://github.com/bazelbuild/bazel/issues/3888)).
 
 *   **Fix the following set of uncategorized issues.**
-    *   **[scheduled: Q2'18]** Write Skylark rule migration guide
+    *   **[on hold]** Write Skylark rule migration guide
         ([#3889](https://github.com/bazelbuild/bazel/issues/3889)).
+        *   **[status as beginning of Q3'18]**: Was scheduled for Q2'18 but we
+            couldn't deliver it. We need to put this on hold because the other
+            scheduled work is more important.
     *   Fix `glob.exclude_directories`
         ([#3674](https://github.com/bazelbuild/bazel/issues/3674)).
     *   Break `cmd.exe` dependency
