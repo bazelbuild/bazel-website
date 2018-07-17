@@ -243,7 +243,7 @@ BUILD, WORKSPACE, or bzl files, Skylark team has to be in the reviewers list.
     such contributors have widely varying levels of Bazel expertise.
 *   The Bazel team itself has varying levels of expertise; no single team member
     has a complete understanding of every corner of Bazel.
-*   Changes to Bazel must account to backward compatibility and avoid breaking
+*   Changes to Bazel must account for backward compatibility and avoid breaking
     changes.
 
 
