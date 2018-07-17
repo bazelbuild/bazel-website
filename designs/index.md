@@ -148,7 +148,6 @@ The lead reviewer is a domain expert. Lead reviewers must be:
 
 *   Knowledgeable of the relevant subsystems
 *   Objective (i.e., capable of providing constructive feedback)
-*   Have sufficient time available to lead the review process
 *   Available for the entire review period to lead the process
 
 
