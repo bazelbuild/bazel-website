@@ -26,7 +26,7 @@ are as follows:
     documentation generators, refactoring tools, testing frameworks and so on.
 
 ## Roadmaps for specific Bazel areas
-*  [Configuarbility](roadmaps/configuration.html)
+*  [Configurability](roadmaps/configuration.html)
 *  [Windows](roadmaps/windows.html)
 
 
