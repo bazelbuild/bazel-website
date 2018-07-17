@@ -18,12 +18,12 @@ current Bazel functionality.
 ## When do I need a design document and review?
 
 If you're planning to add, change, or remove a user-facing feature, or make a
-significant architectural change to Bazel, you must write a design document and
-have it reviewed before you can submit the change. See [What is a significant
-change?](#what-is-a-significant-change) for details.
+significant architectural change to Bazel, you **must** write a design document
+and have it reviewed before you can submit the change. See [What is a
+significant change?](#what-is-a-significant-change) for details.
 
 Implementation can begin before the proposal is accepted, for example as a
-proof-of-concept or an experimentation. However, the change may not be effective
+proof-of-concept or an experimentation. However, you cannot submit the change
 before the review is complete.
 
 
@@ -41,8 +41,8 @@ All design documents must have a header that includes:
 *   link to discussion thread (_to be added after the announcement_)
 
 The document can be written either [as a world-readable Google Doc](#using-google-docs)
-or [using markdown](#using-markdown). Read below about for a
-[markdown / Google Docs comparison](#should-i-use-markdown-or-google-docs).
+or [using Markdown](#using-markdown). Read below about for a
+[Markdown / Google Docs comparison](#should-i-use-markdown-or-google-docs).
 
 Proposals that have a user-visible impact must have a section documenting the
 impact on backward compatibility (and a rollout plan if needed).
@@ -51,7 +51,7 @@ impact on backward compatibility (and a rollout plan if needed).
 ### Create a Pull Request
 
 The author creates a PR to add the document to [the design index](https://github.com/bazelbuild/proposals). If
-the proposal is a markdown file, the file is added in the same PR. Otherwise,
+the proposal is a Markdown file, the file is added in the same PR. Otherwise,
 the PR only adds a link.
 
 When possible, the author [chooses a lead reviewer](#how-to-choose-a-lead-reviewer).
@@ -87,10 +87,10 @@ allowed).
 ### Update the status
 
 When the author believes the iteration round is complete, they send a new PR to
-update the status. The PR must be sent to the lead reviewer and cc the other
-reviewers.
+update the status. The PR must be sent to the same lead reviewer and cc the
+other reviewers.
 
-The lead reviewer approves the PR to officially accept or reject the proposal.
+The lead reviewer approves the PR to officially accept the proposal.
 It is the lead reviewer's responsibility to ensure that other reviewers agree
 with the decision.
 
@@ -99,7 +99,7 @@ a proposal. This ensures that users had enough time to read the document and
 share their concerns.
 
 
-## Should I use markdown or Google Docs?
+## Should I use Markdown or Google Docs?
 
 Both are accepted. The author can decide what works best for them.
 
@@ -119,7 +119,7 @@ Markdown files have some other benefits, including:
     list of authors, etc.).
 
 It is also possible to first iterate on a Google Doc, and then convert it to
-markdown for posterity.
+Markdown for posterity.
 
 
 ## Using Google Docs
@@ -144,11 +144,12 @@ approved by anyone.
 
 ## How to choose a lead reviewer?
 
-The lead reviewer is a  domain expert. Lead reviewers must be:
+The lead reviewer is a domain expert. Lead reviewers must be:
 
 *   Knowledgeable of the relevant subsystems
 *   Objective (i.e., capable of providing constructive feedback)
 *   Have sufficient time available to lead the review process
+*   Available for the entire review period to lead the process
 
 
 ## I'm a reviewer. What are my responsibilities?
@@ -236,14 +237,14 @@ BUILD, WORKSPACE, or bzl files, Skylark team has to be in the reviewers list.
 *   Bazel is a very complex system; seemingly innocuous local changes can have
     significant global consequences.
 *   The team gets many feature requests from users; such requests need to be
-    evaluated not only for technical feasibility but importance w.r.t. other
-    feature requests.
+    evaluated not only for technical feasibility but importance with regards to
+    other feature requests.
 *   Bazel features are frequently implemented by people outside the core team;
     such contributors have widely varying levels of Bazel expertise.
 *   The Bazel team itself has varying levels of expertise; no single team member
     has a complete understanding of every corner of Bazel.
-*   Changes to Bazel need to pay attention to backward compatibility and avoid
-    breaking changes.
+*   Changes to Bazel must account to backward compatibility and avoid breaking
+    changes.
 
 
 ## Why do we need a design review policy?
