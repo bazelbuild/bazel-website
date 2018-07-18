@@ -5,7 +5,7 @@ title: Skylark roadmap
 
 # Skylark Q3 2018 Roadmap
 
-*Last verified: July 18th, 2018*
+*Last verified: 2018-07-18*
 ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/skylark.md))
 
 **Point of contact:** [laurentlb](https://github.com/laurentlb)
