@@ -5,7 +5,20 @@ title: Skylark roadmap
 
 # Skylark Q3 2018 Roadmap
 
+*Last verified: July 18th, 2018*
+([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/skylark.md))
+
 **Point of contact:** [laurentlb](https://github.com/laurentlb)
+
+Our goal is to make Bazel more extensible. Users should be able to easily
+implement their own rules, and support new languages and tools. We want to
+improve the experience of writing and maintaining those rules.
+
+We focus on two areas:
+
+* Make the language and API simple, yet powerful.
+* Provide better tooling for reading, writing, updating, debugging, and testing the code.
+
 
 ## Tools
 
@@ -15,6 +28,7 @@ title: Skylark roadmap
 * Publish a prototype debugger for debugging rules.
 * Publish a technical plan for improvements in testing facilities
 * Write a new prototype of [Skydoc](https://skydoc.bazel.build/), able to handle rule definitions.
+
 
 ## Rules and Language
 
