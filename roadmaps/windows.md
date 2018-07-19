@@ -10,11 +10,6 @@ title: Bazel on Windows Roadmap
 
 **Point of contact:** [laszlocsomor](https://github.com/laszlocsomor)
 
-Have a bug or feature request? File a [GitHub issue](https://github.com/bazelbuild/bazel/issues/new).
-
-Questions or suggestions? Email
-<a href="mailto:bazel-discuss@googlegroups.com">bazel-discuss@googlegroups.com</a>.
-
 ## Goal
 
 Our goal is to make Bazel fast, reliable, and easily usable on Windows.
@@ -39,7 +34,7 @@ Our goal is to make Bazel fast, reliable, and easily usable on Windows.
 *   Build TFLite on Windows
     ([#4148](https://github.com/bazelbuild/bazel/issues/4148)).
 
-## Roadmap for later
+## Future work (unscheduled)
 
 #### Break Bash dependency ([#4319](https://github.com/bazelbuild/bazel/issues/4319))
 
