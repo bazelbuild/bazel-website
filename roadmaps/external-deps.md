@@ -2,28 +2,6 @@
 layout: contribute
 title: Bazel External Deps Roadmap 
 ---
-<style>
-  .padbottom { padding-bottom: 10px; }
-  .etabox {
-    background: #EFEFEF;
-    color: #38761D;
-    font-size: 15px;
-    font-weight: bold;
-    display: inline;
-    padding: 6px;
-    margin-right: 10px;
-  }
-  .donestatus {
-    color: #00D000;
-    font-weight: bold;
-    padding-left: 10px;
-  }
-  .inprogressstatus {
-    color: #D0D000;
-    font-weight: bold;
-    padding-left: 10px;
-  }
-</style>
 
 # Bazel External Deps Roadmap
 
@@ -58,7 +36,7 @@ External dependencies work fall into three broad categories:
  
 1. General improvements for WORKSPACE support in Bazel
    *   Implement [diamond splitting](https://docs.google.com/document/d/1254CQ8T4Rmeasg4NO1NPail2kLPC50VJ7Ok6JsoSe-c/)
-       for external dependencies <span class="donestatus">DONE</span>
+       for external dependencies. DONE
    *   Prototype support for [WORKSPACE.resolved](https://docs.google.com/document/d/1kVNXcw3nLlfFQRR_87SGOka9DJ8nnawlYHUIK4m3s0I/) 
        -   [Blog post](https://blog.bazel.build/2018/07/09/bazel-sync-and-resolved-file.html)
 
