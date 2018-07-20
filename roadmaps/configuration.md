@@ -90,9 +90,7 @@ This translates into the following high-level goals:
 ## Roadmap
 
 ### Platforms
-There's a more detailed [Platforms Roadmap]
-(https://docs.google.com/document/d/1_clxJHyUylwYjmQ9jQfWr-eZeLLTUZL6onfvPV7CMoI)
-available with more details on ongoing subprojects.
+There's a more detailed [Platforms Roadmap](platforms.html) available with more details on ongoing subprojects.
 
 <div class="etabox">June 2018</div>**Rules can declare what kinds of machines
 they can build on**
