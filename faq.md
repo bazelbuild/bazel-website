@@ -4,7 +4,7 @@ title: FAQ
 nav: faq
 ---
 
-Ask technical questions [on StackOverflow using the 'bazel' tag](https://stackoverflow.com/questions/tagged/bazel).
+If you have questions or need help, see the [Get Support](support.html) page.
 
 What is Bazel?
 --------------
@@ -134,8 +134,8 @@ tests are affected by a change, and vet them before submission.
 More background on the development process at Google can be found on
 the [eng tools blog](http://google-engtools.blogspot.com/).
 
-Why are you opening up Bazel?
------------------------------
+Why did you open up Bazel?
+--------------------------
 
 Building software should be fun and easy. Slow and unpredictable
 builds take the fun out of programming.
@@ -178,7 +178,7 @@ Bazel shines at building and testing projects with the following properties:
 *   Projects that have extensive tests
 
 Where can I run Bazel?
----------------------------------
+----------------------
 
 Bazel runs on Linux, macOS (OS X), and Windows.
 
@@ -315,28 +315,7 @@ Further details on exit codes are in the [User Manual](docs/bazel-user-manual.ht
 What future features can we expect in Bazel?
 --------------------------------------------
 
-Our initial goal is to work on Google's internal use-cases. This
-includes Google's principal languages (C++, Java, Go) and major
-platforms (Linux, Android, iOS).  For practical reasons, not all of
-these are currently open-sourced. For more details see our
-[roadmap](roadmap.html).
-
-What about Python?
-------------------
-
-It is possible to write Python rules as extensions (see below). See
-the following files for an example of generating self-contained zip
-files for python:
-
-  <https://github.com/bazelbuild/bazel/blob/master/tools/build_rules/py_rules.bzl>\\
-  <https://github.com/bazelbuild/bazel/tree/master/examples/py>
-
-We have opened up a subset of our internal Python rules, so they
-can be used as helper scripts as part of a build.
-
-Simplistic support for PEX-style binaries is at
-[here](https://github.com/bazelbuild/bazel/blob/master/tools/build_rules/py_rules.bzl).
-
+See our [roadmap](roadmap.html).
 
 Can I use Bazel for my [INSERT LANGUAGE HERE] project?
 ------------------------------------------------------
