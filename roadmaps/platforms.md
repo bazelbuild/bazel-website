@@ -22,20 +22,15 @@ title: Bazel Platforms Roadmap
 </style>
 
 # Bazel Platforms Roadmap
-*Last verified: Friday, July 20, 2018* ([update history]
+
+*Last verified: 2018-07-20* ([update history]
 (https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/platforms.md))
 
+*Point of contact:* [katre](https://github.com/katre)
+
+## Goal
+
 The Bazel [Platforms](https://docs.bazel.build/versions/master/platforms.html) project is a large effort to add a native concept of a "platform", which is something that can execute code, either as part of a build or as the result of a build.
-
-Have a bug or feature request? File a [GitHub issue
-](https://github.com/bazelbuild/bazel/issues/new).
-
-Questions or suggestions? Email
-<a href="mailto:bazel-discuss@googlegroups.com">bazel-discuss@googlegroups.com</a>.
-
-* [Platforms](#platforms)
-* [Toolchains](#toolchains)
-* [Other Areas](#other-areas)
 
 ## Platforms
 

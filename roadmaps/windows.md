@@ -8,7 +8,7 @@ title: Bazel on Windows Roadmap
 *Last verified: 2018-07-19*
 ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/windows.md))
 
-**Point of contact:** [laszlocsomor](https://github.com/laszlocsomor)
+*Point of contact:* [laszlocsomor](https://github.com/laszlocsomor)
 
 ## Goal
 

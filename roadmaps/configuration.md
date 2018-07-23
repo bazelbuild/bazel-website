@@ -26,31 +26,13 @@ title: Bazel Configurability Roadmap
 </style>
 
 # Bazel Configurability 2018 Roadmap
-*Last verified: Wednesday, July 11, 2018* ([update history]
+
+*Last verified: 2018-07-11* ([update history]
 (https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
 
-This page describes committed plans to advance Bazel's configuration and
-multiplatform support in 2018.
+*Point of contact:* [gregestren](https://github.com/gregestren)
 
-Dates are approximate based on our best understanding of problem complexity
-and developer availability. ETAs will change, but we'll keep them refreshed and
-current.
-
-Have a bug or feature request? File a [GitHub issue
-](https://github.com/bazelbuild/bazel/issues/new).
-
-Questions or suggestions? Email
-<a href="mailto:bazel-discuss@googlegroups.com">bazel-discuss@googlegroups.com</a>.
-
-
-* [Goal](#goal)
-* [Roadmap](#roadmap)
-  * [Platforms](#platforms)
-  * [User-Defined Configuration](#user-defined-configuration)
-  * [Correctness and Speed](#correctness-and-speed)
-
-
-## Goal 
+## Goal
 
 Configurability's goal is to make Bazel a graceful multiplatform build
 tool. It also focuses on how users decide how their projects are built.
@@ -66,7 +48,7 @@ This translates into the following high-level goals:
 
 1. **"Platforms" is a first-class concept**
     1. "Platforms" and "toolchains" are well-defined, map well to reality, and are
-        easy to create  
+        easy to create
     1. <div class="padbottom">Builds, build rules, remote executors, etc.
        naturally integrate platforms</div>
 
@@ -89,6 +71,10 @@ This translates into the following high-level goals:
 
 ## Roadmap
 
+Dates are approximate based on our best understanding of problem complexity
+and developer availability. ETAs will change, but we'll keep them refreshed and
+current.
+
 ### Platforms
 There's a more detailed [Platforms Roadmap](platforms.html) available with more details on ongoing subprojects.
 
@@ -107,7 +93,7 @@ they can build on**
 * This gives them first-class Skylark support, `select()` [on
 platforms](https://docs.bazel.build/versions/master/be/general.html#config_setting.constraint_values),
 and configuration via
-[--platforms](https://docs.bazel.build/versions/master/platforms.html#specifying-a-platform-for-a-build) 
+[--platforms](https://docs.bazel.build/versions/master/platforms.html#specifying-a-platform-for-a-build)
 * These set best practice templates for adoption by other rules
 
 

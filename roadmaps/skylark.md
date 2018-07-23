@@ -8,7 +8,7 @@ title: Skylark roadmap
 *Last verified: 2018-07-18*
 ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/skylark.md))
 
-**Point of contact:** [laurentlb](https://github.com/laurentlb)
+*Point of contact:* [laurentlb](https://github.com/laurentlb)
 
 ## Goal
 
