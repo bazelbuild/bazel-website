@@ -6,7 +6,7 @@ title: Bazel External Deps Roadmap
 # Bazel External Deps Roadmap
 
 *Last verified: 2018-07-17*
-([Update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/external-deps.md))_
+([Update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/external-deps.md))
 
 *Point of contact:* [dslomov](https://github.com/dslomov)
 
