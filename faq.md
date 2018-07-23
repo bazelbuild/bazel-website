@@ -4,10 +4,9 @@ title: FAQ
 nav: faq
 ---
 
-Ask technical questions [on StackOverflow using the 'bazel' tag](https://stackoverflow.com/questions/tagged/bazel).
+If you have questions or need help, see the [Get Support](support.html) page.
 
-What is Bazel?
---------------
+## What is Bazel?
 
 Bazel is a tool that automates software builds and tests. Supported build tasks
 include running compilers and linkers to produce executable programs and
@@ -15,8 +14,7 @@ libraries, and assembling deployable packages for Android, iOS and other target
 environments. Bazel is similar to other tools like Make, Ant, Gradle, Buck,
 Pants and Maven.
 
-What is special about Bazel?
-----------------------------
+## What is special about Bazel?
 
 Bazel was designed to fit the way software is developed at Google. It
 has the following features:
@@ -48,9 +46,7 @@ has the following features:
     a server binary to have 100k source files, and builds where no files
     were changed take about ~200ms.
 
-
-Why doesn't Google use ...?
----------------------------
+## Why doesn't Google use ...?
 
 *   Make, Ninja: These tools give very exact control over what commands
     get invoked to build files, but it's up to the user to write rules
@@ -76,30 +72,25 @@ Why doesn't Google use ...?
     after Bazel, but their feature sets are different, so they aren't viable
     alternatives for us.
 
-
-Where did Bazel come from?
---------------------------
+## Where did Bazel come from?
 
 Bazel is a flavor of the tool that Google uses to build its server
 software internally. It has expanded to build other software as well,
 like mobile apps (iOS, Android) that connect to our servers.
 
-Did you rewrite your internal tool as open-source? Is it a fork?
-----------------------------------------------------------------
+## Did you rewrite your internal tool as open-source? Is it a fork?
 
 Bazel shares most of its code with the internal tool and its rules
 are used for millions of builds every day.
 
-Why did Google build Bazel?
----------------------------
+## Why did Google build Bazel?
 
 A long time ago, Google built its software using large, generated
 Makefiles. These led to slow and unreliable builds, which began to
 interfere with our developers' productivity and the company's
 agility. Bazel was a way to solve these problems.
 
-Does Bazel require a build cluster?
------------------------------------
+## Does Bazel require a build cluster?
 
 Google's in-house flavor of Bazel does use [build
 clusters](http://google-engtools.blogspot.com/2011/09/build-in-cloud-distributing-build-steps.html),
@@ -110,9 +101,7 @@ The open source Bazel code runs build operations locally. We believe
 that this is fast enough for most of our users, but work is underway
 to provide [distributed caching](https://github.com/bazelbuild/bazel/issues/904).
 
-
-How does the Google development process work?
-----------------------------------------------
+## How does the Google development process work?
 
 For our server code base, we use the following development workflow:
 
@@ -134,14 +123,12 @@ tests are affected by a change, and vet them before submission.
 More background on the development process at Google can be found on
 the [eng tools blog](http://google-engtools.blogspot.com/).
 
-Why are you opening up Bazel?
------------------------------
+## Why did you open up Bazel?
 
 Building software should be fun and easy. Slow and unpredictable
 builds take the fun out of programming.
 
-Why would I want to use Bazel?
-------------------------------
+## Why would I want to use Bazel?
 
 *   Bazel may give you faster build times because it can recompile only
     the files that need to be recompiled. Similarly, it can skip
@@ -156,8 +143,7 @@ Why would I want to use Bazel?
     works with the updated server, building both with the same tool,
     reaping all the aforementioned benefits of Bazel.
 
-Can I see examples?
--------------------
+## Can I see examples?
 
 Yes. For a simple example, see:
 
@@ -167,8 +153,7 @@ The Bazel source code itself provides a more complex example:
 
   <https://github.com/bazelbuild/bazel/blob/master/src/BUILD>
 
-What is Bazel best at?
-----------------------
+## What is Bazel best at?
 
 Bazel shines at building and testing projects with the following properties:
 
@@ -177,16 +162,14 @@ Bazel shines at building and testing projects with the following properties:
 *   Projects that deploy on multiple platforms
 *   Projects that have extensive tests
 
-Where can I run Bazel?
----------------------------------
+## Where can I run Bazel?
 
 Bazel runs on Linux, macOS (OS X), and Windows.
 
 Porting to other UNIX platforms should be relatively easy, as long as a JDK is
 available for the platform.
 
-What should I not use Bazel for?
---------------------------------
+## What should I not use Bazel for?
 
 *   Bazel tries to be smart about caching. This means that it is not good
     for running build operations whose outputs should not be cached. For example,
@@ -198,8 +181,7 @@ What should I not use Bazel for?
 
 *   If your build consists of a few long, sequential steps, Bazel may not be able to help much. You'll get more speed by breaking long steps into smaller, discrete targets that Bazel can run in parallel.
 
-How stable is Bazel's feature set?
-----------------------------------
+## How stable is Bazel's feature set?
 
 The core features (C++, Java, and shell rules) have extensive use
 inside Google, so they are thoroughly tested and have very little
@@ -212,19 +194,16 @@ Changes to non-experimental rules will be backward compatible. A more detailed
 list of feature support statuses can be found in our
 [support document](support.html).
 
-How stable is Bazel as a binary?
---------------------------------
+## How stable is Bazel as a binary?
 
 Inside Google, we make sure that Bazel crashes are very rare. This
 should also hold for our open source codebase.
 
-How can I start using Bazel?
-----------------------------
+## How can I start using Bazel?
 
 See our [getting started document]({{ site.docs_site_url }}/getting-started.html).
 
-Doesn't Docker solve the reproducibility problems?
---------------------------------------------------
+## Doesn't Docker solve the reproducibility problems?
 
 With Docker you can easily create sandboxes with fixed OS releases,
 for example, Ubuntu 12.04, Fedora 21. This solves the problem of
@@ -240,8 +219,7 @@ In this way, we can vet changes to tools ("upgrade GCC to 4.6.1") with
 the same mechanism as changes to base libraries ("fix bounds check in
 OpenSSL").
 
-Can I build binaries for deployment on Docker?
-----------------------------------------------
+## Can I build binaries for deployment on Docker?
 
 With Bazel, you can build standalone, statically linked binaries in
 C/C++, and self-contained jar files for Java. These run with few
@@ -254,15 +232,13 @@ program as subprocess. It is possible to package up such environments
 as standalone archives, so they can be deployed on different systems,
 including Docker images.
 
-Can I build Docker images with Bazel?
--------------------------------------
+## Can I build Docker images with Bazel?
 
 Yes, you can use our
 [Docker rules](https://github.com/bazelbuild/rules_docker)
 to build reproducible Docker images.
 
-Will Bazel make my builds reproducible automatically?
------------------------------------------------------
+## Will Bazel make my builds reproducible automatically?
 
 For Java and C++ binaries, yes, assuming you do not change the
 toolchain. If you have build steps that involve custom recipes
@@ -282,15 +258,13 @@ will need to take some extra care:
   *   Avoid processes that use random numbers, in particular, dictionary
       traversal is randomized in many programming languages.
 
-Do you have binary releases?
-----------------------------
+## Do you have binary releases?
 
 Yes, you can find the latest release binaries
 [here](https://github.com/bazelbuild/bazel/releases/latest). Our release
 policy is documented [here](http://bazel.build/support.html).
 
-I use Eclipse/IntelliJ/XCode. How does Bazel interoperate with IDEs?
---------------------------------------------------------------------
+## I use Eclipse/IntelliJ/XCode. How does Bazel interoperate with IDEs?
 
 For IntelliJ, check out the [IntelliJ with Bazel plugin](https://ij.bazel.build).
 
@@ -302,8 +276,7 @@ For other IDEs, check out the [blog
 post](https://blog.bazel.build/2016/06/10/ide-support.html) on how these
 plugins work.
 
-I use Jenkins/CircleCI/TravisCI. How does Bazel interoperate with CI systems?
------------------------------------------------------------------------------
+## I use Jenkins/CircleCI/TravisCI. How does Bazel interoperate with CI systems?
 
 Bazel returns a non-zero exit code if the build or test invocation
 fails, and this should be enough for basic CI integration.  Since
@@ -312,34 +285,11 @@ be configured to clean before starting a build/test run.
 
 Further details on exit codes are in the [User Manual](docs/bazel-user-manual.html).
 
-What future features can we expect in Bazel?
---------------------------------------------
+## What future features can we expect in Bazel?
 
-Our initial goal is to work on Google's internal use-cases. This
-includes Google's principal languages (C++, Java, Go) and major
-platforms (Linux, Android, iOS).  For practical reasons, not all of
-these are currently open-sourced. For more details see our
-[roadmap](roadmap.html).
+See our [roadmap](roadmap.html).
 
-What about Python?
-------------------
-
-It is possible to write Python rules as extensions (see below). See
-the following files for an example of generating self-contained zip
-files for python:
-
-  <https://github.com/bazelbuild/bazel/blob/master/tools/build_rules/py_rules.bzl>\\
-  <https://github.com/bazelbuild/bazel/tree/master/examples/py>
-
-We have opened up a subset of our internal Python rules, so they
-can be used as helper scripts as part of a build.
-
-Simplistic support for PEX-style binaries is at
-[here](https://github.com/bazelbuild/bazel/blob/master/tools/build_rules/py_rules.bzl).
-
-
-Can I use Bazel for my [INSERT LANGUAGE HERE] project?
-------------------------------------------------------
+## Can I use Bazel for my [INSERT LANGUAGE HERE] project?
 
 We have an extension mechanism called Skylark that allows you to add new rules
 without recompiling Bazel.
@@ -349,55 +299,43 @@ several languages that use that extension mechanism, see our
 [build encyclopedia](/docs/be/overview.html) for the full
 list of supported languages.
 
-I need more functionality. Can I add rules that are compiled into Bazel?
-------------------------------------------------------------------------
+## I need more functionality. Can I add rules that are compiled into Bazel?
 
 If our extension mechanism is insufficient for your use case, email
 the mailing list for advice: <bazel-discuss@googlegroups.com>.
 
-Can I contribute to the Bazel code base?
-----------------------------------------
+## Can I contribute to the Bazel code base?
 
 See our [contribution guidelines](contributing.html).
 
-Why isn't all development done in the open?
--------------------------------------------
+## Why isn't all development done in the open?
 
 We still have to refactor the interfaces between the public code in
 Bazel and our internal extensions frequently. This makes it hard to do
 much development in the open. See our [governance plan](governance.html)
 for more details.
 
-How do I contact the team?
---------------------------
+## How do I contact the team?
 
 We are reachable at <bazel-discuss@googlegroups.com>.
 
-Where do I report bugs?
------------------------
+## Where do I report bugs?
 
 Open on issue [on GitHub](https://github.com/bazelbuild/bazel/issues).
 
-
-
-What's up with the word "Blaze" in the codebase?
-------------------------------------------------
+## What's up with the word "Blaze" in the codebase?
 
 This is an internal name for the tool. Please refer to Bazel as
 Bazel.
 
-
-Why do other Google projects (Android, Chrome) use other build tools?
----------------------------------------------------------------------
+## Why do other Google projects (Android, Chrome) use other build tools?
 
 Until the first (Alpha) release, Bazel was not available externally, so open
 source projects such as Chromium, Android, etc. could not use it. In addition,
 the original lack of Windows support was a problem for building Windows
 applications, such as Chrome.
 
-
-How do you pronounce "Bazel"?
------------------------------
+## How do you pronounce "Bazel"?
 
 The same way as "basil" (the herb) in US English: "BAY-zel". It rhymes with
 "hazel". IPA: /ˈbeɪzˌəl/
