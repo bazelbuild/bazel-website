@@ -14,19 +14,23 @@ are as follows:
 *   **Remote execution API** is under development, but we are not yet ready to
     provide the full guidance to rule authors on how to write rules to enable it
     for their language.
-*   **External dependency management** story needs to be improved including both
+*   [**External dependency management**](roadmap/external-deps.html) story 
+    needs to be improved including both
     the **general dependency management** mechanism in Bazel and **interfacing with
     external package managers and build systems**. The latter is critical for
     _gradual adoption_ of Bazel.
 *   [**Configurability**](roadmaps/configuration.html). Outside of a few
     hardcoded cases (fat apk for Android,host -> target transitions), the promise
     of single-command multi-platform builds is unfulfilled. 
-*   **Skylark API and tooling**. We need to support the rule authors with 
+*   [**Skylark API and tooling**](roadmaps/skylark.html). We need to support the rule authors with 
     **clear, documented, stable API**, and **strong language and tooling**:
     documentation generators, refactoring tools, testing frameworks and so on.
 
 ## Roadmaps for specific Bazel areas
 *  [Configurability](roadmaps/configuration.html)
+*  [External Dependencies](roadmaps/external-deps.html)
+*  [Platforms](roadmaps/platforms.html)
+*  [Skylark](roadmaps/skylark.html)
 *  [Windows](roadmaps/windows.html)
 
 
