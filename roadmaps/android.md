@@ -5,10 +5,10 @@ title: Android roadmap
 
 # Android Roadmap
 
-*Last verified: 2018-07-21*
+*Last verified: 2018-07-25*
 ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/android.md))
 
-**Points of contact:** [ahumesky](https://github.com/ahumesky), [jingwen](https://github.com/jin)
+*Points of contact:* [ahumesky](https://github.com/ahumesky), [jingwen](https://github.com/jin)
 
 ## Overview
 
