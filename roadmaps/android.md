@@ -55,9 +55,11 @@ development.
 
 #### NDK
 
-- Document Android NDK support with Bazel.
+- Document Android NDK support with Bazel. ([Documentation](https://docs.bazel.build/versions/master/android-ndk.html), [Commit](https://github.com/bazelbuild/bazel/commit/e169b94ce9b0e964b8edd231ef7eb3bed1cd2ccf#diff-64a8f141fa31bcfadcd36fa00be7872b))
+- Add support for NDK r17. ([#4742](https://github.com/bazelbuild/bazel/issues/4742))
+- Add support for [NDK r18 beta](https://github.com/android-ndk/ndk/wiki#ndk-r18). ([#5585](https://github.com/bazelbuild/bazel/issues/5585))
 
 #### Tooling (Build & Test)
 
-- Support and default to D8 for dexing.
-- Support and default to aapt2 for resource processing.
+- Support ([#5150](https://github.com/bazelbuild/bazel/issues/5150)) and default to D8 for dexing.
+- Support ([#5214](https://github.com/bazelbuild/bazel/issues/5214)) and default to aapt2 ([#4103](https://github.com/bazelbuild/bazel/issues/4103)) for resource processing.
