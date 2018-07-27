@@ -54,7 +54,7 @@ system development.
 - Document Android with Bazel compatibility across Windows, macOS and Linux.
 - Introduce a best-practices documentation on configuring your Android build.
 - Introduce `tools_android` repository for common Android build tools for use
-  with Bazel (e.g. Firebase, Google Play Services)
+  with Bazel (e.g. Firebase, Google Services)
 - Add Bazel support to [OkBuck](https://github.com/uber/okbuck).
 
 #### NDK
