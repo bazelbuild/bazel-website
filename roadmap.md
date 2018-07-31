@@ -14,7 +14,7 @@ are as follows:
 *   **Remote execution API** is under development, but we are not yet ready to
     provide the full guidance to rule authors on how to write rules to enable it
     for their language.
-*   [**External dependency management**](roadmap/external-deps.html) story 
+*   [**External dependency management**](roadmaps/external-deps.html) story 
     needs to be improved including both
     the **general dependency management** mechanism in Bazel and **interfacing with
     external package managers and build systems**. The latter is critical for
