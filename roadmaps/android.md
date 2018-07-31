@@ -55,7 +55,6 @@ system development.
 - Introduce a best-practices documentation on configuring your Android build.
 - Introduce `tools_android` repository for common Android build tools for use
   with Bazel (e.g. Firebase, Google Services)
-- Design and implement tooling for migrating Android projects to Bazel.
 
 #### NDK
 
@@ -76,7 +75,8 @@ system development.
 - Replace `bazel mobile-install` in favor of its Skylark reimplementation,
   mobile-install v2, which has better performance and works with instrumentation
   tests.
-- Interoperability with Kotlin
+- Interoperability with Kotlin.
+- Design and implement tooling for migrating Android projects to Bazel.
 
 #### Rules
 
