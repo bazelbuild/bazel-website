@@ -28,6 +28,8 @@ are as follows:
 
 ## Roadmaps for specific Bazel areas
 *  [Android](roadmaps/android.html)
+*  [C++](roadmaps/cpp.html)
+*  [Code Coverage](roadmaps/coverage.html)
 *  [Configurability](roadmaps/configuration.html)
 *  [External Dependencies](roadmaps/external-deps.html)
 *  [Platforms](roadmaps/platforms.html)
