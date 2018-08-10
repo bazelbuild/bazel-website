@@ -196,7 +196,7 @@ flags</a>**
 
 
 <div class="etabox">June 2018</div>**Bazel updates _fast_ on `--test_timeout`, etc. changes**
-<span class="inprogressstatus">IN PROGRESS</span> ([#5579]
+<span class="donestatus">DONE</span> ([#5579]
 (http://github.com/bazelbuild/bazel/issues/5579))
 <br><br>
 
