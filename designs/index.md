@@ -124,8 +124,8 @@ Markdown for posterity.
 
 ## Using Google Docs
 
-To make a [Google Doc](https://docs.google.com) world-readable, create it with a
-personal account. To share it, click on "Share", "Advanced", then "Change…", and
+Create a world-readable document on [Google Doc](https://docs.google.com). To 
+make it world-readable, click on "Share", "Advanced", then "Change…", and
 choose "On - Anyone with the link". You may allow comments on the document. If
 you do so, anyone will be able to comment anonymously, even without a Google
 account.
