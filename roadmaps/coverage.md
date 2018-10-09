@@ -21,7 +21,7 @@ title: Bazel Code Coverage Roadmap
   }
 </style>
 
-# Bazel Code Coverage Roadmap 2018/Q3
+# Bazel Code Coverage Roadmap 2018
 
 *Last verified: 2018-08-08* ([update history]
 (https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/coverage.md))
@@ -35,16 +35,16 @@ the same targets.
 Objectives:
 
 * C++ coverage with clang uses profdata and outputs lcov 
-  <span class="notstartedstatus">NOT STARTED</span>
+ <span class="inprogressstatus">IN PROGRESS</span>
 * C++ coverage with gcc uses gcov and outputs lcov
-  <span class="inprogressstatus">IN PROGRESS</span>
+   <span class="donestatus">DONE</span>
 
 ## Have a reliable Bazel coverage report (P1)
 
 Objectives:
 
 * [C++] Fix symlinks following in the coverage report.
-  <span class="notstartedstatus">NOT STARTED</span>
+  <span class="inprogressstatus">IN PROGRESS</span>
 * [sh] Improve sh\_test coverage ([tracking issue](https://github.com/bazelbuild/bazel/issues/5331))
   <span class="donestatus">DONE</span>
 * [Java] Improve Java coverage ([tracking issue](https://github.com/bazelbuild/bazel/issues/5426))
