@@ -22,7 +22,7 @@ are as follows:
 *   [**Configurability**](roadmaps/configuration.html). Outside of a few
     hardcoded cases (fat apk for Android,host -> target transitions), the promise
     of single-command multi-platform builds is unfulfilled. 
-*   [**Skylark API and tooling**](roadmaps/skylark.html). We need to support the rule authors with 
+*   [**Starlark API and tooling**](roadmaps/starlark.html). We need to support the rule authors with
     **clear, documented, stable API**, and **strong language and tooling**:
     documentation generators, refactoring tools, testing frameworks and so on.
 
@@ -33,7 +33,7 @@ are as follows:
 *  [Configurability](roadmaps/configuration.html)
 *  [External Dependencies](roadmaps/external-deps.html)
 *  [Platforms](roadmaps/platforms.html)
-*  [Skylark](roadmaps/skylark.html)
+*  [Starlark](roadmaps/starlark.html)
 *  [Windows](roadmaps/windows.html)
 
 

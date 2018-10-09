@@ -1,9 +1,9 @@
 ---
 layout: contribute
-title: Skylark roadmap
+title: Starlark roadmap
 ---
 
-# Skylark Roadmap
+# Starlark Roadmap
 
 *Last verified: 2018-07-18*
 ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/skylark.md))
