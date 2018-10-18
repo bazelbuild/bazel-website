@@ -99,8 +99,9 @@ and configuration via
 * These set best practice templates for adoption by other rules
 
 
-<div class="etabox">Dec 2018</div>**"Toolchain modes" support same-platform
-toolchain configuration**
+<div class="etabox">Dec 2018</div>**"Toolchain modes" documentation explains how
+to use flags and configuration to select between multiple toolchains for the
+same platform
 
 * Examples: debug vs. opt, C++ [correctness
   sanitizers](https://github.com/google/sanitizers)
