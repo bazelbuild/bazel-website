@@ -31,6 +31,7 @@ title: Bazel Configurability Roadmap
 (https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
 
 *Point of contact:* [gregestren](https://github.com/gregestren)
+
 *Discuss:*  [Configurability 2018 Roadmap: discussion](https://github.com/bazelbuild/bazel/issues/6431)
 
 ## Goal
