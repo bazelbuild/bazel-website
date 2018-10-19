@@ -23,7 +23,7 @@ title: Bazel Platforms Roadmap
 
 # Bazel Platforms Roadmap
 
-*Last verified: 2018-07-20* ([update history]
+*Last verified: 2018-10-19* ([update history]
 (https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/platforms.md))
 
 *Point of contact:* [katre](https://github.com/katre)
@@ -92,13 +92,13 @@ migration of BUILD files to work properly.
 
 Current status:
 * CC Rules - Code complete, not enabled by default.
-* Java Rules - Work scheduled to start 2018Q3.
+* Java Rules - Work scheduled to start 2019Q1.
 * Other Rules - Not yet scheduled.
 
-### Toolchain Modes
+### Toolchain Modes Documentation
 Status: <span class="notstartedstatus">NOT STARTED</span>
 
-Rule authors need better control over toolchain modes, such as different sanitizers, debug and optimized builds, etc. Some rules may model these as separate toolchains, and other rules may model these modes as a single toolchain that just applies new options. In either case, the user should interact with the modes by both setting target attributes, or as command-line flags.
+Rule authors need better control over toolchain modes, such as different sanitizers, debug and optimized builds, etc. Some rules may model these as separate toolchains, and other rules may model these modes as a single toolchain that just applies new options. We need to provide best practices documentation and guidance for enabling these features.
 
 ### Toolchain-specific Configuration Transitions
 Status: <span class="notstartedstatus">NOT STARTED</span>
