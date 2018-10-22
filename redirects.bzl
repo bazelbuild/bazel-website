@@ -215,4 +215,5 @@ BAZEL_SITE_REDIRECTS = _make_redirects(
     ],
     other = {
         "versions/master/docs/windows-chocolatey-maintenance.html": "https://www.bazel.build/windows-chocolatey-maintenance.html",
+        "roadmaps/index.html": "/roadmap.html",
     })
