@@ -23,6 +23,11 @@ title: Bazel Configurability Roadmap
     font-weight: bold;
     padding-left: 10px;
   }
+  .notstartedstatus {
+    color: #D00000;
+    font-weight: bold;
+    padding-left: 10px;
+  }
 </style>
 
 # Bazel Configurability 2018 Roadmap
@@ -90,18 +95,19 @@ they can build on**
 <div class="etabox">Dec 2018</div>**C++ rules fully support
 [platforms](https://docs.bazel.build/versions/master/platforms.html) and
 [toolchains](https://docs.bazel.build/versions/master/toolchains.html)**
-<span class="inprogressstatus">IN PROGRESS</span>
+<span class="inprogressstatus">IN PROGRESS</span> ([#6516](https://github.com/bazelbuild/bazel/issues/6516))
 
 * This gives them first-class Starlark support, `select()` [on
 platforms](https://docs.bazel.build/versions/master/be/general.html#config_setting.constraint_values),
 and configuration via
-[--platforms](https://docs.bazel.build/versions/master/platforms.html#specifying-a-platform-for-a-build)
+[-\-platforms](https://docs.bazel.build/versions/master/platforms.html#specifying-a-platform-for-a-build)
 * These set best practice templates for adoption by other rules
 
 
 <div class="etabox">Dec 2018</div>**"Toolchain modes" documentation explains how
 to use flags and configuration to select between multiple toolchains for the
-same platform
+same platform**
+[see status](https://bazel.build/roadmaps/platforms.html#toolchain-modes-documentation) ([#6517](https://github.com/bazelbuild/bazel/issues/6517))
 
 * Examples: debug vs. opt, C++ [correctness
   sanitizers](https://github.com/google/sanitizers)
@@ -109,6 +115,7 @@ same platform
 
 <div class="etabox">2019</div>**There's _one_, simple way to choose platforms
 at the command line**
+[see status](https://bazel.build/roadmaps/platforms.html#replace-cpu-and-host_cpu-flags) ([#6518](https://github.com/bazelbuild/bazel/issues/6518))
 
 * `$ bazel build //a:foo_lang_rule --platforms=//platforms:mac`
 * `--cpu`, `--host_cpu`, `--crosstool_top`, `--javabase`,
@@ -117,6 +124,7 @@ at the command line**
 
 <div class="etabox">2019</div>**Flagless multiplatform builds
 (unoptimized)**
+<span class="notstartedstatus">NOT STARTED</span> ([#6519](https://github.com/bazelbuild/bazel/issues/6519))
 
 * ```sh
         $ cat a/BUILD
@@ -132,6 +140,7 @@ at the command line**
 
 <div class="etabox">2019</div>**Java, Android, Apple rules fully support platforms and
 toolchains**
+<span class="notstartedstatus">NOT STARTED</span> ([#6521](https://github.com/bazelbuild/bazel/issues/6521))
 
 * These depend on Java and C++, so need to happen after those rules
 * `--android_sdk`, -`-ios_sdk_version`, etc. are deprecated and obsolete
@@ -193,7 +202,7 @@ in Starlark**
 duplicate under <a
 href="https://github.com/bazelbuild/bazel/blob/d6a98282e229b311dd56e65b72003197120f299a/src/test/java/com/google/devtools/build/lib/rules/android/AndroidBinaryTest.java#L3107">feature
 flags</a>**
-<span class="donestatus">DONE</span>
+<span class="donestatus">DONE</span> ([#6523](https://github.com/bazelbuild/bazel/issues/6523))
 
 * This makes "feature customization" under Android binaries more efficient
 * Non-Android dependencies won't duplicate due to Android-only changes
@@ -208,14 +217,14 @@ flags</a>**
 
 <div class="etabox">Dec 2018</div>**An experimental Bazel mode automatically
 minimizes build graphs**
-<span class="inprogressstatus">IN PROGRESS</span>
+<span class="inprogressstatus">IN PROGRESS</span> ([#6524](https://github.com/bazelbuild/bazel/issues/6524))
 
 * No rule builds twice due to unrelated flag changes
 
 
 <div class="etabox">Dec 2018</div>**User documentation provides clear guidance
 on "safe" [Starlark transitions](#user-defined-configuration) use**
-<span class="inprogressstatus">IN PROGRESS</span>
+<span class="inprogressstatus">IN PROGRESS</span> ([#6525](https://github.com/bazelbuild/bazel/issues/6525))
 
 * Explains the risks of performance and memory regressions
 * Explains how to minimize these risks and make informed use of the feature
@@ -224,7 +233,7 @@ on "safe" [Starlark transitions](#user-defined-configuration) use**
 
 <div class="etabox">2019</div>**Java compilation doesn't include cpu in its
 output paths**
-<span class="inprogressstatus">IN PROGRESS</span>
+<span class="notstartedstatus">ON HOLD</span> ([#6527](https://github.com/bazelbuild/bazel/issues/6527))
 
 * This improves multiplatform build times and cross-build cacheability
 * This is conditional on the impact of generated sources,
@@ -234,7 +243,7 @@ output paths**
 
 <div class="etabox">2019</div>**Distinct actions can't write to the same
 output path**
-<span class="inprogressstatus">IN PROGRESS</span>
+<span class="inprogressstatus">IN PROGRESS</span> ([#6526](https://github.com/bazelbuild/bazel/issues/6526))
 
 * This prevents "output clobbering" when the same command is invoked twice with
   different inputs, producing different versions of the same output
@@ -243,15 +252,18 @@ output path**
 
 <div class="etabox">2019</div>**Bazel automatically minimizes graphs over
 feature flag changes**
+<span class="notstartedstatus">NOT STARTED</span> ([#6524](https://github.com/bazelbuild/bazel/issues/6524))
 <br><br>
 
 <div class="etabox">2019</div>**Bazel automatically minimizes graphs over
 all configuration changes**
+<span class="notstartedstatus">NOT STARTED</span> ([#6524](https://github.com/bazelbuild/bazel/issues/6524))
 
 * This productionizes the experimental minimization mode
 
 
 <div class="etabox">2019</div>**Build actions cache efficiently**
+<span class="inprogressstatus">IN PROGRESS</span> ([#6526](https://github.com/bazelbuild/bazel/issues/6526))
 
 * Content-identical outputs have the same file name (as much as possible)
 * Output paths don't include cache-poisoning segments.:
