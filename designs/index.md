@@ -50,7 +50,8 @@ impact on backward compatibility (and a rollout plan if needed).
 
 ### Create a Pull Request
 
-The author creates a PR to add the document to [the design index](https://github.com/bazelbuild/proposals). If
+The author creates a Pull Request (PR) to add the document to
+[the design index](https://github.com/bazelbuild/proposals). If
 the proposal is a Markdown file, the file is added in the same PR. Otherwise,
 the PR only adds a link.
 
@@ -124,12 +125,17 @@ Markdown for posterity.
 
 ## Using Google Docs
 
-Create a world-readable document on [Google Doc](https://docs.google.com). To 
+Create a world-readable document on [Google Doc](https://docs.google.com). To
 make it world-readable, click on "Share", "Advanced", then "Change…", and
 choose "On - Anyone with the link". You may allow comments on the document. If
 you do so, anyone will be able to comment anonymously, even without a Google
 account.
 
+We recommend that you use [this template](
+https://docs.google.com/document/d/1cE5zrjrR40RXNg64XtRFewSv6FrLV6slGkkqxBumS1w/edit)
+for new documents. It will help you structure the document and create a visual
+consistency with other Bazel related documents. To do that, click on "Make a
+copy" under the "File" menu.
 
 ## Using Markdown
 
