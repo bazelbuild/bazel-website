@@ -1,0 +1,71 @@
+---
+layout: default
+title: Search
+---
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+
+<div id="ais-input-container"></div>
+<div id="ais-results-container"></div>
+<div id="ais-pagination-container"></div>
+
+{% raw %}
+  <script>
+  var search = instantsearch({
+    appId: 'BH4D9OD16A',
+    apiKey: '8e0152321e991cc72635d18bfd059bf1',
+    indexName: 'bazel',
+    urlSync: true,
+    searchParameters: {
+        hitsPerPage: 10
+    }
+  });
+
+  search.addWidget(
+    instantsearch.widgets.searchBox({
+      container: '#ais-input-container',
+      placeholder: 'Search in the documentation',
+      autofocus: false,
+      poweredBy: true
+    })
+  );
+
+  var template = `<div class="ais-result">
+      <div class="ais-lvl1">
+        {{#hierarchy.lvl1}} {{{_highlightResult.hierarchy.lvl1.value}}} {{/hierarchy.lvl1}}
+      </div>
+      <span class="ais-lvl2">
+        <a href="{{url}}">{{#hierarchy.lvl2}}{{{_highlightResult.hierarchy.lvl2.value}}}{{/hierarchy.lvl2}}</a>
+      </span>
+      {{#hierarchy.lvl3}} - {{{_highlightResult.hierarchy.lvl3.value}}} {{/hierarchy.lvl3}}
+      <div class="ais-url">{{url}}</div>
+      <div class="ais-content">
+        {{{#content}}} {{{_highlightResult.content.value}}} {{{/content}}}
+      </div>
+    </div>`;
+
+  search.addWidget(
+    instantsearch.widgets.hits({
+      container: '#ais-results-container',
+      templates: {
+        empty: 'No results',
+          item: template,
+      }
+    })
+  );
+
+  search.addWidget(
+    instantsearch.widgets.pagination({
+      container: '#ais-pagination-container',
+      maxPages: 15,
+      scrollTo: false
+    })
+  );
+
+  search.start();
+  </script>
+{% endraw %}
