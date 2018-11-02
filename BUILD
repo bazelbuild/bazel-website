@@ -52,7 +52,7 @@ pkg_tar(
 pkg_tar(
     name = "instantsearch-css",
     files = ["//third_party/css/instantsearch:instantsearch_css"],
-    package_dir = "assets/css",
+    package_dir = "assets",
     strip_prefix = "/third_party/css/instantsearch",
 )
 
