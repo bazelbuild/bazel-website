@@ -50,6 +50,13 @@ pkg_tar(
 )
 
 pkg_tar(
+    name = "instantsearch-css",
+    files = ["//third_party/css/instantsearch:instantsearch_css"],
+    package_dir = "assets",
+    strip_prefix = "/third_party/css/instantsearch",
+)
+
+pkg_tar(
     name = "font-awesome-css",
     files = ["//third_party/css/font_awesome:font_awesome_css"],
     package_dir = "assets",
@@ -71,6 +78,13 @@ pkg_tar(
 )
 
 pkg_tar(
+    name = "instantsearch-js",
+    files = ["//third_party/javascript/instantsearch:instantsearch_js"],
+    package_dir = "assets",
+    strip_prefix = "/third_party/javascript/instantsearch",
+)
+
+pkg_tar(
     name = "jekyll-base",
     deps = [
         ":bootstrap-css",
@@ -78,6 +92,8 @@ pkg_tar(
         ":bootstrap-js",
         ":font-awesome-css",
         ":font-awesome-font",
+        ":instantsearch-css",
+        ":instantsearch-js",
         ":jekyll-files",
     ],
 )

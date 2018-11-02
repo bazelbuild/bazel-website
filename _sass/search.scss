@@ -1,0 +1,38 @@
+#ais-results-container .algolia-docsearch-suggestion--highlight {
+  background-color: rgba(118, 210, 117, 0.2);
+}
+
+.ais-content {
+  color: #444;
+}
+
+.ais-lvl0 {
+  color: black;
+  font-size: 1.1em
+}
+
+.ais-lvl1 {
+    color: #999;
+    font-size: 0.9em;
+    font-variant: small-caps;
+}
+
+.ais-lvl2 {
+  color: #000;
+  font-size: 1.25em;
+}
+
+.ais-url {
+  color: #9999cc;
+  font-size: 0.8em;
+}
+
+.ais-result {
+  margin-bottom: 18px;
+  border-left: solid 1px #ddd;
+  padding-left: 10px;
+}
+
+input:focus {
+  outline: none;
+}
