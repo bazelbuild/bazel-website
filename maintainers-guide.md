@@ -5,6 +5,11 @@ title: Guide for Bazel Maintainers
 
 # Guide for Bazel Maintainers
 
+## Table of Contents
+* ToC {:toc}
+
+## Overview
+
 This is a guide for the maintainers of the Bazel open source project.
 
 If you are looking to contribute to Bazel, please read [Contributing to
@@ -16,26 +21,6 @@ The objectives of this document are to:
    process.
 1. Set expectations between the community contributors and the project
    maintainers.
-   
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
-**Table of Contents**
-
-- [Overview](#overview)
-- [Releases](#releases)
-- [Continuous Integration](#continuous-integration)
-- [Lifecycle of an Issue](#lifecycle-of-an-issue)
-- [Lifecycle of a Pull Request](#lifecycle-of-a-pull-request)
-- [Initial routing](#initial-routing)
-- [My team owns a label. What should I do?](#my-team-owns-a-label-what-should-i-do)
-    - [Issues](#issues)
-    - [Pull Requests](#pull-requests)
-- [Priority](#priority)
-- [Team labels](#team-labels)
-
-<!-- markdown-toc end -->
-
-
-## Overview
 
 Bazel's [core group of contributors](/governance.html) has dedicated subteams to
 manage aspects of the open source project. These are:
@@ -77,13 +62,13 @@ repository.
      continuing. This usually occurs when the user does not follow the [Issue
      Template](https://github.com/bazelbuild/bazel/blob/master/ISSUE_TEMPLATE.md).
 1. After reviewing the issue, the DevEx member decides if the issue requires
-     immediate attention. If it does, they will assign the **P0** priority label
-     and an owner from the list of team leads.
+   immediate attention. If it does, they will assign the **P0**
+   [priority](#priority) label and an owner from the list of team leads.
 1. The DevEx member assigns the `untriaged` label and exactly one [team
    label](#team-labels) for routing.
 1. The DevEx member also assigns the `bug` or `feature request` label according
    to the type of the issue.
-   
+
 At this stage, the issue enters the pool of [untriaged open
 issues](https://github.com/bazelbuild/bazel/issues?q=is%3Aissue+is%3Aopen+label%3Auntriaged).
 
@@ -123,7 +108,7 @@ many benefits, including:
 1. Maximizing the visibility of the issue or PR towards domain experts.
 1. Reducing the maintainers' toil on sifting through the large volume of issues
    and PRs.
-   
+
 When an issue or PR is routed to the correct owner, the owner can address and
 prioritize the issue accordingly.
 
@@ -133,16 +118,17 @@ and PRs on weekly rotation basis. The subteam can be reached on GitHub using the
 
 ## My team owns a label. What should I do?
 
-Subteams need to triage all issues in the [labels they own](), preferable on a weekly basis.
+Subteams need to triage all issues in the [labels they own](#team-labels),
+preferable on a weekly basis.
 
 ### Issues
 
 1. Filter the list of issues by your team label **and** the `untriaged` label.
 1. Review the issue.
-1. Identify a priority level and assign the label.
-  1. The issue may have already been prioritized by the DevEx subteam if it's a P0. Re-prioritize if needed.
+1. Identify a [priority level](#priority) and assign the label.
+  1. The issue may have already been prioritized by the DevEx subteam if it's a
+     P0. Re-prioritize if needed.
 1. Remove the `untriaged` label.
-
 
 Note that you need to be in the [bazelbuild
 organization](https://github.com/bazelbuild) to be able to add or remove labels.
@@ -188,23 +174,37 @@ issues.
 
 ## Team labels
 
-| Label                | Description                                                           | Link                                                                           |
-|----------------------|-----------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| team-Android         | Issues for Android team                                               | [Open issues](https://github.com/bazelbuild/bazel/labels/team-Android)         |
-| team-Apple           | Issues for Apple team (also MacOS, iOS etc)                           | [Open issues](https://github.com/bazelbuild/bazel/labels/team-Apple)           |
-| team-Configurability | Issues for Configurability team                                       | [Open issues](https://github.com/bazelbuild/bazel/labels/team-Configurability) |
-| team-EngProd         | Issues for EngProd team (also release, distribution)                  | [Open issues](https://github.com/bazelbuild/bazel/labels/team-EngProd)         |
-| team-Execution       | Issues for Execution phase team (local and remote execution, sandbox) | [Open issues](https://github.com/bazelbuild/bazel/labels/team-Execution)       |
-| team-ExternalDeps    | Issues for External Deps team (remote repositories, WORKSPACE file)   | [Open issues](https://github.com/bazelbuild/bazel/labels/team-ExternalDeps)    |
-| team-Performance     | Issues for Performance teams                                          | [Open issues](https://github.com/bazelbuild/bazel/labels/team-Performance)     |
-| team-Product         | Issues for the Product team                                           | [Open issues](https://github.com/bazelbuild/bazel/labels/team-Product)         |
-| team-Rules-CPP       | Issues for C++ rules                                                  | [Open issues](https://github.com/bazelbuild/bazel/labels/team-Rules-CPP)       |
-| team-Rules-Java      | Issues for Java rules                                                 | [Open issues](https://github.com/bazelbuild/bazel/labels/team-Rules-Java)      |
-| team-Rules-Python    | Issues for the native Python rules for Python                         | [Open issues](https://github.com/bazelbuild/bazel/labels/team-Python)          |
-| team-Rules-Server    | Issues for serverside rules included with Bazel                       | [Open issues](https://github.com/bazelbuild/bazel/labels/team-Server)          |
-| team-Starlark        | Issues for Starlark language + Build API                              | [Open issues](https://github.com/bazelbuild/bazel/labels/team-Starlark)        |
-| team-Windows         | Issues for Windows team                                               | [Open issues](https://github.com/bazelbuild/bazel/labels/team-Windows)         |
+* `team-Android`: Issues for Android team ([Open
+  issues](https://github.com/bazelbuild/bazel/labels/team-Android))
+* `team-Apple`: Issues for Apple team (also MacOS, iOS etc) ([Open
+  issues](https://github.com/bazelbuild/bazel/labels/team-Apple))
+* `team-Configurability`: Issues for Configurability team ([Open
+  issues](https://github.com/bazelbuild/bazel/labels/team-Configurability))
+* `team-EngProd`: Issues for EngProd team (also release, distribution) ([Open
+  issues](https://github.com/bazelbuild/bazel/labels/team-EngProd))
+* `team-Execution`: Issues for Execution phase team (local and remote execution,
+  sandbox) ([Open
+  issues](https://github.com/bazelbuild/bazel/labels/team-Execution))
+* `team-ExternalDeps`: Issues for External Deps team (remote repositories,
+  WORKSPACE file) ([Open
+  issues](https://github.com/bazelbuild/bazel/labels/team-ExternalDeps))
+* `team-Performance`: Issues for Performance teams ([Open
+  issues](https://github.com/bazelbuild/bazel/labels/team-Performance))
+* `team-Product`: Issues for the Product team ([Open
+  issues](https://github.com/bazelbuild/bazel/labels/team-Product))
+* `team-Rules-CPP`: Issues for C++ rules ([Open
+  issues](https://github.com/bazelbuild/bazel/labels/team-Rules-CPP))
+* `team-Rules-Java`: Issues for Java rules ([Open
+  issues](https://github.com/bazelbuild/bazel/labels/team-Rules-Java))
+* `team-Rules-Python`: Issues for the native Python rules for Python ([Open
+  issues](https://github.com/bazelbuild/bazel/labels/team-Python))
+* `team-Rules-Server`: Issues for serverside rules included with Bazel ([Open
+  issues](https://github.com/bazelbuild/bazel/labels/team-Server))
+* `team-Starlark`: Issues for Starlark language + Build API ([Open
+  issues](https://github.com/bazelbuild/bazel/labels/team-Starlark))
+* `team-Windows`: Issues for Windows team ([Open
+  issues](https://github.com/bazelbuild/bazel/labels/team-Windows))
 
 For new issues, we deprecated the `category: *` labels in favor of the team labels.
 
-See the full list of labels [here](https://github.com/bazelbuild/bazel/labels). 
+See the full list of labels [here](https://github.com/bazelbuild/bazel/labels).
