@@ -79,10 +79,10 @@ repository.
 1. After reviewing the issue, the DevEx member decides if the issue requires
      immediate attention. If it does, they will assign the **P0** priority label
      and an owner from the list of team leads.
-1. The DevEx member assigns the `untriaged` label and exactly one [team label]()
-   for routing.
+1. The DevEx member assigns the `untriaged` label and exactly one [team
+   label](#team-labels) for routing.
 1. The DevEx member also assigns the `bug` or `feature request` label according
-   to the issue type.
+   to the type of the issue.
    
 At this stage, the issue enters the pool of [untriaged open
 issues](https://github.com/bazelbuild/bazel/issues?q=is%3Aissue+is%3Aopen+label%3Auntriaged).
@@ -98,8 +98,8 @@ When an issue is resolved, it can be closed.
 ## Lifecycle of a Pull Request
 
 1. A user creates a pull request.
-1. A DevEx member assigns one [team label]() and the team's technical lead (TL)
-   for routing.
+1. A DevEx member assigns one [team label](#team-labels) and the team's
+   technical lead (TL) for routing.
    1. The TL may optionally assign someone else to review the PR.
 1. The assigned reviewer reviews the PR and works with the author until it is
    approved or dropped.
