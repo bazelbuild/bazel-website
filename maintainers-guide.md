@@ -6,6 +6,7 @@ title: Guide for Bazel Maintainers
 # Guide for Bazel Maintainers
 
 ## Table of Contents
+{:.no_toc}
 
 * ToC 
 {:toc}
