@@ -1,9 +1,9 @@
 ---
 layout: contribute
-title: Maintainer's Guide
+title: Guide for Bazel Maintainers
 ---
 
-# Maintainer's Guide
+# Guide for Bazel Maintainers
 
 This is a guide for the maintainers of the Bazel open source project.
 
