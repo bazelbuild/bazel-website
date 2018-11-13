@@ -1,7 +1,11 @@
 destination: production
-markdown: redcarpet
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  toc_levels: "2,3"
+highlighter: rouge
+
 paginate: 10
-highlighter: pygments
 sass:
   sass_dir: _sass
 gems: [jekyll-paginate]
