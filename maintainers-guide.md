@@ -6,7 +6,9 @@ title: Guide for Bazel Maintainers
 # Guide for Bazel Maintainers
 
 ## Table of Contents
-* ToC {:toc}
+
+* ToC 
+{:toc}
 
 ## Overview
 
