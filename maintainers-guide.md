@@ -170,7 +170,9 @@ issues.
   candidates) to be unusable, or a downed service that severely impacts
   development of the Bazel project. This includes regressions introduced in a
   new release that blocks a significant number of users, or an incompatible
-  breaking change that was not compliant to the [Breaking Change]() policy.
+  breaking change that was not compliant to the [Breaking
+  Change](https://docs.google.com/document/d/1q5GGRxKrF_mnwtaPKI487P8OdDRh2nN7jX6U-FXnHL0/edit?pli=1#heading=h.ceof6vpkb3ik)
+  policy.
 * **P1** - Critical feature request or bug fix which should be addressed in the
   next release, or a serious issue that impacts many users. Typically does not
   require immediate action. High demand, planned in the roadmap for the current
