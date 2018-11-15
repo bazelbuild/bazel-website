@@ -32,8 +32,7 @@ title: Bazel Configurability Roadmap
 
 # Bazel Configurability 2018 Roadmap
 
-*Last verified: 2018-10-18* ([update history]
-(https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
+*Last verified: 2018-10-18* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
 
 *Point of contact:* [gregestren](https://github.com/gregestren)
 
@@ -150,8 +149,7 @@ toolchains**
 
 
 <div class="etabox">Oct 2018</div>**Starlark supports platform transitions**
-<span class="inprogressstatus">IN PROGRESS</span> ([#5574]
-(http://github.com/bazelbuild/bazel/issues/5574))
+<span class="inprogressstatus">IN PROGRESS</span> ([#5574](http://github.com/bazelbuild/bazel/issues/5574))
 
 * Rule designers can decide which rules target which platforms
 * Rule designers can declare default target platforms
@@ -161,8 +159,7 @@ toolchains**
 
 <div class="etabox">Dec 2018</div>**Starlark supports multi-architecture ("fat")
 binaries**
-<span class="inprogressstatus">IN PROGRESS</span> ([#5575]
-(http://github.com/bazelbuild/bazel/issues/5575))
+<span class="inprogressstatus">IN PROGRESS</span> ([#5575](http://github.com/bazelbuild/bazel/issues/5575))
 
 * Rule designers can write rules that bundle deps configured for multiple
   platforms
@@ -170,8 +167,7 @@ binaries**
 
 <div class="etabox">Jan 2019</div>**Starlark supports user-defined configuration
 settings**
-<span class="inprogressstatus">IN PROGRESS</span> ([#5577]
-(http://github.com/bazelbuild/bazel/issues/5577))
+<span class="inprogressstatus">IN PROGRESS</span> ([#5577](http://github.com/bazelbuild/bazel/issues/5577))
 
 * A standard API defines how to declare custom settings (consolidating [command
   line
@@ -192,8 +188,7 @@ settings**
 
 <div class="etabox">Jan 2019</div>**All native Bazel rules can be implemented
 in Starlark**
-<span class="inprogressstatus">IN PROGRESS</span> ([#5578]
-(http://github.com/bazelbuild/bazel/issues/5578))
+<span class="inprogressstatus">IN PROGRESS</span> ([#5578](http://github.com/bazelbuild/bazel/issues/5578))
 
 ### Correctness and Speed
 
