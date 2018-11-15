@@ -23,8 +23,7 @@ title: Bazel Code Coverage Roadmap
 
 # Bazel Code Coverage Roadmap 2018
 
-*Last verified: 2018-08-08* ([update history]
-(https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/coverage.md))
+*Last verified: 2018-08-08* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/coverage.md))
 
 ## Fast Bazel C++ coverage ([tracking issue](https://github.com/bazelbuild/bazel/issues/5882)) (P0)
 

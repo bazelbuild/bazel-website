@@ -23,8 +23,7 @@ title: Bazel C++ Rules Roadmap
 
 # Bazel C++ Rules Roadmap
 
-*Last verified: 2018-08-08* ([update history]
-(https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/cpp.md))
+*Last verified: 2018-08-08* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/cpp.md))
 
 ## Skylark API for the C++ toolchain (2018/Q3)
 
