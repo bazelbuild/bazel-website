@@ -23,8 +23,7 @@ title: Bazel Platforms Roadmap
 
 # Bazel Platforms Roadmap
 
-*Last verified: 2018-10-19* ([update history]
-(https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/platforms.md))
+*Last verified: 2018-10-19* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/platforms.md))
 
 *Point of contact:* [katre](https://github.com/katre)
 
