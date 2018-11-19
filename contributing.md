@@ -116,8 +116,14 @@ with the following:
 
 ```
 build:debug -c dbg
+```
+```
 build:debug --javacopt="-g"
+```
+```
 build:debug --copt="-g"
+```
+```
 build:debug --strip="never"
 ```
 
