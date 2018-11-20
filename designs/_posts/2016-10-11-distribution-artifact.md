@@ -105,7 +105,7 @@ variable points to a good `protoc` binary.
 So, there will be three ways to build `bazel`.
 
 - If one has an old `bazel` binary already, a new one can be built from a
-  checkout of the source repository. This approach is useful for developpers.
+  checkout of the source repository. This approach is useful for developers.
   It might also be used by users who want to upgrade their old `bazel` binary
   to the next release.
 
@@ -117,7 +117,7 @@ So, there will be three ways to build `bazel`.
 - If one already has the correct version of `protoc` on the machine, the
   `compile.sh` script can be used by setting the `PROTOC` environment variable.
   This approach is useful for distributions that want to provide snapshots
-  of `bazel` inbetween official releases and maintain a `protoc` package anyway.
+  of `bazel` between official releases and maintain a `protoc` package anyway.
 
 ## Other approaches considered
 
@@ -139,5 +139,5 @@ introduce another consistency requirement to the repository. In this case, the
 requirement would be that the generated files be up-to-date with respect to the
 respective `.proto` files. Of course, such a consistency could be verified by
 an appropriate test. Nevertheless, it seems the cleaner and probably more
-managable to only version true source files and generate derived files from
+manageable to only version true source files and generate derived files from
 the respective sources.

@@ -104,7 +104,7 @@ release candidate, and report any regressions.
 
 Version 0.1 is our first release marking the start of our beta phase. Until version 1.0.0, we
 increase the MINOR version every time we do a new full release. We increase the PATCH version
-when a regression is found on a release that necessite a new release.
+when a regression is found on a release that necessitates a new release.
 
 Version 1.0.0 marks the end of our beta phase; afterwards, we will label each release with a
 version number of the form MAJOR.MINOR.PATCH according to the

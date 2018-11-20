@@ -41,14 +41,14 @@ message OptionsParsed {
 
 Startup options, the options that go before the command, are listed in two ways:
 
-*  `startup_options` : The effective options, both those mentioned explicitely 
-   and implicitely (say, in a bazelrc)
+*  `startup_options` : The effective options, both those mentioned explicitly 
+   and implicitly (say, in a bazelrc)
 *  `explicit_startup_options` : The explicit options, only those mentioned 
-   explicitely on the command line.
+   explicitly on the command line.
 
 Command options are also listed in two ways:
 
-*  `cmd_line` : The effective options. These include those listed explicitely 
+*  `cmd_line` : The effective options. These include those listed explicitly 
    in the command line, but also have expansion flags expanded, those mentioned
    in bazelrc's, and any alterations from the invocation policy.
 *  `explicit_cmd_line` : The explicit options listed on the command line.
@@ -126,7 +126,7 @@ command lines that should be trivially accessible from the BEP output.
 
 ### More command lines
 <!-- `1.` numbered list form with sublists with bullets is not working as 
-  intented, numbering them weirdly to keep the referenceability -->
+  intended, numbering them weirdly to keep the referenceability -->
 * (1) Tool command line (not Bazel)
 
    *  the command line to the non-Bazel tool that triggered this whole thing. 
@@ -245,7 +245,7 @@ For each command line described above, it needs a structure. This proposed
 structure aims to logically group the different parts of the command line, 
 while still being general enough to absorb future changes. This also has the 
 advantage of being flexible enough to be used for passing the "tool" command 
-line, which is not necessarilly structured in the same way as a Bazel command 
+line, which is not necessarily structured in the same way as a Bazel command 
 line.
 
 Diagram provided for convenience:
