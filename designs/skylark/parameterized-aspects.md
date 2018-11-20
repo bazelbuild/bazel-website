@@ -198,7 +198,7 @@ In this proposal, aspect parameters are just aspect’s *explicit*
 attributes. We restrict the parameter space by requiring all aspect
 explicit attributes to have `values` declaration.
 
-Here is how the pervious example will look like in this proposal:
+Here is how the previous example will look like in this proposal:
 
 ```python
 SUPPORTED_API_VERSIONS = ["1","2","3"]

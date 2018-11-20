@@ -66,7 +66,7 @@ def _bread_library_impl(ctx):
                 deps = java_deps,
                 ...)
     # java_p is a lang.java.provider representing the result of compilation
-    # action we return that provider and immediately java_libary rule can depend
+    # action we return that provider and immediately java_library rule can depend
     # on us
     return [java_p, ...]
 

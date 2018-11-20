@@ -130,7 +130,7 @@ items:
 - The list of `FileValue`-s requested by
   [`getPathFromLabel`](https://github.com/bazelbuild/bazel/blob/master/src/main/java/com/google/devtools/build/lib/bazel/repository/skylark/SkylarkRepositoryContext.java#L613)
   and the corresponding file content digest.
-- The transtive hash of the `Extension` definining the repository rule.
+- The transtive hash of the `Extension` defining the repository rule.
   This transitive hash is computed from the hash of the current extension
   and the extension loaded from it. This means that a repository function
   will get invalidated as soon as the extension file content changes, which

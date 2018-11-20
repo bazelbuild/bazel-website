@@ -24,7 +24,7 @@ Our goal is to make Bazel fast, reliable, and easily usable on Windows.
 
 #### Increase test coverage
 
-*   Document runfiles libraries in Build Enclycopedia at `*_binary.data`.
+*   Document runfiles libraries in Build Encyclopedia at `*_binary.data`.
 *   Roll out Bash runfiles support to `//src/test/shell/...`
     ([#4292](https://github.com/bazelbuild/bazel/issues/4292)).
 *   Run 90% of `//src/...` on Windows.
@@ -43,7 +43,7 @@ Our goal is to make Bazel fast, reliable, and easily usable on Windows.
     when creating `py_binary` stub.
 *   Create example project on GitHub showing how to write a custom shell
     toolchain for local and remote builds, and how to override the default
-    toolchain. Link to this project from the Build Encyclopdia or the User
+    toolchain. Link to this project from the Build Encyclopedia or the User
     Manual, and announce it on the Blog.
 *   Break
     [`RunCommand`](https://github.com/bazelbuild/bazel/blob/cc0f41dccc55bb1380b10cc65281632676192a8d/src/main/java/com/google/devtools/build/lib/runtime/commands/RunCommand.java#L455)'s

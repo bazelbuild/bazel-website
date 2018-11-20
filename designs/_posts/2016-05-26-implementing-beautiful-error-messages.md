@@ -103,7 +103,7 @@ exception type could report typos in rule names.
 public class IdentifierEvalException extends ContextualEvalException {
  public static final Map<String, String> TYPOS = Map.of(
     "cclibrary", "cc_library",
-    ect...
+    etc...
   )
   public IdentifierEvalException(Identifier identifier, Location loc) {...}
   @Override

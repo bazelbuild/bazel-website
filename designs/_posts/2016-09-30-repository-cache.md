@@ -86,7 +86,7 @@ copy back to `$output_base/external`.
 
 ## Cache structure
 - `repository_cache`: `$HOME/.cache/bazel/repository_cache`
-- `content_adressable_cache`: `${repository_cache}/content_addressable`
+- `content_addressable_cache`: `${repository_cache}/content_addressable`
 - `cache_entry`: `${content_addressable_cache}/sha{1, 256}/file`
 - Cache keys: SHA checksum of ${cache_entry}, for example the tar.gz of
 a http_archive.
