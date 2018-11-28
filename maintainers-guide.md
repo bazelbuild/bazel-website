@@ -160,17 +160,19 @@ issues.
   development of the Bazel project. This includes regressions introduced in a
   new release that blocks a significant number of users, or an incompatible
   breaking change that was not compliant to the [Breaking
-  Change](https://docs.google.com/document/d/1q5GGRxKrF_mnwtaPKI487P8OdDRh2nN7jX6U-FXnHL0/edit?pli=1#heading=h.ceof6vpkb3ik)
+  Change](https://docs.google.com/document/d/1q5GGRxKrF_mnwtaPKI487P8OdDRh2nN7jX6U-FXnHL0/edit?pli=1#heading=h.ceof6vpkb3ik). No practical workaround exists.
   policy.
-* **P1** - Critical feature request or bug fix which should be addressed in the
-  next release, or a serious issue that impacts many users. Typically does not
-  require immediate action. High demand, planned in the roadmap for the current
-  quarter.
-* **P2** - Important feature or defect that is tied to roadmaps or upcoming
-  releases. Moderate live issue in a released Bazel version that is inconvenient
-  for a user that needs to be addressed in a upcoming release.
-* **P3** - Desirable enhancement or minor bug fix that will benefit a user. Not
-  prioritized into Bazel roadmaps or any imminent release.
+* **P1** - Critical defect or feature which should be addressed in the next
+  release, or a serious issue that impacts many users (including the development
+  of the Bazel project), but a practical workaround exists. Typically does not
+  require immediate action. In high demand and planned in the current quarter's
+  roadmap.
+* **P2** - Defect or feature that is tied to roadmaps or upcoming releases.
+  Moderate live issue in a released Bazel version that is inconvenient for a
+  user that needs to be addressed in a upcoming release and/or a easy workaround
+  exists.
+* **P3** - Desirable minor bug fix or enhancement with small impact. Not
+  prioritized into Bazel roadmaps or any imminent release. May never be fixed.
 * **P4** - Low priority defect or feature request that is unlikely to get
   closed. Can also be kept open for a potential re-prioritization if more users
   are impacted.
