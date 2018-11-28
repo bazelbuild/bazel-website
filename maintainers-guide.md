@@ -191,7 +191,7 @@ issues.
 * `team-ExternalDeps`: Issues for External Deps team (remote repositories,
   WORKSPACE file) ([Open
   issues](https://github.com/bazelbuild/bazel/labels/team-ExternalDeps))
-* `team-Performance`: Issues for Performance teams ([Open
+* `team-Performance`: Issues for Bazel Performance team ([Open
   issues](https://github.com/bazelbuild/bazel/labels/team-Performance))
 * `team-Product`: Issues for the Product team ([Open
   issues](https://github.com/bazelbuild/bazel/labels/team-Product))
