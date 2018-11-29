@@ -38,8 +38,8 @@ manage aspects of the open source project. These are:
 
 ## Releases
 
-Read the Release Process team's [release
-playbook](https://github.com/bazelbuild/continuous-integration/blob/master/docs/release-playbook.md).
+* [Release Playbook](https://github.com/bazelbuild/continuous-integration/blob/master/docs/release-playbook.md)
+* [Testing local changes with downstream projects](https://github.com/bazelbuild/continuous-integration/blob/master/docs/downstream-testing.md)
 
 ## Continuous Integration
 
