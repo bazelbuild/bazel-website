@@ -16,7 +16,8 @@ stylistic, refactoring, or "cleanup" changes).
 Please check with us on the
 [dev list](https://groups.google.com/forum/#!forum/bazel-dev) before investing
 a lot of time in a patch. Meet other Bazel contributors on [IRC](http://webchat.freenode.net)
-(irc.freenode.net#bazel).
+(irc.freenode.net#bazel) or [Slack](https://bazelbuild.slack.com) (get an
+[invite here](https://bazel-slackin.herokuapp.com)).
 
 ### Patch Acceptance Process
 
