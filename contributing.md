@@ -13,11 +13,11 @@ machine to develop Bazel and, when you've made a patch, how to submit it.</p>
 In general, we prefer contributions that fix bugs or add features (as opposed to
 stylistic, refactoring, or "cleanup" changes).
 
-Please check with us on the
-[dev list](https://groups.google.com/forum/#!forum/bazel-dev) before investing
-a lot of time in a patch. Meet other Bazel contributors on [IRC](http://webchat.freenode.net)
-(irc.freenode.net#bazel) or [Slack](https://bazelbuild.slack.com) (get an
-[invite here](https://bazel-slackin.herokuapp.com)).
+Please check with us on the [dev
+list](https://groups.google.com/forum/#!forum/bazel-dev) before investing a lot
+of time in a patch. Meet Bazel maintainers and other contributors on
+[Slack](https://bazelbuild.slack.com) (get an [invite
+here](https://join.slack.com/t/bazelbuild/shared_invite/enqtndyyodaxndy4mjqxlwu1otbjowjjota1mme5yjiwmtm5mjfhzgmwm2yzytezytdhngizmtfizji1ntlhytkzngq5mjbkyze5yjmymte)).
 
 ### Patch Acceptance Process
 
