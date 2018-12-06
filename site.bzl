@@ -16,33 +16,32 @@ _REDIRECTS_FILETYPE = [".redirects"]
 _TAR_FILETYPE = [".tar"]
 
 def _gen_redirects_impl(ctx):
-  redirect_str = ""
-  redirects_map = ctx.attr.redirects
-  for path in redirects_map:
-    redirect_str += "%s\t%s\n" % (path, redirects_map[path])
-  ctx.file_action(output=ctx.outputs.redirects, content=redirect_str)
+    redirect_str = ""
+    redirects_map = ctx.attr.redirects
+    for path in redirects_map:
+        redirect_str += "%s\t%s\n" % (path, redirects_map[path])
+    ctx.actions.write(output = ctx.outputs.redirects, content = redirect_str)
 
 def _site_tar_impl(ctx):
-  ctx.action(
-      inputs = [ctx.file.src] + (
-          [ctx.file.redirects_file] if ctx.file.redirects_file else []),
-      executable = ctx.executable.jekyll_tree,
-      arguments = [
-              ctx.outputs.out.path,
-              ctx.file.src.path
-          ] + ([ctx.file.redirects_file.path]
-               if ctx.file.redirects_file
-               else []),
-      outputs = [ctx.outputs.out],
-      mnemonic = "SiteTar",
-      use_default_shell_env = True,
-      progress_message = "Generating site tarball.")
-
+    ctx.actions.run(
+        inputs = [ctx.file.src] + (
+            [ctx.file.redirects_file] if ctx.file.redirects_file else []
+        ),
+        executable = ctx.executable.jekyll_tree,
+        arguments = [
+            ctx.outputs.out.path,
+            ctx.file.src.path,
+        ] + ([ctx.file.redirects_file.path] if ctx.file.redirects_file else []),
+        outputs = [ctx.outputs.out],
+        mnemonic = "SiteTar",
+        use_default_shell_env = True,
+        progress_message = "Generating site tarball.",
+    )
 
 _gen_redirects = rule(
     implementation = _gen_redirects_impl,
     attrs = {
-        "redirects": attr.string_dict(mandatory=True, allow_empty=False),
+        "redirects": attr.string_dict(mandatory = True, allow_empty = False),
     },
     outputs = {
         "redirects": "%{name}.redirects",
@@ -65,14 +64,18 @@ Outputs:
 _site_tar = rule(
     implementation = _site_tar_impl,
     attrs = {
-        "src": attr.label(mandatory=True,
-                          allow_files=_TAR_FILETYPE,
-                          single_file=True),
-        "redirects_file": attr.label(allow_files=_REDIRECTS_FILETYPE,
-                                     single_file=True),
-        "jekyll_tree": attr.label(default=Label("//:build-jekyll-tree"),
-                                  cfg="host",
-                                  executable=True),
+        "src": attr.label(
+            mandatory = True,
+            allow_single_file = _TAR_FILETYPE,
+        ),
+        "redirects_file": attr.label(
+            allow_single_file = _REDIRECTS_FILETYPE,
+        ),
+        "jekyll_tree": attr.label(
+            default = Label("//:build-jekyll-tree"),
+            cfg = "host",
+            executable = True,
+        ),
     },
     outputs = {
         "out": "%{name}.tar",
@@ -89,21 +92,21 @@ Outputs:
   out: Tar archive containing the Jekyll tree with the generated redirect pages.
 """
 
-def site_tar(name, src, redirects={}):
-  """Modifies the Jekyll tree, generating the specified redirect pages.
+def site_tar(name, src, redirects = {}):
+    """Modifies the Jekyll tree, generating the specified redirect pages.
 
-  Args:
-    name: A unique name for this rule.
-    src: The label of the Jekyll tree archive.
-    redirects: Dict mapping page path to redirect URL.
-  """
-  _gen_redirects(
-      name = "%s_redirects" % name,
-      redirects = redirects,
-  )
+    Args:
+      name: A unique name for this rule.
+      src: The label of the Jekyll tree archive.
+      redirects: Dict mapping page path to redirect URL.
+    """
+    _gen_redirects(
+        name = "%s_redirects" % name,
+        redirects = redirects,
+    )
 
-  _site_tar(
-      name = name,
-      src = src,
-      redirects_file = "%s_redirects" % name,
-  )
+    _site_tar(
+        name = name,
+        src = src,
+        redirects_file = "%s_redirects" % name,
+    )
