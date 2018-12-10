@@ -124,7 +124,7 @@ Routed issues **must have**:
 1. a `team` label, e.g. `team-Starlark`
 2. either the `untriaged` label OR one priority label (`p0`, `p1`, `p2`, `p3`, `p4`), but not both.
 
-The exception to this are issues for tracking releases and incompatible changes.
+The exceptions to this are issues for tracking releases and incompatible changes.
 
 See the list of issues to be routed
 [here](https://github.com/bazelbuild/bazel/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+-label%3Ap1+-label%3Ap2+-label%3Ap3+-label%3Ap4+-label%3Auntriaged+-label%3Ap0+-label%3Arelease+-label%3Aincompatible-change).
