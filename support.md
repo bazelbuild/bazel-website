@@ -9,8 +9,10 @@ title: Get Support
 `bazel` tag.
 * Discuss on the [User mailing list](https://groups.google.com/forum/#!forum/bazel-discuss).
 * Report bugs or feature requests in our [GitHub issue tracker](https://github.com/bazelbuild/bazel/issues).
-* Find other Bazel contributors on [IRC](http://webchat.freenode.net)
-(irc.freenode.net#bazel).
+* Find other Bazel contributors on [Slack](https://bazelbuild.slack.com) (get an [invite
+here](https://join.slack.com/t/bazelbuild/shared_invite/enqtndyyodaxndy4mjqxlwu1otbjowjjota1mme5yjiwmtm5mjfhzgmwm2yzytezytdhngizmtfizji1ntlhytkzngq5mjbkyze5yjmymte)).
+* You might also find some team members on the [IRC
+channel](http://webchat.freenode.net) (irc.freenode.net#bazel).
 
 # Support Policy
 
