@@ -122,7 +122,7 @@ and PRs on weekly rotation basis. The subteam can be reached on GitHub using the
 Routed issues **must have**:
 
 1. a `team` label, e.g. `team-Starlark`
-2. an `untriaged` label OR a `priority` label.
+2. either the `untriaged` label OR one priority label (`p0`, `p1`, `p2`, `p3`, `p4`), but not both.
 
 The exception to this are issues for tracking releases and incompatible changes.
 
