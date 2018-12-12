@@ -39,9 +39,8 @@ here](https://join.slack.com/t/bazelbuild/shared_invite/enqtndyyodaxndy4mjqxlwu1
    a reviewer within that time frame, you can ask for one by sending a mail to
    [bazel-dev@googlegroups.com](mailto:bazel-dev@googlegroups.com).
 1. Work with the reviewer to complete a code review. For each change, create a
-   new commit and push it to make changes to your pull request.
-1. If the review takes too long (e.g. reviewer is unresponsive), please also
-   send an email to
+   new commit and push it to make changes to your pull request. If the review
+   takes too long (e.g. reviewer is unresponsive), please also send an email to
    [bazel-dev@googlegroups.com](mailto:bazel-dev@googlegroups.com).
 1. A Bazel maintainer at Google will apply the patch to our internal version
    control system. The patch is exported as a Git commit, at which point the
