@@ -21,23 +21,30 @@ here](https://join.slack.com/t/bazelbuild/shared_invite/enqtndyyodaxndy4mjqxlwu1
 
 ### Patch Acceptance Process
 
-
 1. Read the [Bazel governance plan](governance.html).
-2. Discuss your plan and design, and get agreement on our [mailing list](https://groups.google.com/forum/#!forum/bazel-dev).
-3.  Prepare a git commit that implements the feature. Don't forget to add tests.
-4.  Ensure you've signed a [Contributor License Agreement](https://cla.developers.google.com).
-5.  Send us a pull request on GitHub. If you're new to GitHub, read [about pull requests](https://help.github.com/articles/about-pull-requests/).
-6.  Wait for a Bazel team member to assign you a reviewer.
-    It should be done in 2 business days (excluding holidays in the USA and
-    Germany). If you do not get a reviewer within that time frame, you can ask
-    for one by sending a mail to [bazel-sheriff@googlegroups.com](mailto:bazel-sheriff@googlegroups.com).
-    You can also assign yourself a reviewer if you know who the reviewer should
-    be (e.g., because they reviewed an earlier related change).
-7.  Complete a code review. Amend your existing commit and re-push to make
-    changes to your patch.
-8.  An engineer at Google applies the patch to our internal version control
-    system. The patch is exported as a Git commit, at which point the GitHub
-    pull request is closed.
+2. Discuss your plan and design, and get agreement on our [mailing
+   list](https://groups.google.com/forum/#!forum/bazel-dev).
+3. Prepare a git commit that implements the feature. Don't forget to add tests.
+4. Ensure you've signed a [Contributor License
+   Agreement](https://cla.developers.google.com).
+5. Send us a pull request on
+   [GitHub](https://github.com/bazelbuild/bazel/pulls). If you're new to GitHub,
+   read [about pull
+   requests](https://help.github.com/articles/about-pull-requests/). Note that
+   we restrict permissions to create branchs on the main Bazel repository, so
+   you will need to push your commit to [your own fork of the
+   repository](https://help.github.com/articles/working-with-forks/).
+6. Wait for a Bazel team member to assign you a reviewer. It should be done in 2
+   business days (excluding holidays in the USA and Germany). If you do not get
+   a reviewer within that time frame, you can ask for one by sending a mail to
+   [bazel-dev@googlegroups.com](mailto:bazel-dev@googlegroups.com). You can also
+   assign yourself a reviewer if you know who the reviewer should be (e.g.,
+   because they reviewed an earlier related change).
+7. Complete a code review. For each change, create a new commit and push it to
+   make changes to your pull request.
+8. A Bazel maintainer at Google applies the patch to our internal version
+   control system. The patch is exported as a Git commit, at which point the
+   GitHub pull request is closed.
 
 ## Setting up your coding environment
 
