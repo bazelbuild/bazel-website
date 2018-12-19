@@ -152,16 +152,15 @@ Bazel is organized in several parts:
    *  Core code which is mostly composed of [SkyFrame](designs/skyframe.html) and some
      utilities.
    *  Rules written in Bazel's extension language
-     [Skylark](docs/skylark/index.html) are defined in `tools/build_rules`. If
-     you want to add rules, consider using [Skylark](docs/skylark/index.html)
-     first.
+     [Starlark](docs/skylark/index.html) are defined in `tools/build_rules`. If
+     you want to add rules, use [Starlark](docs/skylark/index.html).
    *  Builtin rules in `com.google.devtools.build.lib.rules` and in
      `com.google.devtools.build.lib.bazel.rules`. You might want to read about
      the [Challenges of Writing Rules](docs/rule-challenges.html) first.
 *  Java native interfaces in `src/main/native`.
 *  Various tooling for language support (see the list in the
    [compiling Bazel](#compile-bazel) section).
-   
+
 ## Searching Bazel's source code
 
 To quickly search through Bazel's source code, use [Bazel Code Search](https://source.bazel.build/). You can navigate Bazel's repositories, branches, and files. You can also view history, diffs, and blame information. To learn more, see the

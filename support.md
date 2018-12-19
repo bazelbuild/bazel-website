@@ -11,8 +11,6 @@ title: Get Support
 * Report bugs or feature requests in our [GitHub issue tracker](https://github.com/bazelbuild/bazel/issues).
 * Find other Bazel contributors on [Slack](https://bazelbuild.slack.com) (get an [invite
 here](https://join.slack.com/t/bazelbuild/shared_invite/enqtndyyodaxndy4mjqxlwu1otbjowjjota1mme5yjiwmtm5mjfhzgmwm2yzytezytdhngizmtfizji1ntlhytkzngq5mjbkyze5yjmymte)).
-* You might also find some team members on the [IRC
-channel](http://webchat.freenode.net) (irc.freenode.net#bazel).
 
 # Support Policy
 
@@ -40,10 +38,6 @@ details, just ask on [bazel-discuss](https://groups.google.com/forum/#!forum/baz
 All undocumented features (attributes, rules, "Make" variables, and flags) are subject to change
 at any time without prior notice. Features that are documented but marked *experimental* are also
 subject to change at any time without prior notice.
-
-Bazel's extension language Skylark (anything you write in a `.bzl` file) is still subject to change.
-We are in the process of migrating Google to Skylark, and expect the language part to extend macros
-to stabilize as part of that process. Adding rules with skylark is still somewhat experimental.
 
 Help keep us honest: report bugs and regressions in the
 [GitHub bugtracker](https://github.com/bazelbuild/bazel/issues). We will make an effort to triage all
@@ -114,13 +108,14 @@ version number of the form MAJOR.MINOR.PATCH according to the
 
 ## Current Status
 
-### Built-In Rules and the Internal API For Rules ###
+### Built-In Rules and the Internal API For Rules
+
 We are planning a number of changes to the APIs between the core of Bazel and the built-in rules,
 in order to make it easier for us to develop openly. This has the added benefit of also making it
-easier for users to maintain their own rules (if written in Java instead of Skylark), if they don't
+easier for users to maintain their own rules (if written in Java instead of Starlark), if they don't
 want to or cannot check this code into our repository. However, it also means our internal API is
-not stable yet. In the long term, we want to move to Skylark wholesale, so we encourage contributors
-to use Skylark instead of Java when writing new rules. Rewriting all of our built-in rules is going
+not stable yet. In the long term, we want to move to Starlark wholesale, so we ask contributors
+to use Starlark instead of Java when writing new rules. Rewriting all of our built-in rules is going
 to be a lengthy process however.
 
 1. We will fix the friction points that we know about, as well as those that we discover every time
@@ -141,8 +136,6 @@ to be a lengthy process however.
 7. We will move more of our rule implementations into the open source repository (Android, Go,
    Python, the remaining C++ rules), even if we don't consider the code to be *ready* or if they are
    still missing tools to work properly.
-8. In order to be able to accept external contributions, our highest priority item for Skylark is a
-   testing framework. We encourage to write new rules in Skylark rather than in Java.
 
 
 ### Stable

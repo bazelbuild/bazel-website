@@ -6,7 +6,7 @@ title: Starlark roadmap
 # Starlark Roadmap
 
 *Last verified: 2018-07-18*
-([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/skylark.md))
+([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/starlark.md))
 
 *Point of contact:* [laurentlb](https://github.com/laurentlb)
 
