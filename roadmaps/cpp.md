@@ -25,12 +25,12 @@ title: Bazel C++ Rules Roadmap
 
 *Last verified: 2018-08-08* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/cpp.md))
 
-## Skylark API for the C++ toolchain (2018/Q3)
+## Starlark API for the C++ toolchain (2018/Q3)
 
 Status: <span class="donestatus">DONE</span>
 
 Objective: It's possible to obtain the exact command line as C++ actions would
-use from Skylark ([tracking
+use from Starlark ([tracking
 issue](https://github.com/bazelbuild/bazel/issues/4571), [design
 doc](https://docs.google.com/document/d/1g91BWJITcYw_X-VxsDC0VgUn5E9g0kRBGoBSpoO41gA/edit), owner:
 [mhlopko](https://github.com/mhlopko)).
@@ -48,8 +48,8 @@ owner: [mhlopko](https://github.com/mhlopko)).
 
 Status: <span class="inprogressstatus">IN PROGRESS</span>
 
-Objective: It's possible to write a custom skylark rule that can depend on C++
-rules, and C++ rules can depend on skylark (C++ sandwich)
+Objective: It's possible to write a custom Starlark rule that can depend on C++
+rules, and C++ rules can depend on Starlark (C++ sandwich)
 ([tracking issue](https://github.com/bazelbuild/bazel/issues/4570),
 owner: [oquenchil](https://github.com/oquenchil)).
 
@@ -61,11 +61,11 @@ Status: <span class="inprogressstatus">IN PROGRESS</span>
 Objective: Features are the only way of defining crosstool flags
 (owner: [mhlopko](https://github.com/mhlopko)).
 
-## Crosstool in Skylark (2018/Q3)
+## Crosstool in Starlark (2018/Q3)
 
 Status: <span class="inprogressstatus">IN PROGRESS</span>
 
-Objective: Crosstool can be written in Skylark 
+Objective: Crosstool can be written in Starlark 
 ([design doc](https://docs.google.com/document/d/1Nqf16jqDGWSrPp4VuRxh0iNnVBoAXsO0meDH69J9xoc/edit#heading=h.r30au8wdo4dh),
 [tracking issue](https://github.com/bazelbuild/bazel/issues/5380),
 owner: [scentini](https://github.com/scentini)).
