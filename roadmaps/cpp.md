@@ -23,28 +23,9 @@ title: Bazel C++ Rules Roadmap
 
 # Bazel C++ Rules Roadmap
 
-*Last verified: 2018-08-08* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/cpp.md))
+*Last verified: 2018-12-21* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/cpp.md))
 
-## Starlark API for the C++ toolchain (2018/Q3)
-
-Status: <span class="donestatus">DONE</span>
-
-Objective: It's possible to obtain the exact command line as C++ actions would
-use from Starlark ([tracking
-issue](https://github.com/bazelbuild/bazel/issues/4571), [design
-doc](https://docs.google.com/document/d/1g91BWJITcYw_X-VxsDC0VgUn5E9g0kRBGoBSpoO41gA/edit), owner:
-[mhlopko](https://github.com/mhlopko)).
-
-## Simplifying Linking Modes (2018/Q3)
-
-Status: <span class="inprogressstatus">IN PROGRESS</span>
-
-Objective: Crosstool definition for linking modes is based on features; it is
-possible to control linking of system libraries ([design
-doc](https://docs.google.com/document/d/1w3nYuuzAeWSmv5UiPrxNE5sHJfsw1t2ywJp1v6HEndg/edit),
-owner: [mhlopko](https://github.com/mhlopko)).
-
-## C++ Sandwich (2018/Q3)
+## C++ Sandwich (2019/Q1)
 
 Status: <span class="inprogressstatus">IN PROGRESS</span>
 
@@ -53,15 +34,19 @@ rules, and C++ rules can depend on Starlark (C++ sandwich)
 ([tracking issue](https://github.com/bazelbuild/bazel/issues/4570),
 owner: [oquenchil](https://github.com/oquenchil)).
 
+2018/Q4 status: C++ providers are stable and exposed without experimental flag in Bazel 0.22. `cc_common.compile` and `cc_common.link` are guarded behind experimental flag and expected to reach stable in Bazel 0.23.
 
-## Migrate Crosstools to Features (2018/Q3)
+## Migrate Crosstools to Features (2019/Q1)
 
 Status: <span class="inprogressstatus">IN PROGRESS</span>
 
 Objective: Features are the only way of defining crosstool flags
-(owner: [mhlopko](https://github.com/mhlopko)).
+(owner: [hlopko](https://github.com/hlopko),
+[tracking issue](https://github.com/bazelbuild/bazel/issues/5883),
+[rollout doc](https://docs.google.com/document/d/1uv4c1zag6KvdI31qdx8C6jiTognXPQrxgsUpVefm9fM/edit#heading=h.5mcn15i0e1ch),
+[incompatible flag](https://github.com/bazelbuild/bazel/issues/6861)).
 
-## Crosstool in Starlark (2018/Q3)
+## Crosstool in Starlark (2019/Q1)
 
 Status: <span class="inprogressstatus">IN PROGRESS</span>
 
@@ -70,29 +55,40 @@ Objective: Crosstool can be written in Starlark
 [tracking issue](https://github.com/bazelbuild/bazel/issues/5380),
 owner: [scentini](https://github.com/scentini)).
 
-## C++ rules use platforms (2018/Q4)
+## C++ rules use platforms (2019/Q1)
 
 Status: <span class="notstartedstatus">NOT STARTED</span>
 
 Objective: C++ toolchain is selected using
 [platforms](https://docs.bazel.build/versions/master/platforms.html).
 
-## Removing hardcoded linux/gcc/libstdc++ assumptions (2018/Q4)
+## System-installed libraries (2019/Q1)
+
+Status: <span class="notstartedstatus">NOT STARTED</span>
+
+Objective: C++ rules are able to depend on a system library using cc_import (possibly build it from source if absent) in a way that works with remote cache/execution and multiple platforms.
+
+## Removing hardcoded linux/gcc/libstdc++ assumptions (2019/Q2)
 
 Status: <span class="notstartedstatus">NOT STARTED</span>
 
 Objective: Bazel doesn't assume linux/gcc anywhere (including include directories).
 
-## Transitive Libraries (2019/Q1)
+## Simplifying Linking Modes (2019/Q2)
+
+Status: <span class="inprogressstatus">IN PROGRESS</span>
+
+Objective: Crosstool definition for linking modes is based on features; it is
+possible to control linking of system libraries ([design
+doc](https://docs.google.com/document/d/1w3nYuuzAeWSmv5UiPrxNE5sHJfsw1t2ywJp1v6HEndg/edit),
+owner: [hlopko](https://github.com/hlopko)).
+
+2018/Q4 status: Toolchain libraries are the last piece that is missing.
+
+## Transitive Libraries (2019/Q2)
 
 Status: <span class="notstartedstatus">NOT STARTED</span>
 
 Objective: It's possible to build a static or a shared library with full control
 over which dependencies are linked statically and which dynamically ([design
 doc](https://docs.google.com/document/d/1d4SPgVX-OTCiEK_l24DNWiFlT14XS5ZxD7XhttFbvrI/edit?usp=sharing)).
-
-## System-installed libraries (2019/Q1)
-
-Status: <span class="notstartedstatus">NOT STARTED</span>
-
-Objective: C++ rules are able to depend on a system library using cc_import (possibly build it from source if absent) in a way that works with remote cache/execution and multiple platforms.
