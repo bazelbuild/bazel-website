@@ -189,52 +189,37 @@ issues.
 
 ## Team labels
 
-* `team-Android`: Issues for Android team
-  * [Open issues](https://github.com/bazelbuild/bazel/labels/team-Android)
-  * Contact: [ahumesky](https://github.com/ahumesky)
-* `team-Apple`: Issues for Apple team (also MacOS, iOS etc)
-  * [Open issues](https://github.com/bazelbuild/bazel/labels/team-Apple)
-  * Contact: [aragos](https://github.com/aragos)
-* `team-Configurability`: Issues for Configurability team
-  * [Open issues](https://github.com/bazelbuild/bazel/labels/team-Configurability)
-  * Contact: [gregestren](https://github.com/gregestren)
-* `team-EngProd`: Issues for EngProd team (CI, release, distribution)
-  * [Open issues](https://github.com/bazelbuild/bazel/labels/team-Engprod)
-  * Contact: [philwo](https://github.com/philwo)
-* `team-ExternalDeps`: Issues for External Deps team (remote repositories,
-  WORKSPACE file)
-  * [Open issues](https://github.com/bazelbuild/bazel/labels/team-ExternalDeps)
-  * Contact: [dslomov](https://github.com/dslomov)
-* `team-Local`: Issues for Execution (Local) team
-  * [Open issues](https://github.com/bazelbuild/bazel/labels/team-Local)
-  * Contact: [jmmv](https://github.com/jmmv)
-* `team-Remote`: Issues for Execution (Remote) team
-  * [Open issues](https://github.com/bazelbuild/bazel/labels/team-Remote)
-  * Contact: [buchgr](https://github.com/buchgr)
-* `team-Performance`: Issues for Bazel Performance team
-  * [Open issues](https://github.com/bazelbuild/bazel/labels/team-Performance)
-  * Contact: [meisterT](https://github.com/meisterT)
-* `team-Product`: Issues for the Product team
-  * [Open issues](https://github.com/bazelbuild/bazel/labels/team-Product)
-  * Contact: [aiuto](https://github.com/aiuto)
-* `team-Rules-CPP`: Issues for C++ rules
-  * [Open issues](https://github.com/bazelbuild/bazel/labels/team-Rules-CPP)
-  * Contact: [hlopko](https://github.com/hlopko)
-* `team-Rules-Java`: Issues for Java rules
-  * [Open issues](https://github.com/bazelbuild/bazel/labels/team-Rules-Java)
-  * Contact: [lberki](https://github.com/lberki)
-* `team-Rules-Python`: Issues for the native Python rules
-  * [Open issues](https://github.com/bazelbuild/bazel/labels/team-Rules-Python)
-  * Contact: [brandjon](https://github.com/brandjon)
-* `team-Rules-Server`: Issues for serverside rules included with Bazel
-  * [Open issues](https://github.com/bazelbuild/bazel/labels/team-Rules-Server)
-  * Contact: [lberki](https://github.com/lberki)
-* `team-Starlark`: Issues for Starlark language + Build API
-  * [Open issues](https://github.com/bazelbuild/bazel/labels/team-Starlark)
-  * Contact: [laurentlb](https://github.com/laurentlb)
-* `team-Windows`: Issues for Windows team
-  * [Open issues](https://github.com/bazelbuild/bazel/labels/team-Windows)
-  * Contact: [laszlocsomor](https://github.com/laszlocsomor)
+*   [`team-Android`](https://github.com/bazelbuild/bazel/labels/team-Android): Issues for Android team
+    *   Contact: [ahumesky](https://github.com/ahumesky)
+*   [`team-Apple`](https://github.com/bazelbuild/bazel/labels/team-Apple): Issues for Apple team (also MacOS, iOS etc)
+    * Contact: [aragos](https://github.com/aragos)
+*   [`team-Configurability`](https://github.com/bazelbuild/bazel/labels/team-Configurability): Issues for Configurability team
+    * Contact: [gregestren](https://github.com/gregestren)
+*   [`team-EngProd`](https://github.com/bazelbuild/bazel/labels/team-Engprod): Issues for EngProd team (CI, release, distribution)
+    * Contact: [philwo](https://github.com/philwo)
+*   [`team-ExternalDeps`](https://github.com/bazelbuild/bazel/labels/team-ExternalDeps): Issues for External Deps team (remote repositories,
+    WORKSPACE file)
+    * Contact: [dslomov](https://github.com/dslomov)
+*   [`team-Local-Exec`](https://github.com/bazelbuild/bazel/labels/team-Local-Exec): Issues for Execution (Local) team
+    * Contact: [jmmv](https://github.com/jmmv)
+*   [`team-Remote-Exec`](https://github.com/bazelbuild/bazel/labels/team-Remote-Exec): Issues for Execution (Remote) team
+    * Contact: [buchgr](https://github.com/buchgr)
+*   [`team-Performance`](https://github.com/bazelbuild/bazel/labels/team-Performance): Issues for Bazel Performance team
+    * Contact: [meisterT](https://github.com/meisterT)
+*   [`team-Product`](https://github.com/bazelbuild/bazel/labels/team-Product): Issues for the Product team
+    * Contact: [aiuto](https://github.com/aiuto)
+*   [`team-Rules-CPP`](https://github.com/bazelbuild/bazel/labels/team-Rules-CPP): Issues for C++ rules
+    * Contact: [hlopko](https://github.com/hlopko)
+*   [`team-Rules-Java`](https://github.com/bazelbuild/bazel/labels/team-Rules-Java): Issues for Java rules
+    * Contact: [lberki](https://github.com/lberki)
+*   [`team-Rules-Python`](https://github.com/bazelbuild/bazel/labels/team-Rules-Python): Issues for the native Python rules
+    * Contact: [brandjon](https://github.com/brandjon)
+*   [`team-Rules-Server`](https://github.com/bazelbuild/bazel/labels/team-Rules-Server): Issues for serverside rules included with Bazel
+    * Contact: [lberki](https://github.com/lberki)
+*   [`team-Starlark`](https://github.com/bazelbuild/bazel/labels/team-Starlark): Issues for Starlark language + Build API
+    * Contact: [laurentlb](https://github.com/laurentlb)
+*   [`team-Windows`](https://github.com/bazelbuild/bazel/labels/team-Windows): Issues for Windows team
+    * Contact: [laszlocsomor](https://github.com/laszlocsomor)
 
 For new issues, we deprecated the `category: *` labels in favor of the team labels.
 
