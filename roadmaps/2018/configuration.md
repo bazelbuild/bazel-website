@@ -31,7 +31,7 @@ title: Bazel Configurability Roadmap
 </style>
 
 # Bazel Configurability 2018 Roadmap
-UPDATE
+
 *Last verified: 2018-10-18* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
 
 *Point of contact:* [gregestren](https://github.com/gregestren)
