@@ -32,11 +32,13 @@ title: Bazel Configurability Roadmap
 
 # Bazel Configurability 2018 Roadmap
 
-*Last verified: 2018-10-18* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
+*Last verified: 2019-01-28*
 
 *Point of contact:* [gregestren](https://github.com/gregestren)
 
-*Discuss:*  [Configurability 2018 Roadmap: discussion](https://github.com/bazelbuild/bazel/issues/6431)
+*Discuss:*  [Configurability roadmap: discussion](https://github.com/bazelbuild/bazel/issues/6431)
+
+**This roadmap has been retired. See [here](../configuration.html) for the current roadmap.**
 
 ## Goal
 
@@ -94,7 +96,7 @@ they can build on**
 <div class="etabox">Dec 2018</div>**C++ rules fully support
 [platforms](https://docs.bazel.build/versions/master/platforms.html) and
 [toolchains](https://docs.bazel.build/versions/master/toolchains.html)**
-<span class="inprogressstatus">IN PROGRESS</span> ([#6516](https://github.com/bazelbuild/bazel/issues/6516))
+<span class="inprogressstatus">PARTIALLY DONE</span> ([#6516](https://github.com/bazelbuild/bazel/issues/6516))
 
 * This gives them first-class Starlark support, `select()` [on
 platforms](https://docs.bazel.build/versions/master/be/general.html#config_setting.constraint_values),
@@ -106,7 +108,7 @@ and configuration via
 <div class="etabox">Dec 2018</div>**"Toolchain modes" documentation explains how
 to use flags and configuration to select between multiple toolchains for the
 same platform**
-[see status](https://bazel.build/roadmaps/platforms.html#toolchain-modes-documentation) ([#6517](https://github.com/bazelbuild/bazel/issues/6517))
+<span class="notstartedstatus">NOT STARTED</span> ([#6517](https://github.com/bazelbuild/bazel/issues/6517))
 
 * Examples: debug vs. opt, C++ [correctness
   sanitizers](https://github.com/google/sanitizers)
@@ -114,7 +116,7 @@ same platform**
 
 <div class="etabox">2019</div>**There's _one_, simple way to choose platforms
 at the command line**
-[see status](https://bazel.build/roadmaps/platforms.html#replace-cpu-and-host_cpu-flags) ([#6518](https://github.com/bazelbuild/bazel/issues/6518))
+<span class="notstartedstatus">NOT STARTED</span> ([#6518](https://github.com/bazelbuild/bazel/issues/6518))
 
 * `$ bazel build //a:foo_lang_rule --platforms=//platforms:mac`
 * `--cpu`, `--host_cpu`, `--crosstool_top`, `--javabase`,
@@ -139,7 +141,7 @@ at the command line**
 
 <div class="etabox">2019</div>**Java, Android, Apple rules fully support platforms and
 toolchains**
-<span class="notstartedstatus">NOT STARTED</span> ([#6521](https://github.com/bazelbuild/bazel/issues/6521))
+<span class="inprogressstatus">SCHEDULED</span> ([#6521](https://github.com/bazelbuild/bazel/issues/6521))
 
 * These depend on Java and C++, so need to happen after those rules
 * `--android_sdk`, -`-ios_sdk_version`, etc. are deprecated and obsolete
@@ -149,7 +151,7 @@ toolchains**
 
 
 <div class="etabox">Oct 2018</div>**Starlark supports platform transitions**
-<span class="inprogressstatus">IN PROGRESS</span> ([#5574](http://github.com/bazelbuild/bazel/issues/5574))
+<span class="inprogressstatus">PARTIALLY DONE</span> ([#5574](http://github.com/bazelbuild/bazel/issues/5574))
 
 * Rule designers can decide which rules target which platforms
 * Rule designers can declare default target platforms
@@ -159,7 +161,7 @@ toolchains**
 
 <div class="etabox">Dec 2018</div>**Starlark supports multi-architecture ("fat")
 binaries**
-<span class="inprogressstatus">IN PROGRESS</span> ([#5575](http://github.com/bazelbuild/bazel/issues/5575))
+<span class="donestatus">DONE</span> ([#5575](http://github.com/bazelbuild/bazel/issues/5575))
 
 * Rule designers can write rules that bundle deps configured for multiple
   platforms
@@ -167,7 +169,7 @@ binaries**
 
 <div class="etabox">Jan 2019</div>**Starlark supports user-defined configuration
 settings**
-<span class="inprogressstatus">IN PROGRESS</span> ([#5577](http://github.com/bazelbuild/bazel/issues/5577))
+<span class="inprogressstatus">PARTIALLY DONE</span> ([#5577](http://github.com/bazelbuild/bazel/issues/5577))
 
 * A standard API defines how to declare custom settings (consolidating [command
   line
@@ -188,7 +190,7 @@ settings**
 
 <div class="etabox">Jan 2019</div>**All native Bazel rules can be implemented
 in Starlark**
-<span class="inprogressstatus">IN PROGRESS</span> ([#5578](http://github.com/bazelbuild/bazel/issues/5578))
+<span class="inprogressstatus">PARTIALLY DONE</span> ([#5578](http://github.com/bazelbuild/bazel/issues/5578))
 
 ### Correctness and Speed
 
@@ -204,22 +206,21 @@ flags</a>**
 
 
 <div class="etabox">June 2018</div>**Bazel updates _fast_ on `--test_timeout`, etc. changes**
-<span class="donestatus">DONE</span> ([#5579]
-(http://github.com/bazelbuild/bazel/issues/5579))
+<span class="donestatus">DONE</span> ([#5579](http://github.com/bazelbuild/bazel/issues/5579))
 
 * Oct 2018: Must be enabled with [`--trim_test_configurarion`](https://github.com/bazelbuild/bazel/blob/f29f78d19288f6d6e7aea6bc65e6bfa01b2531ad/src/main/java/com/google/devtools/build/lib/analysis/test/TestConfiguration.java#L121~)
 
 
 <div class="etabox">Dec 2018</div>**An experimental Bazel mode automatically
 minimizes build graphs**
-<span class="inprogressstatus">IN PROGRESS</span> ([#6524](https://github.com/bazelbuild/bazel/issues/6524))
+<span class="inprogressstatus">PARTIALLY DONE</span> ([#6524](https://github.com/bazelbuild/bazel/issues/6524))
 
 * No rule builds twice due to unrelated flag changes
 
 
 <div class="etabox">Dec 2018</div>**User documentation provides clear guidance
 on "safe" [Starlark transitions](#user-defined-configuration) use**
-<span class="inprogressstatus">IN PROGRESS</span> ([#6525](https://github.com/bazelbuild/bazel/issues/6525))
+<span class="notstartedstatus">NOT STARTED</span> ([#6525](https://github.com/bazelbuild/bazel/issues/6525))
 
 * Explains the risks of performance and memory regressions
 * Explains how to minimize these risks and make informed use of the feature
