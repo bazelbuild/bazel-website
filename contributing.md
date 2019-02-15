@@ -72,17 +72,14 @@ portability, as well as the impact on memory usage and performance.
 1. A Bazel maintainer at Google will apply the patch to our internal version
    control system.
 
-   This triggers internal presubmit checks like
-   [code linters](https://en.wikipedia.org/wiki/Lint_(software)), which may
-   suggest more changes. If you haven't expressed a preference, the submitter
-   will add "trivial" changes that don't affect design, which will also be
-   attributed to you. If you express preferences, such as "*no changes, not even
-   trivial ones*", these will be honored and any further changes will be applied
-   in followup PRs.
-
-   After internal submission, the patch is exported as a Git commit, at which
-   point the GitHub pull request is closed. All changes are attributed to you.
-
+   This triggers [internal presubmit checks](https://bazel.build/governance.html#are-you-done-open-sourcing-bazel)
+   that may suggest more changes. If you haven't expressed a preference, the
+   submitter will add "trivial" changes (like [linting](https://en.wikipedia.org/wiki/Lint_(software))
+   that don't affect your PR's design. If you're concerned about this
+   difference, let the reviewer know and they'll communicate on the PR what
+   further changes are requested. After internal submission, the patch is exported
+   as a Git commit, at which point the GitHub pull request is closed. All final
+   changes are attributed to you.
 
 If your change has user-visible effects, consider [adding release
 notes](release-notes.html). If it is an incompatible change, read the [guide for
