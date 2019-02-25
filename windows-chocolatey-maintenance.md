@@ -15,8 +15,8 @@ You need:
 *    [chocolatey package manager](https://chocolatey.org) installed
 *    (to publish) a chocolatey API key granting you permission to publish the
      `bazel` package
-    *   [@petemounce](https://github.com/petemounce) currently maintains this
-        unofficial package.
+     * [@petemounce](https://github.com/petemounce) currently maintains this
+       unofficial package.
 *    (to publish) to have set up that API key for the chocolatey source locally
      via `choco apikey -k <your key here> -s https://chocolatey.org/`
 
@@ -39,9 +39,9 @@ The `build.ps1` script supports `mode` values `local`, `rc` and `release`.
 
 0. Build the package (with `-mode local`)
 
-  * run a webserver (`python -m SimpleHTTPServer` in
-    `scripts/packages/chocolatey` is convenient and starts one on
-    `http://localhost:8000`)
+    * run a webserver (`python -m SimpleHTTPServer` in
+      `scripts/packages/chocolatey` is convenient and starts one on
+      `http://localhost:8000`)
 
 0. Test the install
 

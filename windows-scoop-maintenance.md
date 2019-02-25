@@ -13,8 +13,8 @@ You need:
 
 *    [Scoop package manager](https://scoop.sh/) installed
 *    (to publish) GitHub account in order to create pull requests to [lukesampson/scoop](https://github.com/lukesampson/scoop)
-    *   [@excitoon](https://github.com/excitoon) currently maintains this
-        unofficial package. Feel free to ask questions by [e-mail](vladimir.chebotarev@gmail.com) or [Telegram](http://telegram.me/excitoon).
+     * [@excitoon](https://github.com/excitoon) currently maintains this
+       unofficial package. Feel free to ask questions by [e-mail](mailto:vladimir.chebotarev@gmail.com) or [Telegram](http://telegram.me/excitoon).
 
 ## Release process
 
