@@ -59,7 +59,7 @@ should contain the URL of the GitHub issue. As the flag name starts with
       },
 ```
 
-In the commit description, use `RELNOTES:` followed by a short description, the
+In the commit description, use [`RELNOTES:`](release-notes.html) followed by a short description, the
 name of the flag, and a link to the GitHub issue.
 
 
@@ -90,7 +90,8 @@ Before flipping the default value of the flag to true, please make sure that:
 
 When changing the flag default to true, please:
 
-  * Use `RELNOTES:` in the commit description, with the name the of the flag.
+  * Use [`RELNOTES:`](release-notes.html) in the commit description, with the
+    name the of the flag.
   * Use `Fixes #xyz` in the description, so that the GitHub issue gets closed
     when the commit is merged.
 
