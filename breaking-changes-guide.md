@@ -69,8 +69,8 @@ Once the commit is merged, add the label
 [`migration-ready`](https://github.com/bazelbuild/bazel/labels/migration-ready)
 to the GitHub issue.
 
-Later a Bazel release manager will update the issue and replace the label with
-`migration-xx.yy`.
+Later a [Bazel release manager](https://github.com/bazelbuild/continuous-integration/blob/master/docs/release-playbook.md)
+will update the issue and replace the label with `migration-xx.yy`.
 
 The label `breaking-change-xx.yy` communicates when we plan to flip the flag. If
 a migration window needs to be extended, the author updates the label on GitHub
