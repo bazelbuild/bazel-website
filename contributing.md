@@ -22,8 +22,9 @@ here](https://join.slack.com/t/bazelbuild/shared_invite/enqtndyyodaxndy4mjqxlwu1
 ### Patch Acceptance Process
 
 1. Read the [Bazel governance plan](governance.html).
-1. Discuss your plan and design, and get agreement on our [mailing
-   list](https://groups.google.com/forum/#!forum/bazel-dev).
+1. Discuss your plan and design, and get agreement on a GitHub issue or our
+   [mailing list](https://groups.google.com/forum/#!forum/bazel-dev).
+   Significant changes need a [design document](designs/index.html).
 1. Prepare a git commit that implements the feature. Don't forget to add tests.
 1. Ensure you've signed a [Contributor License
    Agreement](https://cla.developers.google.com).
@@ -45,6 +46,10 @@ here](https://join.slack.com/t/bazelbuild/shared_invite/enqtndyyodaxndy4mjqxlwu1
 1. A Bazel maintainer at Google will apply the patch to our internal version
    control system. The patch is exported as a Git commit, at which point the
    GitHub pull request is closed.
+
+If your change has user-visible effects, consider [adding release
+notes](release-notes.html). If it is an incompatible change, read the [guide for
+rolling out breaking changes](breaking-changes-guide.html).
 
 ## Setting up your coding environment
 
