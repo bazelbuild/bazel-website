@@ -86,7 +86,8 @@ Before flipping the default value of the flag to true, please make sure that:
 
   * The migration window is respected.
   * User concerns and questions have been resolved.
-  * The flip will not break projects [on our CI](https://github.com/bazelbuild/continuous-integration/blob/master/docs/downstream-testing.md).
+  * The flip will not break projects. Check the [`Bazelisk + Incompatible
+    flags`](https://buildkite.com/bazel/bazelisk-plus-incompatible-flags/) pipeline.
 
 When changing the flag default to true, please:
 
