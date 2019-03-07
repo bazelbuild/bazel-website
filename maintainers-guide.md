@@ -87,7 +87,8 @@ When an issue is resolved, it can be closed.
 
 1. A user creates a pull request.
 1. If you a member of a Bazel team and sending a PR against your own area,
-   you should pre-assigin your team label and finding the best reviewer.
+   you are responsible for assigning your team label and finding the best
+   reviewer.
 1. Otherwise, during daily triage, a DevEx member assigns one
    [team label](#team-labels) and the team's technical lead (TL) for routing.
    1. The TL may optionally assign someone else to review the PR.
