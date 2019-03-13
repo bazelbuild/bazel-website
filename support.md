@@ -58,10 +58,10 @@ projects tested on [ci.bazel.io](http://ci.bazel.io).
 We announce those release candidates on [bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss).
 Over the next days, we monitor community bug reports for regressions in release candidate.
 
-If no regressions are discovered, we officially release the candidate after two weeks. However,
+If no regressions are discovered, we officially release the candidate after one week. However,
 regressions can delay the release of a release candidate. If regressions are found, we apply
 corresponding cherry-picks to the release candidate to fix those regressions. If no further
-regressions are found for two business days, but not before two week has elapsed since the first
+regressions are found for two business days, but not before one week has elapsed since the first
 release candidate, we release it.
 
 After a release candidate is cut, we do not cherry-pick new features into it.
