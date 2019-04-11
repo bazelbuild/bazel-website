@@ -27,7 +27,7 @@ are as follows:
     documentation generators, refactoring tools, testing frameworks and so on.
 
 ## Roadmaps for specific Bazel areas
-*  [Android](roadmaps/android.html)
+*  [Android](https://github.com/bazelbuild/rules_android/blob/master/ROADMAP.md)
 *  [C++](roadmaps/cpp.html)
 *  [Code Coverage](roadmaps/coverage.html)
 *  [Configurability](roadmaps/configuration.html)
