@@ -10,7 +10,7 @@ title: Get Support
 * Discuss on the [User mailing list](https://groups.google.com/forum/#!forum/bazel-discuss).
 * Report bugs or feature requests in our [GitHub issue tracker](https://github.com/bazelbuild/bazel/issues).
 * Find other Bazel contributors on [Slack](https://bazelbuild.slack.com) (get an [invite
-here](https://join.slack.com/t/bazelbuild/shared_invite/enqtndyyodaxndy4mjqxlwu1otbjowjjota1mme5yjiwmtm5mjfhzgmwm2yzytezytdhngizmtfizji1ntlhytkzngq5mjbkyze5yjmymte)).
+here](https://bazel-slackin.herokuapp.com)).
 
 # Support Policy
 
@@ -288,4 +288,3 @@ These rules and features have known limitations that we will likely address in f
       </td>
   </tbody>
 </table>
-
