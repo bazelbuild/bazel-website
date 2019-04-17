@@ -91,9 +91,9 @@ Before flipping the default value of the flag to true, please make sure that:
 
 When changing the flag default to true, please:
 
-  * Use [`RELNOTES[INC]:`](release-notes.html) in the commit description, with the
+  * Use `RELNOTES[INC]` in the commit description, with the
     following format:
-    `--incompatible_name_of_flag is flipped to true. See #yxz for details`
+    `RELNOTES[INC]: --incompatible_name_of_flag is flipped to true. See #yxz for details`
     You can include additional information in the rest of the commit description.
   * Use `Fixes #xyz` in the description, so that the GitHub issue gets closed
     when the commit is merged.
