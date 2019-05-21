@@ -9,8 +9,7 @@ title: Get Support
 `bazel` tag.
 * Discuss on the [User mailing list](https://groups.google.com/forum/#!forum/bazel-discuss).
 * Report bugs or feature requests in our [GitHub issue tracker](https://github.com/bazelbuild/bazel/issues).
-* Find other Bazel contributors on [Slack](https://bazelbuild.slack.com) (get an [invite
-here](https://bazel-slackin.herokuapp.com)).
+* Find other Bazel contributors on [Slack](https://slack.bazel.build).
 
 # Support Policy
 
