@@ -92,14 +92,11 @@ agility. Bazel was a way to solve these problems.
 
 ## Does Bazel require a build cluster?
 
-Google's in-house flavor of Bazel does use [build
-clusters](http://google-engtools.blogspot.com/2011/09/build-in-cloud-distributing-build-steps.html),
-so Bazel does have hooks in the code base to plug in a remote build
-cache or a remote execution system.
-
-The open source Bazel code runs build operations locally. We believe
-that this is fast enough for most of our users, but work is underway
-to provide [distributed caching](https://github.com/bazelbuild/bazel/issues/904).
+Bazel runs build operations locally by default. However, Bazel can
+also connect to a build cluster for even faster builds and tests.
+See our documentation on [remote execution](https://docs.bazel.build/versions/master/remote-execution.html)
+and [remote caching](https://docs.bazel.build/versions/master/remote-execution.html)
+for further details.
 
 ## How does the Google development process work?
 
