@@ -202,7 +202,7 @@ issues.
     * Contact: [philwo](https://github.com/philwo)
 *   [`team-ExternalDeps`](https://github.com/bazelbuild/bazel/labels/team-ExternalDeps): Issues for External Deps team (remote repositories,
     WORKSPACE file)
-    * Contact: [dslomov](https://github.com/dslomov)
+    * Contact: [laurentlb](https://github.com/laurentlb)
 *   [`team-Local-Exec`](https://github.com/bazelbuild/bazel/labels/team-Local-Exec): Issues for Execution (Local) team
     * Contact: [jmmv](https://github.com/jmmv)
 *   [`team-Remote-Exec`](https://github.com/bazelbuild/bazel/labels/team-Remote-Exec): Issues for Execution (Remote) team
@@ -214,11 +214,11 @@ issues.
 *   [`team-Rules-CPP`](https://github.com/bazelbuild/bazel/labels/team-Rules-CPP): Issues for C++ rules
     * Contact: [hlopko](https://github.com/hlopko)
 *   [`team-Rules-Java`](https://github.com/bazelbuild/bazel/labels/team-Rules-Java): Issues for Java rules
-    * Contact: [lberki](https://github.com/lberki)
+    * Contact: [hlopko](https://github.com/hlopko)
 *   [`team-Rules-Python`](https://github.com/bazelbuild/bazel/labels/team-Rules-Python): Issues for the native Python rules
     * Contact: [brandjon](https://github.com/brandjon)
 *   [`team-Rules-Server`](https://github.com/bazelbuild/bazel/labels/team-Rules-Server): Issues for serverside rules included with Bazel
-    * Contact: [lberki](https://github.com/lberki)
+    * Contact: [hlopko](https://github.com/hlopko)
 *   [`team-Starlark`](https://github.com/bazelbuild/bazel/labels/team-Starlark): Issues for Starlark language + Build API
     * Contact: [laurentlb](https://github.com/laurentlb)
 *   [`team-Windows`](https://github.com/bazelbuild/bazel/labels/team-Windows): Issues for Windows team
