@@ -14,6 +14,12 @@ changes as designs are implemented.
 Always go to the [documentation]({{ site.docs_site_url }}) for descriptions of
 current Bazel functionality.
 
+## Table of Contents
+{:.no_toc}
+
+* ToC
+{:toc}
+
 
 ## When do I need a design document and review?
 
