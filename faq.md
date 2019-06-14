@@ -292,7 +292,7 @@ are supported, see the [build encyclopedia](/docs/be/overview.html) for a list
 of recommendations and [https://awesomebazel.com/](https://awesomebazel.com/)
 for a more comprehensive list.
 
-If it is not enough, see the documentation for [extending Bazel](/docs/skylark/index.html).
+If you would like to develop extensions or learn how they work, see the documentation for [extending Bazel](/docs/skylark/index.html).
 
 ## Can I contribute to the Bazel code base?
 
