@@ -19,9 +19,8 @@ Pants and Maven.
 Bazel was designed to fit the way software is developed at Google. It
 has the following features:
 
-*   Multi-language support: Bazel supports Java, Objective-C and C++ out
-    of the box, and can be extended to support arbitrary programming
-    languages.
+*   Multi-language support: Bazel supports [many languages](/docs/be/overview.html),
+    and can be extended to support arbitrary programming languages.
 
 *   High-level build language: Projects are described in the BUILD
     language, a concise text format that describes a project as sets of
@@ -288,18 +287,12 @@ See our [roadmap](roadmap.html).
 
 ## Can I use Bazel for my [INSERT LANGUAGE HERE] project?
 
-We have an extension mechanism called Skylark that allows you to add new rules
-without recompiling Bazel.
+Bazel is extensible. Anyone can add support for new languages. Many languages
+are supported, see the [build encyclopedia](/docs/be/overview.html#additional-rules)
+for a list of recommendations and [https://awesomebazel.com/](https://awesomebazel.com/)
+for a more comprehensive list.
 
-For documentation: see [here](/docs/skylark/index.html). We have support for
-several languages that use that extension mechanism, see our
-[build encyclopedia](/docs/be/overview.html) for the full
-list of supported languages.
-
-## I need more functionality. Can I add rules that are compiled into Bazel?
-
-If our extension mechanism is insufficient for your use case, email
-the mailing list for advice: <bazel-discuss@googlegroups.com>.
+If you would like to develop extensions or learn how they work, see the documentation for [extending Bazel](/docs/skylark/index.html).
 
 ## Can I contribute to the Bazel code base?
 
