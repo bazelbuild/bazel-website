@@ -288,8 +288,8 @@ See our [roadmap](roadmap.html).
 ## Can I use Bazel for my [INSERT LANGUAGE HERE] project?
 
 Bazel is extensible. Anyone can add support for new languages. Many languages
-are supported, see the [build encyclopedia](/docs/be/overview.html) for a list
-of recommendations and [https://awesomebazel.com/](https://awesomebazel.com/)
+are supported, see the [build encyclopedia](/docs/be/overview.html#additional-rules)
+for a list of recommendations and [https://awesomebazel.com/](https://awesomebazel.com/)
 for a more comprehensive list.
 
 If you would like to develop extensions or learn how they work, see the documentation for [extending Bazel](/docs/skylark/index.html).
