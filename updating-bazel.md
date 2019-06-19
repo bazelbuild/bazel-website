@@ -37,9 +37,8 @@ We recommend the following process for project migration:
 
 ### Migrating with Bazelisk
 
-[Bazelisk](https://github.com/bazelbuild/bazelisk) is a bazel wrapper that can 
+[Bazelisk](https://github.com/bazelbuild/bazelisk) can 
 greatly simplify the migration process described above.
-
 
 *   `bazelisk --strict` will build given targets with all incompatible flags for changes with appropriate migration-* labels.
 *   `bazelisk --migrate` will do even more: it will try every flag and report those for which the build was unsuccessful
