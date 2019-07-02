@@ -76,6 +76,8 @@ languages in Bazel right now.
       cd bazel
       bazel --output_user_root=c:\tmp build //src:bazel.exe
       ```
+      
+      For faster iteration times (but larger binaries), use `//src:bazel-dev.exe` instead.
 
 *  This will produce a working Bazel binary in `bazel-bin/src/bazel` (or `bazel-bin/src/bazel.exe` on Windows).
 
