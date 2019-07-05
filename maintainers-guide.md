@@ -210,7 +210,7 @@ issues.
 *   [`team-Performance`](https://github.com/bazelbuild/bazel/labels/team-Performance): Issues for Bazel Performance team
     * Contact: [meisterT](https://github.com/meisterT)
 *   [`team-Product`](https://github.com/bazelbuild/bazel/labels/team-Product): Issues for the Product team
-    * Contact: [aiuto](https://github.com/aiuto)
+    * Contact: [dslomov](https://github.com/dslomov)
 *   [`team-Rules-CPP`](https://github.com/bazelbuild/bazel/labels/team-Rules-CPP): Issues for C++ rules
     * Contact: [hlopko](https://github.com/hlopko)
 *   [`team-Rules-Java`](https://github.com/bazelbuild/bazel/labels/team-Rules-Java): Issues for Java rules
