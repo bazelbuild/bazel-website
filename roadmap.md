@@ -33,6 +33,7 @@ are as follows:
 *  [Configurability](roadmaps/configuration.html)
 *  [External Dependencies](roadmaps/external-deps.html)
 *  [Platforms](roadmaps/platforms.html)
+*  [Remote Execution](roadmaps/remote-execution.html)
 *  [Starlark](roadmaps/starlark.html)
 *  [Windows](roadmaps/windows.html)
 
