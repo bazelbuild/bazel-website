@@ -23,7 +23,7 @@ title: Bazel Remote Execution Roadmap
 
 # Bazel Remote Execution Roadmap
 
-*Last verified: 2018-07-10*
+*Last verified: 2019-07-10*
 
 *Point of contact:* [buchgr](https://github.com/buchgr),
 [ishikhman](https://github.com/ishikhman)
