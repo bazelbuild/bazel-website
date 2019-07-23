@@ -5,9 +5,7 @@ title: Get Support
 
 # Get Support
 
-* Ask questions on [Stack Overflow](http://stackoverflow.com/questions/tagged/bazel) using the
-`bazel` tag.
-* Discuss on the [User mailing list](https://groups.google.com/forum/#!forum/bazel-discuss).
+* Ask questions or discuss on the [User mailing list](https://groups.google.com/forum/#!forum/bazel-discuss).
 * Report bugs or feature requests in our [GitHub issue tracker](https://github.com/bazelbuild/bazel/issues).
 * Find other Bazel contributors on [Slack](https://slack.bazel.build).
 
