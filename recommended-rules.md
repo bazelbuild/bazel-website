@@ -21,15 +21,6 @@ to be part of the _recommended rules_ by filing a
 After a review by the [Bazel core team](https://bazel.build/governance.html), it
 will be recommended on the Bazel website.
 
-## Demotion
-
-If a ruleset stops meeting the requirements (e.g. the code is abandoned, not
-well maintained, or tests keep failing), the Bazel core team will contact the
-rule maintainers.
-
-If it is not feasible to fix the issues or find new maintainers, the ruleset
-will be removed from the website.
-
 ## Requirements for the rule maintainers
 
 *   The ruleset provides an important feature, useful to a large number of Bazel
@@ -52,3 +43,13 @@ will be removed from the website.
 *   Recommended rules are frequently tested with Bazel at head (at least once a day).
 *   No change in Bazel may break a recommended rule (with the default set of
     flags). If it happens, the change should be fixed or rolled back.
+
+## Demotion
+
+If there is a concern that a particular ruleset is no longer meeting the
+requirements, a [GitHub issue](https://github.com/bazelbuild/bazel/) should be
+filed.
+
+Rule maintainers will be contacted and need to respond in 2 weeks. Based on the
+outcome, Bazel core team might make a decision to demote the rule set.
+
