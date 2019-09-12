@@ -75,5 +75,15 @@ title: Bazel Community Experts
       </div>
     </div>
   </div>
+  <div class="landing-section partners">
+    <div class="container">
+      <div class="col-sm-6 col-md-8">
+      <p>
+      If you are interested in being listed as a community expert, please contact
+      <a href="mailto:bazel-experts@bazel.build">bazel-experts@bazel.build</a>.
+      </p>
+      </div>
+    </div>
+  </div>
 
 </div>
