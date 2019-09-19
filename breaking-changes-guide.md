@@ -7,8 +7,11 @@ title: Guide for rolling out breaking changes
 
 It is inevitable that we will make breaking changes to Bazel. We will have to
 change our designs and fix the things that do not quite work. However, we need
-to make sure that community and Bazel ecosystem can follow along. This document
-describes the process for Bazel contributors to make a breaking change in Bazel.
+to make sure that community and Bazel ecosystem can follow along. To that end,
+Bazel project has adopted a 
+[backward compatibility policy](https://docs.bazel.build/versions/master/backward-compatibility.html).
+This document describes the process for Bazel contributors to make a breaking
+change in Bazel to adhere to this policy.
 
 1. Follow the [design document policy](designs/index.html).
 
