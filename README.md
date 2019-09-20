@@ -14,7 +14,17 @@ and to authenticate with `gcloud auth login`.
 
 ## Running the website locally
 
-To stage the site, run `bazel run //:site`.
+To stage the site
+
+```
+bazel run //:site
+```
+
+If you want to show the preview to others
+
+```
+HOST=$(hostname) bazel run //:site
+```
 
 See [the Jekyll site](http://jekyllrb.com/docs) if you need more info.
 
