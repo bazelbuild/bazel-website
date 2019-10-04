@@ -13,22 +13,31 @@ machine to develop Bazel and, when you've made a patch, how to submit it.</p>
 In general, we prefer contributions that fix bugs or add features (as opposed to
 stylistic, refactoring, or "cleanup" changes).
 
-Please check with us on the [dev list](
-https://groups.google.com/forum/#!forum/bazel-dev) before investing
-a lot of time in a patch. You might also meet Bazel maintainers and
-other contributors on [Slack](https://slack.bazel.build). In general,
-if there is a Bazel team member assigned to an issue, someone is working
-on it. That said, there are a lot of P3 and P4 issues which have no
-owner. We welcome community contributions for those.
+### What issues can I work on?
 
+In general, if there is a Bazel team member assigned to an issue, someone is working
+on it. If not, you can use the priority level to as a rough guide.
+
+-   **P0**: someone from the Bazel team is be urgently working on it. If it is
+    not assigned yet, someone will be shortly.
+-   **P1**: someone is actively working on it, even if the assignee is not set.
+-   **P2**: a team knows they would like to get it done, but it is mixed with
+    work of other priorities.
+-   **P3/P4**: this might be worth doing, but no one is planning to work on it at
+    this time. We welcome community contributions for those.
 
 ### Patch Acceptance Process
 
 1. Read the [Bazel governance plan](governance.html).
-1. Discuss your plan and design, and get agreement on a GitHub issue or our
-   [mailing list](https://groups.google.com/forum/#!forum/bazel-dev).
-   Significant changes need a [design document](designs/index.html).
-1. Prepare a git commit that implements the feature. Don't forget to add tests.
+1. Significant changes need a [design review](designs/index.html). Before
+   sending your first PR you should read the design review process to
+   help you decide how to categorize the scope of your change.
+1. For significant changes, you should first discuss it on the
+   [developer mailing list](https://groups.google.com/forum/#!forum/bazel-dev).
+1. Discuss your plan and design, and get agreement on a GitHub issue.
+1. After you have discussed your proposed solution in the issue or on
+   the mailling lies, prepare a git commit that implements the feature.
+   Don't forget to add tests.
 1. Ensure you've signed a [Contributor License
    Agreement](https://cla.developers.google.com).
 1. Send us a pull request on
@@ -179,3 +188,13 @@ To quickly search through Bazel's source code, use [Bazel Code Search](https://s
 ## Using Bazel Continuous Integration
 
 To get started with the Bazel CI system, see [Bazel Continuous Integration](https://github.com/bazelbuild/continuous-integration/blob/master/buildkite/README.md). To monitor the tests and builds of your Bazel contributions, use the [Bazel CI Dashboard](https://ci.bazel.build/).
+
+## Where to discuss Bazel features
+
+The definitive list for technical decisions is the developer mailing list
+[bazel-dev@googlegroups.com](https://groups.google.com/forum/#!forum/bazel-dev)
+
+To reach the Bazel user community, the place to start would be
+[bazel-discuss@googlegroups.com](https://groups.google.com/forum/#!forum/bazel-discuss)
+
+You can often find Bazel developers and users on [Slack](https://slack.bazel.build)
