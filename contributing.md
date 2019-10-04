@@ -15,16 +15,18 @@ stylistic, refactoring, or "cleanup" changes).
 
 ### What issues can I work on?
 
-In general, if there is a Bazel team member assigned to an issue, someone is working
-on it. If not, you can use the priority level to as a rough guide.
+In general, if there is a Bazel team member assigned to an issue, someone is
+working on it. If not, you can use the priority level to as a rough guide.
 
 -   **P0**: someone from the Bazel team is be urgently working on it. If it is
     not assigned yet, someone will be shortly.
 -   **P1**: someone is actively working on it, even if the assignee is not set.
 -   **P2**: a team knows they would like to get it done, but it is mixed with
-    work of other priorities.
--   **P3/P4**: this might be worth doing, but no one is planning to work on it at
-    this time. We welcome community contributions for those.
+    work of other priorities. If you want to work on these, please check in the
+    issue first, to make sure someone has not already started on it but
+    forgotten to assign it to themselves.
+-   **P3/P4**: this might be worth doing, but no one is planning to work on it
+    at this time. We welcome community contributions for those.
 
 ### Patch Acceptance Process
 
