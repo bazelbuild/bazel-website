@@ -8,15 +8,45 @@ title: Contributing to Bazel
 <p class="lead">We welcome contributions! This page covers setting up your
 machine to develop Bazel and, when you've made a patch, how to submit it.</p>
 
-## How can I contribute to Bazel?
+
+## How can I help?
+
+There are many ways to help the Bazel project and ecosystem.
+
+1. Be an active user. Bazel is not perfect. As you use it, you may find things
+   that can be improved. Please report them:
+  - Report bugs. In particular, it's important to report any crash or
+    correctness bug.
+  - Report issues when the documentation is incomplete or unclear.
+  - Report issues when an error message could be improved.
+
+1. As you get experienced with Bazel, engage with the community:
+  - Answer questions [on Stack Overflow](
+    https://stackoverflow.com/questions/tagged/bazel).
+  - Help other users [on Slack](https://slack.bazel.build).
+  - Improve the documentation or [contribute examples](
+    https://github.com/bazelbuild/examples).
+  - Share your experience or your tips, for example on a blog.
+
+1. Contribute to the Bazel ecosystem:
+  - Help rules maintainers with pull requests and contributions.
+  - Create new rules and open-source them.
+  - Contribute to Bazel-related tools, for example migration tools.
+  - Improve Bazel integration with other IDEs and tools.
+
+
+## How can I contribute to Bazel source code?
+
+Bazel is a large project and making a significant change to Bazel source code
+can be difficult. Please check with us on the [dev list](
+https://groups.google.com/forum/#!forum/bazel-dev) or on a GitHub issue before
+investing a lot of time in a patch.
 
 In general, we prefer contributions that fix bugs or add features (as opposed to
-stylistic, refactoring, or "cleanup" changes).
+stylistic, refactoring, or "cleanup" changes). When making a change, please
+include tests and documentation, and keep in mind backward-compatibility,
+portability, as well as the impact on memory usage and performance.
 
-Please check with us on the [dev
-list](https://groups.google.com/forum/#!forum/bazel-dev) before investing a lot
-of time in a patch. Meet Bazel maintainers and other contributors on
-[Slack](https://slack.bazel.build).
 
 ### Patch Acceptance Process
 
@@ -157,9 +187,6 @@ Bazel is organized in several parts:
 *  Server code in `src/main/java` and `src/test/java`.
    *  Core code which is mostly composed of [SkyFrame](designs/skyframe.html) and some
      utilities.
-   *  Rules written in Bazel's extension language
-     [Starlark](docs/skylark/index.html) are defined in `tools/build_rules`. If
-     you want to add rules, use [Starlark](docs/skylark/index.html).
    *  Builtin rules in `com.google.devtools.build.lib.rules` and in
      `com.google.devtools.build.lib.bazel.rules`. You might want to read about
      the [Challenges of Writing Rules](docs/rule-challenges.html) first.
