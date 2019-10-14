@@ -26,7 +26,7 @@ There are many ways to help the Bazel project and ecosystem.
   - Help other users [on Slack](https://slack.bazel.build).
   - Improve the documentation or [contribute examples](
     https://github.com/bazelbuild/examples).
-  - Share your experience or your tips, for example on a blog.
+  - Share your experience or your tips, for example on a blog or social media.
 
 1. Contribute to the Bazel ecosystem:
   - Help rules maintainers with pull requests and contributions.
