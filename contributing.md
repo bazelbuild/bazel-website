@@ -13,7 +13,7 @@ machine to develop Bazel and, when you've made a patch, how to submit it.</p>
 
 There are many ways to help the Bazel project and ecosystem.
 
-1. Be an active user. Bazel is not perfect. As you use it, you may find things
+1. Provide feedback as you use Bazel. As you use it, you may find things
    that can be improved. Please report them:
   - Report bugs. In particular, it's important to report any crash or
     correctness bug.
