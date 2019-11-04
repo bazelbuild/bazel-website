@@ -12,24 +12,24 @@ There are many ways to help the Bazel project and ecosystem.
 
 1. Provide feedback as you use Bazel. As you use it, you may find things
    that can be improved. Please report them:
-  - Report bugs. In particular, it's important to report any crash or
-    correctness bug.
-  - Report issues when the documentation is incomplete or unclear.
-  - Report issues when an error message could be improved.
+   - Report bugs. In particular, it's important to report any crash or
+     correctness bug.
+   - Report issues when the documentation is incomplete or unclear.
+   - Report issues when an error message could be improved.
 
 1. As you get experienced with Bazel, engage with the community:
-  - Answer questions [on Stack Overflow](
-    https://stackoverflow.com/questions/tagged/bazel).
-  - Help other users [on Slack](https://slack.bazel.build).
-  - Improve the documentation or [contribute examples](
-    https://github.com/bazelbuild/examples).
-  - Share your experience or your tips, for example on a blog or social media.
+   - Answer questions [on Stack Overflow](
+     https://stackoverflow.com/questions/tagged/bazel).
+   - Help other users [on Slack](https://slack.bazel.build).
+   - Improve the documentation or [contribute examples](
+     https://github.com/bazelbuild/examples).
+   - Share your experience or your tips, for example on a blog or social media.
 
 1. Contribute to the Bazel ecosystem:
-  - Help rules maintainers by contributing pull requests.
-  - Create new rules and open-source them.
-  - Contribute to Bazel-related tools, for example migration tools.
-  - Improve Bazel integration with other IDEs and tools.
+   - Help rules maintainers by contributing pull requests.
+   - Create new rules and open-source them.
+   - Contribute to Bazel-related tools, for example migration tools.
+   - Improve Bazel integration with other IDEs and tools.
 
 
 ## How can I contribute to Bazel source code?
