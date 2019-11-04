@@ -5,9 +5,6 @@ title: Contributing to Bazel
 
 # Contributing to Bazel
 
-<p class="lead">We welcome contributions! This page covers setting up your
-machine to develop Bazel and, when you've made a patch, how to submit it.</p>
-
 
 ## How can I help?
 
@@ -29,7 +26,7 @@ There are many ways to help the Bazel project and ecosystem.
   - Share your experience or your tips, for example on a blog or social media.
 
 1. Contribute to the Bazel ecosystem:
-  - Help rules maintainers with pull requests and contributions.
+  - Help rules maintainers by contributing pull requests.
   - Create new rules and open-source them.
   - Contribute to Bazel-related tools, for example migration tools.
   - Improve Bazel integration with other IDEs and tools.
