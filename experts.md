@@ -94,8 +94,8 @@ title: Bazel Community Experts
       <div class="row">
         <div class="col-sm-12">
           <p>
-            <b>Would like to be on this list? </b><br><a href="mailto:bazel-experts@bazel.build">Reach out</a> to the Bazel team if you've contributed to the Bazel Open sources community and would like to help others
-          </p>
+            <b>Would like to be on this list? </b><br>
+		If you are interested in being listed as a community expert, please contact <a href="mailto:bazel-experts@bazel.build">bazel-experts@bazel.build</a>.</p>
         </div>
       </div>
     </div>
