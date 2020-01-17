@@ -30,29 +30,34 @@ title: Bazel Configurability Roadmap
   }
 </style>
 
-# Bazel Configurability 2019 Roadmap
+# Bazel Configurability 2020 Roadmap
 
-*Last verified: 2019-04-25* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
+*Last verified: 2020-01-17* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
 
 *Point of contact:* [gregestren](https://github.com/gregestren)
 
 *Discuss:*  [Configurability roadmap: discussion](https://github.com/bazelbuild/bazel/issues/6431)
 
-## Previous
+## Previous Roadmaps
 
-* [Bazel Configurability 2018 Roadmap](2018/configuration.html)
+* [2019](2019/configuration.html) (w/ EOY review)
+* [2018](2018/configuration.html)
 
 ## Goal
 
-**`$ bazel build :all`** ***just works***, for whatever platform(s) you build for.
+`$ bazel build //:all` *just works*, for any project and any targeted platforms.
 
-* Targets "know" how to build themselves. For example, an `android_binary` automatically chooses the right SDK.
 * Builds don't require command-line flags.
-* Any target can be built with any other. For example, a binary's *Mac* and *Linux* versions can be built in the same command.
-* Dependencies can build differently than their parents. For example, a test builds helper binaries without debug symbols.
-* All rule logic and related flags are user-defined. Nothing requires a Bazel release.
-* Builds can target any platform or any mix of platforms. Nothing requires a Bazel release.
-* These features scale well for large builds.
+* Each target automatically uses correct settings (e.g. `android_binary` uses the right NDK).
+* It's easy to target multiple platforms.
+* Dependencies can be configured differently than their parents.
+* Builds scale well, particularly w.r.t graph size and action caching.
+
+We also support
+[`cquery`](https://docs.bazel.build/versions/master/cquery.html), [`Starlark
+configuration`](https://docs.bazel.build/versions/master/skylark/config.html),
+and
+[`select()`](https://docs.bazel.build/versions/master/configurable-attributes.html).
 
 ## Roadmap
 
@@ -60,17 +65,16 @@ Dates are approximate based on our best understanding of problem complexity
 and developer availability. Dates represent expected availability in released
 Bazel. If a feature requires an [incompatible
 flag](https://docs.bazel.build/versions/master/backward-compatibility.html#incompatible-changes-and-migration-recipes),
-dates represent the first time the feature can be used, even if it requires 
-setting the flag before it's on by default. ETAs will change, but we'll keep
-them refreshed and current.
+dates represent the first time the feature can be used, even if the flag has to
+be manually set. ETAs will change, but we'll keep them refreshed as we best
+understand them.
 
 ### Platforms
 Also see the [Platforms Roadmap](platforms.html) for detailed priorities.
 
 <div class="padbottom"></div>
-<span class="etabox">Jun 2019</span>**C++ rules fully support
-[platforms](https://docs.bazel.build/versions/master/platforms.html) and
-[toolchains](https://docs.bazel.build/versions/master/toolchains.html)**
+<span class="etabox">mid 2020</span>**C++ rules use the new [platforms
+API](https://docs.bazel.build/versions/master/platforms-intro.html)** 
 <span class="inprogressstatus">IN PROGRESS</span> ([#6516](https://github.com/bazelbuild/bazel/issues/6516))
 
 * This gives them first-class Starlark support, `select()` [on
@@ -81,7 +85,7 @@ and configuration via
 
 
 <div class="padbottom"></div>
-<span class="etabox">Jun 2019</span>**Java rules fully support
+<span class="etabox">mid 2020</span>**Java rules fully support
 [platforms](https://docs.bazel.build/versions/master/platforms.html) and
 [toolchains](https://docs.bazel.build/versions/master/toolchains.html)**
 <span class="inprogressstatus">IN PROGRESS</span> ([#6521](https://github.com/bazelbuild/bazel/issues/6521))
@@ -103,7 +107,7 @@ at the command line**
 * Rules can get platforms' benefits without having to wait on migration
 
 <div class="padbottom"></div>
-<span class="etabox">Aug 2019</span>**All supported Bazel rules support 
+<span class="etabox">late 2020</span>**Android and iOS rules support 
 [platforms](https://docs.bazel.build/versions/master/platforms.html) and
 [toolchains](https://docs.bazel.build/versions/master/toolchains.html)**
 <span class="inprogressstatus">IN PROGRESS</span>
@@ -123,55 +127,6 @@ at the command line**
         $ bazel build //a:all # No command line flags!
   ```
 * *Unoptimized* means [memory and performance](#efficiency) issues may not be resolved
-
-### User-Defined Build Settings
-See [Starlark Build Configuration](https://docs.google.com/document/d/1vc8v-kXjvgZOdQdnxPTaV0rrLxtP2XwnD2tAZlYJOqw/edit?usp=sharing) for in-depth motivation and design.
-
-<div class="padbottom"></div>
-<span class="etabox">Mar 2019</span>**Starlark supports custom configuration transitions**
-<span class="donestatus">DONE</span> ([#5574](http://github.com/bazelbuild/bazel/issues/5574#issuecomment-458349702))
-
-* Rule designers can have rules change their flags or their dependencies' flags
-* This may have [memory and performance](#efficiency) consequences
-
-
-<div class="padbottom"></div>
-<span class="etabox">Jul 2019</span>**Starlark supports [fancy](https://docs.google.com/document/d/1VIRx06cZB4wLU-ASq1XKFHmx67yfHtNOCbCempaPeaA/edit) transitions**
-<span class="inprogressstatus">IN PROGRESS</span> ([#5574](http://github.com/bazelbuild/bazel/issues/5574))
-
-* Transitions can read a rule's attributes to determine what to change <span class="donestatus">DONE</span>
-* Transitions on a rule can read attributes with `select()`
-
-
-<div class="padbottom"></div>
-<span class="etabox">Jul 2019</span>**Starlark supports user-defined build settings**
-<span class="inprogressstatus">IN PROGRESS</span> ([#5577](http://github.com/bazelbuild/bazel/issues/5577))
-
-* A standard API defines how to declare custom settings. This consolidates [command
-  line
-  flags](https://docs.bazel.build/versions/master/command-line-reference.html),
-  ["secret"
-  flags](https://github.com/bazelbuild/bazel/blob/master/src/main/java/com/google/devtools/build/lib/rules/apple/AppleCommandLineOptions.java#L246),
-  [--define](https://github.com/bazelbuild/bazel/blob/b3cf83cd20f30d77e6768de651a3e652f86d6f78/src/main/java/com/google/devtools/build/lib/analysis/config/BuildConfiguration.java#L423),
-  [--features](https://source.bazel.build/bazel/+/master:src/main/java/com/google/devtools/build/lib/analysis/config/BuildConfiguration.java;l=835?q=file:BuildConfiguration.java),
-  and [feature
-  flags](https://github.com/bazelbuild/bazel/blob/d6a98282e229b311dd56e65b72003197120f299a/src/test/java/com/google/devtools/build/lib/rules/android/AndroidBinaryTest.java#L3107)). <span
-  class="donestatus">DONE</span>
-
-* All hard-coded Bazel flags can be migrated to this API. Actual migration may
-  not have begun.  <span class="inprogressstatus">IN PROGRESS</span>
-* End users (i.e. non-rule designers) can't customize settings. For end users, we want to start
-  by seeing how far we can get with [`--platforms`](https://docs.bazel.build/versions/master/platforms.html#specifying-a-platform-for-a-build) and [feature
-  flags](https://github.com/bazelbuild/bazel/blob/d6a98282e229b311dd56e65b72003197120f299a/src/test/java/com/google/devtools/build/lib/rules/android/AndroidBinaryTest.java#L3107).
-
-
-<div class="padbottom"></div>
-<span class="etabox">Jul 2019</span>**All native Bazel rules can be implemented
-in Starlark**
-<span class="inprogressstatus">IN PROGRESS</span> ([#5578](http://github.com/bazelbuild/bazel/issues/5578))
-
-* This automatically comes out of user-defined build settings and custom transitions
-
 
 ### Efficiency
 
