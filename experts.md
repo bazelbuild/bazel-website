@@ -78,12 +78,20 @@ title: Bazel Community Experts
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-md-3 expert">
-          <img class="user-logo" src="{{site_root}}images/user-logos/sumglobal.png" width="150" alt="SUM Global logo" title="sum global"/>
+          <img class="user-logo" src="{{site_root}}images/user-logos/sumglobal.png" width="125" alt="SUM Global logo" title="sum global"/>
           <h3>SUM Global</h3>
           <p>
           SUM Global Technology is an IT consulting firm. We help create high performance CI/CD build infrastructures. Combining decades of build domain knowledge with a deep technical expertise using Bazel, SUM Global works with your organization to create and enhance the software delivery process. We specialize in Java, Android and Angular builds as well as conversions from other tools. We can help with Google Remote Build Execution.
           </p>
  	<a href="http://sumglobal.com/bazel-build" target="_blank">Learn more</a>
+        </div>
+         <div class="col-sm-6 col-md-3 expert">
+          <img class="user-logo" src="{{site_root}}images/user-logos/oasis_logo.png" width="150" alt="Oasis Digital logo" title="oasisdigital"/>
+          <h3>Oasis Digital</h3>
+          <p>
+          Whether you are considering Bazel or are underway in a complex migration, Oasis Digital can train your build engineers and app developers, assist with build migration, and enhance Bazel rules for your use cases. More broadly, we can assist with the related complexities teams experience while adopting a monorepo approach, cross-project continuous integration, dev-ops, single-version policy, and other technical-organizational challenges.
+          </p>
+  <a href="https://oasisdigital.com/" target="_blank">Learn more</a>
         </div>
     </div>
   </div>
