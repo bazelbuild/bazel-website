@@ -86,7 +86,7 @@ title: Bazel Community Experts
  	<a href="http://sumglobal.com/bazel-build" target="_blank">Learn more</a>
         </div>
          <div class="col-sm-6 col-md-3 expert">
-          <img class="user-logo" src="{{site_root}}images/user-logos/oasis_logo.svg" width="150" alt="Oasis Digital logo" title="oasisdigital"/>
+          <img class="user-logo" src="{{site_root}}images/user-logos/oasis_logo.png" width="150" alt="Oasis Digital logo" title="oasisdigital"/>
           <h3>Oasis Digital</h3>
           <p>
           Whether you are considering Bazel or are underway in a complex migration, Oasis Digital can train your build engineers and app developers, assist with build migration, and enhance Bazel rules for your use cases. More broadly, we can assist with the related complexities teams experience while adopting a monorepo approach, cross-project continuous integration, dev-ops, single-version policy, and other technical-organizational challenges.
