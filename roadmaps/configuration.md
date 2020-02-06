@@ -143,7 +143,7 @@ impact of configuration APIs**
 * Building a binary's *Mac* and *Linux* versions simultaneously doesn't double the build graph
 
 <div class="padbottom"></div>
-<span class="etabox">Jul 2019</span>**An experimental Bazel mode caches
+<span class="etabox">Jul 2020</span>**An experimental Bazel mode caches
 cross-platform Java compilation**
 <span class="inprogressstatus">IN PROGRESS</span> ([#6526](https://github.com/bazelbuild/bazel/issues/6526))
 
