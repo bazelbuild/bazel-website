@@ -70,7 +70,6 @@ be manually set. ETAs will change, but we'll keep them refreshed as we best
 understand them.
 
 ### Platforms
-Also see the [Platforms Roadmap](platforms.html) for detailed priorities.
 
 <div class="padbottom"></div>
 <span class="etabox">Q1 2020</span>**Toolchains can build for both target and
@@ -112,6 +111,10 @@ platform-incompatible targets**
 ([design](https://docs.google.com/document/d/12n5QNHmFSkuh5yAbdEex64ot4hRgR-moL1zRimU7wHQ/edit?ts=5dfbe2fe))
 
 * Design ready, implementation help needed
+
+<div class="padbottom"></div>
+<span class="etabox">2021</span>**Deprecate and remove `--cpu` and related flags**
+<span class="notstartedstatus">NOT STARTED</span>
 
 
 ### Efficiency
