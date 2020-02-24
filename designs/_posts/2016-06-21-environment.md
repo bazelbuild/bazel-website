@@ -51,7 +51,7 @@ whether specified or unspecified value. Options given for different variables
 accumulate.
 
 In every action executed
-with [`use_default_shell_env`] (/docs/skylark/lib/ctx.html#action) being true,
+with [`use_default_shell_env`](/docs/skylark/lib/ctx.html#action) being true,
 precisely the environment variables specified by
 `--action_env` options are set as the default environment.
 (Note that, therefore, by default, the environment for actions is empty.)
