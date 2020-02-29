@@ -69,7 +69,7 @@ taken if the effective environment changes.
 
 Given that normally a rule writer cannot know which tools might need fancy
 environment variables (think of the commercial compiler use case), the default
-for the [`use_default_shell_env`] (/docs/skylark/lib/ctx.html#action)
+for the [`use_default_shell_env`](/docs/skylark/lib/ctx.html#action)
 parameter will become true.
 
 ### List of rc-files read by Bazel
