@@ -41,18 +41,11 @@ title: Bazel Community Experts
  	<a href="https://www.tweag.io/" target="_blank">Learn more</a>
         </div>
         <div class="col-sm-6 col-md-3 expert">
-          <img class="user-logo" src="{{site_root}}images/user-logos/scalio_logo.svg" width="150" height="35" alt="scal.io logo" title="scal.io"/>
+          <img class="user-logo" src="{{site_root}}images/user-logos/flare_logo.png" width="150" height="35" alt="scal.io logo" title="scal.io"/>
           <h3>Scal.io</h3>
           <p>
-          Scalio proliferates the adoption of Bazel, by bringing
-          digital transformation and advanced build pipeline tooling to
-          enterprise customers.  Their primary focus is in advancing
-          build/test tooling for all languages and platforms, working
-          with the world's top companies to move their organizations to
-          Bazel. Scalio's goal is in helping these companies to build
-          and test software at scale -- quickly and reliably. Find more
-          about Scalio’s Bazel initiatives
-          <a href="https://github.com/scalio/bazel-status" target="_blank">here on Github</a>.
+           Flare Build Systems, Inc. is the world’s first <a href="https://flare.build/services" target="_blank">Bazel-focused consulting company</a>. We’ve made a name for ourselves by assisting enterprises and high-growth, high-value startups migrate their build & test systems into Bazel, interacting with almost every major language and ruleset along the way, but we didn’t stop there - we also have launched a build, CI & engineering productivity-focused product line: flare.build. 
+          <a href="http://flare.build/products" target="_blank">flare.build</a>.
           </p>
        <a href="https://scal.io/" target="_blank">Learn more</a>
         </div>
