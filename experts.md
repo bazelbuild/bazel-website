@@ -41,13 +41,12 @@ title: Bazel Community Experts
  	<a href="https://www.tweag.io/" target="_blank">Learn more</a>
         </div>
         <div class="col-sm-6 col-md-3 expert">
-          <img class="user-logo" src="{{site_root}}images/user-logos/flare_logo.png" width="150" height="35" alt="scal.io logo" title="scal.io"/>
-          <h3>Scal.io</h3>
+          <img class="user-logo" src="{{site_root}}images/user-logos/flare_logo.png" width="150" height="35" alt="flare logo" title="flare"/>
+          <h3>Flare</h3>
           <p>
-           Flare Build Systems, Inc. is the world’s first <a href="https://flare.build/services" target="_blank">Bazel-focused consulting company</a>. We’ve made a name for ourselves by assisting enterprises and high-growth, high-value startups migrate their build & test systems into Bazel, interacting with almost every major language and ruleset along the way, but we didn’t stop there - we also have launched a build, CI & engineering productivity-focused product line: flare.build. 
-          <a href="http://flare.build/products" target="_blank">flare.build</a>.
+           Flare Build Systems, Inc. is the world’s first Bazel-focused consulting company. We’ve made a name for ourselves by assisting enterprises and high-growth, high-value startups migrate their build & test systems into Bazel, interacting with almost every major language and ruleset along the way, but we didn’t stop there - we also have launched a build, CI & engineering productivity-focused product line: flare.build.
           </p>
-       <a href="https://scal.io/" target="_blank">Learn more</a>
+       <a href="https://flare.build/" target="_blank">Learn more</a>
         </div>
         <div class="col-sm-6 col-md-3 expert">
           <img class="user-logo" src="{{site_root}}images/user-logos/codethink_logo.svg" width="150" height="35" alt="codethink logo" title="codethink"/>
