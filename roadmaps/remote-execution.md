@@ -23,10 +23,9 @@ title: Bazel Remote Execution Roadmap
 
 # Bazel Remote Execution Roadmap
 
-*Last verified: 2019-07-10*
+*Last verified: 2020-03-12*
 
-*Point of contact:* [buchgr](https://github.com/buchgr),
-[ishikhman](https://github.com/ishikhman)
+*Point of contact:* [philwo](https://github.com/philwo), [buchgr](https://github.com/buchgr)
 
 ## Goal
 
@@ -35,14 +34,14 @@ Our goal is to make Bazel work great with remote caching and execution systems. 
 
 ### Usability
 
-Status: <span class="inprogressstatus">IN PROGRESS</span>
+Status: <span class="donestatus">DONE</span>
 
 Objective: Configuring Bazel to connect to a remote caching and/or execution system has been streamlined in that it takes only a small number of easy to use flags. Configuration errors trigger understandable and actionable error messages ([issues](https://github.com/bazelbuild/bazel/projects/2)).
 
 
 ### Builds without the Bytes
 
-Status: <span class="inprogressstatus">IN PROGRESS</span>
+Status: <span class="donestatus">DONE</span>
 
 Objective: Bazel should only download build outputs that are requested by a user in order to use less network bandwidth and thereby reduce build and test times ([blog post](https://blog.bazel.build/2019/05/07/builds-without-bytes.html), [tracking issue](https://github.com/bazelbuild/bazel/issues/6862), [design doc](https://docs.google.com/document/d/11m5AkWjigMgo9wplqB8zTdDcHoMLEFOSH0MdBNCBYOE/edit#heading=h.fceq4hflt47f)).
 
@@ -77,7 +76,7 @@ Objective: Remote caching and execution users are able to use platforms effectiv
 
 ### Metrics and Profiler Integration
 
-Status: <span class="notstartedstatus">NOT STARTED</span>
+Status: <span class="donestatus">DONE</span>
 
 Objective: Bazel provides information about network usage/conditions and metrics of a remote build via Bazel's profiler, the BEP and/or the command line interface. A user can understand Bazel's network usage and how it affects build performance ([issue](https://github.com/bazelbuild/bazel/issues/6727)).
 
@@ -91,7 +90,7 @@ Objective: Remotely executed or cached actions should not count towards Bazel's 
 
 ### Remote Caching
 
-Status: <span class="notstartedstatus">NOT STARTED</span>
+Status: <span class="donestatus">DONE</span>
 
 Objective: Remote caching should be a simple and effective ("cheap") way to improve build and test performance. It should be dead simple for users to connect to a remote caching backend without requiring extensive modifications of their build.
 
@@ -140,6 +139,6 @@ Objective: Bazel provides an API that supports fetching a manifest instead of th
 
 ### Remote Execution of [repository_rule](https://docs.bazel.build/versions/master/skylark/repository_rules.html)
 
-Status: <span class="notstartedstatus">NOT STARTED</span>
+Status: <span class="inprogessstatus">IN_PROGRESS</span>
 
 Objective: Bazel can remotely execute a repository_rule. This will allow repository rules to be cached remotely and is a step towards removing the host machine as a bottleneck. It enables important use cases like autogenerating toolchains for the remote environment.
