@@ -110,6 +110,6 @@ When changing the flag default to true, please:
     name the of the flag.
   * Use `Fixes #xyz` in the description, so that the GitHub issue gets closed
     when the commit is merged.
-  * Review the documentation and update it if needed.
+  * Review and update documentation if needed.
 
 If a breakage is found after the flag flip, the commit will be rolled back.
