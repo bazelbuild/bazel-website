@@ -74,7 +74,7 @@ In the commit description, use [`RELNOTES:`](release-notes.html) followed by a s
 name of the flag, and a link to the GitHub issue.
 
 The commit should also update the relevant documentation. As the documentation
-is versioned, it is recommended to update the documentation in the same commit
+is versioned, we recommend updating the documentation in the same commit
 as the code change.
 
 
