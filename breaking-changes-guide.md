@@ -29,10 +29,12 @@ change in Bazel to adhere to this policy.
 [File a GitHub issue](https://github.com/bazelbuild/bazel/issues) in the Bazel
 repository. [See example.](https://github.com/bazelbuild/bazel/issues/6611)
 
+We recommend that:
+
 * The title starts with the name of the flag (the flag name will start with
   `incompatible_`).
 
-* Add the label [`incompatible-change`](https://github.com/bazelbuild/bazel/labels/incompatible-change).
+* You add the label [`incompatible-change`](https://github.com/bazelbuild/bazel/labels/incompatible-change).
 
 * The description contains a description of the change and a link to relevant
   design documents.
@@ -42,6 +44,12 @@ repository. [See example.](https://github.com/bazelbuild/bazel/issues/6611)
   migration tool.
 
 * The description includes the intended length of migration window.
+
+* The description includes an example of the error message users will get if
+  they don't migrate. This will make the GitHub issue more discoverable from
+  search engines. Make sure that the error message is helpful and actionable.
+  When possible, the error message should include the name of the incompatible
+  flag.
 
 For the migration tool, consider contributing to
 [Buildifier](https://github.com/bazelbuild/buildtools/blob/master/buildifier/README.md).
@@ -64,6 +72,10 @@ should contain the URL of the GitHub issue. As the flag name starts with
 
 In the commit description, use [`RELNOTES:`](release-notes.html) followed by a short description, the
 name of the flag, and a link to the GitHub issue.
+
+The commit should also update the relevant documentation. As the documentation
+is versioned, we recommend updating the documentation in the same commit
+as the code change.
 
 
 ## Labels
@@ -98,5 +110,6 @@ When changing the flag default to true, please:
     name the of the flag.
   * Use `Fixes #xyz` in the description, so that the GitHub issue gets closed
     when the commit is merged.
+  * Review and update documentation if needed.
 
 If a breakage is found after the flag flip, the commit will be rolled back.
