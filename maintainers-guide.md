@@ -195,13 +195,13 @@ issues.
 *   [`team-Android`](https://github.com/bazelbuild/bazel/labels/team-Android): Issues for Android team
     *   Contact: [ahumesky](https://github.com/ahumesky)
 *   [`team-Apple`](https://github.com/bazelbuild/bazel/labels/team-Apple): Issues for Apple team (also MacOS, iOS etc)
-    * Contact: ?
+    * Contact: [jmmv](https://github.com/jmmv)
 *   [`team-Bazel`](https://github.com/bazelbuild/bazel/labels/team-Bazel): General Bazel product/strategy issues
     * Contact: ?
 *   [`team-Configurability`](https://github.com/bazelbuild/bazel/labels/team-Configurability): Issues for Configurability team
     * Contact: [gregestren](https://github.com/gregestren)
 *   [`team-Core`](https://github.com/bazelbuild/bazel/labels/team-Core): Issues for Core team
-    * Contact: ?
+    * Contact: [janakdr](https://github.com/janakdr)
 *   [`team-EngProd`](https://github.com/bazelbuild/bazel/labels/team-Engprod): Issues for EngProd team (CI, release, distribution)
     * Contact: [philwo](https://github.com/philwo)
 *   [`team-ExternalDeps`](https://github.com/bazelbuild/bazel/labels/team-ExternalDeps): Issues for External Deps team (remote repositories,
@@ -226,7 +226,7 @@ issues.
 *   [`team-Starlark`](https://github.com/bazelbuild/bazel/labels/team-Starlark): Issues for Starlark language + Build API
     * Contact: [laurentlb](https://github.com/laurentlb)
 *   [`team-Windows`](https://github.com/bazelbuild/bazel/labels/team-Windows): Issues for Windows team
-    * Contact: [philwo](https://github.com/philwo)
+    * Contact: [meteorcloudy](https://github.com/meteorcloudy)
 *   [`team-XProduct`](https://github.com/bazelbuild/bazel/labels/team-XProduct): Issues for Product Excellence team: installation, Bazel packaging, website, command line processing
     * Contact: ?
 
