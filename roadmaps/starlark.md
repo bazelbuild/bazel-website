@@ -55,6 +55,15 @@ Technical debt reduction:
 * P1. Finish lib.syntax work (API cleanup, separation from Bazel).
 * P2. Reduce by 50% the build+test latency of a trivial edit to Bazel’s Java packages.
 
+Community:
+
+* `rules_python` is active and well-maintained by the community.
+* Continuous support for rules_jvm_external (no outstanding pull requests, issue
+  triage, making releases).
+* Maintain Bazel documentation infrastructure: centralize and canonicalize CSS
+  styles across bazel-website, bazel-blog, docs
+* Bazel docs: add CI tests for e2e doc site build to prevent regressions.
+
 ## Q1 2020
 
 Build health and Best practices:
@@ -77,3 +86,7 @@ Technical debt reduction:
 * Starlark optimization: flat environment, bytecode compilation
 * Delete all serialization from analysis phase, if possible
 * Make a plan for simplifying/optimizing lib.packages
+
+Community:
+
+* Publish a Glossary containing definitions for all the Bazel-specific terms
