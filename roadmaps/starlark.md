@@ -5,7 +5,7 @@ title: Starlark roadmap
 
 # Starlark Roadmap
 
-*Last verified: 2018-07-18*
+*Last verified: 2020-04-21*
 ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/starlark.md))
 
 *Point of contact:* [laurentlb](https://github.com/laurentlb)
@@ -21,24 +21,72 @@ We focus on two areas:
 * Make the language and API simple, yet powerful.
 * Provide better tooling for reading, writing, updating, debugging, and testing the code.
 
-## Roadmap for Q3 2018
 
-#### Tools
+## Q2 2020
 
-* Implement bzlint, a tool for linting and fixing code automatically ([#341](https://github.com/bazelbuild/buildtools/issues/341)).
-* Implement [bzl-rename](https://docs.google.com/document/d/1quFadX5neC6dWC6uAG1WNQl9Yj1K7lR-LZD1JCrvj9A/edit),
-  a tool for renaming symbols in BUILD and bzl files ([#342](https://github.com/bazelbuild/buildtools/issues/342)).
-* Publish a prototype debugger for debugging rules.
-* Publish a technical plan for improvements in testing facilities ([#5635](https://github.com/bazelbuild/bazel/issues/5635)).
-* Write a new prototype of [Skydoc](https://skydoc.bazel.build/), able to handle
-  rule definitions ([#102](https://github.com/bazelbuild/skydoc/issues/102)).
+Build health and Best practices:
 
+* P0. Discourage macros without have a name, and ensure the name is a unique
+  string literal. This work is focused on Google codebase, but may impact
+  tooling available publicly.
+* P0. Make Buildozer commands reliable with regard to selects and variables.
+* P1. Make Buildifier remove duplicates in lists that we don’t sort because of
+  comments.
+* P1. Update Buildifier linter to recommend inlining trivial expressions.
+* P2. Study use cases for native.existing_rule[s]() and propose alternatives.
+* P2. Study use cases for the prelude file and propose alternatives.
 
-#### Rules and Language
+Performance:
 
-* Forbid macros loaded transitively ([#5636](https://github.com/bazelbuild/bazel/issues/5636)).
-* Implement the [Name resolution](https://github.com/bazelbuild/proposals/blob/master/docs/2018-06-18-name-resolution.md)
-  ([#5637](https://github.com/bazelbuild/bazel/issues/5637)) proposal.
-* Implement fast symbol lookup in the interpreter ([#5638](https://github.com/bazelbuild/bazel/issues/5638)).
-* Improve/clean up build API (to be specified)
-* Curate a [well tested set of Bazel rules](https://docs.google.com/document/d/1oYQ-cqmqrpVE02rphobn4F_Q-lqvch4IiUlqEy9q2Fs/edit)
+* P1. Optimize the Starlark interpreter using flat environments and bytecode
+  compilation.
+
+Technical debt reduction:
+
+* P0. Add ability to port native symbols to Starlark underneath @bazel_tools.
+* P1. Delete obsolete flags (some of them are still used at Google, so we need to
+  clean the codebase first): `incompatible_always_check_depset_elements`,
+  `incompatible_disable_deprecated_attr_params`,
+  `incompatible_no_support_tools_in_action_inputs`, `incompatible_new_actions_api`.
+* P1. Ensure the followin flags can be flipped in Bazel 4.0:
+  `incompatible_disable_depset_items`, `incompatible_no_implicit_file_export`,
+  `incompatible_run_shell_command_string`,
+  `incompatible_restrict_string_escapes`.
+* P1. Finish lib.syntax work (API cleanup, separation from Bazel).
+* P2. Reduce by 50% the build+test latency of a trivial edit to Bazel’s Java packages.
+
+Community:
+
+* `rules_python` is active and well-maintained by the community.
+* Continuous support for rules_jvm_external (no outstanding pull requests, issue
+  triage, making releases).
+* Maintain Bazel documentation infrastructure: centralize and canonicalize CSS
+  styles across bazel-website, bazel-blog, docs
+* Bazel docs: add CI tests for e2e doc site build to prevent regressions.
+
+## Q1 2020
+
+Build health and Best practices:
+
+* Allow targets to track their macro call stack, for exporting via blaze query
+* Implement `--incompatible_no_implicit_file_export`
+* Remove the deprecated depset APIs (#5817, #10313, #9017).
+* Add a cross file analyzer in Buildifier, implement a check for deprecated
+  functions.
+
+Performance:
+
+* Make Blaze’s own Java-based tests 2x faster.
+* Implement a Starlark CPU profiler.
+
+Technical debt reduction:
+
+* Remove 8 incompatible flags (after flipping them).
+* Finish lib.syntax cleanup work (e.g. break dependencies).
+* Starlark optimization: flat environment, bytecode compilation
+* Delete all serialization from analysis phase, if possible
+* Make a plan for simplifying/optimizing lib.packages
+
+Community:
+
+* Publish a Glossary containing definitions for all the Bazel-specific terms
