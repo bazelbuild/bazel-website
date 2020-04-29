@@ -233,14 +233,15 @@ There are no hard and fast criteria, but here are some examples:
     than a single rule
 *   Changes to Bazel's rule definition API
 *   Changes to the APIs that Bazel uses to connect to other systems
-*   Changes to the Skylark language, semantics, or APIs
+*   Changes to the Starlark language, semantics, or APIs
 *   Changes that could have a pervasive effect on Bazel performance or memory
     usage (for better or for worse)
 *   Changes to widely used internal APIs
 *   Changes to flags and command-line interface.
 
 When a proposal adds, removes, or modifies any function or object available in
-BUILD, WORKSPACE, or bzl files, Skylark team has to be in the reviewers list.
+BUILD, WORKSPACE, or bzl files, the [Starlark team](../maintainers-guide.html)
+has to be in the reviewers list.
 
 
 ## Why do we need design reviews?

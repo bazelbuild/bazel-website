@@ -197,7 +197,7 @@ issues.
 *   [`team-Apple`](https://github.com/bazelbuild/bazel/labels/team-Apple): Issues for Apple team (also MacOS, iOS etc)
     * Contact: [jmmv](https://github.com/jmmv)
 *   [`team-Bazel`](https://github.com/bazelbuild/bazel/labels/team-Bazel): General Bazel product/strategy issues
-    * Contact: ?
+    * Contact: [sventiffe](https://github.com/sventiffe)
 *   [`team-Configurability`](https://github.com/bazelbuild/bazel/labels/team-Configurability): Issues for Configurability team
     * Contact: [gregestren](https://github.com/gregestren)
 *   [`team-Core`](https://github.com/bazelbuild/bazel/labels/team-Core): Issues for Core team
@@ -228,7 +228,7 @@ issues.
 *   [`team-Windows`](https://github.com/bazelbuild/bazel/labels/team-Windows): Issues for Windows team
     * Contact: [meteorcloudy](https://github.com/meteorcloudy)
 *   [`team-XProduct`](https://github.com/bazelbuild/bazel/labels/team-XProduct): Issues for Product Excellence team: installation, Bazel packaging, website, command line processing
-    * Contact: ?
+    * Contact: [philwo](https://github.com/philwo)
 
 For new issues, we deprecated the `category: *` labels in favor of the team labels.
 
