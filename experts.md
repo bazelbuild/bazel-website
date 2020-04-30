@@ -85,9 +85,17 @@ title: Bazel Community Experts
           </p>
   <a href="https://oasisdigital.com/" target="_blank">Learn more</a>
         </div>
+        <div class="col-sm-6 col-md-3 expert">
+          <img class="user-logo" src="{{site_root}}images/user-logos/engflow.png" width="150" alt="EngFlow logo" title="EngFlow"/>
+          <h3>EngFlow</h3>
+          <p>
+          EngFlow is a SaaS company with unparalleled Bazel expertise. Created by the engineer who led the development of Bazel, EngFlow builds tools and connects experts to help companies get even more value from Bazel. Its remote execution service typically makes builds ~10x faster. The service can be run on-prem or in the cloud and supports all clients that implement the open-source Remote Execution API.
+          </p>
+          <a href="https://www.engflow.com/" target="_blank">Learn more</a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
   <div class="beta">
     <div class="container">
