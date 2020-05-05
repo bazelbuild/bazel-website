@@ -32,7 +32,7 @@ title: Bazel Configurability Roadmap
 
 # Bazel Configurability 2020 Roadmap
 
-*Last verified: 2020-01-17* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
+*Last verified: 2020-05-04* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
 
 *Point of contact:* [gregestren](https://github.com/gregestren)
 
@@ -105,12 +105,9 @@ API](https://docs.bazel.build/versions/master/platforms-intro.html)**
 <span class="notstartedstatus">NOT STARTED</span>
 
 <div class="padbottom"></div>
-<span class="etabox">blocked</span>**`bazel build //:all` automatically skips
+<span class="etabox">mid 2020</span>**`bazel build //:all` [automatically skips](https://docs.google.com/document/d/12n5QNHmFSkuh5yAbdEex64ot4hRgR-moL1zRimU7wHQ/edit?ts=5dfbe2fe)
 platform-incompatible targets**
-<span class="inprogressstatus">DESIGNED</span>
-([design](https://docs.google.com/document/d/12n5QNHmFSkuh5yAbdEex64ot4hRgR-moL1zRimU7wHQ/edit?ts=5dfbe2fe))
-
-* Design ready, implementation help needed
+<span class="inprogressstatus">IN PROGRESS</span> ([PR 10945](https://github.com/bazelbuild/bazel/pull/10945))
 
 <div class="padbottom"></div>
 <span class="etabox">2021</span>**Deprecate and remove `--cpu` and related flags**
