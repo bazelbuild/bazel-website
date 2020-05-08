@@ -27,17 +27,7 @@ title: Bazel Community Experts
         <div class="col-sm-6 col-md-3 expert">
           <img class="user-logo" src="{{site_root}}images/user-logos/tweag_logo.png" width="150" height="35" alt="Tweag logo" title="tweag.io"/>
           <h3>Tweag</h3>
-          <p>
-          Tweag I/O is one of Bazel's earliest adopters and has been
-          an active contributor of new features and new extensions
-          since early 2018. They now help others succeed in switching
-          to Bazel. Tweag’s engineers and scientists bring rich Bazel
-          skills plus complementary expertise that spans language design,
-          software verification, data science, and more.  Together with
-          Nix, Bazel is integral to delivering byte-for-byte reproducible,
-          composable software systems integrated from hundreds of
-          sources.
-          </p>
+          <p>Tweag I/O is one of Bazel's earliest adopters, an active contributor of new features and new <a 		href="https://github.com/tweag?q=bazel" target="_blank">open source extensions</a> since early 2018, and a <a href="https://cloud.withgoogle.com/partners/detail/?id=tweag-i-o" target="_blank">Google Cloud Partner</a> who works to help others succeed in switching to Bazel—they're experts at <a href="https://www.tweag.io/posts/2018-03-15-bazel-nix.html" target="_blank">Nix + Bazel to achieve reproducibility</a>. Tweag engineers and scientists bring rich Bazel skills complemented with deep technology expertise—they can get you ready for Bazel with their new <a href="https://tweag.io/bazel#ready" target="_blank">Bazel Readiness Assessment</a>, perform migrations, and improve existing setups.</p>
  	<a href="https://www.tweag.io/" target="_blank">Learn more</a>
         </div>
         <div class="col-sm-6 col-md-3 expert">
