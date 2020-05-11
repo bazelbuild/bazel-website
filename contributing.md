@@ -89,7 +89,10 @@ languages in Bazel right now.
    of Bazel.
 *  Clone Bazel's Git repository from GitHub:
    *  `git clone https://github.com/bazelbuild/bazel.git`
-*  Try to build Bazel:
+*  Try to build Bazel (you might need to [install some
+   prerequisites](https://docs.bazel.build/versions/master/install-compile-source.html#bootstrap-unix)
+   first):
+
    *  On Linux/macOS, in Bash/Terminal:
 
       ```
