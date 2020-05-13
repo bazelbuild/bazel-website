@@ -70,8 +70,19 @@ portability, as well as the impact on memory usage and performance.
    takes too long (e.g. reviewer is unresponsive), please also send an email to
    [bazel-dev@googlegroups.com](mailto:bazel-dev@googlegroups.com).
 1. A Bazel maintainer at Google will apply the patch to our internal version
-   control system. The patch is exported as a Git commit, at which point the
-   GitHub pull request is closed.
+   control system.
+
+   This triggers [internal presubmit checks](https://bazel.build/governance.html#are-you-done-open-sourcing-bazel)
+   that may suggest more changes. If you haven't expressed a preference, the
+   submitter will automatically add "trivial" changes (like
+   [linting](https://en.wikipedia.org/wiki/Lint_(software))) that don't affect
+   design. If deeper changes are required or you'd prefer to apply
+   changes directly, you and the reviewer should communicate preferences
+   clearly in review comments.
+
+   After internal submission, the patch is exported as a Git commit,
+   at which point the GitHub pull request is closed. All final changes
+   are attributed to you.
 
 If your change has user-visible effects, consider [adding release
 notes](release-notes.html). If it is an incompatible change, read the [guide for
