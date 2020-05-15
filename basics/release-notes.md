@@ -3,7 +3,7 @@ layout: contribute
 title: Release notes
 ---
 
-# Release Notes
+# Release notes
 
 This document is targeted at Bazel contributors.
 

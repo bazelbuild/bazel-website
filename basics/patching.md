@@ -44,5 +44,5 @@ title: Patch acceptance process
    at which point the GitHub pull request is closed. All final changes
    are attributed to you.
 
-If your change has user-visible effects, please [add release notes](/contributing/release-notes.md). If it is an incompatible change, read the [guide for
+If your change has user-visible effects, please [add release notes](release-notes.html). If it is an incompatible change, read the [guide for
 rolling out breaking changes](/maintaining/breaking-changes-guide.html).
