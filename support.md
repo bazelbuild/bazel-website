@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: contribute
 title: Get Support
 ---
 
