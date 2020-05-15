@@ -1,6 +1,6 @@
 ---
 layout: contribute
-title: Release Notes
+title: Release notes
 ---
 
 # Release Notes
@@ -21,7 +21,7 @@ the release announcement.
   may be advantageous to mention it.
 
 If the change is significant, please follow the [design document
-policy](designs/index.html) first.
+policy](/designs/index.html) first.
 
 
 ## Guidelines
