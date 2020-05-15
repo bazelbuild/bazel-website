@@ -1,3 +1,5 @@
+// Styles specific to the landing page on www.bazel.build
+
 $landing-bg-color: #fafafa;
 
 .body-home {
@@ -152,5 +154,15 @@ $landing-bg-color: #fafafa;
       width: 380px;
       padding-right: 30px;
       padding-top: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home .container {
+    width: 1170px;
+  }
+
+  .footer .container {
+    width: 1170px;
   }
 }

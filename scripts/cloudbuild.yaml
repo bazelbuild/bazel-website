@@ -2,8 +2,12 @@ steps:
 - name: gcr.io/cloud-builders/docker
   args: ['build', '--tag=gcr.io/$PROJECT_ID/bazel-jekyll', 'scripts']
 - name: gcr.io/$PROJECT_ID/bazel-jekyll
-  args: ['build', '--action_env=PATH=/usr/local/bin:/usr/bin:/bin', '//:site']
+  args: ['bazel', 'version']
+- name: gcr.io/$PROJECT_ID/bazel-jekyll
+  args: ['bazel', 'build', '--action_env=PATH=/usr/local/bin:/usr/bin:/bin', '//:site']
 - name: gcr.io/cloud-builders/gsutil
   args: ['-m', 'rsync', '-r', '-c', '-d', '/workspace/bazel-bin/site-build', 'gs://www.bazel.build']
 - name: gcr.io/cloud-builders/gsutil
   args: ['web', 'set', '-m', 'index.html', '-e', '404.html', 'gs://www.bazel.build']
+
+timeout: 600s # 10 minutes

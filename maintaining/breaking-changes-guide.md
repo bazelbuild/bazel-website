@@ -70,8 +70,8 @@ should contain the URL of the GitHub issue. As the flag name starts with
       },
 ```
 
-In the commit description, use [`RELNOTES:`](release-notes.html) followed by a short description, the
-name of the flag, and a link to the GitHub issue.
+In the commit description, add a brief summary of the flag. 
+Also add [`RELNOTES:`](release-notes.html) in the following form: `RELNOTES: --incompatible_name_of_flag has been added. See #yxz for details`
 
 The commit should also update the relevant documentation. As the documentation
 is versioned, we recommend updating the documentation in the same commit
@@ -106,8 +106,10 @@ Before flipping the default value of the flag to true, please make sure that:
 
 When changing the flag default to true, please:
 
-  * Use [`RELNOTES:`](release-notes.html) in the commit description, with the
-    name the of the flag.
+  * Use `RELNOTES[INC]` in the commit description, with the
+    following format:
+    `RELNOTES[INC]: --incompatible_name_of_flag is flipped to true. See #yxz for details`
+    You can include additional information in the rest of the commit description.
   * Use `Fixes #xyz` in the description, so that the GitHub issue gets closed
     when the commit is merged.
   * Review and update documentation if needed.
