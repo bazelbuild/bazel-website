@@ -97,6 +97,21 @@ title: Bazel Community Experts
     </div>
   </div>
 
+  <div class="landing-section experts">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 expert">
+          <img class="user-logo" src="{{site_root}}images/user-logos/epam.png" width="150" alt="EPAM logo" title="EPAM"/>
+          <h3>EPAM</h3>
+          <p>
+          Since 1993 EPAM has leveraged its ‘Engineering DNA’ to become a leading global product development, digital platform engineering, and top digital and product design agency. Due to its tight partnership with Google, EPAM has extensive Bazel expertise and is ready to assess readiness and perform complex migration to Bazel in order to streamline development and CI/CD processes for any technology and complexity including custom rules and tools development, cache and RBE setup.
+          </p>
+ 	<a href="https://www.epam.com/" target="_blank">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="beta">
     <div class="container">
       <div class="row">
