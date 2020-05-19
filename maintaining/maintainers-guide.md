@@ -206,7 +206,7 @@ issues.
     * Contact: [philwo](https://github.com/philwo)
 *   [`team-ExternalDeps`](https://github.com/bazelbuild/bazel/labels/team-ExternalDeps): Issues for External Deps team (remote repositories,
     WORKSPACE file)
-    * Contact: [laurentlb](https://github.com/laurentlb)
+    * Contact: [philwo](https://github.com/philwo)
 *   [`team-Front-End`](https://github.com/bazelbuild/bazel/labels/team-Front-End): Issues for the Bazel Front End team
     * Contact: [laurentlb](https://github.com/laurentlb)
 *   [`team-Local-Exec`](https://github.com/bazelbuild/bazel/labels/team-Local-Exec): Issues for Execution (Local) team
