@@ -6,7 +6,7 @@
 
     <script>
       var current_url = window.location.href;
-      
+
       // Do a shortcut so that be.bazel.build redirect to the build encyclopedia
       var be_url = new RegExp("^https?://be(\.bazel.build)?/?");
       if (be_url.test(current_url)) {
@@ -50,7 +50,25 @@
     <!-- Custom stylesheet -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
 
-    <!-- metadata -->
-    <meta name="og:title" content="{{ page.title }}">
-    <meta name="og:image" content="{{ site.assets_url }}/images/bazel-og-image.png">
+    <!--
+      Metadata tags.
+
+      The metadata tag's name attribute is specified in the HTML5 spec for
+      specifying metadata, and the property attribute comes from RDFa, which
+      itself extends HTML5. It's valid to use both name and property in the
+      same metadata element.
+
+      og:<tag> is part of the Open Graph protocol by Facebook, but is also used
+      by other social media sites like LinkedIn.
+    -->
+    <meta name="og:title" property="og:title" content="{{ page.title }} - Bazel">
+    <meta name="og:image" property="og:image" content="{{ site.assets_url }}/images/bazel-og-image.png">
+    <meta name="og:type"  property="og:type"  content="website">
+    <meta name="og:url"   property="og:url"   content="{{ page.url }}">
+
+    <!-- Twitter has its own custom cards meta tags. -->
+    <meta property="twitter:card"  content="summary_large_image">
+    <meta property="twitter:url"   content="{{ page.url }}">
+    <meta property="twitter:title" content="{{ page.title }} - Bazel">
+    <meta property="twitter:image" content="{{ site.assets_url }}/images/bazel-og-image.png">
   </head>
