@@ -25,7 +25,7 @@ title: Bazel Community Experts
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-md-3 expert">
-          <img class="user-logo" src="{{site_root}}images/user-logos/tweag_logo.png" width="150" height="35" alt="Tweag logo" title="tweag.io"/>
+          <img class="user-logo" src="{{site_root}}images/user-logos/tweag_logo.png" width="146" height="25" alt="Tweag logo" title="tweag.io"/>
           <h3>Tweag</h3>
           <p>Tweag I/O is one of Bazel's earliest adopters, an active contributor of new features and new <a 		href="https://github.com/tweag?q=bazel" target="_blank">open source extensions</a> since early 2018. Our specialty: partner with you to help you achieve near byte-for-byte reproducibility, fully traceable all the way to production and conveniently auditable builds that can be cached correctly and run fast. Tweag engineers combine extensive knowledge of Bazel with a capacity for deep technical understanding of your architecture, because no two builds are the same. We get you ready for Bazel with our <a href="https://tweag.io/bazel#ready" target="_blank">Bazel Readiness Assessment</a>, perform migrations, and improve existing setups.</p>
  	<a href="https://www.tweag.io/" target="_blank">Learn more</a>
