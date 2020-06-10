@@ -213,7 +213,14 @@ BAZEL_SITE_REDIRECTS = _make_redirects(
         "2017/05/26/Bazel-0-5-0-release.html",
         "2017/05/31/google-summer-of-code-2017.html",
     ],
+
+    # Put moved pages here.
     other = {
-        "versions/master/docs/windows-chocolatey-maintenance.html": "https://www.bazel.build/windows-chocolatey-maintenance.html",
+        "breaking-changes-guide.html": "maintaining/breaking-changes-guide.html",
+        "maintainers-guide.html": "maintaining/maintainers-guide.html",
+        "release-notes.html": "basics/release-notes.html",
         "roadmaps/index.html": "/roadmap.html",
+        "versions/master/docs/windows-chocolatey-maintenance.html": "https://bazel.build/windows-chocolatey-maintenance.html",
+        "windows-chocolatey-maintenance.html": "maintaining/windows-chocolatey-maintenance.html",
+        "windows-scoop-maintenance.html": "maintaining/windows-scoop-maintenance.html",
     })
