@@ -168,27 +168,36 @@ organization](https://github.com/bazelbuild) to be able to add or remove labels.
 The following definitions for priority will be used by the maintainers to triage
 issues.
 
-* **P0** - Major broken functionality that causes a Bazel release (minus release
-  candidates) to be unusable, or a downed service that severely impacts
-  development of the Bazel project. This includes regressions introduced in a
-  new release that blocks a significant number of users, or an incompatible
-  breaking change that was not compliant to the [Breaking
+* [**P0**](https://github.com/bazelbuild/bazel/labels/P0) - Major broken
+  functionality that causes a Bazel release (minus release candidates) to be
+  unusable, or a downed service that severely impacts development of the Bazel
+  project. This includes regressions introduced in a new release that blocks a
+  significant number of users, or an incompatible breaking change that was not
+  compliant to the [Breaking
   Change](https://docs.google.com/document/d/1q5GGRxKrF_mnwtaPKI487P8OdDRh2nN7jX6U-FXnHL0/edit?pli=1#heading=h.ceof6vpkb3ik)
   policy. No practical workaround exists.
-* **P1** - Critical defect or feature which should be addressed in the next
-  release, or a serious issue that impacts many users (including the development
-  of the Bazel project), but a practical workaround exists. Typically does not
-  require immediate action. In high demand and planned in the current quarter's
-  roadmap.
-* **P2** - Defect or feature that is tied to roadmaps or upcoming releases.
-  Moderate live issue in a released Bazel version that is inconvenient for a
-  user that needs to be addressed in an upcoming release and/or a easy workaround
-  exists.
-* **P3** - Desirable minor bug fix or enhancement with small impact. Not
-  prioritized into Bazel roadmaps or any imminent release. May never be fixed.
-* **P4** - Low priority defect or feature request that is unlikely to get
-  closed. Can also be kept open for a potential re-prioritization if more users
-  are impacted.
+* [**P1**](https://github.com/bazelbuild/bazel/labels/P1) - Critical defect or
+  feature which should be addressed in the next release, or a serious issue that
+  impacts many users (including the development of the Bazel project), but a
+  practical workaround exists. Typically does not require immediate action. In
+  high demand and planned in the current quarter's roadmap.
+* [**P2**](https://github.com/bazelbuild/bazel/labels/P2) - Defect or feature
+  that should be addressed but we don't currently work on. Moderate live issue
+  in a released Bazel version that is inconvenient for a user that needs to be
+  addressed in an future release and/or a easy workaround exists.
+* [**P3**](https://github.com/bazelbuild/bazel/labels/P3) - Desirable minor bug
+  fix or enhancement with small impact. Not prioritized into Bazel roadmaps or
+  any imminent release. May never be fixed.
+* [**P4**](https://github.com/bazelbuild/bazel/labels/P4) - Low priority defect
+  or feature request that is unlikely to get closed. Can also be kept open for a
+  potential re-prioritization if more users are impacted.
+* [**ice-box**](https://github.com/bazelbuild/bazel/issues?q=label%3Aice-box+is%3Aclosed)
+  - Issues that we currently don't have time to deal with nor the
+  time to accept contributions. We will close these issues to indicate that
+  nobody is working on them, but will continue to monitor their validity over
+  time and revive them if enough people are impacted and if we happen to have
+  resources to deal with them. As always, feel free to comment or add reactions
+  to these issues even when closed.
 
 ## Team labels
 
