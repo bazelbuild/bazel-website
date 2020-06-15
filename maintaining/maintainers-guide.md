@@ -211,11 +211,6 @@ issues.
     * Contact: [gregestren](https://github.com/gregestren)
 *   [`team-Core`](https://github.com/bazelbuild/bazel/labels/team-Core): Issues for Core team
     * Contact: [janakdr](https://github.com/janakdr)
-*   [`team-EngProd`](https://github.com/bazelbuild/bazel/labels/team-Engprod): Issues for EngProd team (CI, release, distribution)
-    * Contact: [philwo](https://github.com/philwo)
-*   [`team-ExternalDeps`](https://github.com/bazelbuild/bazel/labels/team-ExternalDeps): Issues for External Deps team (remote repositories,
-    WORKSPACE file)
-    * Contact: [philwo](https://github.com/philwo)
 *   [`team-Front-End`](https://github.com/bazelbuild/bazel/labels/team-Front-End): Issues for the Bazel Front End team
     * Contact: [laurentlb](https://github.com/laurentlb)
 *   [`team-Local-Exec`](https://github.com/bazelbuild/bazel/labels/team-Local-Exec): Issues for Execution (Local) team
@@ -236,7 +231,7 @@ issues.
     * Contact: [laurentlb](https://github.com/laurentlb)
 *   [`team-Windows`](https://github.com/bazelbuild/bazel/labels/team-Windows): Issues for Windows team
     * Contact: [meteorcloudy](https://github.com/meteorcloudy)
-*   [`team-XProduct`](https://github.com/bazelbuild/bazel/labels/team-XProduct): Issues for Product Excellence team: installation, Bazel packaging, website, command line processing
+*   [`team-XProduct`](https://github.com/bazelbuild/bazel/labels/team-XProduct): Issues for Product Excellence team: installation, Bazel packaging, website, command line processing, Bazel CI, releases / distributions, external repositories
     * Contact: [philwo](https://github.com/philwo)
 
 For new issues, we deprecated the `category: *` labels in favor of the team labels.
