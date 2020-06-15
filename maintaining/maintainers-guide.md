@@ -229,9 +229,7 @@ issues.
     * Contact: [lberki](https://github.com/lberki)
 *   [`team-Starlark`](https://github.com/bazelbuild/bazel/labels/team-Starlark): Issues for Starlark language + Build API
     * Contact: [laurentlb](https://github.com/laurentlb)
-*   [`team-Windows`](https://github.com/bazelbuild/bazel/labels/team-Windows): Issues for Windows team
-    * Contact: [meteorcloudy](https://github.com/meteorcloudy)
-*   [`team-XProduct`](https://github.com/bazelbuild/bazel/labels/team-XProduct): Issues for Product Excellence team: installation, Bazel packaging, website, command line processing, Bazel CI, releases / distributions, external repositories
+*   [`team-XProduct`](https://github.com/bazelbuild/bazel/labels/team-XProduct): Issues for Product Excellence team: installation, Bazel packaging, website, command line processing, Bazel CI, Windows, releases / distributions, external repositories
     * Contact: [philwo](https://github.com/philwo)
 
 For new issues, we deprecated the `category: *` labels in favor of the team labels.
