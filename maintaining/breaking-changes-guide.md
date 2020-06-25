@@ -94,6 +94,13 @@ issue accordingly.
 If a problem is found with the flag and users are not expected to migrate yet:
 remove the flags `migration-xx.yy`.
 
+## Updating repositories
+
+1. Ensure that the core repositories are migrated. On the
+  [`bazelisk-plus-incompatible-flags` pipeline](https://buildkite.com/bazel/bazelisk-plus-incompatible-flags),
+  the flag should appear under "The following flags didn't break any passing Bazel team owned/co-owned projects".
+1. Notify the owners of the other repositories.
+1. Wait 14 days after the notifications to proceed, or until the flag is under "The following flags didn't break any passing projects" in the CI.
 
 ## Flipping the flag
 
@@ -101,8 +108,6 @@ Before flipping the default value of the flag to true, please make sure that:
 
   * The migration window is respected.
   * User concerns and questions have been resolved.
-  * The flip will not break projects. Check the [`Bazelisk + Incompatible
-    flags`](https://buildkite.com/bazel/bazelisk-plus-incompatible-flags/) pipeline.
 
 When changing the flag default to true, please:
 
@@ -113,5 +118,3 @@ When changing the flag default to true, please:
   * Use `Fixes #xyz` in the description, so that the GitHub issue gets closed
     when the commit is merged.
   * Review and update documentation if needed.
-
-If a breakage is found after the flag flip, the commit will be rolled back.
