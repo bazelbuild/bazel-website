@@ -162,9 +162,12 @@ cross-platform Java compilation**
 ### Features
 
 <div class="padbottom"></div>
-<span class="etabox">Mar 2020</span>**Projects can declare and compliance-check software
-licenses** ([#7444](https://github.com/bazelbuild/bazel/issues/7444))
-<span class="inprogressstatus">in progress</span>
+<span class="etabox">Mar 2020</span>**Short and sharp [Starlark flags](https://docs.bazel.build/versions/master/skylark/config.html#user-defined-build-settings)** 
+<span class="inprogressstatus">in progress</span> ([#11750](https://github.com/bazelbuild/bazel/issues/11750))
+
+<div class="padbottom"></div>
+<span class="etabox">Mar 2020</span>**Projects can declare and compliance-check software licenses** 
+<span class="inprogressstatus">in progress</span> ([#7444](https://github.com/bazelbuild/bazel/issues/7444))
 
   
 ### Documentation
