@@ -32,7 +32,7 @@ title: Bazel Configurability Roadmap
 
 # Bazel Configurability 2020 Roadmap
 
-*Last verified: 2020-05-04* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
+*Last verified: 2020-07-13* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
 
 *Point of contact:* [gregestren](https://github.com/gregestren)
 
