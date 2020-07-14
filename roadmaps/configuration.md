@@ -32,7 +32,7 @@ title: Bazel Configurability Roadmap
 
 # Bazel Configurability 2020 Roadmap
 
-*Last verified: 2020-07-13* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
+*Last verified: 2020-07-15* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
 
 *Point of contact:* [gregestren](https://github.com/gregestren)
 
@@ -83,7 +83,7 @@ platforms](https://docs.google.com/document/d/1U9HzdDmtRnm244CaRM6JV-q2408mbNODA
 <span class="inprogressstatus">IN PROGRESS</span> ([#11748](https://github.com/bazelbuild/bazel/issues/11748))
 
 <div class="padbottom"></div>
-<span class="etabox">mid 2020</span>**C++ rules use the new [platforms
+<span class="etabox">Fall 2020</span>**C++ rules use the new [platforms
 API](https://docs.bazel.build/versions/master/platforms-intro.html)** 
 <span class="inprogressstatus">IN PROGRESS</span> ([#6516](https://github.com/bazelbuild/bazel/issues/6516))
 
@@ -94,14 +94,14 @@ API](https://docs.bazel.build/versions/master/platforms-intro.html)**
 * *July update*: we're fulfilling this by implementing proper  Android / iOS support
 
 <div class="padbottom"></div>
-<span class="etabox">mid 2020</span>**Java rules use the new [platforms
+<span class="etabox">Fall 2020</span>**Java rules use the new [platforms
 API](https://docs.bazel.build/versions/master/platforms-intro.html)**
 <span class="inprogressstatus">IN PROGRESS</span> ([#4592](https://github.com/bazelbuild/bazel/issues/4592))
 
 * Same as C++ but also need [platform definitions](https://github.com/bazelbuild/rules_java/pull/8)
 
 <div class="padbottom"></div>
-<span class="etabox">mid 2020</span>**Android rules use the new [platforms
+<span class="etabox">Fall 2020</span>**Android rules use the new [platforms
 API](https://docs.bazel.build/versions/master/platforms-intro.html)**
 <span class="inprogressstatus">IN PROGRESS</span> ([#11749](https://github.com/bazelbuild/bazel/issues/11749))
 
@@ -122,14 +122,14 @@ platform-incompatible targets**
 ### Efficiency
 
 <div class="padbottom"></div>
-<span class="etabox">Q1 2020</span>**Faster incremental tests on `--test_*`
+<span class="etabox">Q3 2020</span>**Faster incremental tests on `--test_*`
 changes**
 <span class="inprogressstatus">IN PROGRESS</span> ([#6842](https://github.com/bazelbuild/bazel/issues/6842))
 
 * Specifically, changing `--test_*` doesn't redo the analysis phase
 
 <div class="padbottom"></div>
-<span class="etabox">Q1 2020</span>**A diganostic tool explains performance
+<span class="etabox">August 2020</span>**A diganostic tool explains performance
 impact of configuration APIs**
 <span class="inprogressstatus">IN PROGRESS</span> ([#10613](https://github.com/bazelbuild/bazel/issues/10613))
 
@@ -148,7 +148,7 @@ impact of configuration APIs**
 * Building a binary's *Mac* and *Linux* versions simultaneously doesn't double the build graph
 
 <div class="padbottom"></div>
-<span class="etabox">Oct 2020</span>**An experimental Bazel mode caches
+<span class="etabox">October 2020</span>**An experimental Bazel mode caches
 cross-platform Java compilation**
 <span class="inprogressstatus">IN PROGRESS</span> ([#6526](https://github.com/bazelbuild/bazel/issues/6526))
 
@@ -162,11 +162,11 @@ cross-platform Java compilation**
 ### Features
 
 <div class="padbottom"></div>
-<span class="etabox">Mar 2020</span>**Short and sharp [Starlark flags](https://docs.bazel.build/versions/master/skylark/config.html#user-defined-build-settings)** 
+<span class="etabox">September 2020</span>**Short and sharp [Starlark flags](https://docs.bazel.build/versions/master/skylark/config.html#user-defined-build-settings)** 
 <span class="inprogressstatus">in progress</span> ([#11750](https://github.com/bazelbuild/bazel/issues/11750))
 
 <div class="padbottom"></div>
-<span class="etabox">Mar 2020</span>**Projects can declare and compliance-check software licenses** 
+<span class="etabox">late 2020</span>**Projects can declare and compliance-check software licenses** 
 <span class="inprogressstatus">in progress</span> ([#7444](https://github.com/bazelbuild/bazel/issues/7444))
 
   
