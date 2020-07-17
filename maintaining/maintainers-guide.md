@@ -211,14 +211,12 @@ issues.
     * Contact: [gregestren](https://github.com/gregestren)
 *   [`team-Core`](https://github.com/bazelbuild/bazel/labels/team-Core): Issues for Core team
     * Contact: [janakdr](https://github.com/janakdr)
-*   [`team-Front-End`](https://github.com/bazelbuild/bazel/labels/team-Front-End): Issues for the Bazel Front End team
-    * Contact: [laurentlb](https://github.com/laurentlb)
 *   [`team-Local-Exec`](https://github.com/bazelbuild/bazel/labels/team-Local-Exec): Issues for Execution (Local) team
     * Contact: [jmmv](https://github.com/jmmv)
 *   [`team-Performance`](https://github.com/bazelbuild/bazel/labels/team-Performance): Issues for Bazel Performance team
     * Contact: [meisterT](https://github.com/meisterT)
 *   [`team-Remote-Exec`](https://github.com/bazelbuild/bazel/labels/team-Remote-Exec): Issues for Execution (Remote) team
-    * Contact: ?
+    * Contact: [philwo](https://github.com/philwo)
 *   [`team-Rules-CPP`](https://github.com/bazelbuild/bazel/labels/team-Rules-CPP): Issues for C++ rules
     * Contact: [lberki](https://github.com/lberki)
 *   [`team-Rules-Java`](https://github.com/bazelbuild/bazel/labels/team-Rules-Java): Issues for Java rules
@@ -228,7 +226,7 @@ issues.
 *   [`team-Rules-Server`](https://github.com/bazelbuild/bazel/labels/team-Rules-Server): Issues for serverside rules included with Bazel
     * Contact: [lberki](https://github.com/lberki)
 *   [`team-Starlark`](https://github.com/bazelbuild/bazel/labels/team-Starlark): Issues for Starlark language + Build API
-    * Contact: [laurentlb](https://github.com/laurentlb)
+    * Contact: [lberki](https://github.com/lberki)
 *   [`team-XProduct`](https://github.com/bazelbuild/bazel/labels/team-XProduct): Issues for Product Excellence team: installation, Bazel packaging, website, command line processing, Bazel CI, Windows, releases / distributions, external repositories
     * Contact: [philwo](https://github.com/philwo)
 
