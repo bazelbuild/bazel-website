@@ -52,7 +52,7 @@ repository.
 1. A user creates an issue using the [Issue
    Template](https://github.com/bazelbuild/bazel/blob/master/ISSUE_TEMPLATE.md)
    and it enters the pool of [unreviewed open
-   issues](https://github.com/bazelbuild/bazel/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+-label%3Auntriaged+-label%3Ap2+-label%3Ap1+-label%3Ap3+-label%3Ap4+-label%3Ateam-Starlark+-label%3Ateam-Rules-CPP+-label%3Ateam-Rules-Java+-label%3Ateam-Engprod++-label%3Ateam-Execution+-label%3Ateam-XProduct+-label%3Ateam-Android+-label%3Ateam-Apple+-label%3Ateam-ExternalDeps+-label%3Ateam-Configurability++-label%3Ateam-Performance+-label%3Ateam-EngProd++-label%3Ateam-Rules-Server+-label%3Ateam-Windows).
+   issues](https://github.com/bazelbuild/bazel/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+-label%3Auntriaged+-label%3Ap2+-label%3Ap1+-label%3Ap3+-label%3Ap4+-label%3Ateam-Starlark+-label%3Ateam-Rules-CPP+-label%3Ateam-Rules-Java+-label%3Ateam-XProduct+-label%3Ateam-Android+-label%3Ateam-Apple+-label%3Ateam-Configurability++-label%3Ateam-Performance+-label%3Ateam-Rules-Server+-label%3Ateam-Core+-label%3Ateam-Rules-Python+-label%3Ateam-Remote-Exec+-label%3Ateam-Local-Exec+-label%3Ateam-Bazel).
 1. A member on the Developer Experience (DevEx) subteam rotation reviews the
    issue.
   1. If the issue is **not a bug** or a **feature request**, the DevEx member
