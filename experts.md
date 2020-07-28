@@ -98,6 +98,14 @@ title: Bazel Community Experts
           </p>
  	<a href="https://www.epam.com/" target="_blank">Learn more</a>
         </div>
+      <div class="col-sm-6 col-md-3 expert">
+          <img class="user-logo" src="{{site_root}}images/user-logos/buildbuddy.svg" height="54" alt="BuildBuddy logo" title="BuildBuddy"/>
+          <h3>BuildBuddy</h3>
+          <p>
+          BuildBuddy provides an open-core suite of enterprise features for Bazel. Included are a highly scalable Remote Build Execution service, a shared build artifact cache, and a build result UI. It's available as a fully-managed cloud service or as an easy to deploy on-prem solution. The service is free to use for individuals and open-source projects. BuildBuddy is based in San Francisco, backed by Y Combinator, and founded by two ex-Googlers deeply passionate about making developers more productive.
+          </p>
+ 	<a href="https://buildbuddy.io/" target="_blank">Learn more</a>
+        </div>
       </div>
     </div>
   </div>
