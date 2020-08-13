@@ -10,8 +10,9 @@ title: Patch acceptance process
    [mailing list](https://groups.google.com/forum/#!forum/bazel-dev).
 1. PRs that change or add behavior are not accepted without being tied to an
    issue.
-1  Significant changes need a [design document](/designs/index.html).
-1. Prepare a git commit that implements the feature. Don't forget to add tests.
+1. Significant changes need a [design document](/designs/index.html).
+1. Prepare a git commit that implements the feature. Don't forget to add tests
+   and update the documentation.
 1. Ensure you've signed a [Contributor License
    Agreement](https://cla.developers.google.com).
 1. Send us a pull request on
