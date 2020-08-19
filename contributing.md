@@ -44,6 +44,6 @@ stylistic, refactoring, or "cleanup" changes). When making a change, please
 include tests and documentation, and keep in mind backward-compatibility,
 portability, as well as the impact on memory usage and performance.
 
-See [getting started](basics/getting_started.md) for learning how to work on the
-code base, and the [patch acceptance process](basics/patching.md) for sending
+See [getting started](basics/getting_started.html) for learning how to work on the
+code base, and the [patch acceptance process](basics/patching.html) for sending
 your contribution.
