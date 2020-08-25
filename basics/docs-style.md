@@ -51,7 +51,7 @@ This section contains basic writing tips.
 
 -  Keep it consistent. Don't introduce new names for existing concepts. Where
    applicable, use the term defined in the
-   [Glossary](https://docs.bazel.build/versions/3.4.0/glossary.html#command).
+   [Glossary](https://docs.bazel.build/glossary.html).
    -  For example, if you're writing about issuing commands on a
       terminal, don't use both terminal and command line on the page.
 
@@ -136,6 +136,16 @@ Where possible, use Markdown instead of HTML in your files. Follow the
 [GitHub Markdown Syntax Guide](https://guides.github.com/features/mastering-markdown/#syntax)
 for recommended Markdown style.
 
+For readability, wrap lines at 80 characters. Long links or code snippets
+may be longer, but should start on a new line. For example:
+
+```
+Where possible, use Markdown instead of HTML in your files. Follow the
+[GitHub Markdown Syntax Guide](https://guides.github.com/features/mastering-markdown/#syntax)
+for recommended Markdown style.
+```
+
+
 ### Links
 
 -  Use descriptive link text instead of "here" or "below". This practice
@@ -144,8 +154,8 @@ for recommended Markdown style.
    -  **NO:** For more details, see [here].
 
 -  End the sentence with the link, if possible.
-   -  **YES:** For more details, see <link>.
-   -  **NO:** See <link> for more information.
+   -  **YES:** For more details, see [link].
+   -  **NO:** See [link] for more information.
 
 ### Lists
 
