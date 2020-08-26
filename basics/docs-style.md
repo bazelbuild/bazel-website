@@ -170,7 +170,7 @@ for recommended Markdown style.
 ### Placeholders
 
 -  Use angle brackets to denote a variable that users should change.
-   In Markdown, escape the angle brackets with a forward slash: `\<example\>`.
+   In Markdown, escape the angle brackets with a back slash: `\<example\>`.
    -  **YES:** `bazel help <command>`: Prints help and options for `<command>`
    -  **NO:** bazel help _command_: Prints help and options for "command"
 
