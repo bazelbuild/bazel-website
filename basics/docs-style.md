@@ -94,7 +94,7 @@ Where possible, avoid terms that orient things in time, such as referencing
 specific dates (Q2 2020) or saying "now", "currently", or "soon."  These go
 stale quickly and could be incorrect if it's a future projection. Instead,
 specify a version level instead, such as "Bazel X.x and higher supports
-<feature>" or a GitHub issue link.
+\<feature\>" or a GitHub issue link.
 
 -  **YES:** Bazel 0.10.0 or later supports remote caching.
 -  **NO:** Bazel will soon support remote caching, likely in October 2017.
@@ -170,6 +170,7 @@ for recommended Markdown style.
 ### Placeholders
 
 -  Use angle brackets to denote a variable that users should change.
+   In Markdown, escape the angle brackets with a forward slash: `\<example\>`.
    -  **YES:** `bazel help <command>`: Prints help and options for `<command>`
    -  **NO:** bazel help _command_: Prints help and options for "command"
 
