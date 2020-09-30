@@ -32,7 +32,7 @@ languages in Bazel right now.
       cd bazel
       bazel --output_user_root=c:\tmp build //src:bazel.exe
       ```
-      
+
       For faster iteration times (but larger binaries), use `//src:bazel-dev.exe` instead.
 
 *  This will produce a working Bazel binary in `bazel-bin/src/bazel` (or `bazel-bin/src/bazel.exe` on Windows).
@@ -105,6 +105,9 @@ But if you want to debug the Java code, you must attach to the server using the 
   [debugging support](https://ij.bazel.build/docs/run-configurations.html)
 
 # Bazel's code description
+
+Please read [CODEBASE.md](https://github.com/bazelbuild/bazel/blob/master/CODEBASE.md)
+for a detailed description of the code base.
 
 Bazel is organized in several parts:
 

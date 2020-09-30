@@ -52,7 +52,7 @@ repository.
 1. A user creates an issue using the [Issue
    Template](https://github.com/bazelbuild/bazel/blob/master/ISSUE_TEMPLATE.md)
    and it enters the pool of [unreviewed open
-   issues](https://github.com/bazelbuild/bazel/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+-label%3Auntriaged+-label%3Ap2+-label%3Ap1+-label%3Ap3+-label%3Ap4+-label%3Ateam-Starlark+-label%3Ateam-Rules-CPP+-label%3Ateam-Rules-Java+-label%3Ateam-Engprod++-label%3Ateam-Execution+-label%3Ateam-Product+-label%3Ateam-Android+-label%3Ateam-Apple+-label%3Ateam-ExternalDeps+-label%3Ateam-Configurability++-label%3Ateam-Performance+-label%3Ateam-EngProd++-label%3Ateam-Rules-Server+-label%3Ateam-Windows).
+   issues](https://github.com/bazelbuild/bazel/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+-label%3Auntriaged+-label%3Ap2+-label%3Ap1+-label%3Ap3+-label%3Ap4+-label%3Ateam-Starlark+-label%3Ateam-Rules-CPP+-label%3Ateam-Rules-Java+-label%3Ateam-XProduct+-label%3Ateam-Android+-label%3Ateam-Apple+-label%3Ateam-Configurability++-label%3Ateam-Performance+-label%3Ateam-Rules-Server+-label%3Ateam-Core+-label%3Ateam-Rules-Python+-label%3Ateam-Remote-Exec+-label%3Ateam-Local-Exec+-label%3Ateam-Bazel).
 1. A member on the Developer Experience (DevEx) subteam rotation reviews the
    issue.
   1. If the issue is **not a bug** or a **feature request**, the DevEx member
@@ -211,14 +211,12 @@ issues.
     * Contact: [gregestren](https://github.com/gregestren)
 *   [`team-Core`](https://github.com/bazelbuild/bazel/labels/team-Core): Issues for Core team
     * Contact: [janakdr](https://github.com/janakdr)
-*   [`team-Front-End`](https://github.com/bazelbuild/bazel/labels/team-Front-End): Issues for the Bazel Front End team
-    * Contact: [laurentlb](https://github.com/laurentlb)
 *   [`team-Local-Exec`](https://github.com/bazelbuild/bazel/labels/team-Local-Exec): Issues for Execution (Local) team
     * Contact: [jmmv](https://github.com/jmmv)
 *   [`team-Performance`](https://github.com/bazelbuild/bazel/labels/team-Performance): Issues for Bazel Performance team
     * Contact: [meisterT](https://github.com/meisterT)
 *   [`team-Remote-Exec`](https://github.com/bazelbuild/bazel/labels/team-Remote-Exec): Issues for Execution (Remote) team
-    * Contact: ?
+    * Contact: [philwo](https://github.com/philwo)
 *   [`team-Rules-CPP`](https://github.com/bazelbuild/bazel/labels/team-Rules-CPP): Issues for C++ rules
     * Contact: [lberki](https://github.com/lberki)
 *   [`team-Rules-Java`](https://github.com/bazelbuild/bazel/labels/team-Rules-Java): Issues for Java rules
@@ -228,7 +226,7 @@ issues.
 *   [`team-Rules-Server`](https://github.com/bazelbuild/bazel/labels/team-Rules-Server): Issues for serverside rules included with Bazel
     * Contact: [lberki](https://github.com/lberki)
 *   [`team-Starlark`](https://github.com/bazelbuild/bazel/labels/team-Starlark): Issues for Starlark language + Build API
-    * Contact: [laurentlb](https://github.com/laurentlb)
+    * Contact: [lberki](https://github.com/lberki)
 *   [`team-XProduct`](https://github.com/bazelbuild/bazel/labels/team-XProduct): Issues for Product Excellence team: installation, Bazel packaging, website, command line processing, Bazel CI, Windows, releases / distributions, external repositories
     * Contact: [philwo](https://github.com/philwo)
 

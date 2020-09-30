@@ -31,10 +31,10 @@ title: Bazel Community Experts
  	<a href="https://www.tweag.io/" target="_blank">Learn more</a>
         </div>
         <div class="col-sm-6 col-md-3 expert">
-          <img class="user-logo" src="{{site_root}}images/user-logos/flare_logo.png" width="150" height="35" alt="flare logo" title="flare"/>
+          <img class="user-logo" src="{{site_root}}images/user-logos/flare_logo.png" width="150" height="68" alt="flare logo" title="flare"/>
           <h3>Flare</h3>
           <p>
-           Flare Build Systems, Inc. is the world’s first Bazel-focused consulting company. We’ve made a name for ourselves by assisting enterprises and high-growth, high-value startups migrate their build & test systems into Bazel, interacting with almost every major language and ruleset along the way, but we didn’t stop there - we also have launched a build, CI & engineering productivity-focused product line: flare.build.
+           Flare Build Systems, Inc. is the world’s first Bazel-focused SaaS & consulting company. We’ve made a name for ourselves by assisting enterprises and high-growth, high-value startups migrate their build & test systems into Bazel, interacting with almost every major language and ruleset along the way, but we didn’t stop there - we also have launched a build CI & engineering productivity-focused product line, and are now offering advanced Bazel training.
           </p>
        <a href="https://flare.build/" target="_blank">Learn more</a>
         </div>
@@ -97,6 +97,14 @@ title: Bazel Community Experts
           Since 1993 EPAM has leveraged its ‘Engineering DNA’ to become a leading global product development, digital platform engineering, and top digital and product design agency. Due to its tight partnership with Google, EPAM has extensive Bazel expertise and is ready to assess readiness and perform complex migration to Bazel in order to streamline development and CI/CD processes for any technology and complexity including custom rules and tools development, remote cache and execution setup.
           </p>
  	<a href="https://www.epam.com/" target="_blank">Learn more</a>
+        </div>
+      <div class="col-sm-6 col-md-3 expert">
+          <img class="user-logo" src="{{site_root}}images/user-logos/buildbuddy.svg" height="54" alt="BuildBuddy logo" title="BuildBuddy"/>
+          <h3>BuildBuddy</h3>
+          <p>
+          BuildBuddy provides an open-core suite of enterprise features for Bazel. Included are a Remote Build Execution service, a shared build artifact cache, and a build result UI. It's available as a fully-managed cloud service or as an easy to deploy on-prem solution. The service is free to use for individuals and open-source projects. BuildBuddy is based in San Francisco, backed by Y Combinator, and founded by two ex-Googlers deeply passionate about making developers more productive.
+          </p>
+ 	<a href="https://buildbuddy.io/" target="_blank">Learn more</a>
         </div>
       </div>
     </div>
