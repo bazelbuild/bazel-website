@@ -1,4 +1,4 @@
-# Bazel website
+# Bazel Website
 
 This repository hosts the content of the Bazel website, available at https://bazel.build/
 It does not contain the [Bazel documentation](https://github.com/bazelbuild/bazel/tree/master/site/docs) or the [Bazel blog](https://github.com/bazelbuild/bazel-blog).
