@@ -28,13 +28,11 @@ The objectives of this document are to:
 Bazel's [core group of contributors](/governance.html) has dedicated subteams to
 manage aspects of the open source project. These are:
 
-* **User Onboarding**: Improve the experience for new Bazel users, and help them
-  get started.
 * **Release Process**: Manage Bazel's release process.
 * **Green Team**: Grow a healthy ecosystem of rules and tools.
-* **Developer Experience**: Encourage external contributions, make our
-  development workflow more open, and shift the team towards GitHub-first
-  development.
+* **Developer Experience Gardeners**: Encourage external contributions, triage issues
+  and pull requests, make our development workflow more open, and shift the team 
+  towards GitHub-first development.
 
 ## Releases
 
