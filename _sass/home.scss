@@ -36,11 +36,11 @@ $landing-bg-color: #fafafa;
       margin-top: 30px;
       margin-left: auto;
       margin-right: auto;
-    }  
+    }
 
     .logo-md {
-	max-width: 110px;
-	margin-top: 30px;
+      max-width: 110px;
+      margin-top: 30px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -54,17 +54,16 @@ $landing-bg-color: #fafafa;
       color: #757575;
     }
 
-	.hero-tagline-sub {
-	font-size: 14px;
-	text-transform: uppercase;
-	color: #43a047;
-	padding: 15px;
-	}
+    .hero-tagline-sub {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #43a047;
+      padding: 15px;
+    }
 
     .hero-title {
       margin-top: 0px;
       font-size: 36px;
-
     }
   }
 
@@ -125,6 +124,7 @@ $landing-bg-color: #fafafa;
     h2 {
       text-align: center;
     }
+
   }
 
   .logos {
@@ -154,6 +154,12 @@ $landing-bg-color: #fafafa;
       width: 380px;
       padding-right: 30px;
       padding-top: 15px;
+  }
+
+  .bazelcon {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+    background-color: #ffffff;
   }
 }
 
