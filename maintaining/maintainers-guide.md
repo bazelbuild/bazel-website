@@ -55,22 +55,22 @@ repository.
    issues](https://github.com/bazelbuild/bazel/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+-label%3Auntriaged+-label%3Ap2+-label%3Ap1+-label%3Ap3+-label%3Ap4+-label%3Ateam-Starlark+-label%3Ateam-Rules-CPP+-label%3Ateam-Rules-Java+-label%3Ateam-XProduct+-label%3Ateam-Android+-label%3Ateam-Apple+-label%3Ateam-Configurability++-label%3Ateam-Performance+-label%3Ateam-Rules-Server+-label%3Ateam-Core+-label%3Ateam-Rules-Python+-label%3Ateam-Remote-Exec+-label%3Ateam-Local-Exec+-label%3Ateam-Bazel).
 1. A member on the Developer Experience (DevEx) subteam rotation reviews the
    issue.
-  1. If the issue is **not a bug** or a **feature request**, the DevEx member
-     will close the issue and redirect the user to
-     [StackOverflow](https://stackoverflow.com/questions/tagged/bazel) and
-     [bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss) for
-     higher visibility on the question.
-  1. If the issue is vague or has missing information, the DevEx member will
-     assign the issue back to the user to request for more information before
-     continuing. This usually occurs when the user does not follow the [Issue
-     Template](https://github.com/bazelbuild/bazel/blob/master/ISSUE_TEMPLATE.md).
+   1. If the issue is **not a bug** or a **feature request**, the DevEx member
+      will usually close the issue and redirect the user to
+      [StackOverflow](https://stackoverflow.com/questions/tagged/bazel) and
+      [bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss) for
+      higher visibility on the question.
+   1. If the issue is vague or has missing information, the DevEx member will
+      assign the issue back to the user to request for more information before
+      continuing. This usually occurs when the user does not follow the [Issue
+      Template](https://github.com/bazelbuild/bazel/blob/master/ISSUE_TEMPLATE.md).
 1. After reviewing the issue, the DevEx member decides if the issue requires
    immediate attention. If it does, they will assign the **P0**
    [priority](#priority) label and an owner from the list of team leads.
 1. The DevEx member assigns the `untriaged` label and exactly one [team
    label](#team-labels) for routing.
-1. The DevEx member also assigns the `bug` or `feature request` label according
-   to the type of the issue.
+1. The DevEx member also assigns exactly one `type:` label, such as `type: bug` 
+   or `type: feature request`, according to the type of the issue.
 
 At this stage, the issue enters the pool of [untriaged open
 issues](https://github.com/bazelbuild/bazel/issues?q=is%3Aissue+is%3Aopen+label%3Auntriaged).
@@ -102,35 +102,6 @@ When an issue is resolved, it can be closed.
    and exported back out to GitHub.
 1. When the commit merges into master, GitHub automatically closes the PR.
 
-## Initial routing
-
-When someone opens a new issue or pull request (PR) on Bazel's GitHub
-repository, it needs to be routed to the appropriate owners for **triaging**.
-
-For a large project like Bazel, routing issues and PRs in a timely manner has
-many benefits, including:
-
-1. Acknowledging the contributor's time and effort to open an issue or PR.
-1. Maximizing the visibility of the issue or PR towards domain experts.
-1. Reducing the maintainers' toil on sifting through the large volume of issues
-   and PRs.
-
-When an issue or PR is routed to the correct owner, the owner can address and
-prioritize the issue accordingly.
-
-The Developer Experience (DevEx) subteam handles the initial routing of issues
-and PRs on weekly rotation basis. The subteam can be reached on GitHub using the
-`@bazelbuild/devex` alias.
-
-Routed issues **must have**:
-
-1. a `team` label, e.g. `team-Starlark`
-2. either the `untriaged` label OR one priority label (`p0`, `p1`, `p2`, `p3`, `p4`), but not both.
-
-The exceptions to this are issues for tracking releases and incompatible changes.
-
-See the list of issues to be routed
-[here](https://github.com/bazelbuild/bazel/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+-label%3Ap1+-label%3Ap2+-label%3Ap3+-label%3Ap4+-label%3Auntriaged+-label%3Ap0+-label%3Arelease+-label%3Aincompatible-change).
 
 ## My team owns a label. What should I do?
 
@@ -144,6 +115,8 @@ preferable on a weekly basis.
 1. Identify a [priority level](#priority) and assign the label.
   1. The issue may have already been prioritized by the DevEx subteam if it's a
      P0. Re-prioritize if needed.
+  1. Each issue needs to have exactly one [priority label](#priority). If an
+     issue is either P0 or P1 we assume that is actively worked on.
 1. Remove the `untriaged` label.
 
 Note that you need to be in the [bazelbuild
