@@ -50,7 +50,7 @@ Every beginning of the month (we target the first business day of the month), we
 candidate for a new MINOR version (e.g. 0.6.0). The work is tracked by a [release bug on GitHub](https://github.com/bazelbuild/bazel/issues?q=is%3Aissue+is%3Aopen+label%3Arelease) which indicates
 the exact target date for the incoming month and assigned to the current Release Manager.
 Those release candidates should pass all our unit tests, and show no unwanted regression in the
-projects tested on [ci.bazel.io](http://ci.bazel.io).
+projects tested on [Buildkite](https://buildkite.com/bazel).
 
 We announce those release candidates on [bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss).
 Over the next days, we monitor community bug reports for regressions in release candidate.
