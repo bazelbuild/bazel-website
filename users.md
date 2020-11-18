@@ -1,18 +1,18 @@
 ---
 layout: contribute
-title: Who is using Bazel
+title: Bazel Users
 ---
 
-*Using Bazel? Send an email to [product@bazel.build](mailto:produc@bazel.build) to get added to the list.
-Feel free to also add your company [on StackShare](https://stackshare.io/bazel)*
+*Using Bazel? You can add your company on [StackShare](https://stackshare.io/bazel)
+To add yourself to this page, contact [product@bazel.build](mailto:produc@bazel.build).
 
-This page lists projects and companies that are known to use Bazel. This does not constitute an endorsement.
+This page lists companies and OSS projects that are known to use Bazel. This does not constitute an endorsement.
 
 ## Companies using Bazel
 
 ### [acqio](https://acqio.com.br)
 
-<!-- img src="https://github.com/bazelbuild/bazel/wiki/acqio_logo.svg" width="150" align="right" -->
+<img src="/images/user-logos/acqio_logo.svg" width="150" align="right">
 
 Acqio is a Fintech that provides payment products and services for small and medium merchants. Acqio has a handful of monorepos and uses Bazel along with Kubernetes to deliver fast and reliable microservices.
 
