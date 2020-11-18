@@ -58,6 +58,9 @@ repository.
       [StackOverflow](https://stackoverflow.com/questions/tagged/bazel) and
       [bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss) for
       higher visibility on the question.
+   1. If the issue belongs in one of the rules repositories owned by the community,
+      like [rules_apple](https://github.com.bazelbuild/rules_apple), the DevEx
+      member will [transfer this issue](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/transferring-an-issue-to-another-repository) to the correct repository.
    1. If the issue is vague or has missing information, the DevEx member will
       assign the issue back to the user to request for more information before
       continuing. This usually occurs when the user does not follow the [Issue
@@ -69,7 +72,8 @@ repository.
    label](#team-labels) for routing.
 1. The DevEx member also assigns exactly one `type:` label, such as `type: bug` 
    or `type: feature request`, according to the type of the issue.
-
+1. For platform-specific issues, the DevEx member assigns one `platform: ` label,
+   such as `platform: apple` for Mac-specific issues.
 At this stage, the issue enters the pool of [untriaged open
 issues](https://github.com/bazelbuild/bazel/issues?q=is%3Aissue+is%3Aopen+label%3Auntriaged).
 
