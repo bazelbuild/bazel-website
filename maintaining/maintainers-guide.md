@@ -72,8 +72,8 @@ repository.
    label](#team-labels) for routing.
 1. The DevEx member also assigns exactly one `type:` label, such as `type: bug` 
    or `type: feature request`, according to the type of the issue.
-1. For platform-specific issues, the DevEx member assigns one `platform: ` label,
-   such as `platform: apple` for Mac-specific issues.
+1. For platform-specific issues, the DevEx member assigns one `platform:` label,
+   such as `platform:apple` for Mac-specific issues.
 At this stage, the issue enters the pool of [untriaged open
 issues](https://github.com/bazelbuild/bazel/issues?q=is%3Aissue+is%3Aopen+label%3Auntriaged).
 
