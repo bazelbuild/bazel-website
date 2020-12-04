@@ -463,11 +463,9 @@ An open source software library for machine intelligence.
 
 A platform-independent GameBoy emulator.
 
-
 ### [Wycheproof](https://github.com/google/wycheproof)
 
 Project Wycheproof tests crypto libraries against known attacks.
-
 
 ### [XIOSim](https://github.com/s-kanev/XIOSim)
 
