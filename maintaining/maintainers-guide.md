@@ -178,8 +178,6 @@ issues.
 
 *   [`team-Android`](https://github.com/bazelbuild/bazel/labels/team-Android): Issues for Android team
     *   Contact: [ahumesky](https://github.com/ahumesky)
-*   [`team-Apple`](https://github.com/bazelbuild/bazel/labels/team-Apple): Issues for Apple team (also MacOS, iOS etc)
-    * Contact: [jmmv](https://github.com/jmmv)
 *   [`team-Bazel`](https://github.com/bazelbuild/bazel/labels/team-Bazel): General Bazel product/strategy issues
     * Contact: [sventiffe](https://github.com/sventiffe)
 *   [`team-Configurability`](https://github.com/bazelbuild/bazel/labels/team-Configurability): Issues for Configurability team
@@ -187,11 +185,11 @@ issues.
 *   [`team-Core`](https://github.com/bazelbuild/bazel/labels/team-Core): Issues for Core team
     * Contact: [janakdr](https://github.com/janakdr)
 *   [`team-Local-Exec`](https://github.com/bazelbuild/bazel/labels/team-Local-Exec): Issues for Execution (Local) team
-    * Contact: [jmmv](https://github.com/jmmv)
+    * Contact: [jmmv](https://github.com/meisterT)
 *   [`team-Performance`](https://github.com/bazelbuild/bazel/labels/team-Performance): Issues for Bazel Performance team
     * Contact: [meisterT](https://github.com/meisterT)
 *   [`team-Remote-Exec`](https://github.com/bazelbuild/bazel/labels/team-Remote-Exec): Issues for Execution (Remote) team
-    * Contact: [philwo](https://github.com/philwo)
+    * Contact: [philwo](https://github.com/coeuvre)
 *   [`team-Rules-CPP`](https://github.com/bazelbuild/bazel/labels/team-Rules-CPP): Issues for C++ rules
     * Contact: [lberki](https://github.com/lberki)
 *   [`team-Rules-Java`](https://github.com/bazelbuild/bazel/labels/team-Rules-Java): Issues for Java rules
