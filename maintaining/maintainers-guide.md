@@ -58,6 +58,9 @@ repository.
       [StackOverflow](https://stackoverflow.com/questions/tagged/bazel) and
       [bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss) for
       higher visibility on the question.
+   1. If the issue belongs in one of the rules repositories owned by the community,
+      like [rules_apple](https://github.com.bazelbuild/rules_apple), the DevEx
+      member will [transfer this issue](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/transferring-an-issue-to-another-repository) to the correct repository.
    1. If the issue is vague or has missing information, the DevEx member will
       assign the issue back to the user to request for more information before
       continuing. This usually occurs when the user does not follow the [Issue
@@ -69,7 +72,8 @@ repository.
    label](#team-labels) for routing.
 1. The DevEx member also assigns exactly one `type:` label, such as `type: bug` 
    or `type: feature request`, according to the type of the issue.
-
+1. For platform-specific issues, the DevEx member assigns one `platform:` label,
+   such as `platform:apple` for Mac-specific issues.
 At this stage, the issue enters the pool of [untriaged open
 issues](https://github.com/bazelbuild/bazel/issues?q=is%3Aissue+is%3Aopen+label%3Auntriaged).
 
@@ -174,8 +178,6 @@ issues.
 
 *   [`team-Android`](https://github.com/bazelbuild/bazel/labels/team-Android): Issues for Android team
     *   Contact: [ahumesky](https://github.com/ahumesky)
-*   [`team-Apple`](https://github.com/bazelbuild/bazel/labels/team-Apple): Issues for Apple team (also MacOS, iOS etc)
-    * Contact: [jmmv](https://github.com/jmmv)
 *   [`team-Bazel`](https://github.com/bazelbuild/bazel/labels/team-Bazel): General Bazel product/strategy issues
     * Contact: [sventiffe](https://github.com/sventiffe)
 *   [`team-Configurability`](https://github.com/bazelbuild/bazel/labels/team-Configurability): Issues for Configurability team
@@ -183,11 +185,11 @@ issues.
 *   [`team-Core`](https://github.com/bazelbuild/bazel/labels/team-Core): Issues for Core team
     * Contact: [janakdr](https://github.com/janakdr)
 *   [`team-Local-Exec`](https://github.com/bazelbuild/bazel/labels/team-Local-Exec): Issues for Execution (Local) team
-    * Contact: [jmmv](https://github.com/jmmv)
+    * Contact: [meisterT](https://github.com/meisterT)
 *   [`team-Performance`](https://github.com/bazelbuild/bazel/labels/team-Performance): Issues for Bazel Performance team
     * Contact: [meisterT](https://github.com/meisterT)
 *   [`team-Remote-Exec`](https://github.com/bazelbuild/bazel/labels/team-Remote-Exec): Issues for Execution (Remote) team
-    * Contact: [philwo](https://github.com/philwo)
+    * Contact: [coeuvre](https://github.com/coeuvre)
 *   [`team-Rules-CPP`](https://github.com/bazelbuild/bazel/labels/team-Rules-CPP): Issues for C++ rules
     * Contact: [lberki](https://github.com/lberki)
 *   [`team-Rules-Java`](https://github.com/bazelbuild/bazel/labels/team-Rules-Java): Issues for Java rules
