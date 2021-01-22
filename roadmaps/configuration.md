@@ -32,7 +32,7 @@ title: Bazel Configurability Roadmap
 
 # Bazel Configurability 2021 Roadmap
 
-*Last verified: 2020-01-25* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
+*Last verified: 2021-01-25* ([update history](https://github.com/bazelbuild/bazel-website/commits/master/roadmaps/configuration.md))
 
 *Point of contact:* [gregestren](https://github.com/gregestren)
 
@@ -97,8 +97,7 @@ platforms](https://docs.google.com/document/d/1U9HzdDmtRnm244CaRM6JV-q2408mbNODA
 <span class="etabox">paused</span>**Deprecate and remove `--cpu` and related flags**
 <span class="notstartedstatus">NOT STARTED</span>
 
-* This is an aspirational goal that falls out of migrating all rule sets to
-  platforms.
+* This is an aspirational goal that falls out of migrating all rules to platforms.
 
   
 ### Efficiency
@@ -108,5 +107,5 @@ platforms](https://docs.google.com/document/d/1U9HzdDmtRnm244CaRM6JV-q2408mbNODA
 cross-platform Java compilation**
 <span class="inprogressstatus">IN PROGRESS</span> ([#6526](https://github.com/bazelbuild/bazel/issues/6526))
 
-* Improves multiplatform build speed
+* Improves multi-platform build speed
 * Underallocated, so progress is slow

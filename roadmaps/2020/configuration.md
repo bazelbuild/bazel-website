@@ -82,13 +82,13 @@ Other work:
   is expected to land in Bazel 4.1. This makes it possible to test with
   different flags without slow rebuilds. Big thanks to
   [@sdtwigg](http://github.com/sdtwigg).
-* Other efficiency efforts, like cacheable output paths, continue slowy because
+* Other efficiency efforts, like cacheable output paths, continue slowly because
   of insufficient dev allocation. They'll continue to move forward, but
   collaborators welcome!
 
-For 2021, we're going to put more effort behind fewer initiatives at a
-time. We'll note "later in the year" efforts but not give them estimates until
-they're actively prioritized. 
+For 2021, we're going to put more effort behind fewer initiatives at once. We'll
+note "later in the year" efforts but not give them estimates until they're
+actively prioritized.
 
 ## Goal
 
