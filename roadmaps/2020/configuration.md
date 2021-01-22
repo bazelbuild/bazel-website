@@ -75,13 +75,13 @@ Other work:
   *delivered* in Bazel 4.0:
   [write](https://docs.bazel.build/versions/master/skylark/config.html#user-defined-build-settings)
   `//my/package:my_flag` in Starlark and set it as `--myflag` at the command
-  line. Big thanks for [@warkahscott](https://github.com/warkahscott) for
+  line. Big thanks to [@warkahscott](https://github.com/warkahscott) for
   delivering the feature and [@juliexxia](https://github.com/juliexxia) for
   guiding it.
 * [--trim_test_configuration](https://github.com/bazelbuild/bazel/issues/6842)
   is expected to land in Bazel 4.1. This makes it possible to test with
   different flags without slow rebuilds. Big thanks to
-  [@sdtwigg](http://github.com/sdtwigg) for implementation.
+  [@sdtwigg](http://github.com/sdtwigg).
 * Other efficiency efforts, like cacheable output paths, continue slowy because
   of insufficient dev allocation. They'll continue to move forward, but
   collaborators welcome!
