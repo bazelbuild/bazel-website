@@ -31,10 +31,10 @@ title: Bazel Community Experts
  	<a href="https://www.tweag.io/" target="_blank">Learn more</a>
         </div>
         <div class="col-sm-6 col-md-3 expert">
-          <img class="user-logo" src="{{site_root}}images/user-logos/flare_logo.png" width="150" height="35" alt="flare logo" title="flare"/>
+          <img class="user-logo" src="{{site_root}}images/user-logos/flare_logo.png" width="150" height="68" alt="flare logo" title="flare"/>
           <h3>Flare</h3>
           <p>
-           Flare Build Systems, Inc. is the world’s first Bazel-focused consulting company. We’ve made a name for ourselves by assisting enterprises and high-growth, high-value startups migrate their build & test systems into Bazel, interacting with almost every major language and ruleset along the way, but we didn’t stop there - we also have launched a build, CI & engineering productivity-focused product line: flare.build.
+           Flare Build Systems, Inc. is the world’s first Bazel-focused SaaS & consulting company. We’ve made a name for ourselves by assisting enterprises and high-growth, high-value startups migrate their build & test systems into Bazel, interacting with almost every major language and ruleset along the way, but we didn’t stop there - we also have launched a build CI & engineering productivity-focused product line, and are now offering advanced Bazel training.
           </p>
        <a href="https://flare.build/" target="_blank">Learn more</a>
         </div>
