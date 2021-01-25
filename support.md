@@ -281,5 +281,6 @@ These rules and features have known limitations that we will likely address in f
             future.</li>
         </ul>
       </td>
+    </tr>
   </tbody>
 </table>

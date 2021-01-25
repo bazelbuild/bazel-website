@@ -9,6 +9,10 @@ To build the site, you will need [Jekyll](http://jekyllrb.com) version 2.5.3 or
 above. For instance, it can be installed with `apt-get install jekyll` on recent
 Ubuntu (tested on 16.10).
 
+```
+sudo apt-get install jekyll ruby-jekyll-paginate ruby-jekyll-sitemap ruby-jekyll-toc ruby-kramdown-parser-gfm
+```
+
 To deploy the site, you will need [gsutil](https://cloud.google.com/storage/docs/gsutil)
 and to authenticate with `gcloud auth login`.
 
