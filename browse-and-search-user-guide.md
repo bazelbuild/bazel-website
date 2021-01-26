@@ -67,7 +67,7 @@ The interface now shows the repository as it existed at that commit.
 ### Open a branch, commit, or tag
 
 By default, the code search and source browsing interface opens a repository to
-the master branch.  To open a different branch, from the Breadcrumb toolbar,
+the default branch.  To open a different branch, from the Breadcrumb toolbar,
 click the **Branch/Commit/Tag** menu. A submenu opens, allowing you to select a
 branch using a branch name, a tag name, or through a search box.
 
@@ -208,7 +208,7 @@ which you can use to navigate between different cross references.
 ## Searching for code
 
 You can search for specific files or code snippets using the search box located
-at the top of the screen. Searches are always against the master branch.
+at the top of the screen. Searches are always against the default branch.
 
 All searches use [RE2 regular expressions](https://github.com/google/re2/wiki/Syntax)
 by default. If you do not want to use regular expressions, enclose your search
