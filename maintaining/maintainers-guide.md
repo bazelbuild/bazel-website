@@ -184,6 +184,8 @@ issues.
     * Contact: [gregestren](https://github.com/gregestren)
 *   [`team-Core`](https://github.com/bazelbuild/bazel/labels/team-Core): Issues for Core team
     * Contact: [janakdr](https://github.com/janakdr)
+*   [`team-Documentation`](https://github.com/bazelbuild/bazel/labels/team-Documentation): Issues for Documentation team
+    * Contact: [communikit](https://github.com/communikit)
 *   [`team-Local-Exec`](https://github.com/bazelbuild/bazel/labels/team-Local-Exec): Issues for Execution (Local) team
     * Contact: [meisterT](https://github.com/meisterT)
 *   [`team-Performance`](https://github.com/bazelbuild/bazel/labels/team-Performance): Issues for Bazel Performance team
