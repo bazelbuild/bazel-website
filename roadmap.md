@@ -8,4 +8,5 @@ title: Roadmap
 ## Roadmaps for specific Bazel areas
 
 *  [Configurability](roadmaps/configuration.html)
+*  [Build API](roadmaps/build-api.md)
 *  [Starlark](roadmaps/starlark.html)
