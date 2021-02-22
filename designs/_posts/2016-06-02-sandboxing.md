@@ -95,8 +95,7 @@ As part of this project, we also propose to change the handling of environment
 variables (e.g. `PATH`) in Bazel, as we believe they are an important part of
 the configuration of the environment that the build runs in.
 
-As an example, Bazel currently [resets PATH to a hard-coded string]
-(https://github.com/bazelbuild/bazel/blob/master/src/main/java/com/google/devtools/build/lib/bazel/rules/BazelConfiguration.java),
+As an example, Bazel currently resets PATH to a hard-coded string,
 which may not be suitable for the environment that it actually runs in - e.g.
 if a user installs a tool called `babel` in `/usr/local/bin` and they call
 `babel` in a shell script or Skylark rule they wrote, [they expect it to just
@@ -149,7 +148,7 @@ was built last time, its target has to be rebuild for correctness.
 Bazel should instead use `PATH` from the environment and for correctness
 trigger a rebuild when it changes.
 
-*Open question: Should the whitelist of environment variables be configurable,
+*Open question: Should the list of allowed environment variables be configurable,
 e.g. in the WORKSPACE file?*
 
 ### What files does a sandboxed process have access to?

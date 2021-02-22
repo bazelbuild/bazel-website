@@ -117,7 +117,7 @@ the repository context object:
      to list the built-in include directories.
 To address the issue 5, we can add the list of paths to dependencies to the
 [crosstool rule in the BUILD
-file](https://github.com/bazelbuild/bazel/wiki/Building-with-a-custom-toolchain).
+file](https://docs.bazel.build/versions/master/tutorial/cc-toolchain-config.html)
 
 ## Writing the cpp package
 

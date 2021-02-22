@@ -124,13 +124,11 @@ to be a lengthy process however.
    example with annotations) and documented. Just collecting a list will likely give us good
    suggestions for further improvements, as well as opportunities for a more principled API review
    process.
-4. We will automatically check rule implementations against an API whitelist, with the intention
-   that API changes are implicitly flagged during code review.
-5. We will work on removing (legacy) Google-internal features to reduce the amount of differences
+4. We will work on removing (legacy) Google-internal features to reduce the amount of differences
    between the internal and external rule sets.
-6. We will encourage our engineers to make changes in the external depot first, and migrate them to
+5. We will encourage our engineers to make changes in the external depot first, and migrate them to
    to the internal one afterwards.
-7. We will move more of our rule implementations into the open source repository (Android, Go,
+6. We will move more of our rule implementations into the open source repository (Android, Go,
    Python, the remaining C++ rules), even if we don't consider the code to be *ready* or if they are
    still missing tools to work properly.
 
@@ -283,5 +281,6 @@ These rules and features have known limitations that we will likely address in f
             future.</li>
         </ul>
       </td>
+    </tr>
   </tbody>
 </table>
