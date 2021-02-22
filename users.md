@@ -216,6 +216,10 @@ Redfin is a next-generation real estate brokerage with full-service local agents
 
 Ritual is a mobile pick up app, connecting restaurants with customers to offer a simple, time-saving tool to get the food and beverages they want, without the wait. Ritual uses Bazel for their backend services.
 
+### [Snap](https://www.snap.com/en-US/)
+
+Snap, the developper of Snapchat messaging app, has migrated from Buck to Bazel in 2020 ([source](https://twitter.com/wew/status/1326957862816509953)).
+
 ### [Stripe](https://stripe.com)
 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Stripe_logo%2C_revised_2016.png/320px-Stripe_logo%2C_revised_2016.png" width="150" align="right">
 
@@ -437,10 +441,6 @@ Semantic is a Haskell library and command line tool for parsing, analyzing, and 
 ### [Served](https://github.com/meltwater/served)
 
 Served is a C++ library for building high performance RESTful web servers.
-
-### [Snap](https://www.snap.com/en-US/)
-
-Snap, the developper of Snapchat messaging app, has migrated from Buck to Bazel in 2020 ([source](https://twitter.com/wew/status/1326957862816509953)).
 
 ### [Sonnet](https://github.com/deepmind/sonnet)
 
