@@ -172,7 +172,7 @@ The lead reviewer is a domain expert. Lead reviewers must be:
 *   Available for the entire review period to lead the process
 
 Consider checking the contacts for various [team
-labels](/maintaining/maintainers-guide.html#team-labels).
+labels](../maintainers-guide.html#team-labels).
 
 ## I'm a reviewer. What are my responsibilities?
 
