@@ -5,34 +5,39 @@ title: Contributing to Bazel
 
 # Contributing to Bazel
 
-
-## How can I help?
-
 There are many ways to help the Bazel project and ecosystem.
 
-1. Provide feedback as you use Bazel. As you use it, you may find things
-   that can be improved. Please report them:
-   - Report bugs. In particular, it's important to report any crash or
+## Provide feedback
+
+As you use Bazel, you may find things that can be improved. You can help by:
+
+   - Reporting bugs. In particular, it's important to report any crash or
      correctness bug.
-   - Report issues when the documentation is incomplete or unclear.
-   - Report issues when an error message could be improved.
+   - Reporting issues when the documentation is incomplete or unclear.
+   - Reporting issues when an error message could be improved.
 
-1. As you get experienced with Bazel, engage with the community:
-   - Answer questions [on Stack Overflow](
+## Participate in the community
+
+You can engage with the Bazel community by:
+
+   - Answering questions [on Stack Overflow](
      https://stackoverflow.com/questions/tagged/bazel).
-   - Help other users [on Slack](https://slack.bazel.build).
-   - Improve the documentation or [contribute examples](
+   - Helping other users [on Slack](https://slack.bazel.build).
+   - Improving documentation or [contributing examples](
      https://github.com/bazelbuild/examples).
-   - Share your experience or your tips, for example on a blog or social media.
+   - Sharing your experience or your tips, for example, on a blog or social media.
 
-1. Contribute to the Bazel ecosystem:
-   - Help rules maintainers by contributing pull requests.
-   - Create new rules and open-source them.
-   - Contribute to Bazel-related tools, for example migration tools.
-   - Improve Bazel integration with other IDEs and tools.
+## Contribute code
+
+You can contribute to the Bazel ecosystem by:
+
+   - Helping rules maintainers by contributing pull requests.
+   - Creating new rules and open-sourcing them.
+   - Contributing to Bazel-related tools, for example, migration tools.
+   - Improving Bazel integration with other IDEs and tools.
 
 
-## How can I contribute to Bazel source code?
+### How can I contribute to Bazel source code?
 
 Bazel is a large project and making a significant change to Bazel source code
 can be difficult. Please check with us on the [dev list](
