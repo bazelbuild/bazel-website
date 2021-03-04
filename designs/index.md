@@ -14,27 +14,37 @@ changes as designs are implemented.
 Always go to the [documentation]({{ site.docs_site_url }}) for descriptions of
 current Bazel functionality.
 
-## Table of Contents
-{:.no_toc}
-
-* ToC
-{:toc}
-
-
 ## When do I need a design document and review?
 
 If you're planning to add, change, or remove a user-facing feature, or make a
-significant architectural change to Bazel, you **must** write a design document
-and have it reviewed before you can submit the change. See [What is a
-significant change?](#what-is-a-significant-change) for details.
+*significant architectural change* to Bazel, you **must** write a design document
+and have it reviewed before you can submit the change.
 
 Implementation can begin before the proposal is accepted, for example as a
 proof-of-concept or an experimentation. However, you cannot submit the change
 before the review is complete.
 
+## What is a significant change?
+
+There are no hard and fast criteria, but here are some examples:
+
+*   Addition or deletion of native build rules
+*   Breaking-changes to native rules
+*   Changes to a native build rule semantics that affect the behavior of more
+    than a single rule
+*   Changes to Bazel's rule definition API
+*   Changes to the APIs that Bazel uses to connect to other systems
+*   Changes to the Starlark language, semantics, or APIs
+*   Changes that could have a pervasive effect on Bazel performance or memory
+    usage (for better or for worse)
+*   Changes to widely used internal APIs
+*   Changes to flags and command-line interface.
+
+When a proposal adds, removes, or modifies any function or object available in
+BUILD, WORKSPACE, or bzl files, the [Starlark team](../maintainers-guide.html)
+has to be in the reviewers list.
 
 ## Workflow
-
 
 ### Write the design document
 
@@ -52,7 +62,6 @@ or [using Markdown](#using-markdown). Read below about for a
 
 Proposals that have a user-visible impact must have a section documenting the
 impact on backward compatibility (and a rollout plan if needed).
-
 
 ### Create a Pull Request
 
@@ -129,9 +138,9 @@ It is also possible to first iterate on a Google Doc, and then convert it to
 Markdown for posterity.
 
 
-## Using Google Docs
+### Using Google Docs
 
-Create a world-readable document on [Google Doc](https://docs.google.com). To
+Create a world-readable document on [Google Docs](https://docs.google.com). To
 make it world-readable, click on "Share", "Advanced", then "Change…", and
 choose "On - Anyone with the link". You may allow comments on the document. If
 you do so, anyone will be able to comment anonymously, even without a Google
@@ -143,7 +152,7 @@ for new documents. It will help you structure the document and create a visual
 consistency with other Bazel related documents. To do that, click on "Make a
 copy" under the "File" menu.
 
-## Using Markdown
+### Using Markdown
 
 Documents are stored on GitHub and use the GitHub flavor of Markdown
 ([overview](https://guides.github.com/features/mastering-markdown/),
@@ -162,6 +171,8 @@ The lead reviewer is a domain expert. Lead reviewers must be:
 *   Objective (i.e., capable of providing constructive feedback)
 *   Available for the entire review period to lead the process
 
+Consider checking the contacts for various [team
+labels](/maintaining/maintainers-guide.html#team-labels).
 
 ## I'm a reviewer. What are my responsibilities?
 
@@ -220,29 +231,6 @@ Blaze manager for further disposition.
 *   Add a comment to the document explaining why the design can't be approved in
     its current state, and outlining next steps, if any (e.g., "revisit invalid
     assumptions and resubmit").
-
-
-## What is a significant change?
-
-
-There are no hard and fast criteria, but here are some examples:
-
-*   Addition or deletion of native build rules
-*   Breaking-changes to native rules
-*   Changes to a native build rule semantics that affect the behavior of more
-    than a single rule
-*   Changes to Bazel's rule definition API
-*   Changes to the APIs that Bazel uses to connect to other systems
-*   Changes to the Starlark language, semantics, or APIs
-*   Changes that could have a pervasive effect on Bazel performance or memory
-    usage (for better or for worse)
-*   Changes to widely used internal APIs
-*   Changes to flags and command-line interface.
-
-When a proposal adds, removes, or modifies any function or object available in
-BUILD, WORKSPACE, or bzl files, the [Starlark team](../maintainers-guide.html)
-has to be in the reviewers list.
-
 
 ## Why do we need design reviews?
 
