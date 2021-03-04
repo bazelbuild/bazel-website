@@ -9,9 +9,9 @@ This page covers Bazel's governance model and contribution policy.
 
 ## Governance model
 
-The Bazel project is led by a core group of contributors,  and managed by the
-community. At this time, all core contributors work for Google, but this will hopefully
-change over time. The group of core contributors is self-managing - core contributors are added by two
+The Bazel project is led by a core group of contributors and managed by the
+community. At this time, all core contributors work for Google.
+The group of core contributors is self-managing - core contributors are added by two
 supporting votes from core contributors on the mailing list and no veto within four business days.
 We expect that new contributors will submit a number of patches before they become core
 contributors.
@@ -19,10 +19,10 @@ contributors.
 Contact the core team at <a href="mailto:bazel-core@googlegroups.com">
 bazel-core@googlegroups.com</a>.
 
+## Contribution policy
+
 The Bazel project also accepts individual contributions from external
 contributors that are not actively supporting the project.
-
-## Contribution policy
 
 The Bazel team uses the following rules for accepting code contributions.
 
@@ -51,4 +51,6 @@ The Bazel team uses the following rules for accepting code contributions.
 
 1. We will work with interested parties to improve existing extension points and to establish new
     extension points if they do not run counter to the internal requirements of any of the core
-    contributors.
+   contributors.
+
+For more details on contributing to Bazel, see our [contribution guidelines](contributing.html).
