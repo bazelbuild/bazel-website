@@ -5,23 +5,30 @@ title: Getting Started
 
 # Getting started
 
-This page helps you set up your coding environment, describes creating an
-IntelliJ project and takes you through compiling and debugging your project.
-Finally, you can read about Bazel's source code, how to navigate through it, and
-how to use the Bazel CI system.
+This page covers how to start contributing code to Bazel. It covers how to set up
+your coding environment, describes creating an IntelliJ project and takes you
+through compiling and debugging your project.
+
+After you set up your environment, there is a quick overview of the structure of
+Bazel's code base, how to search and navigate the code, and how to monitor your
+builds with Bazel's continuous integration system.
 
 ## Installing Bazel
 
-*  [Install Bazel](https://bazel.build/versions/master/docs/install.html) on your
-   system. Note that you need the latest released version of Bazel for
-   development.
-*  Clone Bazel's Git repository from GitHub:
+Before you start developing, you'll need to
 
-   *  `git clone https://github.com/bazelbuild/bazel.git`
+1.  Install the latest version of Bazel on your system. For instructions, see
+    [Compiling Bazel from source](https://docs.bazel.build/versions/master/install-compile-source.html).
 
-*  Try to build Bazel (you might need to [install some
-   prerequisites](https://docs.bazel.build/versions/master/install-compile-source.html#bootstrap-unix)
-   first):
+2.  Clone Bazel's Git repository from GitHub:
+
+    ```
+    git clone https://github.com/bazelbuild/bazel.git
+    ```
+3. Install any [prerequisites](https://docs.bazel.build/versions/master/install-compile-source.html#bootstrap-unix).
+
+4. Try to [build
+   Bazel](https://docs.bazel.build/versions/master/guide.html#building-programs-with-bazel):
 
    *  On Linux/macOS, in Bash/Terminal:
 
@@ -39,7 +46,7 @@ how to use the Bazel CI system.
 
       For faster iteration times (but larger binaries), use `//src:bazel-dev.exe` instead.
 
-*  This produces a working Bazel binary in `bazel-bin/src/bazel` (or `bazel-bin/src/bazel.exe` on Windows).
+This produces a working Bazel binary in `bazel-bin/src/bazel` (or `bazel-bin/src/bazel.exe` on Windows).
 
 ## Creating an IntelliJ project
 
