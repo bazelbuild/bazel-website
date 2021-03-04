@@ -23,8 +23,7 @@ manage aspects of the open source project. These are:
 * **Release Process**: Manage Bazel's release process.
 * **Green Team**: Grow a healthy ecosystem of rules and tools.
 * **Developer Experience Gardeners**: Encourage external contributions, review issues
-  and pull requests, make our development workflow more open, and shift the team
-  towards GitHub-first development.
+  and pull requests, and make our development workflow more open.
 
 ## Releases
 
