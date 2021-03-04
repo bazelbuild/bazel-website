@@ -3,18 +3,22 @@ layout: contribute
 title: Getting Started
 ---
 
-# Setting up your coding environment
+# Getting started
 
-For now we have support for IntelliJ. We don't have IDE support for other
-languages in Bazel right now.
+This page helps you set up your coding environment, describes creating an
+IntelliJ project and takes you through compiling and debugging your project.
+Finally, you can read about Bazel's source code, how to navigate through it, and
+how to use the Bazel CI system.
 
-## Preparations
+## Installing Bazel
 
 *  [Install Bazel](https://bazel.build/versions/master/docs/install.html) on your
-   system. Note that for developing Bazel, you need the latest released version
-   of Bazel.
+   system. Note that you need the latest released version of Bazel for
+   development.
 *  Clone Bazel's Git repository from GitHub:
+
    *  `git clone https://github.com/bazelbuild/bazel.git`
+
 *  Try to build Bazel (you might need to [install some
    prerequisites](https://docs.bazel.build/versions/master/install-compile-source.html#bootstrap-unix)
    first):
@@ -35,9 +39,11 @@ languages in Bazel right now.
 
       For faster iteration times (but larger binaries), use `//src:bazel-dev.exe` instead.
 
-*  This will produce a working Bazel binary in `bazel-bin/src/bazel` (or `bazel-bin/src/bazel.exe` on Windows).
+*  This produces a working Bazel binary in `bazel-bin/src/bazel` (or `bazel-bin/src/bazel.exe` on Windows).
 
 ## Creating an IntelliJ project
+
+The IDE that Bazel supports is IntelliJ.
 
 To work with IntelliJ:
 
@@ -56,8 +62,8 @@ To work with IntelliJ:
 <a name="compile-bazel"></a>
 ## Compiling Bazel
 
-To test out Bazel, you need to compile it. To compile a development version of
-Bazel, you need a the latest released version of Bazel, which can be
+To test Bazel, you need to compile it. To compile a development version of
+Bazel, you need the latest released version of Bazel, which can be
 [compiled from source](/versions/master/docs/install-compile-source.html).
 
 `bazel build //src:bazel` builds the Bazel binary using `bazel` from your PATH
@@ -104,7 +110,7 @@ But if you want to debug the Java code, you must attach to the server using the 
 *  Our IntelliJ plugin has built-in
   [debugging support](https://ij.bazel.build/docs/run-configurations.html)
 
-# Bazel's code description
+## Bazel's code description
 
 Please read [CODEBASE.md](https://github.com/bazelbuild/bazel/blob/master/CODEBASE.md)
 for a detailed description of the code base.
@@ -123,11 +129,11 @@ Bazel is organized in several parts:
 *  Various tooling for language support (see the list in the
    [compiling Bazel](#compile-bazel) section).
 
-# Searching Bazel's source code
+## Searching Bazel's source code
 
 To quickly search through Bazel's source code, use [Bazel Code Search](https://source.bazel.build/). You can navigate Bazel's repositories, branches, and files. You can also view history, diffs, and blame information. To learn more, see the
 [Bazel Code Search User Guide](https://www.bazel.build/browse-and-search-user-guide.html).
 
-# Using Bazel Continuous Integration
+## Using Bazel Continuous Integration
 
 To get started with the Bazel CI system, see [Bazel Continuous Integration](https://github.com/bazelbuild/continuous-integration/blob/master/buildkite/README.md). To monitor the tests and builds of your Bazel contributions, use the [Bazel CI Dashboard](https://ci.bazel.build/).
