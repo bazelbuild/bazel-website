@@ -70,7 +70,7 @@ issues](https://github.com/bazelbuild/bazel/issues?q=is%3Aissue+is%3Aopen+label%
 
 Each Bazel subteam will triage all issues under labels they own, preferably on a
 weekly basis. The subteam will review and evaluate the issue and provide a
-resolution, if possible. If you are a owner of a team label, see [this section
+resolution, if possible. If you are an owner of a team label, see [this section
 ](maintainers-guide.html#my-team-owns-a-label-what-should-i-do) for more
 information.
 
