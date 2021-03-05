@@ -9,12 +9,15 @@ There are many ways to help the Bazel project and ecosystem.
 
 ## Provide feedback
 
-As you use Bazel, you may find things that can be improved. You can help by:
+As you use Bazel, you may find things that can be improved.
+You can help by [reporting issues](http://github.com/bazelbuild/bazel/issues)
+when:
 
-   - Reporting bugs. In particular, it's important to report any crash or
-     correctness bug.
-   - Reporting issues when the documentation is incomplete or unclear.
-   - Reporting issues when an error message could be improved.
+   - Bazel requires a crash or correctness bug.
+   - The documentation is incomplete or unclear. You can also report issues
+     from the page you are viewing by using the "Create issue"
+     link at the top right corner of the page.
+   - An error message could be improved.
 
 ## Participate in the community
 
@@ -39,15 +42,17 @@ You can contribute to the Bazel ecosystem by:
 
 ### How can I contribute to Bazel source code?
 
-Bazel is a large project and making a significant change to Bazel source code
-can be difficult. Please check with us on the [dev list](
-https://groups.google.com/forum/#!forum/bazel-dev) or on a GitHub issue before
-investing a lot of time in a patch.
+Bazel is a large project and making a change to Bazel source code
+can be difficult.
 
-In general, we prefer contributions that fix bugs or add features (as opposed to
-stylistic, refactoring, or "cleanup" changes). When making a change, please
-include tests and documentation, and keep in mind backward-compatibility,
-portability, as well as the impact on memory usage and performance.
+Before making a change, [create a GitHub
+issue](http://github.com/bazelbuild/bazel/issues)
+or email [bazel-dev@]((mailto:bazel-dev@googlegroups.com).
 
-See [getting started](basics/getting_started.html) for learning how to work on the
-code base.
+The most helpful contributions fix bugs or add features (as opposed
+to stylistic, refactoring, or "cleanup" changes). Your change should
+include tests and documentation, keeping in mind backward-compatibility,
+portability, and the impact on memory usage and performance.
+
+To learn how to work on the Bazel code base, see [getting started](basics/getting_started.html).
+To learn about how to submit a change, see the [patch acceptance process](basics/patching.html).
