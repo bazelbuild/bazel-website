@@ -47,7 +47,7 @@ can be difficult.
 
 Before making a change, [create a GitHub
 issue](http://github.com/bazelbuild/bazel/issues)
-or email [bazel-dev@]((mailto:bazel-dev@googlegroups.com).
+or email [bazel-dev@](mailto:bazel-dev@googlegroups.com).
 
 The most helpful contributions fix bugs or add features (as opposed
 to stylistic, refactoring, or "cleanup" changes). Your change should
