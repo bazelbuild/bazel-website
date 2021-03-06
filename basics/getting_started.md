@@ -54,17 +54,14 @@ The IDE that Bazel supports is IntelliJ.
 
 To work with IntelliJ:
 
-1.  Install Bazel's [IntelliJ plug-in](https://ij.bazel.build).
-1.  Set the path to the Bazel binary in the plugin preferences
+1. Install Bazel's [IntelliJ plug-in](https://ij.bazel.build).
+1. Set the path to the Bazel binary in the plugin preferences
    (`Preferences` > `Other Settings` > `Bazel Settings`).
-1.  Import the Bazel workspace as a Bazel project
+1. Import the Bazel workspace as a Bazel project
    (`File` > `Import Bazel Project...`) with the following settings:
-
    *  Use existing Bazel workspace: choose your cloned Git repository.
-   *  Select `Import from workspace` and choose the `scripts/ij.bazelproject`
-      file as the `Project view`.
-
-1.  Download [Google's Java Code Style Scheme file for IntelliJ](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml),
+   *  Select `Import from workspace` and choose the `scripts/ij.bazelproject` file as the `Project view`.
+1. Download [Google's Java Code Style Scheme file for IntelliJ](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml),
    import it (go to `Preferences` > `Editor` > `Code Style` > `Java`, click `Manage`, then `Import`)
    and use it when working on Bazel's code.
 
@@ -98,8 +95,8 @@ to ensure that we don't break Bazel when pushing new commits.
 
 ## Debugging Bazel
 
-Start creating a debug configuration for both C++ and Java in your `.bazelrc`
-with the following:
+To create a debug configuration for both C++ and Java in your `.bazelrc`
+use:
 
 ```
 build:debug -c dbg
@@ -108,15 +105,15 @@ build:debug --copt="-g"
 build:debug --strip="never"
 ```
 
-Then you can rebuild Bazel with `bazel build --config debug //src:bazel` and use
+Rebuild Bazel with `bazel build --config debug //src:bazel` and use
 your favorite debugger to start debugging.
 
-For debugging the C++ client you can just run it from gdb or lldb as you normally would.
-But if you want to debug the Java code, you must attach to the server using the following:
+To debug the C++ client, run it from `gdb`or `lldb` as usual.
+However, to debug Java code, attach to the server using the following:
 
-*  Run Bazel with debugging option `--host_jvm_debug` before the
+*  Run Bazel with the debugging option `--host_jvm_debug` before the
    command (e.g., `bazel --host_jvm_debug build //src:bazel`).
-*  Attach a debugger to the port 5005. With `jdb` for instance,
+*  Attach a debugger to the port 5005. For instance, with `jdb`,
    run `jdb -attach localhost:5005`.
 
 Our IntelliJ plugin has built-in [debugging support](https://ij.bazel.build/docs/run-configurations.html).
