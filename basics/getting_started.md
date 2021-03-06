@@ -15,19 +15,19 @@ builds with Bazel's continuous integration system.
 
 ## Installing Bazel
 
-Before you start developing, you'll need to
+Before you start developing, you'll need to:
 
 1.  Install the latest version of Bazel on your system. For instructions, see
     [Compiling Bazel from source](https://docs.bazel.build/versions/master/install-compile-source.html).
 
-2.  Clone Bazel's Git repository from GitHub:
+1.  Clone Bazel's Git repository from GitHub:
 
     ```
     git clone https://github.com/bazelbuild/bazel.git
     ```
-3. Install any [prerequisites](https://docs.bazel.build/versions/master/install-compile-source.html#bootstrap-unix).
+1. Install any missing [prerequisites](https://docs.bazel.build/versions/master/install-compile-source.html#bootstrap-unix).
 
-4. Try to [build
+1. Try to [build
    Bazel](https://docs.bazel.build/versions/master/guide.html#building-programs-with-bazel):
 
    *  On Linux/macOS, in Bash/Terminal:
@@ -54,27 +54,28 @@ The IDE that Bazel supports is IntelliJ.
 
 To work with IntelliJ:
 
-*  Install Bazel's [IntelliJ plug-in](https://ij.bazel.build).
-*  Set the path to the Bazel binary in the plugin preferences
+1.  Install Bazel's [IntelliJ plug-in](https://ij.bazel.build).
+1.  Set the path to the Bazel binary in the plugin preferences
    (`Preferences` > `Other Settings` > `Bazel Settings`).
-*  Import the Bazel workspace as a Bazel project
+1.  Import the Bazel workspace as a Bazel project
    (`File` > `Import Bazel Project...`) with the following settings:
    *  Use existing Bazel workspace: choose your cloned Git repository.
    *  Select `Import from workspace` and choose the `scripts/ij.bazelproject`
    file as the `Project view`.
-*  Download [Google's Java Code Style Scheme file for IntelliJ](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml),
+1.  Download [Google's Java Code Style Scheme file for IntelliJ](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml),
    import it (go to `Preferences` > `Editor` > `Code Style` > `Java`, click `Manage`, then `Import`)
    and use it when working on Bazel's code.
 
 <a name="compile-bazel"></a>
 ## Compiling Bazel
 
-To test Bazel, you need to compile it. To compile a development version of
+You need to compile Bazel in order to test it. To compile a development version of
 Bazel, you need the latest released version of Bazel, which can be
 [compiled from source](/versions/master/docs/install-compile-source.html).
 
-`bazel build //src:bazel` builds the Bazel binary using `bazel` from your PATH
-and the resulting binary can be found at `bazel-bin/src/bazel`. This is the
+You can build the Bazel binary using
+`bazel build //src:bazel`, using `bazel` from your PATH.
+The resulting binary can be found at `bazel-bin/src/bazel`. This is the
 recommended way of rebuilding Bazel once you have bootstrapped it.
 
 In addition to the Bazel binary, you might want to build the various tools Bazel
@@ -114,26 +115,26 @@ But if you want to debug the Java code, you must attach to the server using the 
    command (e.g., `bazel --host_jvm_debug build //src:bazel`).
 *  Attach a debugger to the port 5005. With `jdb` for instance,
    run `jdb -attach localhost:5005`.
-*  Our IntelliJ plugin has built-in
-  [debugging support](https://ij.bazel.build/docs/run-configurations.html)
+
+Our IntelliJ plugin has built-in [debugging support](https://ij.bazel.build/docs/run-configurations.html)
 
 ## Bazel's code description
 
 Please read [CODEBASE.md](https://github.com/bazelbuild/bazel/blob/master/CODEBASE.md)
 for a detailed description of the code base.
 
-Bazel is organized in several parts:
+Bazel is organized as follows:
 
-*  Client code in `src/main/cpp` provides the command-line interface.
-*  Protocol buffers in `src/main/protobuf`.
-*  Server code in `src/main/java` and `src/test/java`.
+*  Client code is in `src/main/cpp` and provides the command-line interface.
+*  Protocol buffers are in `src/main/protobuf`.
+*  Server code is in `src/main/java` and `src/test/java`.
    *  Core code which is mostly composed of [SkyFrame](/designs/skyframe.html) and some
      utilities.
-   *  Builtin rules in `com.google.devtools.build.lib.rules` and in
+   *  Built-in rules are in `com.google.devtools.build.lib.rules` and in
      `com.google.devtools.build.lib.bazel.rules`. You might want to read about
      the [Challenges of Writing Rules](docs/rule-challenges.html) first.
-*  Java native interfaces in `src/main/native`.
-*  Various tooling for language support (see the list in the
+*  Java native interfaces are in `src/main/native`.
+*  Various tooling for language support are described in the list in the
    [compiling Bazel](#compile-bazel) section).
 
 ## Searching Bazel's source code
