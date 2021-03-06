@@ -135,7 +135,7 @@ Bazel is organized as follows:
      the [Challenges of Writing Rules](docs/rule-challenges.html) first.
 *  Java native interfaces are in `src/main/native`.
 *  Various tooling for language support are described in the list in the
-   [compiling Bazel](#compile-bazel) section).
+   [compiling Bazel](#compile-bazel) section.
 
 ## Searching Bazel's source code
 
