@@ -82,7 +82,7 @@ uses. They are located in `//src/java_tools/...`, `//src/objc_tools/...` and
 `//src/tools/...` and their directories contain README files describing their
 respective utility.
 
-When modifying Bazel,
+When modifying Bazel:
 1. Build a distribution archive with `bazel build //:bazel-distfile`.
 1. Unzip the archive in a new empty directory.
 1. Run `bash compile.sh all` there.
@@ -118,10 +118,13 @@ However, to debug Java code, attach to the server using the following:
 
 Our IntelliJ plugin has built-in [debugging support](https://ij.bazel.build/docs/run-configurations.html).
 
+## Using Bazel Continuous Integration
+
+To get started with the Bazel CI system, see [Bazel Continuous Integration](https://github.com/bazelbuild/continuous-integration/blob/master/buildkite/README.md). To monitor the tests and builds of your Bazel contributions, use the [Bazel CI Dashboard](https://ci.bazel.build/).
+
 ## Bazel's code description
 
-Please read [CODEBASE.md](https://github.com/bazelbuild/bazel/blob/master/CODEBASE.md)
-for a detailed description of the code base.
+Bazel has a large codebase with code in multiple locations.
 
 Bazel is organized as follows:
 
@@ -137,11 +140,10 @@ Bazel is organized as follows:
 *  Various tooling for language support are described in the list in the
    [compiling Bazel](#compile-bazel) section.
 
-## Searching Bazel's source code
+For a detailed description of the code base, read
+[CODEBASE.md](https://github.com/bazelbuild/bazel/blob/master/CODEBASE.md).
+
+### Searching Bazel's source code
 
 To quickly search through Bazel's source code, use [Bazel Code Search](https://source.bazel.build/). You can navigate Bazel's repositories, branches, and files. You can also view history, diffs, and blame information. To learn more, see the
 [Bazel Code Search User Guide](https://www.bazel.build/browse-and-search-user-guide.html).
-
-## Using Bazel Continuous Integration
-
-To get started with the Bazel CI system, see [Bazel Continuous Integration](https://github.com/bazelbuild/continuous-integration/blob/master/buildkite/README.md). To monitor the tests and builds of your Bazel contributions, use the [Bazel CI Dashboard](https://ci.bazel.build/).
