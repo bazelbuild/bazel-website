@@ -27,20 +27,17 @@ When a proposal adds, removes, or modifies any function or object available in
 BUILD, WORKSPACE, or bzl files, the [Starlark team](../maintainers-guide.html)
 has to be in the reviewers list.
 
-Implementation can begin before the proposal is accepted, for example as a
-proof-of-concept or an experimentation. However, you cannot submit the change
-before the review is complete.
-
 The list of design documents is published on the [Bazel Proposals Repository](https://github.com/bazelbuild/proposals).
 
 Implementation of designs can change over time. The
 published design documents capture the initial design, and _not_ the ongoing
-changes as designs are implemented.
-
-Always go to the [documentation]({{ site.docs_site_url }}) for descriptions of
+changes as designs are implemented. Always go to the
+[documentation]({{ site.docs_site_url }}) for descriptions of
 current Bazel functionality.
 
 ## Reasons for design reviews
+
+Design documents are reviewed before submission because:
 
 *   Bazel is a very complex system; seemingly innocuous local changes can have
     significant global consequences.
@@ -56,12 +53,17 @@ current Bazel functionality.
 
 ## Reasons for a design review policy
 
+Bazel has a design review policy:
+
 *   To maximize the likelihood that all feature requests get a baseline level of
     scrutiny.
 *   To maximize the likelihood that the right people will weigh in on designs
     before we've invested in an implementation that may not work.
 
 ## Contributor Workflow
+
+As a contributor, you can write a design document, send pull requests and
+request reviewers for your proposal.
 
 ### Write the design document
 
@@ -82,7 +84,7 @@ impact on backward compatibility (and a rollout plan if needed).
 
 ### Create a Pull Request
 
-To share your design doc, create a pull request (PR) to add the document to
+Share your design doc by creating a pull request (PR) to add the document to
 [the design index](https://github.com/bazelbuild/proposals). Add your markdown file
 or a document link to your PR.
 
@@ -99,7 +101,7 @@ start the discussion.
 
 ### Announce the new proposal
 
-When the PR is submitted, send an announcement to [bazel-dev](https://groups.google.com/forum/#!forum/bazel-dev).
+Send an announcement to [bazel-dev](https://groups.google.com/forum/#!forum/bazel-dev) when the PR is submitted.
 
 You may cc other groups (e.g. [bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss),
 to get feedback from Bazel end-users).
@@ -115,8 +117,8 @@ allowed).
 
 ### Update the status
 
-When iteration is complete, create a new PR to update the status of the proposal.
-Send the PR to the same lead reviewer and cc the other reviewers.
+Create a new PR to update the status of the proposal, when iteration is
+complete. Send the PR to the same lead reviewer and cc the other reviewers.
 
 To officially accept the proposal, the lead reviewer approves the PR after
 ensuring that the other reviewers agree with the decision.
@@ -124,6 +126,10 @@ ensuring that the other reviewers agree with the decision.
 There must be at least 1 week between the first announcement and the approval of
 a proposal. This ensures that users had enough time to read the document and
 share their concerns.
+
+Implementation can begin before the proposal is accepted, for example as a
+proof-of-concept or an experimentation. However, you cannot submit the change
+before the review is complete.
 
 ### Choosing a lead reviewer
 
@@ -186,28 +192,29 @@ approved by anyone.
 
 ## Reviewer workflow
 
+A reviewer comments, reviews and approves design documents.
+
 ### General reviewer responsibilities
+
+You're responsible for reviewing design documents, asking for additional
+information if needed, and approving a design that passes the review process.
 
 #### When you receive a new proposal
 
-*   Take a quick look at the document. Comment if critical information is
-    missing, or if the design doesn't fit with the goals of the project.
-*   Suggest additional reviewers.
-*   Approve the PR when it is ready for review.
+1.  Take a quick look at the document.
+1.  Comment if critical information is missing, or if the design doesn't fit with the goals of the project.
+1.  Suggest additional reviewers.
+1.  Approve the PR when it is ready for review.
 
 #### During the review process
 
-*   Engage in a dialogue with the design author about issues that are
-    problematic or require clarification.
-*   If appropriate, invite comments from non-reviewers who should be aware of
-    the design.
-*   Decide which comments must be addressed by the author as a prerequisite to approval.
-*   Write "LGTM" (_Looks Good To Me_) in the discussion thread when you are
-    happy with the current state of the proposal.
+1. Engage in a dialogue with the design author about issues that are problematic or require clarification.
+1. If appropriate, invite comments from non-reviewers who should be aware of the design.
+1. Decide which comments must be addressed by the author as a prerequisite to approval.
+1. Write "LGTM" (_Looks Good To Me_) in the discussion thread when you are happy with the current state of the proposal.
 
-If you get a design review request, please make sure it followed this process.
-Do not approve designs affecting Bazel if they are not in the [design
-index](https://github.com/bazelbuild/proposals).
+Follow this process for all design review requests. Do not approve designs affecting Bazel
+if they are not in the [design index](https://github.com/bazelbuild/proposals).
 
 ### Lead reviewer responsibilities
 
@@ -218,22 +225,19 @@ Blaze manager for further disposition.
 
 #### During the review process
 
-*   Ensure that the comment and design iteration process moves forward
-    constructively.
-*   Prior to approval, ensure that concerns from other reviewers have been
-    resolved.
+1.  Ensure that the comment and design iteration process moves forward constructively.
+1.  Prior to approval, ensure that concerns from other reviewers have been resolved.
 
 #### After approval by all reviewers
 
-*   Make sure there has been at least 1 week since the announcement on the
-    mailing list.
-*   Make sure the PR updates the status.
-*   Approve the PR sent by the proposal author.
+1.  Make sure there has been at least 1 week since the announcement on the mailing list.
+1.  Make sure the PR updates the status.
+1.  Approve the PR sent by the proposal author.
 
 #### Rejecting designs
 
-*   Make sure the PR author sends a PR; or send them a PR.
-*   The PR updates the status of the document.
-*   Add a comment to the document explaining why the design can't be approved in
+1.  Make sure the PR author sends a PR; or send them a PR.
+1.  The PR updates the status of the document.
+1.  Add a comment to the document explaining why the design can't be approved in
     its current state, and outlining next steps, if any (e.g., "revisit invalid
     assumptions and resubmit").
