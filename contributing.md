@@ -13,7 +13,8 @@ As you use Bazel, you may find things that can be improved.
 You can help by [reporting issues](http://github.com/bazelbuild/bazel/issues)
 when:
 
-   - Bazel crashes.
+   - Bazel crashes or you encounter a bug that can [only be resolved using `bazel
+     clean`](https://docs.bazel.build/guide.html#correct-incremental-rebuilds).
    - The documentation is incomplete or unclear. You can also report issues
      from the page you are viewing by using the "Create issue"
      link at the top right corner of the page.
