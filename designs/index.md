@@ -23,21 +23,13 @@ Here are some examples of significant changes:
 *   Changes to widely used internal APIs
 *   Changes to flags and command-line interface.
 
-When a proposal adds, removes, or modifies any function or object available in
-BUILD, WORKSPACE, or bzl files, the [Starlark team](../maintainers-guide.html)
-has to be in the reviewers list.
-
-The list of design documents is published on the [Bazel Proposals Repository](https://github.com/bazelbuild/proposals).
-
-Implementation of designs can change over time. The
-published design documents capture the initial design, and _not_ the ongoing
-changes as designs are implemented. Always go to the
-[documentation]({{ site.docs_site_url }}) for descriptions of
-current Bazel functionality.
-
 ## Reasons for design reviews
 
-Design documents are reviewed before submission because:
+When you write a design document, you can coordinate with other Bazel developers
+and seek guidance from Bazel's core team. For example, when a proposal adds,
+removes, or modifies any function or object available in BUILD, WORKSPACE, or bzl files,
+add the [Starlark team](../maintainers-guide.html) as reviewers. Design documents
+are reviewed before submission because:
 
 *   Bazel is a very complex system; seemingly innocuous local changes can have
     significant global consequences.
@@ -51,14 +43,19 @@ Design documents are reviewed before submission because:
 *   Changes to Bazel must account for backward compatibility and avoid breaking
     changes.
 
-## Reasons for a design review policy
+Bazel's design review policy helps to maximize the likelihood that:
 
-Bazel has a design review policy:
+*   all feature requests get a baseline level of scrutiny.
+*   the right people will weigh in on designs before we've invested in an
+    implementation that may not work.
 
-*   To maximize the likelihood that all feature requests get a baseline level of
-    scrutiny.
-*   To maximize the likelihood that the right people will weigh in on designs
-    before we've invested in an implementation that may not work.
+To help you get started, take a look at the design documents in the
+[Bazel Proposals Repository](https://github.com/bazelbuild/proposals).
+Designs are works in progress, so implementation details can change over time
+and with feedback. The published design documents capture the initial design,
+and *not* the ongoing changes as designs are implemented. Always go to the
+[documentation]({{ site.docs_site_url }}) for descriptions of
+current Bazel functionality.
 
 ## Contributor Workflow
 
