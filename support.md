@@ -83,7 +83,7 @@ We are doing public post-mortems in the following cases:
 
 ### Testing
 
-We run nightly build of all the projects running on [ci.bazel.io](http://ci.bazel.io) using Bazel
+We run nightly build of all the projects running on [ci.bazel.build](https://ci.bazel.build/) using Bazel
 binaries built at head, and using the release binaries. We notify projects going to be impacted by a
 breaking change. Google's internal continuous integraion test run all the applicable build targets
 at Google nightly.
