@@ -10,7 +10,7 @@ these changes are sometimes necessary to fix bugs, make improvements (such as
 improving performance or usability) to the system, or to lock down APIs that
 are known to be brittle.
 
-Before any major change, you will have advance notice on the
+Major changes are announced in advance on the
 [bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss) mailing list.
 Both undocumented features (attributes, rules, "Make" variables, and flags) and
 documented features that are marked *experimental* are subject to change at any
