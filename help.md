@@ -5,16 +5,39 @@ title: Getting Help
 
 # Getting Help
 
-If you have questions about Bazel, or encounter issues and errors, you can reach out
-to the Bazel team and community in the following ways:
+This page lists Bazel resources beyond the documentation and covers how to get support from the Bazel team and community.
 
-* Email the [User mailing list](https://groups.google.com/forum/#!forum/bazel-discuss)
-  to ask questions and participate in discussions.
-* Email the [Developer mailing
-  list](https://groups.google.com/forum/#!forum/bazel-dev) if you are interested
-  in developing Bazel.
-* Use our [GitHub issue tracker](https://github.com/bazelbuild/bazel/issues) to
-  report bugs or request features.
-* Chat with other Bazel contributors on [Slack](https://slack.bazel.build).
-* Find answers to questions and join the Bazel community on
-  [Stack Overflow](https://stackoverflow.com/questions/tagged/bazel).
+## Search existing material
+
+In addition to the documentation, you can find helpful information by searching:
+
+* [Bazel user group](https://groups.google.com/g/bazel-discuss)
+* [Bazel developer group](https://groups.google.com/g/bazel-dev)
+* [Bazel blog](https://blog.bazel.build/)
+* [Stack Overflow](https://stackoverflow.com/questions/tagged/bazel)
+* [`awesome-bazel` resources](https://github.com/jin/awesome-bazel)
+
+## Watch videos
+
+There are recordings of Bazel talks at various conferences, such as:
+
+* Bazel’s annual conference, BazelCon:
+  * [BazelCon 2020](https://www.youtube.com/playlist?list=PLxNYxgaZ8RseRybXNbopHRv6-wGmFr04n)
+  * [BazelCon 2019](https://youtu.be/eymphDN7No4?t=PLxNYxgaZ8Rsf-7g43Z8LyXct9ax6egdSj)
+  * [BazelCon 2018](https://youtu.be/DVYRg6b2UBo?t=PLxNYxgaZ8Rsd3Nmvl1W1B4I6nK1674ezp)
+  * [BazelCon 2017](https://youtu.be/3eFllvz8_0k?t=PLxNYxgaZ8RseY0KmkXQSt0StE71E7yizG)
+* Bazel day on [Google Open Source Live](https://opensourcelive.withgoogle.com/events/bazel)
+
+## Ask the Bazel community
+
+If there are no existing answers, you can ask the community by:
+
+* Emailing the [Bazel user group](https://groups.google.com/g/bazel-discuss)
+* Emailing the [Bazel developer group](https://groups.google.com/g/bazel-dev)
+* Asking a question on [Stack Overflow](https://stackoverflow.com/questions/tagged/bazel)
+* Chatting with other Bazel contributors on [Slack](https://slack.bazel.build/)
+
+## File a bug
+
+If you encounter a bug or want to request a feature, file a [GitHub
+Issue](https://github.com/bazelbuild/bazel/issues).
