@@ -36,6 +36,7 @@ If there are no existing answers, you can ask the community by:
 * Emailing the [Bazel developer group](https://groups.google.com/g/bazel-dev)
 * Asking a question on [Stack Overflow](https://stackoverflow.com/questions/tagged/bazel)
 * Chatting with other Bazel contributors on [Slack](https://slack.bazel.build/)
+* Consulting a [Bazel community expert](https://www.bazel.build/experts.html)
 
 ## File a bug
 
