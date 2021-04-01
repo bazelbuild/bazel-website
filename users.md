@@ -218,7 +218,7 @@ Ritual is a mobile pick up app, connecting restaurants with customers to offer a
 
 ### [Snap](https://www.snap.com/en-US/)
 
-Snap, the developper of Snapchat messaging app, has migrated from Buck to Bazel in 2020 ([source](https://twitter.com/wew/status/1326957862816509953)). Check out their [engineering blog](https://eng.snap.com/blog/) for more about their process.
+Snap, the developer of Snapchat messaging app, has migrated from Buck to Bazel in 2020 ([source](https://twitter.com/wew/status/1326957862816509953)). Check out their [engineering blog](https://eng.snap.com/blog/) for more about their process.
 
 ### [Stripe](https://stripe.com)
 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Stripe_logo%2C_revised_2016.png/320px-Stripe_logo%2C_revised_2016.png" width="150" align="right">
