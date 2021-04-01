@@ -302,8 +302,27 @@ See our [contribution guidelines](contributing.html).
 
 We still have to refactor the interfaces between the public code in
 Bazel and our internal extensions frequently. This makes it hard to do
-much development in the open. See our [governance plan](governance.html)
-for more details.
+much development in the open.
+
+## Are you done open sourcing Bazel?
+
+Open sourcing Bazel is a work-in-progress. In particular, we're still working on open sourcing:
+
+* Many of our unit and integration tests (which should make contributing patches easier).
+* Full IDE integration.
+
+Beyond code, we'd like to eventually have all code reviews, bug tracking, and design decisions
+happen publicly, with the Bazel community involved. We are not there yet, so some changes will
+simply appear in the Bazel repository without clear explanation. Despite this lack of
+transparency, we want to support external developers and collaborate. Thus, we are opening up the
+code, even though some of the development is still happening internal to Google. Please let us know
+if anything seems unclear or unjustified as we transition to an open model.
+
+## Are there parts of Bazel that will never be open sourced?
+
+Yes, some of the code base either integrates with Google-specific technology or we have been looking
+for an excuse to get rid of (or is some combination of the two). These parts of the code base are
+not available on GitHub and probably never will be.
 
 ## How do I contact the team?
 

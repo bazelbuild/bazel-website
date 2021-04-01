@@ -5,20 +5,12 @@ title: Guide for Bazel Maintainers
 
 # Guide for Bazel Maintainers
 
-## Table of Contents
-{:.no_toc}
-
-* ToC 
-{:toc}
-
-## Overview
-
 This is a guide for the maintainers of the Bazel open source project.
 
 If you are looking to contribute to Bazel, please read [Contributing to
 Bazel](/contributing.html) instead.
 
-The objectives of this document are to:
+The objectives of this page are to:
 
 1. Serve as the maintainers' source of truth for the project’s contribution
    process.
@@ -31,8 +23,7 @@ manage aspects of the open source project. These are:
 * **Release Process**: Manage Bazel's release process.
 * **Green Team**: Grow a healthy ecosystem of rules and tools.
 * **Developer Experience Gardeners**: Encourage external contributions, review issues
-  and pull requests, make our development workflow more open, and shift the team 
-  towards GitHub-first development.
+  and pull requests, and make our development workflow more open.
 
 ## Releases
 
@@ -79,7 +70,7 @@ issues](https://github.com/bazelbuild/bazel/issues?q=is%3Aissue+is%3Aopen+label%
 
 Each Bazel subteam will triage all issues under labels they own, preferably on a
 weekly basis. The subteam will review and evaluate the issue and provide a
-resolution, if possible. If you are a owner of a team label, see [this section
+resolution, if possible. If you are an owner of a team label, see [this section
 ](maintainers-guide.html#my-team-owns-a-label-what-should-i-do) for more
 information.
 
@@ -108,7 +99,7 @@ When an issue is resolved, it can be closed.
 ## My team owns a label. What should I do?
 
 Subteams need to triage all issues in the [labels they own](#team-labels),
-preferable on a weekly basis.
+preferably on a weekly basis.
 
 ### Issues
 
