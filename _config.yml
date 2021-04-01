@@ -15,7 +15,9 @@ gems:
 
 main_site_url: ""
 blog_site_url: https://blog.bazel.build
-docs_site_url: https://docs.bazel.build
+getting_started_category_url: https://docs.bazel.build/bazel-overview.html
+docs_site_url: https://docs.bazel.build/guide.html
+extending_category_url: https://docs.bazel.build/skylark/concepts.html
 
 assets_url: https://bazel.build
 
