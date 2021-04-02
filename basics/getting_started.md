@@ -135,7 +135,7 @@ Bazel is organized as follows:
      utilities.
    *  Built-in rules are in `com.google.devtools.build.lib.rules` and in
      `com.google.devtools.build.lib.bazel.rules`. You might want to read about
-     the [Challenges of Writing Rules](docs/rule-challenges.html) first.
+     the [Challenges of Writing Rules](https://docs.bazel.build/versions/master/rule-challenges.html) first.
 *  Java native interfaces are in `src/main/native`.
 *  Various tooling for language support are described in the list in the
    [compiling Bazel](#compile-bazel) section.
