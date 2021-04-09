@@ -136,3 +136,4 @@ builtins functionality. The API for C++ rules will not be made accessible from
 *   Aspect can propagate other aspects - proposal
     [Aspects Propagating Other Aspects](https://docs.google.com/document/d/1fVNyskIgMoiNeOOGt57LdDmEkAShkYUKYQTkf5yD1fA/edit).
     <span class="inprogressstatus">IN PROGRESS</span>
+*   Improve Starlark testing framework
