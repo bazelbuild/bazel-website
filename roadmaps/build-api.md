@@ -20,7 +20,7 @@ title: Bazel Build API Roadmap
     padding-left: 10px;
   }
   .droppedstatus {
-    color: #0D0000;
+    color: #D00000;
     font-weight: bold;
     padding-left: 10px;
   }
