@@ -34,9 +34,9 @@ This section contains basic writing tips.
    -  **YES:** Permissions
    -  **NO:** A brief note on permissions
 
--  Use sentence case for headings
-   -  **YES:** Set up your workspace
-   -  **NO:** Set Up Your Workspace
+-  Use title case for headings
+   -  **YES:** Set Up Your Workspace
+   -  **NO:** Set up your workspace
 
 -  Try to make headings task-based or actionable. If headings are conceptual,
    it may be based around understanding, but write to what the user does.
