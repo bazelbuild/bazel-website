@@ -184,11 +184,11 @@ issues.
 *   [`team-Remote-Exec`](https://github.com/bazelbuild/bazel/labels/team-Remote-Exec): Issues for Execution (Remote) team
     * Contact: [coeuvre](https://github.com/coeuvre)
 *   [`team-Rules-CPP`](https://github.com/bazelbuild/bazel/labels/team-Rules-CPP): Issues for C++ rules
-    * Contact: [lberki](https://github.com/lberki)
+    * Contact: [oquenchil](https://github.com/oquenchil)
 *   [`team-Rules-Java`](https://github.com/bazelbuild/bazel/labels/team-Rules-Java): Issues for Java rules
-    * Contact: [lberki](https://github.com/lberki)
+    * Contact: [comius](https://github.com/comius)
 *   [`team-Rules-Python`](https://github.com/bazelbuild/bazel/labels/team-Rules-Python): Issues for the native Python rules
-    * Contact: [lberki](https://github.com/lberki)
+    * Contact: [comius](https://github.com/comius)
 *   [`team-Rules-Server`](https://github.com/bazelbuild/bazel/labels/team-Rules-Server): Issues for serverside rules included with Bazel
     * Contact: [lberki](https://github.com/lberki)
 *   [`team-Starlark`](https://github.com/bazelbuild/bazel/labels/team-Starlark): Issues for Starlark language + Build API
