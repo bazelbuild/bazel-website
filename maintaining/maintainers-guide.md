@@ -142,28 +142,39 @@ issues.
   compliant to the [Breaking
   Change](https://docs.google.com/document/d/1q5GGRxKrF_mnwtaPKI487P8OdDRh2nN7jX6U-FXnHL0/edit?pli=1#heading=h.ceof6vpkb3ik)
   policy. No practical workaround exists.
+  * Issues marked as P0 are under active development. P0 issues of type:bug
+  are supposed to be updated every 1 day and be closed in 7 days.
 * [**P1**](https://github.com/bazelbuild/bazel/labels/P1) - Critical defect or
   feature which should be addressed in the next release, or a serious issue that
   impacts many users (including the development of the Bazel project), but a
   practical workaround exists. Typically does not require immediate action. In
   high demand and planned in the current quarter's roadmap.
+  * Issues marked as P1 are under active development. P1 issues of type:bug
+  are supposed to be updated every 1 week and be closed in 4 weeks.
 * [**P2**](https://github.com/bazelbuild/bazel/labels/P2) - Defect or feature
   that should be addressed but we don't currently work on. Moderate live issue
   in a released Bazel version that is inconvenient for a user that needs to be
   addressed in an future release and/or a easy workaround exists.
+  * Issues marked as P2 are part of the actively maintained backlog. P2 issues
+  of type:bug are supposed to receive an initial update within one week and are 
+  considered to be re-reviewed within one quarter.
 * [**P3**](https://github.com/bazelbuild/bazel/labels/P3) - Desirable minor bug
   fix or enhancement with small impact. Not prioritized into Bazel roadmaps or
   any imminent release. May never be fixed.
+  * Issues marked as P3 are not actively managed by the Bazel team. 
+  Community contributions are encouraged, the Bazel team will accept PRs.
 * [**P4**](https://github.com/bazelbuild/bazel/labels/P4) - Low priority defect
   or feature request that is unlikely to get closed. Can also be kept open for a
   potential re-prioritization if more users are impacted.
-* [**ice-box**](https://github.com/bazelbuild/bazel/issues?q=label%3Aice-box+is%3Aclosed)
-  - Issues that we currently don't have time to deal with nor the
-  time to accept contributions. We will close these issues to indicate that
-  nobody is working on them, but will continue to monitor their validity over
-  time and revive them if enough people are impacted and if we happen to have
-  resources to deal with them. As always, feel free to comment or add reactions
-  to these issues even when closed.
+  * Issues marked as P4 are not actively managed by the Bazel team. 
+  We'll leave issues open as P4 if we think that there is a value to keep them
+  in the backlog though. The P4 label essentially replaces the former ice-box
+  label. As always, feel free to comment or add reactions to these issues.
+
+Priorities define the priority of the work (which might be different from 
+concepts like importance, relevance or severity). If issue under active development
+do not receive updates, we will ping the assignees or owners and ask them to either 
+update the issue or to correct the priority accordingly. 
 
 ## Team labels
 
