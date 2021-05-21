@@ -70,7 +70,7 @@ Registry:
 
 Dependency Management:
 * Upgrade / downgrade a module version
-* External dependency graph in querying
+* External dependency graph querying
 
 Registry:
 * Helper tool for managing index registry <span class="inprogressstatus">IN PROGRESS</span>
