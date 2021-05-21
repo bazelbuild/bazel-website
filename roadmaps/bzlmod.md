@@ -3,6 +3,34 @@ layout: contribute
 title: Bzlmod roadmap
 ---
 
+<style>
+  .padbottom { padding-bottom: 10px; }
+  .etabox {
+    background: #EFEFEF;
+    color: #38761D;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline;
+    padding: 6px;
+    margin-right: 10px;
+  }
+  .donestatus {
+    color: #00D000;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  .droppedstatus {
+    color: #D00000;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  .inprogressstatus {
+    color: #D0D000;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+</style>
+
 # Bzlmod Roadmap
 
 *Point of contact:* [Wyverald](https://github.com/Wyverald), [pcloudy](https://github.com/pcloudy)
@@ -18,18 +46,18 @@ We have [a MVP](https://github.com/Wyverald/bazel/pull/16) that implements some 
 ## Bazel Module & Registry
 
 Bazel module:
-* MODULE.bazel file support
-* Bazel module discovery & selection (MVS)
-* Support `repo_name` in `bazel_dep`
+* MODULE.bazel file support <span class="donestatus">(DONE in MVP)</span>
+* Bazel module discovery & selection (MVS) <span class="donestatus">(DONE in MVP)</span>
+* Support `repo_name` in `bazel_dep` <span class="donestatus">(DONE in MVP)</span>
 * Support `dev_dependency` in `bazel_dep`
 * Support `compatibility_level` in `module`
 
 Resolution:
-* `override_dep` support: `single_version_override`, `archive_override`, `git_override`, `local_path_override`
+* `override_dep` support: `single_version_override`, `archive_override`, `git_override`, `local_path_override` <span class="donestatus">(DONE in MVP)</span>
 * `override_dep` support: `multiple_version_override`
 
 Registry:
-* Implement fetching modules from index registry
+* Implement fetching modules from index registry <span class="donestatus">(DONE in MVP)</span>
 * Implement fetching modules from single module registry (git repo with version tags)
 
 ## Module Rule
@@ -45,7 +73,7 @@ Dependency Management:
 * External dependency graph in querying
 
 Registry:
-* Helper tool for managing index registry
+* Helper tool for managing index registry <span class="inprogressstatus">IN PROGRESS</span>
 
 CI:
 * Presubmit for [Bazel Central Registry](https://github.com/bazelbuild/bazel-central-registry)
