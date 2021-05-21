@@ -51,8 +51,6 @@ Bazel module:
 * Support `repo_name` in `bazel_dep` <span class="donestatus">(DONE in MVP)</span>
 * Support `dev_dependency` in `bazel_dep`
 * Support `compatibility_level` in `module`
-
-Resolution:
 * `override_dep` support: `single_version_override`, `archive_override`, `git_override`, `local_path_override` <span class="donestatus">(DONE in MVP)</span>
 * `override_dep` support: `multiple_version_override`
 
