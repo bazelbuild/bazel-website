@@ -39,7 +39,7 @@ title: Bzlmod roadmap
 
 To implement the new Bazel external dependency management system (Bzlmod) designed in [Bazel External Dependencies Overhaul](https://docs.google.com/document/d/1moQfNcEIttsk6vYanNKIy3ZuK53hQUFq1b1r0rmsYVg/edit?usp=sharing).
 
-## Current Situation (as of 2021-05-20)
+## Current Status (as of 2021-05-20)
 
 We have [a MVP](https://github.com/Wyverald/bazel/pull/16) that implements some of the following features.
 
