@@ -50,14 +50,14 @@ title: Bazel Configurability Roadmap
 Platforms:
 
 * C++ rules support the new [platforms
-  API](https://docs.bazel.build/versions/master/platforms-intro.html). Deferred
+  API](https://docs.bazel.build/platforms-intro.html). Deferred
   [enabling](https://github.com/bazelbuild/bazel/issues/7260) by default since
   depending Android and iOS projects
   [break](https://github.com/bazelbuild/bazel/issues/8716).
 * Java rules support the new platforms API. [Actual platform
   definitions](https://github.com/bazelbuild/rules_java/pull/8) remain pending.
 * To enable C++ and Java support in 2020, we'll use [platform
-  mappings](https://docs.bazel.build/versions/master/platforms-intro.html#how-to-use-platforms-today)
+  mappings](https://docs.bazel.build/platforms-intro.html#how-to-use-platforms-today)
   to manage Android / iOS integration. We'll need help from project
   owners to ensure we don't break them.
 * Lesson learned: global rollout is an involved cross-team effort.
@@ -65,7 +65,7 @@ Platforms:
 User-defined configuration:
 
 * [Starlark build
-  configuration](https://docs.bazel.build/versions/master/skylark/config.html)
+  configuration](https://docs.bazel.build/skylark/config.html)
   is v1.0 feature-complete: the core API is working and stable.
 * Some features will continue to need bake-in time
   ([example](https://github.com/bazelbuild/bazel/issues/10499)). We'll
@@ -99,7 +99,7 @@ Collaboration:
 Dates are approximate based on our best understanding of problem complexity
 and developer availability. Dates represent expected availability in released
 Bazel. If a feature requires an [incompatible
-flag](https://docs.bazel.build/versions/master/backward-compatibility.html#incompatible-changes-and-migration-recipes),
+flag](https://docs.bazel.build/backward-compatibility.html#incompatible-changes-and-migration-recipes),
 dates represent the first time the feature can be used, even if it requires 
 setting the flag before it's on by default. ETAs will change, but we'll keep
 them refreshed and current.
@@ -109,21 +109,21 @@ Also see the [Platforms Roadmap](platforms.html) for detailed priorities.
 
 <div class="padbottom"></div>
 <span class="etabox">Jun 2019</span>**C++ rules fully support
-[platforms](https://docs.bazel.build/versions/master/platforms.html) and
-[toolchains](https://docs.bazel.build/versions/master/toolchains.html)**
+[platforms](https://docs.bazel.build/platforms.html) and
+[toolchains](https://docs.bazel.build/toolchains.html)**
 <span class="inprogressstatus">PARTIALLY DONE</span> ([#6516](https://github.com/bazelbuild/bazel/issues/6516))
 
 * This gives them first-class Starlark support, `select()` [on
-platforms](https://docs.bazel.build/versions/master/be/general.html#config_setting.constraint_values),
+platforms](https://docs.bazel.build/be/general.html#config_setting.constraint_values),
 and configuration via
-[-\-platforms](https://docs.bazel.build/versions/master/platforms.html#specifying-a-platform-for-a-build)
+[-\-platforms](https://docs.bazel.build/platforms.html#specifying-a-platform-for-a-build)
 * Sets best practices for adding platform and toolchain support to other rules
 
 
 <div class="padbottom"></div>
 <span class="etabox">Jun 2019</span>**Java rules fully support
-[platforms](https://docs.bazel.build/versions/master/platforms.html) and
-[toolchains](https://docs.bazel.build/versions/master/toolchains.html)**
+[platforms](https://docs.bazel.build/platforms.html) and
+[toolchains](https://docs.bazel.build/toolchains.html)**
 <span class="inprogressstatus">PARTIALLY DONE</span> ([#6521](https://github.com/bazelbuild/bazel/issues/6521))
 
 <div class="padbottom"></div>
@@ -138,7 +138,7 @@ at the command line**
 <div class="padbottom"></div>
 <span class="etabox">Jun 2019</span>**Legacy flags like `--cpu` automatically set `--platform` while the former are removed**
 <span class="donestatus">DONE</span> ([w/ opt
-in](https://docs.bazel.build/versions/master/platforms-intro.html#platform-mappings))
+in](https://docs.bazel.build/platforms-intro.html#platform-mappings))
 ([#6426](https://github.com/bazelbuild/bazel/issues/6426))
 
 * This prevents `.bazelrc`s, `select()`s on `--cpu`, and legacy command lines from breaking as rules adopt platforms
@@ -146,8 +146,8 @@ in](https://docs.bazel.build/versions/master/platforms-intro.html#platform-mappi
 
 <div class="padbottom"></div>
 <span class="etabox">Aug 2019</span>**All supported Bazel rules support 
-[platforms](https://docs.bazel.build/versions/master/platforms.html) and
-[toolchains](https://docs.bazel.build/versions/master/toolchains.html)**
+[platforms](https://docs.bazel.build/platforms.html) and
+[toolchains](https://docs.bazel.build/toolchains.html)**
 <span class="inprogressstatus">DONE FOR PYTHON</span>
 
 * Python: [#7375](https://github.com/bazelbuild/bazel/issues/7375)
@@ -191,18 +191,18 @@ See [Starlark Build Configuration](https://docs.google.com/document/d/1vc8v-kXjv
 
 * A standard API defines how to declare custom settings. This consolidates [command
   line
-  flags](https://docs.bazel.build/versions/master/command-line-reference.html),
+  flags](https://docs.bazel.build/command-line-reference.html),
   ["secret"
-  flags](https://github.com/bazelbuild/bazel/blob/master/src/main/java/com/google/devtools/build/lib/rules/apple/AppleCommandLineOptions.java#L246),
+  flags](https://github.com/bazelbuild/bazel/blob/HEAD/src/main/java/com/google/devtools/build/lib/rules/apple/AppleCommandLineOptions.java#L246),
   [--define](https://github.com/bazelbuild/bazel/blob/b3cf83cd20f30d77e6768de651a3e652f86d6f78/src/main/java/com/google/devtools/build/lib/analysis/config/BuildConfiguration.java#L423),
-  [--features](https://source.bazel.build/bazel/+/master:src/main/java/com/google/devtools/build/lib/analysis/config/BuildConfiguration.java;l=835?q=file:BuildConfiguration.java),
+  [--features](https://github.com/bazelbuild/bazel/blob/HEAD/src/main/java/com/google/devtools/build/lib/analysis/config/BuildConfiguration.java;l=835?q=file:BuildConfiguration.java),
   and [feature
   flags](https://github.com/bazelbuild/bazel/blob/d6a98282e229b311dd56e65b72003197120f299a/src/test/java/com/google/devtools/build/lib/rules/android/AndroidBinaryTest.java#L3107)).
 
 * All hard-coded Bazel flags can be migrated to this API. Actual migration may
   not have begun.
 * End users (i.e. non-rule designers) can't customize settings. For end users, we want to start
-  by seeing how far we can get with [`--platforms`](https://docs.bazel.build/versions/master/platforms.html#specifying-a-platform-for-a-build) and [feature
+  by seeing how far we can get with [`--platforms`](https://docs.bazel.build/platforms.html#specifying-a-platform-for-a-build) and [feature
   flags](https://github.com/bazelbuild/bazel/blob/d6a98282e229b311dd56e65b72003197120f299a/src/test/java/com/google/devtools/build/lib/rules/android/AndroidBinaryTest.java#L3107).
 
 

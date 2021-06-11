@@ -54,14 +54,14 @@ class="inprogressstatus">IN PROGRESS</span>. 6 <span class="notstartedstatus">NO
 Platforms:
 
 * [Incompatible target
-skipping](https://docs.bazel.build/versions/master/platforms.html#skipping-incompatible-targets)
+skipping](https://docs.bazel.build/platforms.html#skipping-incompatible-targets)
 *delivered* in Bazel 4.0. Big thanks to [@philsc](https://github.com/philsc) for
 carrying the feature through.
 * Java rules
-  [migrated](https://docs.bazel.build/versions/master/platforms-intro.html#java)
+  [migrated](https://docs.bazel.build/platforms-intro.html#java)
   to platforms. Big thanks to [@comius](https://github.com/comius) for
   implementation.
-* Core devs are doubling down on migrating Android rules. This will also [unlock](https://docs.bazel.build/versions/master/platforms-intro.html#c) C++
+* Core devs are doubling down on migrating Android rules. This will also [unlock](https://docs.bazel.build/platforms-intro.html#c) C++
   rules. We're continuing this focus in the interest of making Bazel's platform
   API the standard for all projects. This is involved work that will continue
   through 2021.
@@ -71,9 +71,9 @@ carrying the feature through.
 Other work:
 
 * [Flag
-  aliases](https://docs.bazel.build/versions/master/skylark/config.html#using-build-setting-aliases)
+  aliases](https://docs.bazel.build/skylark/config.html#using-build-setting-aliases)
   *delivered* in Bazel 4.0:
-  [write](https://docs.bazel.build/versions/master/skylark/config.html#user-defined-build-settings)
+  [write](https://docs.bazel.build/skylark/config.html#user-defined-build-settings)
   `//my/package:my_flag` in Starlark and set it as `--myflag` at the command
   line. Big thanks to [@warkahscott](https://github.com/warkahscott) for
   delivering the feature and [@juliexxia](https://github.com/juliexxia) for
@@ -101,17 +101,17 @@ actively prioritized.
 * Builds scale well, particularly w.r.t graph size and action caching.
 
 We also support
-[`cquery`](https://docs.bazel.build/versions/master/cquery.html), [`Starlark
-configuration`](https://docs.bazel.build/versions/master/skylark/config.html),
+[`cquery`](https://docs.bazel.build/cquery.html), [`Starlark
+configuration`](https://docs.bazel.build/skylark/config.html),
 and
-[`select()`](https://docs.bazel.build/versions/master/configurable-attributes.html).
+[`select()`](https://docs.bazel.build/configurable-attributes.html).
 
 ## Roadmap
 
 Dates are approximate based on our best understanding of problem complexity
 and developer availability. Dates represent expected availability in released
 Bazel. If a feature requires an [incompatible
-flag](https://docs.bazel.build/versions/master/backward-compatibility.html#incompatible-changes-and-migration-recipes),
+flag](https://docs.bazel.build/backward-compatibility.html#incompatible-changes-and-migration-recipes),
 dates represent the first time the feature can be used, even if the flag has to
 be manually set. ETAs will change, but we'll keep them refreshed as we best
 understand them.
@@ -131,26 +131,26 @@ platforms](https://docs.google.com/document/d/1U9HzdDmtRnm244CaRM6JV-q2408mbNODA
 
 <div class="padbottom"></div>
 <span class="etabox">Fall 2020</span>**C++ rules use the new [platforms
-API](https://docs.bazel.build/versions/master/platforms-intro.html)** 
+API](https://docs.bazel.build/platforms-intro.html)** 
 <span class="inprogressstatus">IN PROGRESS</span> ([#6516](https://github.com/bazelbuild/bazel/issues/6516))
 
 * Already [ready](https://github.com/bazelbuild/bazel/issues/7260) but need
   [platform
-  mappings](https://docs.bazel.build/versions/master/platforms-intro.html#how-to-use-platforms-today)
+  mappings](https://docs.bazel.build/platforms-intro.html#how-to-use-platforms-today)
   to [support](507230303) Android/IOS projects
 * *Final update*: we're fulfilling this by implementing proper Android / iOS
   support in 2021
 
 <div class="padbottom"></div>
 <span class="etabox">Fall 2020</span>**Java rules use the new [platforms
-API](https://docs.bazel.build/versions/master/platforms-intro.html)**
+API](https://docs.bazel.build/platforms-intro.html)**
 <span class="donestatus">DONE</span> ([#4592](https://github.com/bazelbuild/bazel/issues/4592))
 
 * Same as C++ but also need [platform definitions](https://github.com/bazelbuild/rules_java/pull/8)
 
 <div class="padbottom"></div>
 <span class="etabox">Fall 2020</span>**Android rules use the new [platforms
-API](https://docs.bazel.build/versions/master/platforms-intro.html)**
+API](https://docs.bazel.build/platforms-intro.html)**
 <span class="inprogressstatus">IN PROGRESS</span> ([#11749](https://github.com/bazelbuild/bazel/issues/11749))
 
 * *Final update*: primary focus in 2021
@@ -182,7 +182,7 @@ impact of configuration APIs**
 <span class="donestatus">DONE</span> ([#10613](https://github.com/bazelbuild/bazel/issues/10613))
 
 * For example, how does a
-  [transition](https://docs.bazel.build/versions/master/skylark/config.html#user-defined-transitions)
+  [transition](https://docs.bazel.build/skylark/config.html#user-defined-transitions)
   affect the configured target graph, which targets are responsible,
   and how could trimming help?
 * Also quantifies action caching inefficiency
@@ -210,7 +210,7 @@ cross-platform Java compilation**
 ### Features
 
 <div class="padbottom"></div>
-<span class="etabox">September 2020</span>**Short and sharp [Starlark flags](https://docs.bazel.build/versions/master/skylark/config.html#user-defined-build-settings)** 
+<span class="etabox">September 2020</span>**Short and sharp [Starlark flags](https://docs.bazel.build/skylark/config.html#user-defined-build-settings)** 
 <span class="donestatus">DONE</span> ([#11750](https://github.com/bazelbuild/bazel/issues/11750))
 
 <div class="padbottom"></div>

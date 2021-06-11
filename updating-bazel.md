@@ -5,7 +5,7 @@ title: Updating Bazel
 
 # Updating Bazel
 
-Bazel defined a [backwards compatibility policy](https://docs.bazel.build/versions/master/backward-compatibility.html)
+Bazel defined a [backwards compatibility policy](https://docs.bazel.build/backward-compatibility.html)
 (see [guidance for rolling out incompatible changes](https://www.bazel.build/breaking-changes-guide.html) if you are the author of one).
 This page summarized best practices on how to test and migrate your project with upcoming incompatible
 changes and how to provide feedback to the incompatible change authors.
@@ -25,7 +25,7 @@ We recommend the following process for project migration:
    "migration-\<release\>" label on GitHub, for example "[migration-0.26](https://github.com/bazelbuild/bazel/issues?utf8=%E2%9C%93&q=label%3Amigration-0.26+)".
 3. Each of those issues has an associated `--incompatible_*` flag. For each of them, build your project 
    with that flag enabled, and if the build is unsuccessful, fix the project according to
-   [migration recipe](https://docs.bazel.build/versions/master/backward-compatibility.html#incompatible-changes-and-migration-recipes) as specified in the corresponding GitHub issue:
+   [migration recipe](https://docs.bazel.build/backward-compatibility.html#incompatible-changes-and-migration-recipes) as specified in the corresponding GitHub issue:
     *   Migration guidance is available in the associated GitHub issue.
     *   Migration is always possible in such a way that the project continues to build with and without the flag.
     *   For some of the incompatible changes migration tooling is available, for example as part of [buildifier](https://github.com/bazelbuild/buildtools/releases). Be sure to check the GitHub issue for migration instructions.
