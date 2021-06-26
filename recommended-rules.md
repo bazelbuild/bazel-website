@@ -6,7 +6,7 @@ title: Recommended Rules
 # Recommended Rules
 
 In the documentation, we provide a list of
-[recommended rules](https://docs.bazel.build/rules.html).
+[recommended rules](https://docs.bazel.build/versions/main/rules.html).
 
 This is a set of high quality rules, which will provide a good experience to our
 users. We make a distinction between the supported rules, and the hundreds of
@@ -28,7 +28,7 @@ will be recommended on the Bazel website.
 *   The ruleset is well maintained. There must be at least two active maintainers.
 *   The ruleset is well documented, with examples, and easy to use.
 *   The ruleset follows the best practices and is performant (see
-    [the performance guide](https://docs.bazel.build/skylark/performance.html)).
+    [the performance guide](https://docs.bazel.build/versions/main/skylark/performance.html)).
 *   The ruleset has sufficient test coverage.
 *   The ruleset is tested on
     [BuildKite](https://github.com/bazelbuild/continuous-integration/blob/master/buildkite/README.md)

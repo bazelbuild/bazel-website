@@ -6,7 +6,7 @@ title: Updating Bazel
 # Updating Bazel
 
 Bazel defined a [backwards compatibility policy](https://docs.bazel.build/backward-compatibility.html)
-(see [guidance for rolling out incompatible changes](https://www.bazel.build/breaking-changes-guide.html) if you are the author of one).
+(see [guidance for rolling out incompatible changes](https://bazel.build/breaking-changes-guide.html) if you are the author of one).
 This page summarized best practices on how to test and migrate your project with upcoming incompatible
 changes and how to provide feedback to the incompatible change authors.
 

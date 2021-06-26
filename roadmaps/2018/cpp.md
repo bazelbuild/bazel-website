@@ -60,7 +60,7 @@ owner: [scentini](https://github.com/scentini)).
 Status: <span class="notstartedstatus">NOT STARTED</span>
 
 Objective: C++ toolchain is selected using
-[platforms](https://docs.bazel.build/platforms.html).
+[platforms](https://docs.bazel.build/versions/main/platforms.html).
 
 ## System-installed libraries (2019/Q1)
 
