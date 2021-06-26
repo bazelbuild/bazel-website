@@ -11,7 +11,7 @@ If you are building a Bazel related tool or sharing your Skylark rules, we recom
 
 ## Naming Skylark rules
 
-See the ["Deploying new Skylark rules" section](https://docs.bazel.build/versions/master/skylark/deploying.html) in the docs.
+See the ["Deploying new Skylark rules" section](https://docs.bazel.build/skylark/deploying.html) in the docs.
 
 ## Naming other Bazel related tools
 

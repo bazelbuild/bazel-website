@@ -94,14 +94,14 @@ they can build on**
 
 
 <div class="etabox">Dec 2018</div>**C++ rules fully support
-[platforms](https://docs.bazel.build/versions/master/platforms.html) and
-[toolchains](https://docs.bazel.build/versions/master/toolchains.html)**
+[platforms](https://docs.bazel.build/versions/main/platforms.html) and
+[toolchains](https://docs.bazel.build/versions/main/toolchains.html)**
 <span class="inprogressstatus">PARTIALLY DONE</span> ([#6516](https://github.com/bazelbuild/bazel/issues/6516))
 
 * This gives them first-class Starlark support, `select()` [on
-platforms](https://docs.bazel.build/versions/master/be/general.html#config_setting.constraint_values),
+platforms](https://docs.bazel.build/versions/main/be/general.html#config_setting.constraint_values),
 and configuration via
-[-\-platforms](https://docs.bazel.build/versions/master/platforms.html#specifying-a-platform-for-a-build)
+[-\-platforms](https://docs.bazel.build/versions/main/platforms.html#specifying-a-platform-for-a-build)
 * These set best practice templates for adoption by other rules
 
 
@@ -173,7 +173,7 @@ settings**
 
 * A standard API defines how to declare custom settings (consolidating [command
   line
-  flags](https://docs.bazel.build/versions/master/command-line-reference.html),
+  flags](https://docs.bazel.build/versions/main/command-line-reference.html),
   ["secret"
   flags](https://github.com/bazelbuild/bazel/blob/master/src/main/java/com/google/devtools/build/lib/rules/apple/AppleCommandLineOptions.java#L246),
   [--define](https://github.com/bazelbuild/bazel/blob/b3cf83cd20f30d77e6768de651a3e652f86d6f78/src/main/java/com/google/devtools/build/lib/analysis/config/BuildConfiguration.java#L423),
@@ -233,7 +233,7 @@ output paths**
 
 * This improves multiplatform build times and cross-build cacheability
 * This is conditional on the impact of generated sources,
-  [selects](https://docs.bazel.build/versions/master/be/functions.html#select)(),
+  [selects](https://docs.bazel.build/versions/main/be/functions.html#select)(),
   etc.
 
 

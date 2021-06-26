@@ -50,7 +50,7 @@ Objective: Bazel should only download build outputs that are requested by a user
 
 Status: <span class="donestatus">DONE</span>
 
-Objective: All critical features required for enabling this mode in a continuous integration environment are available to use in a Bazel release. In particular, Bazel supports not downloading any build outputs, only top level outputs as well as translating local file paths for [BES](https://docs.bazel.build/versions/master/build-event-protocol.html).
+Objective: All critical features required for enabling this mode in a continuous integration environment are available to use in a Bazel release. In particular, Bazel supports not downloading any build outputs, only top level outputs as well as translating local file paths for [BES](https://docs.bazel.build/versions/main/build-event-protocol.html).
 
 
 #### Use Case: Developer Builds
@@ -137,7 +137,7 @@ Status: <span class="notstartedstatus">NOT STARTED</span>
 Objective: Bazel provides an API that supports fetching a manifest instead of the full contents of a static external repository (e.g. http_archive). This is one step towards removing the host machine to be a bottleneck and towards [fully virtualizing](https://docs.google.com/document/d/17WJ4cz150IHeTgvJGxcbSGK1Zg2vsLpcgUSVffrwGfk/edit#) inputs and outputs.
 
 
-### Remote Execution of [repository_rule](https://docs.bazel.build/versions/master/skylark/repository_rules.html)
+### Remote Execution of [repository_rule](https://docs.bazel.build/versions/main/skylark/repository_rules.html)
 
 Status: <span class="inprogessstatus">IN_PROGRESS</span>
 
