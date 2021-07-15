@@ -60,6 +60,12 @@ CarGurus is on a mission to build the world's most trusted and transparent autom
 
 Compass is a tech-driven real estate platform. With an elite team of real estate, technology and business professionals, we aim to be the best and most trusted source for home seekers.
 
+### [Cookies](https://cookies.co)
+
+<img src="https://img.cookies.co/static/logo/cookies-blue.png" width="150" align="right">
+
+COOKIES is one of the most well-respected and top-selling cannabis brands in California and throughout the world. Eng@Cookies and our Digital Platform are powered by a central Bazel monorepo, with components written in Java, Kotlin, Typescript and more. Services are powered by gRPC, and specified via the OpenCannabis stack of specifications, which are also built with Bazel.
+
 ### [Databricks](https://databricks.com)
 
 <img src="https://upload.wikimedia.org/wikipedia/en/0/09/Databricks_logo.png" width="100" align="right">
