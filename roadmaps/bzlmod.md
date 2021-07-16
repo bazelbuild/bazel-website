@@ -33,7 +33,7 @@ title: Bzlmod roadmap
 
 # Bzlmod Roadmap
 
-*Point of contact:* [Wyverald](https://github.com/Wyverald), [pcloudy](https://github.com/pcloudy)
+*Point of contact:* [Wyverald](https://github.com/Wyverald), [meteorcloudy](https://github.com/meteorcloudy)
 
 ## Goal
 
