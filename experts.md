@@ -106,6 +106,14 @@ title: Bazel Community Experts
           </p>
  	<a href="https://buildbuddy.io/" target="_blank">Learn more</a>
         </div>
+        <div class="col-sm-6 col-md-3 expert">
+          <img class="user-logo" src="{{site_root}}images/user-logos/Aspect_Dev.png" height="68" alt="Aspect logo" title="Aspect"/>
+          <h3>Aspect</h3>
+          <p>
+          Aspect is a Bazel consulting company. For years our experts have contributed to Bazel at Google and maintained official Bazel rules.  We offer clients this firsthand, comprehensive technical experience both with Bazel itself and with the ways it integrates with the surrounding toolchain, developer workflow, and business processes. With decades of combined industry experience, our experts have championed the benefits of Bazel since its initial release in 2015.  We're passionate about helping companies optimize the way they build and test software with this innovative build tool.
+          </p>
+ 	<a href="https://aspect.dev/" target="_blank">Learn more</a>
+        </div>
       </div>
     </div>
   </div>
