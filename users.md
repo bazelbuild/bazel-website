@@ -224,6 +224,8 @@ Ritual is a mobile pick up app, connecting restaurants with customers to offer a
 
 ### [Sabre](https://www.sabre.com/)
 
+<img src="/images/user-logos/sabre_logo.svg" width="150" align="right">
+
 Sabre is a software and technology company that powers the global travel industry. With decades of revolutionary firsts, Sabre's team of experts drive innovation and ingenuity across the travel ecosystem. Sabre is using Bazel with a monorepo for its opinionated build and CI platform.
 
 ### [Snap](https://www.snap.com/en-US/)
