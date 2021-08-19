@@ -222,6 +222,10 @@ Redfin is a next-generation real estate brokerage with full-service local agents
 
 Ritual is a mobile pick up app, connecting restaurants with customers to offer a simple, time-saving tool to get the food and beverages they want, without the wait. Ritual uses Bazel for their backend services.
 
+### [Sabre](https://www.sabre.com/)
+
+Sabre is a software and technology company that powers the global travel industry. With decades of revolutionary firsts, Sabre's team of experts drive innovation and ingenuity across the travel ecosystem. Sabre is using Bazel with a monorepo for its opinionated build and CI platform.
+
 ### [Snap](https://www.snap.com/en-US/)
 
 Snap, the developer of Snapchat messaging app, has migrated from Buck to Bazel in 2020 ([source](https://twitter.com/wew/status/1326957862816509953)). For more details about their process, see their [engineering blog](https://eng.snap.com/blog/).
