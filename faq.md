@@ -346,5 +346,4 @@ applications, such as Chrome.
 
 ## How do you pronounce "Bazel"?
 
-The same way as "basil" (the herb) in US English: "BAY-zel". It rhymes with
-"hazel". IPA: /ˈbeɪzˌəl/
+It's pronounced "BAY-zel". It rhymes with "hazel". IPA: /ˈbeɪzˌəl/
