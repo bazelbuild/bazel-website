@@ -79,7 +79,7 @@ title: Bazel Community Experts
           <img class="user-logo" src="{{site_root}}images/user-logos/engflow.svg" height="40" alt="EngFlow logo" title="EngFlow"/>
           <h3>EngFlow</h3>
           <p>
-          EngFlow helps companies accelerate builds for Bazel, Goma, and Android Platform. Builds, tests and CI are typically 5 to 10x faster when using EngFlow’s <a href="https://www.engflow.com/product/remoteExecution" target="_blank">remote build execution</a>, caching, and <a href="https://www.engflow.com/product/buildDashboard" target="_blank">build results UI</a>. Customers also benefit from the company’s unparalleled Bazel expertise. Created by the engineer who led the development of Bazel, EngFlow upstreams Bazel changes <a href="https://www.engflow.com/product/bazelForYou" target="_blank">in the interest of customers</a>, and connects them to experts in the Bazel ecosystem.
+          EngFlow helps companies accelerate builds for Bazel, Goma, and Android Platform. Builds, tests and CI are typically 5 to 10x faster when using EngFlow’s <a href="https://www.engflow.com/product/remoteExecution" target="_blank">remote build execution</a>, caching, and <a href="https://www.engflow.com/product/buildDashboard" target="_blank">build results UI</a>. Customers also benefit from the company’s unparalleled Bazel expertise. Created by the engineer who led the development of Bazel, EngFlow upstreams Bazel changes <a href="https://www.engflow.com/product/bazelForYou" target="_blank">in the interest of customers</a>, and has partnerships with other Bazel experts.
           </p>
           <a href="https://www.engflow.com/" target="_blank">Learn more</a>
         </div>
