@@ -6,7 +6,7 @@ title: Who's Using Bazel
 # Who's Using Bazel
 
 *Using Bazel? You can add your company on [StackShare](https://stackshare.io/bazel).
-To add yourself to this page, contact [product@bazel.build](mailto:produc@bazel.build).*
+To add yourself to this page, contact [product@bazel.build](mailto:product@bazel.build).*
 
 This page lists companies and OSS projects that are known to use Bazel. This does not constitute an endorsement.
 
@@ -40,6 +40,10 @@ Ascend is a Palo Alto startup that offers solutions for large data sets analysis
 ### [Beeswax](https://www.beeswax.com/)
 
 "_Beeswax is a New York based startup that provides real time bidding as service. Bazel powers their Jenkins based continuous integration and deployment framework. Beeswax loves Bazel because it is blazingly fast, correct and well supported across many languages and platforms._"
+
+### [BMW](https://www.bmw.de/)
+
+BMW is using Bazel in many of their engineering projects like automated driving, driver assistance system and other. We measured a 10x speed up of our build and test times. Take a look at our [BazelCon talk](https://www.youtube.com/watch?v=Gh4SJuYUoQI) for more details.
 
 ### [Braintree](https://www.braintreepayments.com)
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Braintree-logo1.png" width="150" align="right">
