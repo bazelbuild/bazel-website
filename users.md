@@ -6,7 +6,7 @@ title: Who's Using Bazel
 # Who's Using Bazel
 
 *Using Bazel? You can add your company on [StackShare](https://stackshare.io/bazel).
-To add yourself to this page, contact [product@bazel.build](mailto:produc@bazel.build).*
+To add yourself to this page, contact [product@bazel.build](mailto:product@bazel.build).*
 
 This page lists companies and OSS projects that are known to use Bazel. This does not constitute an endorsement.
 
