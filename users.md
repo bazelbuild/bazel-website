@@ -6,7 +6,7 @@ title: Who's Using Bazel
 # Who's Using Bazel
 
 *Using Bazel? You can add your company on [StackShare](https://stackshare.io/bazel).
-To add yourself to this page, contact [product@bazel.build](mailto:produc@bazel.build).*
+To add yourself to this page, contact [product@bazel.build](mailto:product@bazel.build).*
 
 This page lists companies and OSS projects that are known to use Bazel. This does not constitute an endorsement.
 
@@ -41,6 +41,10 @@ Ascend is a Palo Alto startup that offers solutions for large data sets analysis
 
 "_Beeswax is a New York based startup that provides real time bidding as service. Bazel powers their Jenkins based continuous integration and deployment framework. Beeswax loves Bazel because it is blazingly fast, correct and well supported across many languages and platforms._"
 
+### [BMW](https://www.bmw.de/)
+
+BMW is using Bazel in many of their engineering projects like automated driving, driver assistance system and other. We measured a 10x speed up of our build and test times. Take a look at our [BazelCon talk](https://www.youtube.com/watch?v=Gh4SJuYUoQI) for more details.
+
 ### [Braintree](https://www.braintreepayments.com)
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Braintree-logo1.png" width="150" align="right">
 
@@ -59,6 +63,12 @@ CarGurus is on a mission to build the world's most trusted and transparent autom
 ### [Compass](https://www.compass.com)
 
 Compass is a tech-driven real estate platform. With an elite team of real estate, technology and business professionals, we aim to be the best and most trusted source for home seekers.
+
+### [Cookies](https://cookies.co)
+
+<img src="https://img.cookies.co/static/logo/cookies-blue.png" width="150" align="right">
+
+COOKIES is one of the most well-respected and top-selling cannabis brands in California and throughout the world. Eng@Cookies and our Digital Platform are powered by a central Bazel monorepo, with components written in Java, Kotlin, Typescript and more. Services are powered by gRPC, and specified via the OpenCannabis stack of specifications, which are also built with Bazel.
 
 ### [Databricks](https://databricks.com)
 
@@ -215,6 +225,12 @@ Redfin is a next-generation real estate brokerage with full-service local agents
 <img src="https://lh3.googleusercontent.com/7Ir6j25ROnsXhtQXveOzup33cizxLf-TiifSC1cI6op0bQVB-WePmPjJOfXUBQ0L3KpkheObAiS28e-TS8hZtDzxOIc" width="150" align="right">
 
 Ritual is a mobile pick up app, connecting restaurants with customers to offer a simple, time-saving tool to get the food and beverages they want, without the wait. Ritual uses Bazel for their backend services.
+
+### [Sabre](https://www.sabre.com/)
+
+<img src="/images/user-logos/sabre_logo.svg" width="150" align="right">
+
+Sabre is a software and technology company that powers the global travel industry. With decades of revolutionary firsts, Sabre's team of experts drive innovation and ingenuity across the travel ecosystem. Sabre is using Bazel with a monorepo for its opinionated build and CI platform.
 
 ### [Snap](https://www.snap.com/en-US/)
 
