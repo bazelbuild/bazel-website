@@ -76,10 +76,10 @@ title: Bazel Community Experts
   <a href="https://oasisdigital.com/" target="_blank">Learn more</a>
         </div>
         <div class="col-sm-6 col-md-3 expert">
-          <img class="user-logo" src="{{site_root}}images/user-logos/engflow.png" width="150" alt="EngFlow logo" title="EngFlow"/>
+          <img class="user-logo" src="{{site_root}}images/user-logos/engflow.svg" height="40" alt="EngFlow logo" title="EngFlow"/>
           <h3>EngFlow</h3>
           <p>
-          EngFlow is a SaaS company with unparalleled Bazel expertise. Created by the engineer who led the development of Bazel, EngFlow builds tools and connects experts to help companies get even more value from Bazel. Its remote execution service typically makes builds ~10x faster. The service can be run on-prem or in the cloud and supports all clients that implement the open-source Remote Execution API.
+          EngFlow helps companies accelerate builds for Bazel, Goma, and Android Platform. Builds, tests and CI are typically 5 to 10x faster when using EngFlow’s <a href="https://www.engflow.com/product/remoteExecution" target="_blank">remote build execution</a>, caching, and <a href="https://www.engflow.com/product/buildDashboard" target="_blank">build results UI</a>. Customers also benefit from the company’s unparalleled Bazel expertise. Created by the engineer who led the development of Bazel, EngFlow upstreams Bazel changes <a href="https://www.engflow.com/product/bazelForYou" target="_blank">in the interest of customers</a>, and has partnerships with other Bazel experts.
           </p>
           <a href="https://www.engflow.com/" target="_blank">Learn more</a>
         </div>
@@ -105,6 +105,14 @@ title: Bazel Community Experts
           BuildBuddy provides an open-core suite of enterprise features for Bazel. Included are a Remote Build Execution service, a shared build artifact cache, and a build result UI. It's available as a fully-managed cloud service or as an easy to deploy on-prem solution. The service is free to use for individuals and open-source projects. BuildBuddy is based in San Francisco, backed by Y Combinator, and founded by two ex-Googlers deeply passionate about making developers more productive.
           </p>
  	<a href="https://buildbuddy.io/" target="_blank">Learn more</a>
+        </div>
+        <div class="col-sm-6 col-md-3 expert">
+          <img class="user-logo" src="{{site_root}}images/user-logos/Aspect_Dev.png" height="68" alt="Aspect logo" title="Aspect"/>
+          <h3>Aspect</h3>
+          <p>
+          Aspect is a Bazel consulting company. For years our experts have contributed to Bazel at Google and maintained official Bazel rules.  We offer clients this firsthand, comprehensive technical experience both with Bazel itself and with the ways it integrates with the surrounding toolchain, developer workflow, and business processes. With decades of combined industry experience, our experts have championed the benefits of Bazel since its initial release in 2015.  We're passionate about helping companies optimize the way they build and test software with this innovative build tool.
+          </p>
+ 	<a href="https://aspect.dev/" target="_blank">Learn more</a>
         </div>
       </div>
     </div>

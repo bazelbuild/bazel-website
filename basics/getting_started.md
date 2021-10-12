@@ -78,7 +78,7 @@ The resulting binary can be found at `bazel-bin/src/bazel`. This is the
 recommended way of rebuilding Bazel once you have bootstrapped it.
 
 In addition to the Bazel binary, you might want to build the various tools Bazel
-uses. They are located in `//src/java_tools/...`, `//src/objc_tools/...` and
+uses. They are located in `//src/java_tools/...` and
 `//src/tools/...` and their directories contain README files describing their
 respective utility.
 
