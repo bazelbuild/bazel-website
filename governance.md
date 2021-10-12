@@ -12,10 +12,10 @@ This page covers Bazel's governance model and contribution policy.
 The [Bazel project](https://github.com/bazelbuild) is led and managed by Google
 and has a large community of contributors outside of Google. Some Bazel
 components (such as specific rules repositories under the
-<code>[bazelbuild](https://github.com/bazelbuild)</code> organization) are led,
+[bazelbuild](https://github.com/bazelbuild) organization) are led,
 maintained, and managed by members of the community. The Google Bazel team
 reviews suggestions to add community-owned repositories (such as rules) to the
-<code>[bazelbuild](https://github.com/bazelbuild)</code> GitHub organization.
+[bazelbuild](https://github.com/bazelbuild) GitHub organization.
 
 ### Contributor roles
 
