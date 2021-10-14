@@ -60,5 +60,5 @@ To learn about how to submit a change, see the [patch acceptance process](basics
 
 ## Code of Conduct
 Contributing to Bazel should be a pleasant and inclusive experience for everyone. This
-[code of conduct](https://github.com/bazelbuild/bazel/blob/master/CODE_OF_CONDUCT.md) applies to
+[code of conduct](https://github.com/bazelbuild/bazel/blob/HEAD/CODE_OF_CONDUCT.md) applies to
 all interactions within the Bazel project.
