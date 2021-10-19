@@ -117,7 +117,7 @@ the repository context object:
      to list the built-in include directories.
 To address the issue 5, we can add the list of paths to dependencies to the
 [crosstool rule in the BUILD
-file](https://docs.bazel.build/versions/master/tutorial/cc-toolchain-config.html)
+file](https://docs.bazel.build/versions/main/tutorial/cc-toolchain-config.html)
 
 ## Writing the cpp package
 
@@ -137,7 +137,7 @@ To ease the writing of crosstool, we should also provide a
 `template(path, label, variables)` method which will write the file
 pointed by path using the file pointed by label (should be a
 FileValue) in which variables have been replaced in the same way that
-[template_action](http://bazel.build/docs/skylark/lib/ctx.html#template_action)
+[template_action](http://docs.bazel.build/versions/main/skylark/lib/ctx.html#template_action)
 works.
 
 ## Rollout plan
