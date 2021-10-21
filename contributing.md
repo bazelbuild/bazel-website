@@ -57,3 +57,8 @@ portability, and the impact on memory usage and performance.
 
 To learn how to work on the Bazel code base, see [getting started](basics/getting_started.html).
 To learn about how to submit a change, see the [patch acceptance process](basics/patching.html).
+
+## Code of Conduct
+Contributing to Bazel should be a pleasant and inclusive experience for everyone. This
+[code of conduct](https://github.com/bazelbuild/bazel/blob/HEAD/CODE_OF_CONDUCT.md) applies to
+all interactions within the Bazel project.
