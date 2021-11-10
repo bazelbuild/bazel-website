@@ -33,7 +33,7 @@ This page outlines how contributors can propose and make changes to the Bazel co
    new commit and push it to make changes to your pull request. If the review
    takes too long (e.g. reviewer is unresponsive), send an email to
    [bazel-dev@googlegroups.com](mailto:bazel-dev@googlegroups.com).
-1. After your review is complete, the pull request can be finalized. Note that some
+1. After the review is complete, the pull request can be finalized. Note that some
    repositories, such as [bazel](https://github.com/bazelbuild/bazel) do not allow
    to directly merge a PR. In that case, a Bazel maintainer applies your patch to 
    Google's internal version control system. Only after that process is concluded,
