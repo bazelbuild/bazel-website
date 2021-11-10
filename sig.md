@@ -79,7 +79,8 @@ the comments on the PR (see template below). On approval, the PR for the group w
 and the required resources created.
 
 ### Template Request for New SIG
-This template will be available in the community repo: SIG-request-template.md.
+This template will be available in the community repo: 
+[SIG-request-template.md](https://github.com/bazelbuild/community/blob/master/governance/SIG-request-template.md).
 
 ### Chartering
 Each group will be established with a charter, and be governed by the Bazel 
@@ -127,4 +128,5 @@ outcome. A SIG may also opt to disband if it recognizes it has reached the end o
 useful life.
 
 ## Note
-This content has been adopted from Tensorflow’s SIG playbook with modifications.
+This content has been adopted from Tensorflow’s 
+[SIG playbook](https://www.tensorflow.org/community/sig_playbook) with modifications.
