@@ -28,10 +28,10 @@ See the complete list of [Bazel SIGs](https://github.com/bazelbuild/community/tr
 ### Non-goals: What a SIG is not
 SIGs are intended to facilitate collaboration on shared work. A SIG is therefore:
 
-- Not a support forum: a mailing list and a SIG is not the same thing.
-- Not immediately required: early on in a project's life, you may not know if you have shared 
+- *Not a support forum:* a mailing list and a SIG is not the same thing.
+- *Not immediately required:* early on in a project's life, you may not know if you have shared 
   work or collaborators.
-- Not free labor: energy is required to grow and coordinate the work collaboratively.
+- *Not free labor:* energy is required to grow and coordinate the work collaboratively.
 
 Our approach to SIG creation will be conservative—thanks to the ease of starting projects on 
 GitHub, there are many avenues where collaboration can happen without the need for a SIG.
@@ -128,5 +128,5 @@ outcome. A SIG may also opt to disband if it recognizes it has reached the end o
 useful life.
 
 ## Note
-This content has been adopted from Tensorflow’s 
-[SIG playbook](https://www.tensorflow.org/community/sig_playbook) with modifications.
+*This content has been adopted from Tensorflow’s 
+[SIG playbook](https://www.tensorflow.org/community/sig_playbook) with modifications.*
