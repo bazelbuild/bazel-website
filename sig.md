@@ -80,7 +80,7 @@ and the required resources created.
 
 ### Template Request for New SIG
 This template will be available in the community repo: 
-[SIG-request-template.md](https://github.com/bazelbuild/community/blob/master/governance/SIG-request-template.md).
+[SIG-request-template.md](https://github.com/bazelbuild/community/blob/main/governance/SIG-request-template.md).
 
 ### Chartering
 Each group will be established with a charter, and be governed by the Bazel 
