@@ -35,6 +35,8 @@ We recommend that:
   `incompatible_`).
 
 * You add the label [`incompatible-change`](https://github.com/bazelbuild/bazel/labels/incompatible-change).
+  This ensures that the flag, once it's merged, will be picked up by the
+  [`bazelisk-plus-incompatible-flags` pipeline](https://buildkite.com/bazel/bazelisk-plus-incompatible-flags).
 
 * The description contains a description of the change and a link to relevant
   design documents.
@@ -61,13 +63,10 @@ also report warnings.
 
 Create a new flag in Bazel. The default value must be false. The help text
 should contain the URL of the GitHub issue. As the flag name starts with
-`incompatible_`, it needs metadata tags:
+`incompatible_`, it needs a metadata tag:
 
 ```java
-      metadataTags = {
-        OptionMetadataTag.INCOMPATIBLE_CHANGE,
-        OptionMetadataTag.TRIGGERED_BY_ALL_INCOMPATIBLE_CHANGES
-      },
+      metadataTags = {OptionMetadataTag.INCOMPATIBLE_CHANGE},
 ```
 
 In the commit description, add a brief summary of the flag. 
