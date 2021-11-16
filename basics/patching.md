@@ -1,9 +1,9 @@
 ---
 layout: contribute
-title: Patch acceptance process
+title: Making a pull request
 ---
 
-# Patch Acceptance Process (Life of a PR)
+# Making a Pull Request (Patch Acceptance Process)
 
 This page outlines how contributors can propose and make changes to the Bazel code base.
 
