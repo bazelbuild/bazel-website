@@ -50,7 +50,7 @@ repository.
       [bazel-discuss](https://groups.google.com/forum/#!forum/bazel-discuss) for
       higher visibility on the question.
    1. If the issue belongs in one of the rules repositories owned by the community,
-      like [rules_apple](https://github.com.bazelbuild/rules_apple), the DevEx
+      like [rules_apple](https://github.com/bazelbuild/rules_apple), the DevEx
       member will [transfer this issue](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/transferring-an-issue-to-another-repository) to the correct repository.
    1. If the issue is vague or has missing information, the DevEx member will
       assign the issue back to the user to request for more information before
