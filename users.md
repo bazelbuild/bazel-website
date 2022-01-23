@@ -241,6 +241,12 @@ Snap, the developer of Snapchat messaging app, has migrated from Buck to Bazel i
 
 Stripe provides mobile payment solutions.  They are the main maintainers of the [Bazel Scala rules](https://github.com/bazelbuild/rules_scala).
 
+### [Tencent](https://tencent.com/)
+
+<img src="/images/user-logos/tencent.svg" width="150" align="right">
+
+Tencent is a world-leading internet and technology company that develops innovative products and services to improve the quality of life of people around the world.
+
 ### [Tink](https://tink.com/)
 <img src="https://cdn.tink.se/tink-logos/LOW/Tink_Black.png" width="150" align="right">
 
