@@ -93,8 +93,8 @@ agility. Bazel was a way to solve these problems.
 
 Bazel runs build operations locally by default. However, Bazel can
 also connect to a build cluster for even faster builds and tests.
-See our documentation on [remote execution](https://docs.bazel.build/versions/master/remote-execution.html)
-and [remote caching](https://docs.bazel.build/versions/master/remote-execution.html)
+See our documentation on [remote execution and caching](https://docs.bazel.build/versions/main/remote-execution.html)
+and [remote caching](https://docs.bazel.build/versions/main/remote-caching.html)
 for further details.
 
 ## How does the Google development process work?

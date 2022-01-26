@@ -9,7 +9,7 @@ It is inevitable that we will make breaking changes to Bazel. We will have to
 change our designs and fix the things that do not quite work. However, we need
 to make sure that community and Bazel ecosystem can follow along. To that end,
 Bazel project has adopted a 
-[backward compatibility policy](https://docs.bazel.build/versions/master/backward-compatibility.html).
+[backward compatibility policy](https://docs.bazel.build/backward-compatibility.html).
 This document describes the process for Bazel contributors to make a breaking
 change in Bazel to adhere to this policy.
 
@@ -35,6 +35,8 @@ We recommend that:
   `incompatible_`).
 
 * You add the label [`incompatible-change`](https://github.com/bazelbuild/bazel/labels/incompatible-change).
+  This ensures that the flag, once it's merged, will be picked up by the
+  [`bazelisk-plus-incompatible-flags` pipeline](https://buildkite.com/bazel/bazelisk-plus-incompatible-flags).
 
 * The description contains a description of the change and a link to relevant
   design documents.
@@ -61,13 +63,10 @@ also report warnings.
 
 Create a new flag in Bazel. The default value must be false. The help text
 should contain the URL of the GitHub issue. As the flag name starts with
-`incompatible_`, it needs metadata tags:
+`incompatible_`, it needs a metadata tag:
 
 ```java
-      metadataTags = {
-        OptionMetadataTag.INCOMPATIBLE_CHANGE,
-        OptionMetadataTag.TRIGGERED_BY_ALL_INCOMPATIBLE_CHANGES
-      },
+      metadataTags = {OptionMetadataTag.INCOMPATIBLE_CHANGE},
 ```
 
 In the commit description, add a brief summary of the flag. 

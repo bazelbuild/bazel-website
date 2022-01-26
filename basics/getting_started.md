@@ -18,17 +18,17 @@ builds with Bazel's continuous integration system.
 Before you start developing, you'll need to:
 
 1.  Install the latest version of Bazel on your system. For instructions, see
-    [Compiling Bazel from source](https://docs.bazel.build/versions/master/install-compile-source.html).
+    [Compiling Bazel from source](https://docs.bazel.build/versions/main/install-compile-source.html).
 
 1.  Clone Bazel's Git repository from GitHub:
 
     ```
     git clone https://github.com/bazelbuild/bazel.git
     ```
-1. Install any missing [prerequisites](https://docs.bazel.build/versions/master/install-compile-source.html#bootstrap-unix).
+1. Install any missing [prerequisites](https://docs.bazel.build/versions/main/install-compile-source.html#bootstrap-unix).
 
 1. Try to [build
-   Bazel](https://docs.bazel.build/versions/master/guide.html#building-programs-with-bazel):
+   Bazel](https://docs.bazel.build/versions/main/guide.html#building-programs-with-bazel):
 
    *  On Linux/macOS, in Bash/Terminal:
 
@@ -78,7 +78,7 @@ The resulting binary can be found at `bazel-bin/src/bazel`. This is the
 recommended way of rebuilding Bazel once you have bootstrapped it.
 
 In addition to the Bazel binary, you might want to build the various tools Bazel
-uses. They are located in `//src/java_tools/...`, `//src/objc_tools/...` and
+uses. They are located in `//src/java_tools/...` and
 `//src/tools/...` and their directories contain README files describing their
 respective utility.
 
@@ -135,7 +135,7 @@ Bazel is organized as follows:
      utilities.
    *  Built-in rules are in `com.google.devtools.build.lib.rules` and in
      `com.google.devtools.build.lib.bazel.rules`. You might want to read about
-     the [Challenges of Writing Rules](https://docs.bazel.build/versions/master/rule-challenges.html) first.
+     the [Challenges of Writing Rules](https://docs.bazel.build/versions/main/rule-challenges.html) first.
 *  Java native interfaces are in `src/main/native`.
 *  Various tooling for language support are described in the list in the
    [compiling Bazel](#compile-bazel) section.
