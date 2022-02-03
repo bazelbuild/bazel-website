@@ -113,8 +113,9 @@ However, to debug Java code, attach to the server using the following:
 
 *  Run Bazel with the debugging option `--host_jvm_debug` before the
    command (e.g., `bazel --host_jvm_debug build //src:bazel`).
-*  Attach a debugger to the port 5005. For instance, with `jdb`,
-   run `jdb -attach localhost:5005`.
+*  Attach a debugger to the port 5005. For instance, with `jdb`
+   * on Linux: run `jdb -attach localhost:5005`
+   * on Windows: run `jdb.exe -connect com.sun.jdi.SocketAttach:hostname=localhost,port=5005`
 
 Our IntelliJ plugin has built-in [debugging support](https://ij.bazel.build/docs/run-configurations.html).
 
