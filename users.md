@@ -122,6 +122,10 @@ FINDMINE is a automation technology for the retail industry that uses machine le
 Flexport is a tech-enabled global freight forwarder; our mission is to make global trade easier for everyone. At Flexport, we use Bazel to build/test our Java/JavaScript services and client libraries and to generate Java and Ruby code from protobuf definitions.
 [Read about how we run individual JUnit 5 tests in isolation with Bazel.](https://flexport.engineering/connecting-bazel-and-junit5-by-transforming-arguments-46440c6ea068)
 
+### [Glean](https://www.glean.com/)
+<img src="https://app.glean.com/images/glean-text2.svg" width="150" align="right">
+Glean is the work assistant with intuition, providing search that works for today's teams. Their engineering team relies on Bazel to hermetically build and test their monorepo encompassing Android, iOS, GCP, Go, Java, Playwright, Python, React and TypeScript.
+
 ### [Google](https://google.com)
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" width="150" align="right">
 Bazel was designed to be able to scale to Google's needs and meet Google's requirements of reproducibility and platform/language support. All software at Google is built using Bazel. Google uses Bazel and its rules for millions of builds every day.
