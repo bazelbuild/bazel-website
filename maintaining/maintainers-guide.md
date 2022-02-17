@@ -201,8 +201,6 @@ issues.
     * Contact: [brandjon](https://github.com/brandjon)
 *   [`team-Starlark-interpreter`](https://github.com/bazelbuild/bazel/labels/team-Starlark-interpreter): Issues for the Starlark interpreter (anything in [java.net.starlark](https://github.com/bazelbuild/bazel/tree/master/src/main/java/net/starlark/java)). BUILD and .bzl API issues (which represent Bazel's *integration* with Starlark) go in `team-Build-Language`.
     * Contact: [brandjon](https://github.com/brandjon)
-*   [`team-Starlark`](https://github.com/bazelbuild/bazel/labels/team-Starlark): Issues for Starlark language + Build API
-    * Contact: [lberki](https://github.com/lberki)
 
 For new issues, we deprecated the `category: *` labels in favor of the team labels.
 
