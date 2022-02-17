@@ -150,7 +150,7 @@ issues.
 * [**P2**](https://github.com/bazelbuild/bazel/labels/P2) - Defect or feature
   that should be addressed but we don't currently work on. Moderate live issue
   in a released Bazel version that is inconvenient for a user that needs to be
-  addressed in an future release and/or a easy workaround exists.
+  addressed in an future release and/or an easy workaround exists.
 * [**P3**](https://github.com/bazelbuild/bazel/labels/P3) - Desirable minor bug
   fix or enhancement with small impact. Not prioritized into Bazel roadmaps or
   any imminent release. May never be fixed.
@@ -171,19 +171,25 @@ issues.
     *   Contact: [ahumesky](https://github.com/ahumesky)
 *   [`team-Bazel`](https://github.com/bazelbuild/bazel/labels/team-Bazel): General Bazel product/strategy issues
     * Contact: [sventiffe](https://github.com/sventiffe)
+*   [`team-Build-Language`](https://github.com/bazelbuild/bazel/labels/team-Build-Language): Issues for the BUILD and .bzl APIs
+    * Contact: [brandjon](https://github.com/brandjon)
 *   [`team-Configurability`](https://github.com/bazelbuild/bazel/labels/team-Configurability): Issues for Configurability team
     * Contact: [gregestren](https://github.com/gregestren)
 *   [`team-Core`](https://github.com/bazelbuild/bazel/labels/team-Core): Issues for Core team
     * Contact: [janakdr](https://github.com/janakdr)
 *   [`team-Documentation`](https://github.com/bazelbuild/bazel/labels/team-Documentation): Issues for Documentation team
     * Contact: [communikit](https://github.com/communikit)
+*   [`team-ExternalDeps`](https://github.com/bazelbuild/bazel/labels/team-ExternalDeps): External dependency handling, Bzlmod, remote repositories, WORKSPACE file
+    * Contact: [meteorcloudy](https://github.com/meteorcloudy)
 *   [`team-Local-Exec`](https://github.com/bazelbuild/bazel/labels/team-Local-Exec): Issues for Execution (Local) team
     * Contact: [meisterT](https://github.com/meisterT)
+*   [`team-OSS`](https://github.com/bazelbuild/bazel/labels/team-OSS): Issues for Bazel OSS team: installation, release process, Bazel packaging, website, docs infrastructure
+    * Contact: [meteorcloudy](https://github.com/meteorcloudy)
 *   [`team-Performance`](https://github.com/bazelbuild/bazel/labels/team-Performance): Issues for Bazel Performance team
     * Contact: [meisterT](https://github.com/meisterT)
 *   [`team-Remote-Exec`](https://github.com/bazelbuild/bazel/labels/team-Remote-Exec): Issues for Execution (Remote) team
     * Contact: [coeuvre](https://github.com/coeuvre)
-*   [`team-Rules-CPP`](https://github.com/bazelbuild/bazel/labels/team-Rules-CPP): Issues for C++ rules
+*   [`team-Rules-CPP`](https://github.com/bazelbuild/bazel/labels/team-Rules-CPP): Issues for C++ rules, including native Apple rule logic
     * Contact: [oquenchil](https://github.com/oquenchil)
 *   [`team-Rules-Java`](https://github.com/bazelbuild/bazel/labels/team-Rules-Java): Issues for Java rules
     * Contact: [comius](https://github.com/comius)
@@ -191,10 +197,12 @@ issues.
     * Contact: [comius](https://github.com/comius)
 *   [`team-Rules-Server`](https://github.com/bazelbuild/bazel/labels/team-Rules-Server): Issues for serverside rules included with Bazel
     * Contact: [lberki](https://github.com/lberki)
+*   [`team-Starlark-integration`](https://github.com/bazelbuild/bazel/labels/team-Starlark-integration): Non-API Bazel + Starlark integration. Includes: how Bazel triggers the Starlark interpreter, Stardoc, builtins injection, character encoding.  Does *not* include: BUILD or .bzl language issues.
+    * Contact: [brandjon](https://github.com/brandjon)
+*   [`team-Starlark-interpreter`](https://github.com/bazelbuild/bazel/labels/team-Starlark-interpreter): Issues for the Starlark interpreter (anything in [java.net.starlark](https://github.com/bazelbuild/bazel/tree/master/src/main/java/net/starlark/java)). BUILD and .bzl API issues (which represent Bazel's *integration* with Starlark) go in `team-Build-Language`.
+    * Contact: [brandjon](https://github.com/brandjon)
 *   [`team-Starlark`](https://github.com/bazelbuild/bazel/labels/team-Starlark): Issues for Starlark language + Build API
     * Contact: [lberki](https://github.com/lberki)
-*   [`team-XProduct`](https://github.com/bazelbuild/bazel/labels/team-XProduct): Issues for Product Excellence team: installation, Bazel packaging, website, command line processing, Bazel CI, Windows, releases / distributions, external repositories
-    * Contact: [philwo](https://github.com/philwo)
 
 For new issues, we deprecated the `category: *` labels in favor of the team labels.
 
