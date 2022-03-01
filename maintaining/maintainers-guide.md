@@ -160,8 +160,9 @@ issues.
   fix or enhancement with small impact. Not prioritized into Bazel roadmaps or
   any imminent release. May never be fixed by the Bazel team.
   * Issues marked as P3 are not actively managed by the Bazel team.
-    Community contributions are encouraged, the Bazel team will accept PRs.
-    Please reach out to the team prior submitting PRs.
+    Community contributions are welcome. Before sending a PR, please reach out
+    in the issue first to discuss your solution and work with the Bazel team to
+    find the best reviewer.
 * [**P4**](https://github.com/bazelbuild/bazel/labels/P4) - Low priority defect
   or feature request that is unlikely to get closed. Can also be kept open for a
   potential re-prioritization if more users are impacted.
