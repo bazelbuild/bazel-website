@@ -47,6 +47,15 @@ rule sets. Contributors with a record of consistent, responsible past
 contributions who are planning major contributions in the future could be
 considered to become qualified Maintainers.
 
+To be added as a maintainer to a repository in the bazelbuild organization:
+
+*   File an issue in the respective repository.
+*   After approval by the current maintainers, ask to be added to the [Bazel team](https://github.com/orgs/bazelbuild/people){: .external}
+    by writing an e-mail to governance@bazel.build. Include a link to the
+    approved issue.
+*   After this step is completed, you can be added as a maintainer to the
+    repository.
+
 ## Contribution policy
 
 The Bazel project accepts contributions from external contributors. Here are the
